@@ -1,0 +1,6 @@
+# Art. 189 bis
+El que, con el fin de contribuir a la comisión de delitos contra la seguridad común o causar daños en las máquinas o elaboración de productos, fabricare, suministrare, adquiriere, sustrajere o tuviere en su poder bombas, materias o aparatos capaces de liberar energía nuclear, materias explosivas, inflamables, asfixiantes o tóxicas, o sustancias o materiales destinados a su preparación, será reprimido con reclusión o prisión de cinco a quince años.
+La misma pena se impondrá al que, sabiendo o debiendo saber que contribuye a la comisión de delitos contra la seguridad común o destinados a causar daños en las máquinas o en la elaboración de productos, diere instrucciones para la preparación de sustancias o materiales mencionados en el párrafo anterior.
+La simple tenencia de armas de guerra o de los materiales a que se refiere el primer párrafo de este artículo, sin la debida autorización legal, será reprimida con prisión de tres a seis años.
+La pena será de tres a ocho años de prisión o reclusión, en caso de acopio de armas. Si se tratare de armas de guerra, la pena será de tres a diez años de prisión o reclusión.
+Las mismas penas se aplicarán respectivamente, la que tuviere o copiare municiones correspondientes a armas de guerra, piezas de éstas o instrumental para producirlas.
