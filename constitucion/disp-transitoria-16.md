@@ -1,0 +1,3 @@
+# Disposición transitoria decimosexta
+Esta reforma entra en vigencia al día siguiente de su publicación. Los miembros de la Convención Constituyente, el presidente de la Nación Argentina, los presidentes de las Cámaras Legislativas y el presidente de la Corte Suprema de Justicia prestan juramento en un mismo acto el día 24 de agosto de 1994, en el Palacio San José, Concepción del Uruguay, provincia de Entre Ríos.
+Cada poder del Estado y las autoridades provinciales y municipales disponen lo necesario para que sus miembros y funcionarios juren esta Constitución
