@@ -1,0 +1,7 @@
+# Art. 92 ter
+Contrato de Trabajo a tiempo Parcial.
+1.-El contrato de trabajo a tiempo parcial es aquel en virtud del cual el trabajador se obliga a prestar servicios durante un determinado número de horas al día o a la semana o al mes, inferiores a las dos terceras (2/3) partes de la jornada habitual de la actividad. En este caso la remuneración no podrá ser inferior a la proporcional que le corresponda a un trabajador a tiempo completo, establecida por ley o convenio colectivo, de la misma categoría o puesto de trabajo.
+2.-Los trabajadores contratados a tiempo parcial no podrán realizar horas extraordinarias, salvo el caso del artículo 89 de la presente Ley.
+3.-Las cotizaciones a la seguridad social y las demás que se recaudan con ésta, se efectuarán en proporción a la remuneración del trabajador y serán unificadas en caso de pluriempleo. En este último supuesto, el trabajador deberá elegir entre las obras sociales a las que aporte, a aquella a la cual pertenecerá.
+4.-Las prestaciones de la seguridad social se determinarán reglamentariamente teniendo en cuente el tiempo trabajado, los aportes y las contribuciones efectuadas. Las prestaciones de obra social serán las adecuadas para una cobertura satisfactoria en materia de salud, aportando el Estado los fondos necesarios a tal fin, de acuerdo al nivel de las prestaciones y conforme lo determine la reglamentación.
+5.-Los convenios colectivos de trabajo podrán establecer para los trabajadores a tiempo parcial prioridad para ocupar las vacantes a tiempo completo que se produjeren en la empresa.
