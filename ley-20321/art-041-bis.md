@@ -1,0 +1,2 @@
+# Art. 41 bis
+El Estado nacional autorizará la retención del importe de las cuotas sociales y cargos por servicios de sus empleados que lo soliciten a favor de sus respectivas mutuales, en las condiciones que establezca la reglamentación. Los importes retenidos serán ingresados a las mutuales dentro de los cinco días de haberse abonado los haberes. Igual procedimiento regirá para los jubilados y pensionados nacionales. Se invitará a los gobiernos provinciales y de la Ciudad Autónoma de Buenos Aires y a los empleadores privados a adoptar medidas similares.
