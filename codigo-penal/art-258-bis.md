@@ -1,0 +1,2 @@
+# Art. 258 bis
+Será reprimido con reclusión de uno a seis años e inhabilitación especial perpetua para ejercer la función pública, el que ofreciere u otorgare a un funcionario público de otro Estado, directa o indirectamente, cualquier objeto de valor pecuniario u otros beneficios como dádivas, favores, promesas o ventajas, a cambio de que dicho funcionario realice u omita realizar un acto en el ejercicio de sus funciones públicas, relacionados con una transacción de naturaleza económica o comercial.
