@@ -1,3 +1,2 @@
 # Art. 127 bis
-El que promoviere o facilitare la entrada o salida del país de una mujer o de un menor de edad para que ejerzan la prostitución, será reprimido con reclusión o prisión de tres a seis años.
-La pena se elevará a ocho años si mediare alguna de las circunstancias enumeradas en el último párrafo del artículo 125.
+El que promoviere o facilitare la entrada o salida del país de menores de 18 años para que ejerzan la prostitución, será reprimido con reclusión o prisión de 4 a 10 años. La pena será de seis a quince años de reclusión o prisión cuando la víctima fuere menor de trece años. Cualquiera que fuese la edad de la víctima, la pena será de prisión o reclusión de 10 a 15 años cuando mediare engaño, violencia, amenaza, abuso de autoridad o cualquier otro medio de intimidación o coerción, como también si el autor fuera ascendiente, cónyuge, hermano, tutor o persona conviviente o encargado de su educación o guarda.
