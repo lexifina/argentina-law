@@ -1,0 +1,4 @@
+# Art. 3 bis
+Los procesados que se encuentren cumpliendo prisión preventiva, tendrán derecho a emitir su voto en todos los actos eleccionarios que se celebren durante el lapso en que se encuentren detenidos.
+A tal fin la Cámara Nacional Electoral confeccionará el Registro de Electores Privados de Libertad, que contendrá los datos de los procesados que se encuentren alojados en esos establecimientos de acuerdo con la información que deberán remitir los jueces competentes; asimismo habilitará mesas de votación en cada uno de los establecimientos de detención y designará a sus autoridades.
+Los procesados que se encuentren en un distrito electoral diferente al que le corresponda podrán votar en el establecimiento en que se encuentren alojados y sus votos se adjudicarán al Distrito en el que estén empadronados.
