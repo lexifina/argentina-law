@@ -1,0 +1,2 @@
+# Art. 277 bis
+Se aplicará prisión de TRES (3) a SEIS (6) años e inhabilitación especial de TRES (3) a DIEZ (10) años al funcionario público que, tras la comisión del delito de abigeato en el que no hubiera participado, violando los deberes a su cargo o abusando de sus funciones, intervenga o facilite el transporte, faena, comercialización o mantenimiento de ganado, sus despojos o los productos obtenidos, conociendo su origen ilícito.
