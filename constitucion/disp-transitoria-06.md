@@ -1,0 +1,4 @@
+# Disposición transitoria sexta
+Un régimen de coparticipación conforme lo dispuesto en el inc. 2 del Artículo 75 y la reglamentación del organismo fiscal federal, serán establecidos antes de la finalización del año 1996; la distribución de competencias, servicios y funciones vigentes a la sanción de esta reforma, no podrá modificarse sin la aprobación de la provincia interesada; tampoco podrá modificarse en desmedro de las provincias la distribución de recursos vigente a la sanción de esta reforma y en ambos casos hasta el dictado del mencionado régimen de coparticipación.
+La presente cláusula no afecta los reclamos administrativos o judiciales en trámite originados por diferencias por distribución de competencias, servicios, funciones o recursos entre la Nación y las provincias.
+(Corresponde al Artículo 75 inc. 2).
