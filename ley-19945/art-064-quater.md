@@ -1,0 +1,3 @@
+# Art. 64 quater
+Publicidad de los actos de gobierno. Durante la campaña electoral, la publicidad de los actos de gobierno no podrá contener elementos que promuevan expresamente la captación del sufragio a favor de ninguno de los candidatos a cargos públicos electivos nacionales.
+Queda prohibido durante los siete (7) días anteriores a la fecha fijada para la celebración del comicio, la realización de actos inaugurales de obras públicas, el lanzamiento o promoción de planes, proyectos o programas de alcance colectivo, y, en general, la realización de todo acto de gobierno que pueda promover la captación del sufragio a favor de cualquiera de los candidatos a cargos públicos electivos nacionales.
