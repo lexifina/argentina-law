@@ -1,0 +1,7 @@
+# Art. 14 bis
+Las importaciones y adquisiciones de bienes y servicios que determine la autoridad de aplicación a través de la reglamentación de esta ley y que efectúen las empresas que realicen tareas de exploración minera, gozarán del beneficio indicado en el segundo párrafo de este artículo, en la medida que se cumplan las siguientes condiciones:
+1. Las tareas de exploración minera sean efectuadas por sujetos inscritos en el régimen de la presente ley.
+2. Las importaciones y adquisiciones de bienes y servicios tengan por destino realizar actividades mineras consistentes en prospección, exploración, ensayos mineralúrgicos e investigación aplicada.
+Los créditos fiscales originados en las operaciones citadas en el párrafo precedente, que luego de transcurridos doce (12) períodos fiscales contados a partir de aquel en que resultó procedente su cómputo, conformaren el saldo a favor de los responsables a que se refiere el primer párrafo del artículo 24 de la ley de impuesto al valor agregado, les serán devueltos de acuerdo al procedimiento, forma y condiciones que establezca el Poder Ejecutivo nacional.
+La devolución prevista en este artículo no podrá realizarse cuando los referidos créditos fiscales hayan sido financiados mediante el régimen establecido por la ley 24.402, ni podrá solicitarse el acogimiento a este último cuando se haya solicitado la citada devolución.
+Lo dispuesto por el presente artículo será de aplicación sin perjuicio de otros beneficios que pudieran corresponder, salvo lo dispuesto en el párrafo precedente.
