@@ -1,0 +1,2 @@
+# Art. 144 quinto
+Si se ejecutase el hecho previsto en el artículo 144 tercero, se impondrá prisión de seis meses a dos años e inhabilitación especial de tres a seis años al funcionario a cargo de la repartición, establecimiento, departamento, dependencia o cualquier otro organismo, si las circunstancias del caso permiten establecer que el hecho no se hubiese cometido de haber mediado la debida vigilancia o adoptado los recaudos necesarios por dicho funcionario.
