@@ -1,0 +1,4 @@
+# Art. 64 bis
+Duración de la campaña electoral. A los efectos de esta ley, se entenderá por campaña electoral el conjunto de actividades realizadas con el propósito de promover o desalentar expresamente la captación del sufragio a favor, o en contra, de candidatos oficializados a cargos públicos electivos nacionales.
+Las actividades académicas, los debates, conferencias, presentación de planes y proyectos, la realización de congresos y simposios, no serán considerados como partes integrantes de la campaña electoral.
+La campaña electoral para la elección de diputados y senadores nacionales sólo podrá iniciarse sesenta (60) días corridos antes de la fecha fijada para el comicio. Cuando se trate de la elección de presidente y vicepresidente, la campaña sólo podrá iniciarse noventa (90) días antes de la fecha fijada para el comicio.
