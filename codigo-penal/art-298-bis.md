@@ -1,2 +1,2 @@
 # Art. 298 bis
-Quienes expidan, acepten o endosen facturas conformadas que no correspondan total o parcialmente a compraventas realmente realizadas, incurrirán en la pena prevista en el artículo 293 de este Código.
+Quienes emitan o acepten facturas de crédito que no correspondan a compraventa, locación de cosas muebles, locación de servicios o locación de obra realmente contratadas, serán sancionados con la pena prevista en el artículo 293 de este Código. Igual pena les corresponderá a quienes injustificadamente rechacen o eludan la aceptación de factura de crédito, cuando el servicio ya hubiese sido prestado en forma debida, o reteniendo la mercadería que se le hubiere entregado.
