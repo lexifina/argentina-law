@@ -1,6 +1,12 @@
 # Art. 142 bis
-Se impondrá prisión o reclusión de cinco a quince años, al que sustrajere, retuviere u ocultare a una persona con el fin de obligar a la víctima, o a un tercero a hacer, no hacer o tolerar algo contra su voluntad.
-La pena será de diez a veinticinco años de prisión o reclusión:
-1º Si la víctima fuere mujer o menor de dieciocho años de edad;
-2º En los casos previstos en el artículo 142, incisos 2 y 3 de este Código.
-Si resultare la muerte de la persona ofendida, la pena será de prisión o reclusión perpetua.
+Se impondrá prisión o reclusión de cinco (5) a quince (15) años, al que sustrajere, retuviere u ocultare a una persona con el fin de obligar a la víctima o a un tercero, a hacer, no hacer, o tolerar algo contra su voluntad. Si el autor lograre su propósito, el mínimo de la pena se elevará a ocho (8) años.
+La pena será de diez (10) a veinticinco (25) años de prisión o reclusión:
+1. Si la víctima fuese una mujer embarazada; un menor de dieciocho (18) años de edad; o un mayor de setenta (70) años de edad.
+2. Si el hecho se cometiere en la persona de un ascendiente; de un hermano; del cónyuge o conviviente; o de otro individuo a quien se deba respeto particular.
+3. Si se causare a la víctima lesiones graves o gravísimas.
+4. Cuando la víctima sea una persona discapacitada, enferma o que no pueda valerse por sí misma.
+5. Cuando el agente sea funcionario o empleado público; o pertenezca o haya pertenecido a alguna fuerza de seguridad u organismo de inteligencia del Estado.
+6. Cuando participaran en el hecho tres (3) o más personas.
+La pena será de quince (15) a veinticinco (25) años de prisión a reclusión si del hecho resultara la muerte de la persona ofendida, como consecuencia no querida por el autor.
+La pena será de prisión o reclusión perpetua si se causare intencionalmente la muerte de la persona ofendida.
+La pena del partícipe que, desvinculándose de los otros, se esforzare de modo que la víctima recupere la libertad, sin que tal resultado fuese la consecuencia del logro del propósito del autor, se reducirá de un tercio a la mitad.
