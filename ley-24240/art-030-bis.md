@@ -1,0 +1,6 @@
+# Art. 30 bis
+Las constancias que las empresas prestatarias de servicios públicos, entreguen a sus usuarios para el cobro de los servicios prestados, deberán expresar si existen períodos u otras deudas pendientes, en su caso fechas, concepto e intereses si correspondiera, todo ello escrito en forma clara y con caracteres destacados. En caso que no existan deudas pendientes se expresará: "no existen deudas pendientes".
+La falta de esta manifestación hace presumir que el usuario se encuentra al día con sus pagos y que no mantiene deudas con la prestataria.
+En caso que existan deudas y a los efectos del pago, los conceptos reclamados deben facturarse por documento separado, con el detalle consignado en este artículo.
+Los entes residuales de las empresas estatales que prestaban anteriormente el servicio deberán notificar en forma fehaciente a las actuales prestatarias el detalle de las deudas que registren los usuarios, dentro de los ciento veinte (120) días contados a partir de la sanción de la presente.
+Para el supuesto que algún ente que sea titular del derecho, no comunicare al actual prestatario del servicio, el detalle de la deuda dentro del plazo fijado, quedará condonada la totalidad de la deuda que pudiera existir, con anterioridad a la privatización.
