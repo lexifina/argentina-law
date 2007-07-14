@@ -1,0 +1,2 @@
+# Art. 213 quater
+Será reprimido con reclusión o prisión de CINCO (5) a QUINCE (15) años, salvo que correspondiere una pena mayor por aplicación de las reglas de los artículos 45 y 48, el que recolectare o proveyere bienes o dinero, con conocimiento de que serán utilizados, en todo o en parte, para financiar a una asociación ilícita terrorista de las descriptas en el artículo 213 ter, o a un miembro de éstas para la comisión de cualquiera de los delitos que constituyen su objeto, independientemente de su acaecimiento.
