@@ -1,0 +1,5 @@
+# Art. 40 bis
+Daño directo. Es todo perjuicio o menoscabo al derecho del usuario o consumidor, susceptible de apreciación pecuniaria, ocasionado de manera inmediata sobre sus bienes o sobre su persona, como consecuencia de la acción u omisión del proveedor de bienes o del prestador de servicios.
+La autoridad de aplicación podrá determinar la existencia de daño directo al usuario o consumidor resultante de la infracción del proveedor o del prestador de servicios y obligar a éste a resarcirlo, hasta un valor máximo de CINCO (5) Canastas Básicas Total para el Hogar 3, que publica el Instituto Nacional de Estadística y Censos de la República Argentina (INDEC).
+El acto administrativo de la autoridad de aplicación será apelable por el proveedor en los términos del artículo 45 de la presente ley, y, una vez firme, respecto del daño directo que determine constituirá título ejecutivo a favor del consumidor.
+Las sumas que el proveedor pague al consumidor en concepto de daño directo determinado en sede administrativa serán deducibles de otras indemnizaciones que por el mismo concepto pudieren corresponderle a éste por acciones eventualmente incoadas en sede judicial.
