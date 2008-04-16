@@ -1,0 +1,3 @@
+# Art. 10 ter
+Modos de Rescisión. Cuando la contratación de un servicio, incluidos los servicios públicos domiciliarios, haya sido realizada en forma telefónica, electrónica o similar, podrá ser rescindida a elección del consumidor o usuario mediante el mismo medio utilizado en la contratación.
+La empresa receptora del pedido de rescisión del servicio deberá enviar sin cargo al domicilio del consumidor o usuario una constancia fehaciente dentro de las SETENTA Y DOS (72) horas posteriores a la recepción del pedido de rescisión. Esta disposición debe ser publicada en la factura o documento equivalente que la empresa enviare regularmente al domicilio del consumidor o usuario.
