@@ -1,0 +1,2 @@
+# Art. 26 bis
+VENTA DE ALCOHOL EN LA VIA PUBLICA. Limítase el expendio de bebidas alcohólicas, cualquiera sea su graduación, para su consumo, en establecimientos comerciales que tengan acceso directo desde caminos, rutas, semiautopistas o autopistas conforme lo establezca la reglamentación. Las violaciones a esta limitación serán sancionadas con las penas de multas y/o clausuras previstas por la Ley 24.788 - De Lucha contra el Alcoholismo.
