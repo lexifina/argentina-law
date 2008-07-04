@@ -1,0 +1,4 @@
+# Art. 189 bis
+Empresa de la familia. Excepción.
+Las personas mayores de catorce (14) y menores a la edad indicada en el artículo anterior podrán ser ocupados en empresas cuyo titular sea su padre, madre o tutor, en jornadas que no podrán superar las tres (3) horas diarias, y las quince (15) horas semanales, siempre que no se trate de tareas penosas, peligrosas y/o insalubres, y que cumplan con la asistencia escolar. La empresa de la familia del trabajador menor que pretenda acogerse a esta excepción a la edad mínima de admisión al empleo, deberá obtener autorización de la autoridad administrativa laboral de cada jurisdicción.
+Cuando, por cualquier vínculo o acto, o mediante cualquiera de las formas de descentralización productiva, la empresa del padre, la madre o del tutor se encuentre subordinada económicamente o fuere contratista o proveedora de otra empresa, no podrá obtener la autorización establecida en esta norma.
