@@ -1,0 +1,2 @@
+# Art. 253 bis
+El militar que sin orden ni necesidad emprendiere una operación militar, o en sus funciones usare armas sin las formalidades y requerimientos del caso, sometiere a la población civil a restricciones arbitrarias u ordenare o ejerciere cualquier tipo de violencia innecesaria contra cualquier persona, será penado con prisión de uno (1) a cuatro (4) años si no resultare un delito más severamente penado.
