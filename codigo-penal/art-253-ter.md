@@ -1,0 +1,2 @@
+# Art. 253 ter
+Será penado con prisión de dos (2) a ocho (8) años el militar que por imprudencia o negligencia, impericia en el arte militar o inobservancia de los reglamentos o deberes a su cargo, en el curso de conflicto armado o de asistencia o salvación en situación de catástrofe, causare o no impidiere, la muerte de una o más personas o pérdidas militares, si no resultare un delito más severamente penado.
