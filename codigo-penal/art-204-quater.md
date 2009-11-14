@@ -1,2 +1,2 @@
 # Art. 204 quater
-Será reprimido con prisión de seis meses a tres años el que sin autorización vendiere sustancias medicinales que requieran receta médica para su comercialización.
+Será reprimido con multa de PESOS DIEZ MIL ($ 10.000) a PESOS DOSCIENTOS MIL ($ 200.000), el que teniendo a su cargo la dirección, administración, control o vigilancia de un establecimiento destinado al expendio, almacenamiento, distribución, producción o fabricación de sustancias medicinales, a sabiendas, incumpliere con los deberes a su cargo posibilitando la comisión de alguno de los hechos previstos en el artículo 204.
