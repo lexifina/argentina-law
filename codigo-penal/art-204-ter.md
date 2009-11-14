@@ -1,2 +1,2 @@
 # Art. 204 ter
-Será reprimido con multa de seiscientos australes a doce mil australes el que teniendo a su cargo la dirección, administración, control o vigilancia de un establecimiento destinado al expendio de medicamentos, omitiere cumplir con los deberes a su cargo posibilitando la comisión de alguno de los hechos previstos en el artículo 204.
+Será reprimido con prisión de UNO (1) a CUATRO (4) años y multa de PESOS DIEZ MIL ($ 10.000) a PESOS DOSCIENTOS MIL ($ 200.000), el que produjere o fabricare sustancias medicinales en establecimientos no autorizados.
