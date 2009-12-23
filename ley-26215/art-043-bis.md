@@ -1,0 +1,2 @@
+# Art. 43 bis
+La Dirección Nacional Electoral del Ministerio del Interior distribuirá los espacios de publicidad electoral en los servicios de comunicación audiovisual entre las agrupaciones políticas que oficialicen precandidaturas para las elecciones primarias y candidaturas para las elecciones generales, para la transmisión de sus mensajes de campaña. En relación a los espacios de radiodifusión sonora, los mensajes serán emitidos por emisoras de amplitud y emisoras de frecuencia modulada.

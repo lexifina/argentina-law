@@ -1,0 +1,4 @@
+# Art. 44 bis
+Financiamiento privado. Constituye financiamiento privado de campaña electoral toda contribución en dinero, o estimable en dinero, que una persona física efectúe a una agrupación política, destinado al financiamiento de gastos electorales.
+Las donaciones de las personas físicas deberán realizarse mediante transferencia bancaria, cheque, en efectivo, mediante internet, o cualquier otro medio siempre que permita la identificación del donante. Dichas contribuciones deben estar respaldadas con los comprobantes correspondientes. En el informe final de campaña se deberá informar la identificación de las personas que hayan realizado las contribuciones o donaciones.
+Queda prohibida toda donación o contribución a una agrupación política por personas de existencia ideal.
