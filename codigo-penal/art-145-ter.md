@@ -1,8 +1,12 @@
 # Art. 145 ter
-El que ofreciere, captare, transportare o trasladare, dentro del país o desde o hacia el exterior, acogiere o recibiere personas menores de DIECIOCHO (18) años de edad, con fines de explotación, será reprimido con prisión de CUATRO (4) a DIEZ (10) años.
-La pena será de SEIS (6) a QUINCE (15) años de prisión cuando la víctima fuere menor de TRECE (13) años.
-En cualquiera de los supuestos anteriores, la pena será de DIEZ (10) a QUINCE (15) años de prisión, cuando:
-1. Mediare engaño, fraude, violencia, amenaza o cualquier otro medio de intimidación o coerción, abuso de autoridad o de una situación de vulnerabilidad, concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre la víctima;
-2. El autor fuere ascendiente, cónyuge, afín en línea recta, hermano, tutor, persona conviviente, curador, encargado de la educación o guarda, ministro de algún culto reconocido o no, o funcionario público;
-3. El hecho fuere cometido por TRES (3) o más personas en forma organizada;
-4. Las víctimas fueren TRES (3) o más.
+En los supuestos del artículo 145 bis la pena será de cinco (5) a diez (10) años de prisión, cuando:
+1. Mediare engaño, fraude, violencia, amenaza o cualquier otro medio de intimidación o coerción, abuso de autoridad o de una situación de vulnerabilidad, o concesión o recepción de pagos o beneficios para obtener el consentimiento de una persona que tenga autoridad sobre la víctima.
+2. La víctima estuviere embarazada, o fuere mayor de setenta (70) años.
+3. La víctima fuera una persona discapacitada, enferma o que no pueda valerse por sí misma.
+4. Las víctimas fueren tres (3) o más.
+5. En la comisión del delito participaren tres (3) o más personas.
+6. El autor fuere ascendiente, descendiente, cónyuge, afín en línea recta, colateral o conviviente, tutor, curador, autoridad o ministro de cualquier
+culto reconocido o no, o encargado de la educación o de la guarda de la víctima.
+7. El autor fuere funcionario público o miembro de una fuerza de seguridad, policial o penitenciaria.
+Cuando se lograra consumar la explotación de la víctima objeto del delito de trata de personas la pena será de ocho (8) a doce (12) años de prisión.
+Cuando la víctima fuere menor de dieciocho (18) años la pena será de diez (10) a quince (15) años de prisión.
