@@ -1,0 +1,6 @@
+# Art. 257 bis
+Procederá el recurso extraordinario ante la Corte Suprema prescindiendo del recaudo del tribunal superior, en aquellas causas de competencia federal en las que se acredite que entrañen cuestiones de notoria gravedad institucional, cuya solución definitiva y expedita sea necesaria, y que el recurso constituye el único remedio eficaz para la protección del derecho federal comprometido, a los fines de evitar perjuicios de imposible o insuficiente reparación ulterior.
+Existirá gravedad institucional en aquellas cuestiones sometidas a juicio que excedan el interés de las partes en la causa, proyectándose sobre el general o público, de modo tal que por su trascendencia queden comprometidas las instituciones básicas del sistema republicano de gobierno o los principios y garantías consagrados por la Constitución Nacional y los Tratados Internacionales por ella incorporados.
+La Corte habilitará la instancia con alcances restringidos y de marcada excepcionalidad.
+Sólo serán susceptibles del recurso extraordinario por salto de instancia las sentencias definitivas de primera instancia, las resoluciones equiparables a ellas en sus efectos y aquellas dictadas a título de medidas cautelares.
+No procederá el recurso en causas de materia penal.
