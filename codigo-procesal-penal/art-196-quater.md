@@ -1,0 +1,3 @@
+# Art. 196 quater
+En los casos en que la investigación de los delitos mencionados en el artículo 196 bis, hiciere posible la imputación a persona o personas determinadas, el funcionario del Ministerio Público a cargo de la unidad funcional respectiva, deberá remitir las actuaciones al fiscal a quien hubiese correspondido intervenir por sorteo, turno o circuito territorial. Ello, sin perjuicio de la actuación conjunta o alternativa que pueda disponer el Procurador General de la Nación, de acuerdo a las facultades del artículo 33 incisos d), e), g) y n) de la Ley 24.946.
+El fiscal interviniente, remitirá las actuaciones al juez competente para que en el plazo de tres días haga uso de la facultad que le otorga el artículo 196 primer párrafo.
