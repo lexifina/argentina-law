@@ -1,0 +1,3 @@
+# Art. 360 bis
+Sin perjuicio de lo establecido en el artículo 36, inciso 2, apartado a), en la audiencia mencionada en el artículo anterior, el juez y las partes podrán proponer fórmulas conciliatorias.
+Si se arribase a un acuerdo conciliatorio, se labrará acta en la que conste su contenido y la homologación por el juez interviniente. Tendrá efecto de cosa juzgada y se ejecutará mediante el procedimiento previsto para la ejecución de sentencia. Si no hubiera acuerdo entre las partes, en el acta se hará constar esta circunstancia, sin expresión de causas. Los intervinientes no podrán ser interrogados acerca de lo acontecido en la audiencia.
