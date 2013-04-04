@@ -1,0 +1,3 @@
+# Art. 196 bis
+No obstante lo dispuesto en el artículo anterior, en los sumarios por hechos ilícitos de competencia criminal de instrucción o correccional que no tengan autor individualizado, la dirección de la investigación quedará desde el inicio de las actuaciones delegada al Ministerio Público Fiscal, con noticia al juez competente en turno.
+En las causas en que se investigue alguno de los delitos previstos en los artículos 142 bis y 170 del CODIGO PENAL DE LA NACION, o que tramiten en forma conexa con aquéllas, aun cuando tengan autores individualizados, la dirección de la investigación quedará a cargo del MINISTERIO PUBLICO FISCAL desde el inicio de las actuaciones hasta la conclusión del sumario, con noticia al Juez competente en turno.

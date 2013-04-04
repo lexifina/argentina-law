@@ -1,0 +1,7 @@
+# Art. 250 bis
+Cuando se trate de víctimas de los delitos tipificados en el Código Penal, libro II, título I, capítulo II, y título III, que a la fecha en que se requiriera su comparecencia no hayan cumplido los 16 años de edad se seguirá el siguiente procedimiento:
+a) Los menores aludidos sólo serán entrevistados por un psicólogo especialista en niños y/o adolescentes designado por el tribunal que ordene la medida, no pudiendo en ningún caso ser interrogados en forma directa por dicho tribunal o las partes;
+b) El acto se llevará a cabo en un gabinete acondicionado con los implementos adecuados a la edad y etapa evolutiva del menor;
+c) En el plazo que el tribunal disponga, el profesional actuante elevará un informe detallado con las conclusiones a las que arriban;
+d) A pedido de parte o si el tribunal lo dispusiera de oficio, las alternativas del acto podrán ser seguidas desde el exterior del recinto a través de vidrio espejado, micrófono, equipo de video o cualquier otro medio técnico con que se cuente. En ese caso, previo a la iniciación del acto el tribunal hará saber al profesional a cargo de la entrevista las inquietudes propuestas por las partes, así como las que surgieren durante el transcurso del acto, las que serán canalizadas teniendo en cuenta las características del hecho y el estado emocional del menor.
+Cuando se trate de actos de reconocimiento de lugares y/o cosas, el menor será acompañado por el profesional que designe el tribunal no pudiendo en ningún caso estar presente el imputado.

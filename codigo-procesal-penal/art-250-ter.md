@@ -1,0 +1,2 @@
+# Art. 250 ter
+Cuando se trate de víctimas previstas en el artículo 250 bis, que a la fecha de ser requerida su comparecencia hayan cumplido 16 años de edad y no hubieren cumplido los 18 años, el tribunal previo a la recepción del testimonio, requerirá informe de especialista acerca de la existencia de riesgo para la salud psicofísica del menor en caso de comparecer ante los estrados. En caso afirmativo, se procederá de acuerdo a lo dispuesto en el artículo 250 bis.
