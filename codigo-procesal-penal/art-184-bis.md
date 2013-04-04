@@ -1,0 +1,2 @@
+# Art. 184 bis
+Cuando se tratare de delitos cometidos por personas que tuvieran estado militar y en el interior de establecimientos militares o bajo control militar, la autoridad superior militar deberá notificar a la autoridad judicial competente y tendrá las facultades y obligaciones previstas en los incisos 2º, 3º, 4º, 8º y 9º del artículo anterior hasta que se haga presente en el lugar la autoridad judicial competente.
