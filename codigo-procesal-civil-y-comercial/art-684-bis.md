@@ -1,0 +1,2 @@
+# Art. 684 bis
+En los supuestos en que la causal invocada para el desalojo fuere la de falta de pago o vencimiento del contrato, el actor podrá también, bajo caución real, obtener la desocupación inmediata de acuerdo al procedimiento previsto en el artículo 680 bis. Para el supuesto que se probare que el actor obtuvo esa medida ocultando hechos o documentos que configuraren la relación locativa o el pago de alquileres, además de la inmediata ejecución de la caución se le impondrá una multa de hasta $ 20.000 en favor de la contraparte.
