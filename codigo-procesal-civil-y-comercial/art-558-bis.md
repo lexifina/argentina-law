@@ -1,0 +1,3 @@
+# Art. 558 bis
+Durante el curso del proceso de ejecución, el juez podrá de oficio o a pedido de parte, y si las circunstancias así lo aconsejaren, fijar UNA (1) audiencia para que comparezcan ejecutante y ejecutado con el objeto de establecer la forma más rápida y eficaz de satisfacer el crédito, procurando evitar perjuicios innecesarios.
+A esta audiencia deberán comparecer las partes personalmente, y se celebrará con la que concurra. No podrá señalarse UNA (1) nueva con el mismo objeto, ni tampoco podrá el ejecutado promover posteriormente incidentes por causas anteriores que no fueron invocadas en dicha audiencia.

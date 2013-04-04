@@ -1,0 +1,2 @@
+# Art. 680 ter
+Cuando el desalojo se fundare en las causales de cambio de destino, deterioro del inmueble, obras nocivas o uso abusivo o deshonesto, el juez deberá realizar antes del traslado de la demanda un reconocimiento judicial dentro de los cinco días de dictada la primera providencia, con asistencia del Defensor Oficial. Igual previsión deberá tomarse cuando se diera la causal prevista en los artículos 680 bis y 684 bis.
