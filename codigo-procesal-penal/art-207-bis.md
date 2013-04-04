@@ -1,0 +1,2 @@
+# Art. 207 bis
+En las causas en que se investigue alguno de los delitos previstos por los artículos 142 bis y 170 del CODIGO PENAL DE LA NACION, o que tramiten en forma conexa con aquéllas, los términos fijados en el artículo 207 de este Código se reducirán en la mitad. El Fiscal a cargo de la instrucción podrá solicitar una prórroga de dicho término, en las condiciones estipuladas en el artículo precitado y previa autorización del Procurador General de la Nación.

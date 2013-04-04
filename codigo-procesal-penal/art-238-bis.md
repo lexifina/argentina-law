@@ -1,0 +1,2 @@
+# Art. 238 bis
+En las causas por infracción al artículo 181 del Código Penal, en cualquier estado del proceso y aun sin dictado de auto de procesamiento, el juez, a pedido del damnificado, podrá disponer provisionalmente el inmediato reintegro de la posesión o tenencia del inmueble, cuando el derecho invocado por el damnificado fuere verosímil. El juez, podrá fijar una caución si lo considerare necesario.
