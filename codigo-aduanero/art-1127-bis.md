@@ -1,0 +1,2 @@
+# Art. 1127 bis
+El domicilio fiscal registrado por el contribuyente, responsable o garante ante la Administración Federal de Ingresos Públicos a los fines del cumplimiento de las obligaciones de naturaleza impositiva y, en su defecto, el constituido ante el servicio aduanero o el que se considere tal por aplicación de los artículos 1003 a 1005 de este Código, mantendrá dicho carácter a los fines de la ejecución fiscal, siendo válidas y eficaces todas las notificaciones y diligencias que allí se practiquen.
