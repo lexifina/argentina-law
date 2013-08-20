@@ -1,0 +1,10 @@
+# Art. 45 bis
+Régimen de voto en el caso de títulos emitidos en serie. Los titulares de debentures, bonos convertibles, obligaciones negociables u otros títulos emitidos en serie que representen créditos contra el concursado, participarán de la obtención de conformidades con el siguiente régimen:
+1) Se reunirán en asamblea convocada por el fiduciario o por el juez en su caso.
+2) En ella los participantes expresarán su conformidad o rechazo de la propuesta de acuerdo preventivo que les corresponda; y manifestarán a qué alternativa adhieren para el caso que la propuesta fuere aprobada.
+3) La conformidad se computará por el capital que representen todos los que hayan dado su aceptación a la propuesta, y como si fuera otorgada por una sola persona; las negativas también serán computadas como una sola persona.
+4) La conformidad será exteriorizada por el fiduciario o por quien haya designado la asamblea, sirviendo el acta de la asamblea como instrumento suficiente a todos los efectos.
+5) Podrá prescindirse de la asamblea cuando el fideicomiso o las normas aplicables a él prevean otro método de obtención de aceptaciones de los titulares de créditos que el juez estime suficiente.
+6) En los casos en que sea el fiduciario quien haya resultado verificado o declarado admisible como titular de los créditos, de conformidad a lo previsto en el artículo 32 bis, podrá desdoblar su voto; se computará como aceptación por el capital de los beneficiarios que hayan expresado su conformidad con la propuesta de acuerdo al método previsto en el fideicomiso o en la ley que le resulte aplicable; y como rechazo por el resto. Se computará en la mayoría de personas como una aceptación y una negativa.
+7) En el caso de legitimados o representantes colectivos verificados o declarados admisibles en los términos del artículo 32 bis, en el régimen de voto se aplicará el inciso 6.
+8) En todos los casos el juez podrá disponer las medidas pertinentes para asegurar la participación de los acreedores y la regularidad de la obtención de las conformidades o rechazos.
