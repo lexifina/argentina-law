@@ -1,0 +1,2 @@
+# Art. 164 quinquies
+Presentación de modelos de boletas. Para la categoría parlamentarios del Mercosur se presentarán dos secciones de boletas: una correspondiente a la elección de parlamentarios del Mercosur por distrito nacional, ante la Junta Electoral Nacional de la Capital Federal; y otra correspondiente a la elección de parlamentarios del Mercosur por distritos regionales provinciales y de la Ciudad Autónoma de Buenos Aires, ante las juntas electorales nacionales de los respectivos distritos.
