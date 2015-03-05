@@ -1,0 +1,6 @@
+# Art. 16 ter
+Para cada grado de clasificación de seguridad se dispondrá un plazo para la desclasificación y acceso a la información.
+Las condiciones del acceso y de la desclasificación se fijarán en la reglamentación de la presente.
+En ningún caso el plazo para la desclasificación de información, documentos o material podrá ser inferior a los quince (15) años a partir de la decisión que originó su clasificación de seguridad efectuada por alguno de los organismos integrantes del Sistema de Inteligencia Nacional.
+Toda persona u organización que acredite interés legítimo, podrá iniciar una petición de desclasificación ante el Poder Ejecutivo nacional, destinada a acceder a cualquier clase de información, documentos, o material, que se encuentre en poder de uno de los organismos que componen el Sistema de Inteligencia Nacional. La forma, plazos y vías administrativas serán reglamentadas por el Poder Ejecutivo nacional.
+Sin perjuicio de lo establecido en los párrafos anteriores y la reglamentación respectiva, el Poder Ejecutivo nacional podrá ordenar la desclasificación de cualquier tipo de información y determinar el acceso total o parcial a la misma por acto fundado si lo estimare conveniente para los intereses y seguridad de la Nación y sus habitantes.

@@ -1,0 +1,3 @@
+# Art. 16 quater
+Los organismos de inteligencia enmarcarán sus actividades inexcusablemente dentro de las prescripciones generales de la Ley de Protección de los Datos Personales 25.326. El cumplimiento de estas disposiciones será materia de directivas y controles por parte del titular de cada organismo integrante del Sistema de Inteligencia Nacional en el ámbito de su respectiva Jurisdicción.
+La revelación o divulgación de información respecto de habitantes o personas jurídicas, públicas o privadas, adquirida por los organismos de inteligencia con motivo del ejercicio de sus funciones, requerirá sin excepción de una orden o dispensa judicial.
