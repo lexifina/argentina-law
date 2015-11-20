@@ -1,0 +1,2 @@
+# Art. 59 bis
+El control administrativo externo de las instituciones de educación superior universitarias de gestión estatal es competencia directa e indelegable de la Auditoría General de la Nación que, a tales efectos, dispondrá de un área específica con los recursos humanos y materiales adecuados para llevar a cabo esta tarea. Todas las instituciones de educación superior universitarias de gestión estatal deben generar mecanismos de auditoría interna que garanticen transparencia en el uso de los bienes y recursos.
