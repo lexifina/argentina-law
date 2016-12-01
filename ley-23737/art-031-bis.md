@@ -1,7 +1,0 @@
-# Art. 31 bis
-Durante el curso de una investigación y a los efectos de comprobar la comisión de algún delito previsto en esta ley o en el artículo 866 del Código Aduanero, de impedir su consumación, de lograr la individualización o detención de los autores, partícipes o encubridores, o para obtener y asegurar los medios de prueba necesarios, el juez por resolución fundada podrá disponer, si las finalidades de la investigación no pudieran ser logradas de otro modo, que agentes de las fuerzas de seguridad en actividad, actuando en forma encubierta:
-a) Se introduzcan como integrantes de organizaciones delictivas que tengan entre sus fines la comisión de los delitos previstos en esta ley o en el artículo 866 del Código Aduanero, y
-b) Participen en la realización de alguno de los hechos previstos en esta ley o en el artículo 866 del Código Aduanero.
-La designación deberá consignar el nombre verdadero del agente y la falsa identidad con la que actuará en el caso, y será reservada fuera de las actuaciones y con la debida seguridad.
-La información que el agente encubierto vaya logrando, será puesta de inmediato en conocimiento del juez.
-La designación de un agente encubierto deberá mantenerse en estricto secreto. Cuando fuere absolutamente imprescindible aportar como prueba la información personal del agente encubierto, éste declarará como testigo, sin perjuicio de adoptarse, en su caso, las medidas previstas en el artículo 31 quinques.
