@@ -1,3 +1,0 @@
-# Art. 31 sexies
-El funcionario o empleado público que indebidamente revelare la real o nueva identidad de un agente encubierto o, en su caso, la nueva identidad o el domicilio de un testigo o imputado protegido, será reprimido con prisión de dos a seis años, multa de diez mil a cien mil pesos e inhabilitación absoluta perpetua.
-El funcionario o empleado público que por imprudencia, negligencia o inobservancia de los deberes a su cargo, permitiere o diere ocasión a que otro conozca dicha información, será sancionado con prisión de uno a cuatro años, multa de un mil a treinta mil pesos e inhabilitación especial de tres a diez años.
