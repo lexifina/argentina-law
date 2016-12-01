@@ -1,6 +1,6 @@
 # Art. 353 bis
-Cuando una persona haya sido sorprendida en flagrancia de un delito de acción pública, y el juez considerare prima facie que no procederá la prisión preventiva del imputado, la investigación quedará directamente a cargo del agente fiscal, quien actuará con las facultades previstas en el libro II, sección II.
-En la primera oportunidad el agente fiscal le hará conocer al imputado cuál es el hecho que se le atribuye y cuáles son las pruebas existentes en su contra, y lo invitará a elegir defensor.
-El imputado podrá presentarse ante el fiscal con su abogado defensor, aun por escrito, aclarando los hechos e indicando las pruebas que, a su juicio, puedan ser útiles.
-La instrucción del agente fiscal no podrá extenderse por un plazo superior a los quince (15) días.
-El imputado podrá solicitar al juez ser oido en declaración indagatoria. En tal caso la instrucción se regirá por las normas comunes.
+El procedimiento para casos de flagrancia que se establece en este título es de aplicación a todos los hechos dolosos en los que se verificasen las circunstancias del artículo 285 y cuya pena máxima no supere los quince (15) años de prisión o veinte (20) años de prisión en los supuestos del artículo 119, cuarto párrafo, y del artículo 166, penúltimo párrafo, del Código Penal, o tratándose de un concurso de delitos, ninguno de ellos supere dicho monto.
+Las decisiones jurisdiccionales a las que se refiere el presente título se adoptarán en forma oral en audiencia pública y contradictoria, respetándose los principios de inmediación, bilateralidad, continuidad y concentración.
+Las resoluciones se notificarán oralmente en la misma audiencia y los recursos de reposición y apelación se interpondrán y concederán del mismo modo.
+Se labrará un acta sucinta de la audiencia, la que será grabada en forma total mediante soporte de audio y, en la medida de las posibilidades del tribunal, video.
+Las disposiciones previstas en el presente título no se aplicarán cuando el o los hechos de que se traten tuvieran lugar en ocasión del ejercicio de derechos humanos y/o sociales, o de cualquier otro derecho constitucional. Si con motivo u ocasión de la protesta social se cometieren delitos comunes en flagrancia, podrán ser sometidos a las disposiciones del presente título.
