@@ -1,0 +1,3 @@
+# Art. 64 nonies
+Cantidad de Debates y Fechas. Las temáticas mencionadas en el artículo anterior se abordarán en dos (2) instancias de debate, uno de los cuales deberá llevarse a cabo en el interior del país, en la capital de provincia que determine la Cámara Nacional Electoral. Los debates tendrán lugar dentro de los veinte (20) y hasta los siete (7) días anteriores a la fecha de la elección.
+En caso de que la elección presidencial se decida a través del procedimiento de ballotage, se realizará un debate adicional, con los candidatos que accedan a la elección definitoria, el que tendrá lugar dentro de los diez (10) días anteriores a la fecha de la elección.
