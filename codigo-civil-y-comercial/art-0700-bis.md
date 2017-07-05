@@ -1,0 +1,7 @@
+# Art. 700 bis
+Cualquiera de los progenitores queda privado de la responsabilidad parental por:
+a) Ser condenado como autor, coautor, instigador o cómplice del delito de homicidio agravado por el vínculo o mediando violencia de género conforme lo previsto en el artículo 80, incisos 1 y 11 del Código Penal de la Nación, en contra del otro progenitor;
+b) Ser condenado como autor, coautor, instigador o cómplice del delito de lesiones previstas en el artículo 91 del Código Penal, contra el otro progenitor, o contra el hijo o hija de que se trata;
+c) Ser condenado como autor, coautor, instigador o cómplice del delito contra la integridad sexual previsto en el artículo 119 del Código Penal de la Nación, cometido contra el hijo o hija de que se trata.
+La privación operará también cuando los delitos descriptos se configuren en grado de tentativa, si correspondiere.
+La condena penal firme produce de pleno derecho la privación de la responsabilidad parental. La sentencia definitiva debe ser comunicada al Ministerio Público a los fines de lo previsto en el artículo 703, teniéndose en cuenta la asistencia letrada establecida en el artículo 26, segundo párrafo y a la autoridad de protección de los derechos de las niñas, niños y adolescentes competente en cada jurisdicción, a efectos de que proceda en sede civil, a los efectos de este artículo. Se deberá observar lo previsto en el artículo 27 de la ley 26.061.
