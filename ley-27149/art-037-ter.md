@@ -1,0 +1,2 @@
+# Art. 37 ter
+Funciones. Los Defensores Públicos de Víctimas son los magistrados de la Defensoría General de la Nación que, según los fueros e instancias asignados, ejercen la asistencia técnica y patrocinio jurídico de las víctimas de delitos en procesos penales, en atención a la especial gravedad de los hechos investigados y siempre que la limitación de recursos económicos o situación de vulnerabilidad hicieran necesaria la intervención del Ministerio Público de la Defensa.
