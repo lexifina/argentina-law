@@ -1,0 +1,3 @@
+# Art. 56 ter
+En los casos de las personas condenadas por los delitos previstos en el Título III del Libro Segundo del Código Penal, se establecerá una intervención especializada y adecuada a las necesidades del interno, con el fin de facilitar su reinserción al medio social, que será llevada a cabo por el equipo especializado previsto en el inciso l) del artículo 185 de esta ley.
+En todos los casos, al momento de recuperar la libertad por el cumplimiento de pena, se otorgarán a la persona condenada, un resumen de su historia clínica y una orden judicial a los efectos de obtener una derivación a un centro sanitario, en caso de que sea necesario.
