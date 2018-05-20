@@ -1,0 +1,3 @@
+# Art. 7 bis
+Se podrán constituir Fondos Comunes de Inversión destinados exclusivamente a Inversores Calificados en los términos que establezca la Comisión Nacional de Valores en su reglamentación la que deberá considerar los estándares internacionales en la materia. En particular, dicho organismo deberá tomar en consideración requisitos patrimoniales y de ingresos anuales.
+Los Fondos Comunes de Inversión mencionados en el párrafo anterior estarán exentos de los límites y restricciones de inversión establecidos en esta ley conforme las disposiciones que establezca la Comisión Nacional de Valores.
