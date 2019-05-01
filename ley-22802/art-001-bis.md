@@ -1,2 +1,0 @@
-# Art. 1 bis
-Las máquinas, equipos y/o artefactos y sus componentes consumidores de energía que se comercialicen en la REPUBLICA ARGENTINA deberán cumplir los estándares de eficiencia energética que, a tales efectos defina la SECRETARIA DE ENERGIA del MINISTERIO DE PLANIFICACION FEDERAL, INVERSION PUBLICA Y SERVICIOS. La citada Secretaría definirá para cada tipo de producto estándares de niveles máximos de consumo de energía y/o niveles mínimos de eficiencia energética, en función de indicadores técnicos y económicos.
