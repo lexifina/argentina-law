@@ -1,0 +1,3 @@
+# Art. 16 bis
+Aporte en dinero. Los aportes en dinero deberán ser efectuados únicamente mediante transferencia bancaria, depósito bancario acreditando identidad, medio electrónico, cheque, tarjeta de crédito o débito, o plataformas y aplicativos digitales siempre que éstos permitan la identificación fehaciente del donante y la trazabilidad del aporte.
+Las entidades bancarias o administradoras de tarjetas de crédito o débito deben informar a la agrupación política destinataria del aporte, la identidad del aportante y permitir la reversión en caso de que el mismo no sea aceptado por el destinatario, sin necesidad de expresión de causa por parte de este último.
