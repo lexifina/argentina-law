@@ -1,0 +1,2 @@
+# Art. 16 ter
+Declaración de los aportes. La Justicia Nacional Electoral establecerá una plataforma a través de la cual quienes realicen un aporte a una agrupación política en cualquier instancia efectuarán una declaración jurada respecto al libre consentimiento del aporte y a que éste no está contemplado en ninguna de las prohibiciones previstas en esta ley, quedando habilitado el uso del aporte por parte del partido o la agrupación.

@@ -1,0 +1,2 @@
+# Art. 146 ter
+Sanciones privativas de la libertad. En el caso que el juez federal con competencia electoral investigue un delito electoral que tenga prevista pena privativa de la libertad, o cualquier otro delito previsto por el Código Penal de la Nación u otras leyes especiales, en oportunidad de lo establecido por el artículo 146 duovicies, será aplicable el procedimiento previsto por el Código Procesal Penal de la Nación o el que en el futuro lo reemplace.
