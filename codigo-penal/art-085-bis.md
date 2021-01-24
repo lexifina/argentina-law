@@ -1,0 +1,2 @@
+# Art. 85 bis
+Será reprimido o reprimida con prisión de tres (3) meses a un (1) año e inhabilitación especial por el doble del tiempo de la condena, el funcionario público o la funcionaria pública o la autoridad del establecimiento de salud, profesional, efector o personal de salud que dilatare injustificadamente, obstaculizare o se negare, en contravención de la normativa vigente, a practicar un aborto en los casos legalmente autorizados.
