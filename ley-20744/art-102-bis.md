@@ -1,0 +1,3 @@
+# Art. 102 bis
+Concepto. Habrá contrato de teletrabajo cuando la realización de actos, ejecución de obras o prestación de servicios, en los términos de los artículos 21 y 22 de esta ley, sea efectuada total o parcialmente en el domicilio de la persona que trabaja, o en lugares distintos al establecimiento o los establecimientos del empleador, mediante la utilización de tecnologías de la información y comunicación.
+Los presupuestos legales mínimos del contrato de teletrabajo se establecerán por ley especial. Las regulaciones específicas para cada actividad se establecerán mediante la negociación colectiva respetando los principios de orden público establecidos en esta ley.
