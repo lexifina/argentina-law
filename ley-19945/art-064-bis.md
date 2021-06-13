@@ -1,3 +1,2 @@
 # Art. 64 bis
 Campaña electoral. La campaña electoral es el conjunto de actividades desarrolladas por las agrupaciones políticas, sus candidatos o terceros, mediante actos de movilización, difusión, publicidad, consulta de opinión y comunicación, presentación de planes y proyectos, debates a los fines de captar la voluntad política del electorado, las que se deberán desarrollar en un clima de tolerancia democrática. Las actividades académicas, las conferencias y la realización de simposios, no serán consideradas como partes integrantes de la campaña electoral.
-La campaña electoral se inicia cincuenta (50) días antes de la fecha de las elecciones generales y finaliza cuarenta y ocho (48) horas antes del inicio del comicio.
