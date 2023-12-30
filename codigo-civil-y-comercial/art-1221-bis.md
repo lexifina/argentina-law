@@ -1,2 +1,0 @@
-# Art. 1221 bis
-Renovación del contrato. En los contratos de inmuebles destinados a vivienda, dentro de los tres (3) últimos meses de la relación locativa, cualquiera de las partes puede convocar a la otra, notificándola en forma fehaciente, a efectos de acordar la renovación del contrato, en un plazo no mayor a quince (15) días corridos. En caso de silencio del locador o frente a su negativa de llegar a un acuerdo, estando debidamente notificado, el locatario puede resolver el contrato de manera anticipada sin pagar la indemnización correspondiente.
