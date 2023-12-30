@@ -1,0 +1,2 @@
+# Art. 120 quinquies
+Profesionalización del personal. La profesionalización del personal dentro de un marco transparencia es un principio que debe orientar en el desarrollo de las funciones de la Dirección General de Aduanas. La Dirección General de Aduanas deberá impulsar procedimientos de contratación basados en los principios de objetividad, neutralidad, mérito, capacidad, publicidad y transparencia, así como la profesionalidad y la neutralidad del organismo, comité o personal que lleve adelante el proceso de selección.
