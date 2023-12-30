@@ -1,0 +1,3 @@
+# Art. 197 bis
+Las convenciones colectivas de trabajo, respetando los mínimos indisponibles de 12 horas de descanso entre jornada y jornada por razones de salud y seguridad en el trabajo, así como los límites legales conforme la naturaleza de cada actividad, podrán establecer regímenes que se adecuen a los cambios en las modalidades de producción, las condiciones propias de cada actividad, contemplando especialmente el beneficio e interés de los trabajadores.
+A tal efecto, se podrá disponer colectivamente del régimen de horas extras, banco de horas, francos compensatorios, entre otros institutos relativos a la jornada laboral.
