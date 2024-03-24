@@ -1,0 +1,5 @@
+# Art. 25 bis
+Las sanciones de multa deberán contener el monto expresado en moneda de curso legal y la cantidad de módulos que ésta representa a la fecha de la resolución.
+Las sanciones de multa deberán abonarse dentro de los diez (10) días de notificado el acto que disponga la sanción, estableciendo como lugar de pago el domicilio de la sede central de la Unidad de Información Financiera (UIF) en la Ciudad Autónoma de Buenos Aires.
+Para el cobro de las multas aplicadas, la Unidad de Información Financiera (UIF) seguirá el procedimiento de ejecución fiscal previsto en el Código Procesal Civil y Comercial de la Nación. Constituirá título ejecutivo suficiente la copia certificada de la resolución que aplicó la multa, sin que puedan oponerse otras excepciones que la de prescripción y la de pago total documentado.
+Las multas impagas devengarán un interés compensatorio equivalente a la tasa de interés pasiva, o la que en el futuro la reemplace, que se divulga a través del Boletín Estadístico del Banco Central de la República Argentina.
