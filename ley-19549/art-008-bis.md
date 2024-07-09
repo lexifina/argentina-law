@@ -1,0 +1,3 @@
+# Art. 8 bis
+En los casos en los que la ley exija la participación de usuarios y consumidores en cuestiones tarifarias y de regulación de servicios públicos, deberá realizarse un procedimiento de consulta pública que resguarde el acceso a la información adecuada, veraz e imparcial, y proporcione a los interesados la posibilidad de exponer sus opiniones con la amplitud necesaria, dentro de plazos razonables. La autoridad regulatoria deberá considerar fundadamente las opiniones vertidas en la consulta pública. También podrá optar por la celebración de una audiencia pública no vinculante, cuando así lo ameriten las circunstancias del caso justificando la decisión en razones de economía, sencillez y celeridad.
+Vías de hecho
