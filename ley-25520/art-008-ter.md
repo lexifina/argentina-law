@@ -1,0 +1,8 @@
+# Art. 8 ter
+La AGENCIA FEDERAL DE CIBERSEGURIDAD (AFC) será el órgano con competencia sobre la ciberdelincuencia, las infraestructuras críticas y objetivos de valor estratégico tecnológicos y de la información. A tal efecto, estará facultada para:
+1. Proveer los servicios de inteligencia a través de medios técnicos, informáticos, de señales, telecomunicaciones, espectro radioeléctrico y ciberseguridad, a través de la adquisición, intercepción, recolección, procesamiento, evaluación y análisis de toda información relevante para el Sistema de Inteligencia Nacional.
+2. Diseñar e implementar las tecnologías necesarias a los fines de modernizar las capacidades técnicas del Sistema de Inteligencia Nacional.
+3. Garantizar, conforme a la clasificación, los niveles de acceso a la información y las medidas de seguridad correspondientes, la disponibilidad de la información obtenida y facilitar su explotación por parte del Sistema de Inteligencia Nacional propiciando los medios técnicos y tecnológicos para su fusión e integración con otros organismos del ESTADO NACIONAL.
+4. Desarrollar y aplicar sistemas de ciberseguridad, encriptación y todo otro mecanismo de seguridad informática a los fines de resguardar y proteger toda información y comunicación de cualquier tipo de ciberamenazas y actividades de inteligencia de terceros.
+5. Dar apoyo logístico y estratégico al Sistema de Inteligencia Nacional en su ámbito de competencia.
+6. Capacitar, junto a los organismos correspondientes, a los miembros del Sistema de Inteligencia Nacional y al Sector Público Nacional, cuando así lo requiera, en el uso y aplicación de los medios utilizados en el marco de su competencia.
