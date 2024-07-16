@@ -1,0 +1,3 @@
+# Art. 8 bis
+La AGENCIA DE SEGURIDAD NACIONAL (ASN) será el órgano encargado de la producción de inteligencia referida a las amenazas susceptibles de afectar los derechos y garantías de los habitantes de la REPÚBLICA ARGENTINA y la plena vigencia y funcionamiento de las instituciones del sistema representativo, republicano y federal que establece la CONSTITUCIÓN NACIONAL en todo el territorio de la República.
+En ese marco, las funciones de la citada AGENCIA DE SEGURIDAD NACIONAL (ASN) abarcarán fenómenos de criminalidad organizada nacional y trasnacional como el narcotráfico, la proliferación armamentística, así como toda amenaza contra el orden constitucional y los poderes públicos. La ASN contará con medios propios para la obtención y reunión de información.
