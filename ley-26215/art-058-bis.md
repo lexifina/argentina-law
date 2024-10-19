@@ -7,5 +7,4 @@ d) Gastos de publicidad electoral;
 e) Gastos por servicios de sondeos o encuestas de opinión;
 f) Servicios de transporte;
 g) Gastos judiciales y de rendición de cuentas;
-h) Gastos de impresión de boletas;
-i) Otros gastos debidamente fundamentados.
+h) Otros gastos debidamente fundamentados.

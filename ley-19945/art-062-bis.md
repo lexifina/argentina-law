@@ -1,0 +1,13 @@
+# Art. 62 bis
+Contenido de la Boleta Única de Papel y de los afiches de candidatas y candidatos. La Boleta Única incluirá todas las categorías para las que se realiza la elección, claramente distinguidas. Estará dividida en espacios, franjas o filas horizontales para cada una de las categorías de cargos electivos y en espacios, franjas o columnas verticales para cada agrupación política que cuente con listas oficializadas de personas propuestas para ocupar los cargos públicos electivos. Los espacios, franjas o columnas verticales se distribuirán homogéneamente entre las distintas listas, e identificarán con claridad:
+1. El nombre de la agrupación política. En las elecciones presidenciales, cuando en la misma franja se incluyan legisladores nacionales, se utilizará el nombre de la agrupación de orden nacional. En el caso de las elecciones primarias, la denominación de la lista interna.
+2. La sigla, monograma, logotipo, escudo, símbolo, emblema o distintivo y el número de identificación de la agrupación política.
+3. La categoría de cargos a elegir.
+4. Para el caso de presidente y vice: nombre, apellido y fotografía color de ambos candidatos.
+5. Para el caso de la lista de senadores nacionales: nombre y apellido de los candidatos y fotografía color de las personas titulares.
+6. Para el caso de la lista de diputados nacionales, deberá contener como mínimo los nombres y apellidos de los cinco (5) primeros candidatos y candidatas de la lista, a excepción de los distritos que elijan un número inferior en cuyo caso se consignarán el total de los candidatos y candidatas. En todos los casos se incluirá la fotografía color de las primeras dos (2) candidatas o candidatos titulares.
+7. Para el caso de la lista de parlamentarios del Mercosur, por distrito nacional deberá contener el nombre y apellido de los cinco (5) primeros candidatos y candidatas de la lista y fotografía color de las dos (2) primeras personas titulares.
+8. Para el caso de la lista de candidatos a parlamentario del Mercosur, por distrito provincial: nombre y apellido y fotografía color del candidato titular.
+9. Un casillero en blanco próximo a cada tramo de cargo electivo, a efectos de que se pueda votar por cada una de las categorías. Si el partido político o alianza no participa en alguna de las categorías de cargos a elegir, en el espacio correspondiente se incluirá la inscripción "No presenta candidato".
+10. No contendrá casillero en blanco para votar por lista completa.
+11. Las listas completas de candidatas y candidatos con sus respectivos suplentes deben ser publicadas en afiches o carteles de exhibición obligatoria de manera clara y visible en cada cabina de votación, cuarto oscuro, centros de votación y/o cualquier otro espacio destinado a tal fin.
