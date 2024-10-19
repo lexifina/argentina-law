@@ -7,4 +7,4 @@ c) Declaración de principios y programa o bases de acción política conjunta, 
 d) Acta de designación de las autoridades;
 e) Domicilio de la confederación y acta de designación de los apoderados;
 f) Libros a que se refiere el artículo 37, dentro de los dos (2) meses de obtenido el reconocimiento a los fines de su rúbrica.
-Para participar en las elecciones generales como confederación deberán haber solicitado su reconocimiento ante el juez federal con competencia electoral competente hasta sesenta (60) días antes del plazo previsto para las elecciones primarias respectivas.
+Para participar en las elecciones generales como confederación deberán haber solicitado su reconocimiento ante el juez federal con competencia electoral competente hasta ochenta (80) días antes del plazo previsto para las elecciones primarias respectivas.
