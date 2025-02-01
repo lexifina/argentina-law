@@ -1,4 +1,0 @@
-# Art. 1 bis
-Sistema Electrónico de Resolución de Conflictos. Establécese el Sistema Electrónico de Resolución de Conflictos, como instancia previa, facultativa y gratuita para los consumidores y usuarios para el acceso al Servicio de Conciliación Previa en las Relaciones de Consumo (COPREC), mediante el cual se dirimirán los reclamos individuales o plurindividuales homogéneos de consumidores y usuarios, con el alcance y las modalidades que determine la Autoridad de Aplicación.
-El Sistema Electrónico de Resolución de Conflictos será de uso obligatorio para los proveedores y/o prestadores.
-Si no fuera posible arribar a una solución de la controversia en el marco del Sistema Electrónico de Resolución de Conflictos, podrá continuarse con la tramitación del reclamo conforme el procedimiento establecido en la presente Ley y su reglamentación.
