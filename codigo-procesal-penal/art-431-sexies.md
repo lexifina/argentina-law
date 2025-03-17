@@ -1,0 +1,3 @@
+# Art. 431 sexies
+Registro audiovisual del juicio. Preservación de la prueba. El juicio en ausencia, bajo pena de nulidad, deberá ser registrado por medios audiovisuales. Los soportes de la audiencia, así como los elementos de prueba ofrecidos, deberán ser resguardados hasta la culminación definitiva del juicio, en condiciones que aseguren su autenticidad y preserven su integridad.
+Finalizado el juicio, las autoridades judiciales intervinientes ordenarán la preservación de los registros audiovisuales y de los elementos de prueba indicados en el párrafo precedente por el término de cien (100) años.
