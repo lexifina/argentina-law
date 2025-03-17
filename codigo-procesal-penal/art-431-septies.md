@@ -1,0 +1,7 @@
+# Art. 431 septies
+Presentación ulterior del imputado. El imputado sometido a un proceso en ausencia que se presentare durante la realización del debate tendrá derecho a ser oído.
+Si el imputado sometido a un proceso en ausencia se presentare luego del dictado de la sentencia condenatoria, podrá, en un plazo de diez (10) días, solicitar la realización de un nuevo juicio:
+a) Si no hubiere tomado conocimiento del proceso en su contra;
+b) Si, a pesar de haber tomado conocimiento del proceso en su contra, no hubiere concurrido a la citación del tribunal debido a un grave y legítimo impedimento.
+Asimismo, toda persona condenada en ausencia podrá interponer un recurso de revisión contra la sentencia firme, siempre que existan hechos o elementos de prueba que, solos o unidos a los ya examinados en el proceso, demuestren que el hecho no existió, que el condenado no es responsable, que su participación en el hecho fue distinta de la establecida en la sentencia, que el hecho encuadra en una norma penal más favorable o que la pena impuesta no está justificada. Son aplicables para su tramitación las demás normas establecidas en el capítulo VII, libro IV de este código, salvo lo dispuesto en el artículo 486, segundo párrafo.
+En cualquier caso, la persona condenada en ausencia tendrá a su disposición los recursos establecidos en este código contra la sentencia definitiva cuyos plazos de interposición no estuviesen vencidos. En los casos regidos por el presente capítulo, los recursos podrán ser interpuestos directamente por los defensores.
