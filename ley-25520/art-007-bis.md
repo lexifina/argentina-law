@@ -1,3 +1,7 @@
 # Art. 7 bis
-Los órganos desconcentrados de la SECRETARÍA DE INTELIGENCIA DE ESTADO (SIDE), la Dirección Nacional de Inteligencia Criminal y la Dirección Nacional de Inteligencia Estratégica Militar deberán elaborar anualmente sus respectivos proyectos de presupuesto a los fines de garantizar sus actividades estables, operaciones de largo plazo y las actividades con organismos extranjeros, los que deberán ser aprobados por el titular de la citada Secretaría.
-Los proyectos de presupuesto aprobados por el referido Secretario servirán de base para las partidas presupuestarias de los órganos del Sistema de Inteligencia Nacional que el PODER EJECUTIVO NACIONAL determine en ocasión del envío al H. CONGRESO DE LA NACIÓN de la Ley Anual de Presupuesto Nacional, en los términos del artículo 38 bis de la presente.
+La SECRETARÍA DE INTELIGENCIA DE ESTADO (SIDE) deberá:
+1. Elaborar y aprobar el proyecto de presupuesto de sus órganos.
+2. Aprobar los proyectos de presupuesto de la DIRECCIÓN NACIONAL DE INTELIGENCIA CRIMINAL (DNIC), de la DIRECCIÓN GENERAL DE INTELIGENCIA DEL ESTADO MAYOR CONJUNTO DE LAS FUERZAS ARMADAS (DGIEMCO) y de los integrantes de la COMUNIDAD DE INTELIGENCIA NACIONAL (CITN), a excepción de la UNIDAD DE INFORMACIÓN FINANCIERA (UIF).
+3. Administrar y controlar las partidas presupuestarias de sus órganos.
+4. Prestar su conformidad a las Jurisdicciones que posean asignaciones presupuestarias destinadas a la atención de Gastos de Inteligencia, incluyendo los Gastos Reservados del SISTEMA DE INTELIGENCIA NACIONAL (SIN), previo a efectuar solicitudes de modificación de crédito presupuestario y previo a realizar solicitudes de programación y reprogramación de la ejecución presupuestaria.
+5. Realizar el seguimiento periódico de las partidas presupuestarias destinadas a la atención de Gastos de Inteligencia, su modificación, reasignación y/o ampliación, así como del empleo de los recursos en la ejecución de actividades de inteligencia.

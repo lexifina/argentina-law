@@ -1,0 +1,3 @@
+# Art. 10 nonies
+Los órganos del SISTEMA DE INTELIGENCIA NACIONAL (SIN) proporcionarán su propia seguridad y protección de las instalaciones, bienes, personal, operaciones e información, encontrándose habilitados a repeler y/o hacer cesar las agresiones que los pongan en riesgo. Lo podrán hacer en toda instalación, durante el desplazamiento, o en los lugares donde se desarrollen las actividades de inteligencia, ya sea en forma permanente, transitoria o circunstancial.
+En el marco del desarrollo de actividades de inteligencia, auxilio o requerimiento judicial y/o comisión de delitos en flagrancia, el personal de inteligencia podrá proceder a la aprehensión de personas, debiendo dar aviso inmediato a las FUERZAS POLICIALES y de SEGURIDAD competentes.
