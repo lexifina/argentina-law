@@ -1,0 +1,3 @@
+# Art. 34 bis
+Compatibilidad entre trabajo rural registrado y prestaciones sociales. Los trabajadores que sean contratados bajo las modalidades de trabajo temporario, previstas en la ley 26.727 y sus modificatorias, así como aquellos comprendidos en el artículo 96 de la ley 20.744 y sus modificatorias, tendrán derecho a percibir las asignaciones familiares contributivas establecidas en la ley 24.714.
+Al cesar la relación laboral y dejar de estar alcanzados por el régimen contributivo, los trabajadores accederán automáticamente al régimen de asignaciones familiares no contributivas correspondiente, garantizándose la continuidad en la percepción del beneficio.
