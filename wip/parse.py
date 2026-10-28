@@ -115,11 +115,11 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
                 in_trans = True
             after_marker = True
             continue
-        m = ART_RE.match(s)
-        if m and not in_trans:
-            num, suf, rest = int(m.group(1)), m.group(2), m.group(3).strip()
-            key = (f"art-{num:0{width}d}") + (f"-{fold(suf)}" if suf else "")
-            label = f"Art. {num}" + (f" {fold(suf)}" if suf else "")
+        hd = heading(s) if not s.startswith('"') else None
+        if hd and not in_trans:
+            num, suf, sub, rest = hd
+            key = key_of(num, suf, sub, width)
+            label = label_of(num, suf, sub)
             if key in units:  # a repeated heading: keep the first, treat the rest as body
                 cur["body"].append(s)
                 continue
@@ -477,8 +477,10 @@ def new_text(body: list[str]) -> list[str]:
 def split_articles(body: list[str], width: int) -> list[tuple[str, str, list[str]]]:
     """New articles given one after another ("Artículo 213 ter: … Artículo 213 quater: …"): [(key, label, lines)]."""
     lines = clean_body(body)
-    if not lines or heading(lines[0]) is None:
+    first = next((i for i, l in enumerate(lines[:3]) if heading(l)), None)
+    if first is None:
         return []
+    lines = lines[first:]
     out = []
     for s in lines:
         h = heading(s)
@@ -554,7 +556,7 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
             m = re.search(r"incisos?\s+(.+?)\s+del\s+art[ií]culo\s+" + REF, c, re.I)
             if m:
                 ks = refs("artículo " + c[m.start(2):], width)[:1]
-                items = re.findall(r"(\d+|[a-z])\s*[º°)]?", m.group(1))
+                items = re.findall(r"(\d+)", m.group(1)) or re.findall(r"\b([a-z])\)", m.group(1))
                 ops.append({"op": "lines", "action": "delete", "keys": ks, "items": items})
                 continue
             m = re.search(ORD_RE + r"(?:\s+y\s+" + ORD_RE + r")?\s+p[aá]rrafos?\s+del\s+art[ií]culo\s+" + REF, c, re.I)
@@ -572,7 +574,7 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
     m = re.search(r"incisos?\s+(.+?)\s+(?:del|al)\s+art[ií]culo\s+" + REF, h, re.I)
     if m:
         ks = refs("artículo " + h[m.start(2):], width)[:1]
-        items = re.findall(r"(\d+|\b[a-z])\s*[º°)]?", m.group(1))
+        items = re.findall(r"(\d+)", m.group(1)) or re.findall(r"\b([a-z])\)", m.group(1))
         action = "insert" if re.search(V_INSERT, h, re.I) else "replace" if re.search(V_REPLACE, h, re.I) else None
         if action:
             return [{"op": "lines", "action": action, "keys": ks, "items": items, "text": clean_body(body)}]
@@ -954,6 +956,7 @@ ACT_SETUP = {
             (192139, 10): [{"op": "renumber", "pairs": [("art-306", "art-314"), ("art-307", "art-315"),
                                                          ("art-308", "art-316")], "order": -1}],
             (192137, 4): [{"op": "skip"}],
+            **{(193841, n): [{"op": "skip"}] for n in range(1, 9)},
         },
         "patches": {
             # Decreto 14/2021 vetoed ("observó") the word "integral" after "salud" in art. 86 inc. 2 as written by Ley 27.610
