@@ -17,6 +17,7 @@ No network access here: everything comes from .cache/ (fetch.py).
 from __future__ import annotations
 
 import csv
+import difflib
 import datetime as dt
 import hashlib
 import io
@@ -366,7 +367,7 @@ def law_entry(nid: int) -> dict:
 # ------------------------------------------------------------------ the amending norms
 
 SUF = r"bis|ter|qu[aá]ter|quinquies|sexies|septies|octies"
-REF = r"(\d+)(?:\s*[°º])?(?:\s+(" + SUF + r"))?(?:\s*\((\d)\))?"   # "268 (2)", "204 ter", "41 quinquies"
+REF = r"(\d+)(?:\s*[°º])?(?:\s+\(?(" + SUF + r")\)?)?(?:\s*\((\d)\))?"   # "268 (2)", "204 ter", "41 quinquies"
 ORD = {"primer": 1, "primero": 1, "segundo": 2, "tercer": 3, "tercero": 3, "cuarto": 4, "quinto": 5, "sexto": 6,
        "septimo": 7, "octavo": 8, "noveno": 9, "decimo": 10, "ultimo": "last", "ultimos": "last"}
 ORD_RE = r"(primer|primero|segundo|tercer|tercero|cuarto|quinto|sexto|s[eé]ptimo|octavo|noveno|d[eé]cimo|[uú]ltimos?)"
@@ -425,13 +426,17 @@ def amender_articles(nid: int) -> list[tuple[int, list[str]]]:
     b = F.cached(F.norma_url(nid))
     if b is None:
         raise SystemExit(f"not cached: amender {nid} (run fetch.py amenders)")
-    out, expect, cur = [], 1, None
+    out, expect, cur, base = [], 1, None, 0
     for raw in H.lines(b):
         s = H.strip_links(raw)
+        if re.match(r"^ANEXO\s+([IVX]+|\d+)\s*$", s) and expect > 1:
+            base, expect = base + 1000, 1  # an annex numbers its own articles again from 1
+            cur = None
+            continue
         m = ART_RE.match(dehead(s)) if not s.startswith('"') else None
         if m and int(m.group(1)) == expect and not m.group(2):
             cur = [m.group(3).strip()]
-            out.append((expect, cur))
+            out.append((base + expect, cur))
             expect += 1
             continue
         if cur is not None:
@@ -614,8 +619,20 @@ def instruction(text: str, body: list[str], target: str, width: int) -> list[dic
     t = dethousand(text)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\s*,?\s*(?=C[oó]digo Penal)", " del ", t, flags=re.I)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\b", " del Código Penal", t, flags=re.I) if "Penal" in target else t
+    VERB = r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se\b"
     if not re.search(target, t, re.I):
-        return None
+        # an article whose own first line is only an epigraph, with numbered instructions below it
+        subs = [i for i, l in enumerate(body) if re.match(r"^\d+\s*[.)-]\s*" + VERB, l, re.I) and re.search(target, l, re.I)]
+        if not subs or re.search(VERB, t, re.I):
+            return None
+        ops = []
+        for j, i in enumerate(subs):
+            end = subs[j + 1] if j + 1 < len(subs) else len(body)
+            ops += instruction(re.sub(r"^\d+\s*[.)-]\s*", "", body[i]), body[i + 1:end], target, width) or []
+        return ops
+    mv = re.search(VERB, t, re.I)
+    if mv:
+        t = t[mv.start():]
     head = re.split(r"\s+(?:del?|al)\s+(?:la\s+)?(?:" + target + ")", t, maxsplit=1, flags=re.I)[0]
     if not re.search(r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se\b",
                      head, re.I):
@@ -751,6 +768,8 @@ def replay(act: dict) -> dict:
     """Replay the amending norms on the act as enacted. Returns versions, the laws used and a report."""
     width = act.get("width", 3)
     L, url0, sha0 = act_lines(act.get("base_id", act["id"]), "norma.htm", act["start"], act["end"])
+    for pat, repl in act.get("base_fixes", []):
+        L = [re.sub(pat, repl, l) for l in L]
     state = {k: {"label": u["label"], "kind": u["kind"], "body": body_of(u)}
              for k, u in split_units(L, width=width, transitorias=act.get("transitorias", False)).items()}
     report = {"act": act["slug"], "ops": [], "mismatches": [], "typography": [], "transcription": [], "reconciled": [],
@@ -863,13 +882,18 @@ def replay(act: dict) -> dict:
                 report["mismatches"].append(f"{k}: {'only in texact' if t else 'only in the replay'}")
                 continue
             last = max(i for i, v in enumerate(versions) if i == 0 or k in v["credits"])
+            named = {int(x) for n in tex[k]["notes"] for x in H.LINK_RE.findall(n)}
             if loose(a) != loose(t):
                 if k in act.get("transcription", {}):
                     report["transcription"].append(k)
+                elif last == 0 and not named and act.get("base_from_texact"):
+                    # never amended since the base text (no change replayed, and InfoLEG's consolidated text names
+                    # no norm for it): InfoLEG's two transcriptions of the same words differ; take the consolidated one
+                    ratio = difflib.SequenceMatcher(None, loose(a), loose(t)).ratio()
+                    report["transcription"].append(f"{k} ({ratio:.2f})")
                 else:
                     # InfoLEG's consolidated text gives the article as left by the last norm its note names; if the
                     # replay's last change to it was by that norm, take InfoLEG's wording from that change on
-                    named = {int(x) for n in tex[k]["notes"] for x in H.LINK_RE.findall(n)}
                     lastlaws = set(versions[last]["credits"].get(k, [])) if last else set()
                     if last and any(law_key(n) in lastlaws for n in named):
                         report["reconciled"].append(f"{k} ({', '.join(sorted(lastlaws))})")
@@ -945,6 +969,9 @@ ACT_SETUP = {
                  "force on 1 January 2016; Ley 27.077 (B.O. 2014-12-19) brought it forward to 1 August 2015.")},
     "codigo-penal": {
         "first_day": "1985-01-16", "first_law": None, "earlier_ids": [16546, 38033], "base_published": "1985-01-16",
+        "base_from_texact": True,
+        # InfoLEG's transcription of the texto ordenado heads art. 22 bis "Artículo 20 bis" (art. 20 bis is earlier)
+        "base_fixes": [(r"^Artículo 20 bis\. - (Si el hecho ha sido cometido con ánimo de lucro)", r"Artículo 22 bis. - \1")],
         "overrides": {
             # Leyes 26.733 and 26.734 (both B.O. 2011-12-28) each added an art. 306 and renumbered the closing
             # articles 306-308; Decreto 169/2012 (B.O. 2012-02-06) fixed the numbering: 26.734's new article is 306,
