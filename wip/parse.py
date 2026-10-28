@@ -280,6 +280,8 @@ IN_FORCE = {
     406267: ("pub", "Decreto 1017/2024, art. 22: a partir del día de su publicación"),
     412944: ("pub", "Decreto 338/2025, art. 12: a partir del día de su publicación"),
     422008: ("pub", "Ley 27.799, art. 45: a partir del día de su publicación"),
+    60847: ("pub+8", "Ley 25.188, art. 43: its Capítulo IX (reformas al Código Penal) entra en vigencia a los ocho días de su publicación"),
+    143873: ("2009-02-26", "Ley 26.394, art. 7: comenzará a regir a los seis meses de su promulgación (promulgada el 26 de agosto de 2008)"),
 }
 
 
@@ -309,7 +311,7 @@ def auto_rule(nid: int) -> tuple[str, str]:
     r = bulk()[nid]
     label = law_entry(nid)["label"]
     for num, lines in amender_articles(nid):
-        t = lines[0]
+        t = re.sub(r"^(?:Entrada en vigencia|Entrada en vigor|Vigencia)\s*\.\s*-?\s*", "", lines[0], flags=re.I)
         if not VIG_RE.search(t):
             continue
         f = fold(t)
