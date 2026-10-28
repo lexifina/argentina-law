@@ -64,6 +64,8 @@ SETUP = {
     "ley-23551": {
         # art. 65: "La presente ley entrará en vigencia al día siguiente de su publicación" (B.O. 1988-04-22)
         "first_day": "1988-04-23", "first_law": "ley-23551", "base_published": "1988-04-22",
+        # the names of the act's chapters ("VI. - De la inscripción") are headings, not text
+        "drop_lines": [r"^[IVXL]+\.? - De(?:l| la| las| los)? "],
         "note": ("Ley 23.551 as enacted (sancionada 1988-03-23, promulgada 1988-04-14, B.O. 1988-04-22). Art. 65: "
                  "\"La presente ley entrará en vigencia al día siguiente de su publicación\"."),
     },
@@ -76,6 +78,10 @@ SETUP = {
     },
     "ley-25164": {
         "first_day": None, "first_law": "ley-25164", "base_published": "1999-10-08",
+        # Ley 27.742 art. 53 replaces "el primer párrafo" of art. 12 but quotes two paragraphs, the second being the
+        # old second paragraph again; InfoLEG's consolidated text reads both as replacing the first two
+        "overrides": {(401266, 53): [{"op": "lines", "action": "replace", "keys": ["art-012"], "paras": [1, 2],
+                                             "text_fix": [(r"^Art[ií]culo 12:\s*", "")]}]},
         "note": ("Ley 25.164 as enacted (sancionada 1999-09-15, promulgada de hecho 1999-10-06, B.O. 1999-10-08): the six "
                  "articles of the law and the Ley Marco de Regulación de Empleo Público Nacional it approves as its "
                  "Anexo. No vigencia clause: in force from the ninth day after publication (Código Civil art. 2)."),
