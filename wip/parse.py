@@ -542,7 +542,7 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
         arts = split_articles(body, width)
         ops += [{"op": "insert", "keys": [k], "label": lab, "text": t} for k, lab, t in arts]
         return ops or [{"op": "unknown"}]
-    if re.search(r"r[uú]brica|denominaci[oó]n|ep[ií]grafe", h, re.I) or \
+    if re.search(r"r[uú]brica|denominaci[oó]n|ep[ií]grafe", h, re.I) or (re.search(r"r[uú]brica|denominaci[oó]n|ep[ií]grafe", full, re.I) and not re.search(r"art[ií]culo\s+\d", h, re.I)) or \
             (re.search(r"\bt[ií]tulo\b|\bcap[ií]tulo\b", h, re.I) and not re.search(r"art[ií]culo", h, re.I)
              and not split_articles(body, width)):
         return [{"op": "heading"}]
@@ -630,12 +630,19 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
     return [{"op": "unknown"}]
 
 
-def instruction(text: str, body: list[str], target: str, width: int) -> list[dict] | None:
+def instruction(text: str, body: list[str], target: str, width: int, implicit: bool = False) -> list[dict] | None:
     """What one article of an amending norm does to the act, or None if it does not address it."""
+    mi = re.search(r":\s*([\"'](?:ART[IÍ]CULO|Art[ií]culo).+)$", text)
+    if mi:
+        body, text = [mi.group(1)] + list(body), text[:mi.start() + 1]
     t = dethousand(text)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\s*,?\s*(?=C[oó]digo Penal)", " del ", t, flags=re.I)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\b", " del Código Penal", t, flags=re.I) if "Penal" in target else t
     VERB = r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se\b"
+    if not re.search(target, t, re.I) and implicit and re.search(VERB, t, re.I) and re.search(r"art[ií]culo", t, re.I) and \
+            not re.search(r"\b(?:ley|decreto|c[oó]digo|r[eé]gimen)\b", t, re.I):
+        # a norm that amends only this act ("Incorpórase el artículo 127 ter."): its articles need not name it
+        return [dict(o, instruction=text) for o in parse_head(t, t, body, width)]
     if not re.search(target, t, re.I):
         # an article whose own first line is only an epigraph, with numbered instructions below it
         subs = [i for i, l in enumerate(body) if re.match(r"^\d+\s*[.)-]\s*" + VERB, l, re.I) and re.search(target, l, re.I)]
@@ -703,7 +710,8 @@ def amendments(act: dict, ids: list[int]) -> list[dict]:
                     if o["op"] in ("insert", "replace") and "text" not in o:
                         o["text"] = new_text(lines[1:])
             else:
-                ops = instruction(lines[0], lines[1:], act["target"], act.get("width", 3)) or []
+                implicit = bool(re.search(act["target"], bulk()[nid]["titulo_sumario"] + " " + bulk()[nid]["titulo_resumido"], re.I))
+                ops = instruction(lines[0], lines[1:], act["target"], act.get("width", 3), implicit) or []
             for i, op in enumerate(ops):
                 op.update({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": num, "sub": i})
                 out.append(op)
@@ -741,6 +749,7 @@ def apply_lines(body: list[str], o: dict) -> list[str] | None:
     """A change to some lines of an article (items or paragraphs). None if it cannot be placed."""
     body, new = list(body), list(o.get("text", []))
     if "items" in o:
+        new = [re.sub(r"^Art[ií]culo\s+\d+\s*,\s*(?=inciso)", "", l, flags=re.I) for l in new]  # "Artículo 163, inciso 1°- …"
         new = [l for l in new if not (heading(l) and not item_no(l))]
         idx = {item_no(l): i for i, l in reversed(list(enumerate(body))) if item_no(l)}
         if o["action"] == "delete":
@@ -749,15 +758,27 @@ def apply_lines(body: list[str], o: dict) -> list[str] | None:
                 return None
             return [l for i, l in enumerate(body) if i not in pos]
         if o["action"] == "replace":
+            last = None
             for line in new:
-                it = item_no(line) or (o["items"][0] if len(o["items"]) == 1 else None)
+                it = item_no(line)
+                if it is None and last is not None:  # a paragraph that continues the item just replaced
+                    last += 1
+                    body.insert(last, line)
+                    continue
+                it = it or (o["items"][0] if len(o["items"]) == 1 else None)
+                idx = {item_no(l): j for j, l in reversed(list(enumerate(body))) if item_no(l)}
                 if it not in idx:
                     return None
                 body[idx[it]] = line
+                last = idx[it]
             return body
         if o["action"] == "insert":
-            for line in new:
-                it = item_no(line) or o["items"][0]
+            for n_, line in enumerate(new):
+                it = item_no(line)
+                if it is None and len(new) == len(o["items"]):
+                    it = o["items"][n_]
+                    line = f"{it}. {line}"  # the item's number, from the instruction ("como inciso 10")
+                it = it or o["items"][0]
                 prev = str(int(it) - 1) if it.isdigit() else chr(ord(it) - 1)
                 if prev in idx:
                     # after the previous item's line and any lines that continue it (not items, not a closing paragraph)
@@ -854,6 +875,8 @@ def replay(act: dict) -> dict:
     report["nids"] = sorted({o["nid"] for o in ops if o["op"] not in ("heading", "unknown", "skip")})
     report["fines_nids"] = sorted({o["nid"] for o in ops if o["op"] == "fines"})
     patches = act.get("patches", {})
+    renames: list[tuple[int, str, str]] = []  # (index of the version that renumbers, old key, new key)
+    worded: set[str] = set()                   # keys whose words a replayed norm set
     for day in sorted({o["from"] for o in ops}):
         day_ops = [o for o in ops if o["from"] == day]
         credits: dict[str, list[str]] = {}
@@ -886,6 +909,9 @@ def replay(act: dict) -> dict:
                 for a, b in o["pairs"]:
                     if a in moved:
                         state[b] = dict(moved[a], label=label_from_key(b))
+                        renames.append((len(versions), a, b))
+                        if a in worded:
+                            worded.add(b)
                         credit(a, o["law"])
                         credit(b, o["law"])
                     else:
@@ -915,6 +941,7 @@ def replay(act: dict) -> dict:
                     continue
                 if state.get(k) != before:
                     credit(k, o["law"])
+                    worded.add(k)
                 report["ops"].append(f"{tag}: {o['op']} {o.get('action', '')} {k}".replace("  ", " "))
         for law, k, pat, rep in [(law_key(n), *x) for n in sorted({o["nid"] for o in day_ops})
                                  for x in patches.get(n, [])]:
@@ -953,7 +980,10 @@ def replay(act: dict) -> dict:
             if loose(a) != loose(t):
                 if k in act.get("transcription", {}):
                     report["transcription"].append(k)
-                elif last == 0 and not named and act.get("base_from_texact"):
+                elif k not in worded and act.get("base_from_texact") and all(
+                        re.match(r"^\(?\s*(?:Cap[ií]tulo|T[ií]tulo|R[uú]brica|Ep[ií]grafe|Denominaci|Art[ií]culo \S+ renumerado)",
+                                 H.strip_links(n), re.I) for n in tex[k]["notes"]):
+                    last = 0  # from the first version, under the article's earlier numbers
                     # never amended since the base text (no change replayed, and InfoLEG's consolidated text names
                     # no norm for it): InfoLEG's two transcriptions of the same words differ; take the consolidated one
                     ratio = difflib.SequenceMatcher(None, loose(a), loose(t)).ratio()
@@ -971,8 +1001,13 @@ def replay(act: dict) -> dict:
                 report["typography"].append(k)
             # same words (or a known InfoLEG transcription error in norma.htm): take texact's wording from the
             # version in which the unit last changed onwards, so today's file is the official consolidated text
-            for v in versions[last:]:
-                v["state"][k] = dict(v["state"][k], body=list(t))
+            cur = k
+            for i in range(len(versions) - 1, last - 1, -1):
+                if cur in versions[i]["state"]:
+                    versions[i]["state"][cur] = dict(versions[i]["state"][cur], body=list(t))
+                for (vi, a_, b_) in renames:
+                    if vi == i and b_ == cur:
+                        cur = a_
     return {"versions": versions, "report": report}
 
 
