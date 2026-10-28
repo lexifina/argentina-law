@@ -103,7 +103,7 @@ Research guides that cover every country: [GlobaLex](https://www.nyulawglobal.or
 
 ## Licence
 
-The legal texts are official texts of the Argentine Nation, as published by the Ministerio de Justicia de la Nación in InfoLEG. Fuente: InfoLEG - Información Legislativa, Ministerio de Justicia de la Nación (www.infoleg.gob.ar). The InfoLEG dataset on datos.jus.gob.ar is published under Creative Commons Attribution 4.0; InfoLEG's own pages carry "Copyright 2005" and no licence. The arrangement, tables, commit messages and tools are by Lexifina, under the terms in `LICENSE`.
+The legal texts are official texts of the Argentine Nation, as published by the Ministerio de Justicia de la Nación in InfoLEG. Fuente: InfoLEG - Información Legislativa, Ministerio de Justicia de la Nación (www.infoleg.gob.ar). The InfoLEG dataset on datos.jus.gob.ar is published under Creative Commons Attribution 4.0; InfoLEG's own pages carry "Copyright 2005", the site footer names CC BY 2.5 Argentina, and its "Aviso Legal" (https://www.infoleg.gob.ar/?page_id=762) restricts reproduction to strictly personal use and inclusion in databases to written authorisation from the Ministerio de Justicia. This repository is private. The arrangement, tables, commit messages and tools are by Lexifina, under the terms in `LICENSE`.
 
 This repository is not legal advice and not an official publication.
 
