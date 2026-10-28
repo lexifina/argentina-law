@@ -648,6 +648,9 @@ def amendments(act: dict, ids: list[int]) -> list[dict]:
         for num, lines in amender_articles(nid):
             if (nid, num) in overrides:
                 ops = [dict(o, instruction=lines[0]) for o in overrides[(nid, num)]]
+                for o in ops:
+                    if o["op"] in ("insert", "replace") and "text" not in o:
+                        o["text"] = new_text(lines[1:])
             else:
                 ops = instruction(lines[0], lines[1:], act["target"], act.get("width", 3)) or []
             for i, op in enumerate(ops):
@@ -762,7 +765,8 @@ def replay(act: dict) -> dict:
         if o["op"] == "fines":
             o["body"] = next(l for n, l in amender_articles(o["nid"]) if n == o["art"])[1:]
             o["keys"] = fine_keys(o, width)
-    report["nids"] = sorted({o["nid"] for o in ops if o["op"] not in ("heading",)})
+    report["nids"] = sorted({o["nid"] for o in ops if o["op"] not in ("heading", "unknown", "skip")})
+    report["fines_nids"] = sorted({o["nid"] for o in ops if o["op"] == "fines"})
     patches = act.get("patches", {})
     for day in sorted({o["from"] for o in ops}):
         day_ops = [o for o in ops if o["from"] == day]
@@ -937,6 +941,28 @@ ACT_SETUP = {
         "transcription": {"art-2277": "\"testa-mento\" in norma.htm", "art-2446": "\"Iegitimarios\" in norma.htm"},
         "note": ("The Code approved by Ley 26.994 (B.O. 2014-10-08) as enacted. Ley 26.994 art. 7 set its entry into "
                  "force on 1 January 2016; Ley 27.077 (B.O. 2014-12-19) brought it forward to 1 August 2015.")},
+    "codigo-penal": {
+        "first_day": "1985-01-16", "first_law": None, "earlier_ids": [16546, 38033], "base_published": "1985-01-16",
+        "overrides": {
+            # Leyes 26.733 and 26.734 (both B.O. 2011-12-28) each added an art. 306 and renumbered the closing
+            # articles 306-308; Decreto 169/2012 (B.O. 2012-02-06) fixed the numbering: 26.734's new article is 306,
+            # 26.733's arts. 306-312 are 307-313, and the closing articles are 314-316 (InfoLEG follows it)
+            (192139, 3): [{"op": "insert", "keys": ["art-307"]}], (192139, 4): [{"op": "insert", "keys": ["art-308"]}],
+            (192139, 5): [{"op": "insert", "keys": ["art-309"]}], (192139, 6): [{"op": "insert", "keys": ["art-310"]}],
+            (192139, 7): [{"op": "insert", "keys": ["art-311"]}], (192139, 8): [{"op": "insert", "keys": ["art-312"]}],
+            (192139, 9): [{"op": "insert", "keys": ["art-313"]}],
+            (192139, 10): [{"op": "renumber", "pairs": [("art-306", "art-314"), ("art-307", "art-315"),
+                                                         ("art-308", "art-316")], "order": -1}],
+            (192137, 4): [{"op": "skip"}],
+        },
+        "patches": {
+            # Decreto 14/2021 vetoed ("observó") the word "integral" after "salud" in art. 86 inc. 2 as written by Ley 27.610
+            346231: [("art-086", r"\bsalud integral\b", "salud")],
+        },
+        "note": ("The Código Penal (Ley 11.179 of 1921) in the texto ordenado approved by Decreto 3992/1984 (B.O. "
+                 "1985-01-16), the oldest full text of the code as amended that InfoLEG publishes. A texto ordenado "
+                 "changes no law; this version is dated by its publication. The amendments of 1921-1984 are in it but "
+                 "are not shown one by one.")},
 }
 
 
@@ -967,13 +993,20 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
             continue
         if act["first_day"] is None:
             act["first_day"] = plus(bulk()[act["id"]]["fecha_boletin"], 9)
-        if act["first_law"] not in laws:
+        if act["first_law"] and act["first_law"] not in laws:
             laws[act["first_law"]] = law_entry(act["id"])
-        for nid in act.get("amenders", []):
+        for nid in act.get("earlier_ids", []):
             laws[law_key(nid)] = law_entry(nid)
         r = replay(act)
         reports.append(r["report"])
         amenders_used |= set(r["report"]["nids"])
+        for nid in r["report"]["nids"]:
+            laws[law_key(nid)] = law_entry(nid)
+        for nid in r["report"].get("fines_nids", []):
+            laws[law_key(nid)]["note"] = (
+                "Fixed new minimum and maximum amounts for the fines of the articles credited here, without rewriting "
+                "them. InfoLEG's consolidated text writes in only the amounts in force today, so the words change "
+                "only where this is the last norm its notes name for the article.")
         versions = []
         for i, v in enumerate(r["versions"]):
             out = {"from": v["from"], "source_url": v["source_url"], "sha256": v["sha256"],
@@ -983,7 +1016,7 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
             else:
                 prev = r["versions"][i - 1]["state"]
                 for k in sorted(set(prev) | set(v["state"])):
-                    if prev.get(k) != v["state"].get(k):
+                    if prev.get(k) != v["state"].get(k) or k in v["credits"]:
                         out["credits"][k] = v["credits"].get(k, [])
                         if not out["credits"][k]:
                             del out["credits"][k]  # unexplained: committed by the publisher
@@ -994,7 +1027,7 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
                          "url": F.norma_url(act["id"], "texact.htm" if act.get("texact") else "norma.htm"),
                          "first_law": act["first_law"], "earlier_laws": act.get("earlier_laws", []),
                          "versions": versions})
-    used = {act["first_law"] for act in acts_out} | {l for act in acts_out for l in act["earlier_laws"]} | \
+    used = {act["first_law"] for act in acts_out if act["first_law"]} | {l for act in acts_out for l in act["earlier_laws"]} | \
         {l for act in acts_out for v in act["versions"] for ls in v["credits"].values() for l in ls}
     laws = {k: laws[k] for k in sorted(laws) if k in used}
     hosts = requests_by_host()
