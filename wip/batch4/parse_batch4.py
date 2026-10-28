@@ -71,8 +71,9 @@ SETUP = {
             ("art-019", r"derecho a ser consultada y a opinar", "derecho a opinar"),
             ("art-029", r"\s*Se presume iuris tantum la responsabilidad del autor del daño ambiental, si existen "
                         r"infracciones a las normas ambientales administrativas\.", ""),
-            ("art-032", r"\s*Asimismo, en su sentencia, de acuerdo a las reglas de la sana crítica, el juez podrá "
-                        r"extender su fallo a cuestiones no sometidas expresamente a su consideración por las partes\.", ""),
+            # InfoLEG's transcription reads "en su Sentencia" and "expresamente su consideración"
+            ("art-032", r"\s*Asimismo, en su [Ss]entencia, de acuerdo a las reglas de la sana crítica, el juez podrá "
+                        r"extender su fallo a cuestiones no sometidas expresamente (?:a )?su consideración por las partes\.", ""),
         ],
         "note": ("Ley 25.675 as promulgated by Decreto 2413/2002 (B.O. 2002-11-28), which vetoed (\"observó\") the word "
                  "\"operativas\" in art. 3, the words \"a ser consultada y\" in art. 19, the last sentence of art. 29 and "
@@ -82,6 +83,27 @@ SETUP = {
     },
     "ley-26485": {
         "first_day": "2009-04-14", "first_law": "ley-26485", "base_published": "2009-04-14",
+        # instructions the generic reader misplaces: art. 11 repeats the item letters under each numbered point
+        # ("inciso a) del punto 3"), so those changes are scoped to the point ("within" … "until", see apply_lines);
+        # art. 26 numbers its sub-items "a.2.", "a.8.", which are placed by position
+        "overrides": {
+            (322870, 1): [{"op": "lines", "action": "insert", "keys": ["art-006"], "items": ["g"]}],
+            (322870, 3): [{"op": "lines", "action": "replace", "keys": ["art-011"], "items": ["a"],
+                           "within": r"^3\.-", "until": r"^4\.-"}],
+            (322870, 4): [{"op": "lines", "action": "insert", "keys": ["art-011"], "items": ["f"],
+                           "within": r"^5\.2\.", "until": r"^5\.3\."}],
+            (333514, 3): [{"op": "lines", "action": "insert", "keys": ["art-005"], "items": ["6"]}],
+            (333514, 4): [{"op": "lines", "action": "insert", "keys": ["art-006"], "items": ["h"]}],
+            (356020, 3): [{"op": "lines", "action": "replace", "keys": ["art-011"], "items": ["a"],
+                           "within": r"^5\.1\.", "until": r"^5\.2\."}],
+            (391774, 6): [{"op": "lines", "action": "replace", "keys": ["art-011"], "items": ["f"],
+                           "within": r"^3\.-", "until": r"^4\.-"}],
+            (391774, 7): [{"op": "lines", "action": "insert", "keys": ["art-011"], "items": ["g"],
+                           "within": r"^3\.-", "until": r"^4\.-"}],
+            (391774, 10): [{"op": "lines", "action": "replace", "keys": ["art-026"], "paras": [4], "check": r"^a\.2\."}],
+            (391774, 11): [{"op": "lines", "action": "insert_after", "keys": ["art-026"], "paras": [9], "check": r"^a\.7\."}],
+            (391774, 12): [{"op": "lines", "action": "insert_after", "keys": ["art-026"], "paras": [10], "check": r"^a\.8\."}],
+        },
         "note": ("Ley 26.485 as enacted (sancionada 2009-03-11, promulgada de hecho 2009-04-01, B.O. 2009-04-14). Art. "
                  "44: \"La ley entrará en vigencia a partir de su publicación en el Boletín Oficial\"."),
     },
@@ -93,6 +115,24 @@ ANNEXES = {
 }
 
 _replay = P.replay
+_apply_lines = P.apply_lines
+
+
+def apply_lines(body: list[str], o: dict) -> list[str] | None:
+    """parse.apply_lines, plus two keys for batch 4's overrides: "within"/"until" (regexes) limit the change to the
+    lines of one numbered point of the article; "check" (regex) must match the paragraph a positional change targets."""
+    if "check" in o:
+        p = o["paras"][0]
+        if p > len(body) or not re.match(o["check"], body[p - 1]):
+            return None
+    if "within" not in o:
+        return _apply_lines(body, o)
+    h = next((i for i, l in enumerate(body) if re.match(o["within"], l)), None)
+    if h is None:
+        return None
+    e = next((i for i in range(h + 1, len(body)) if re.match(o["until"], body[i])), len(body))
+    seg = _apply_lines(body[h + 1:e], o)
+    return None if seg is None else body[:h + 1] + seg + body[e:]
 
 
 def replay(act: dict) -> dict:
@@ -110,6 +150,7 @@ def build() -> tuple[dict, list[dict]]:
     A.ACTS[:] = [a for a in A.ACTS if a["slug"] not in SETUP] + ACTS
     P.ACT_SETUP.update(SETUP)
     P.replay = replay
+    P.apply_lines = apply_lines
     corpus, reports = P.build_corpus(set(SETUP))
     order = {a["slug"]: i for i, a in enumerate(ACTS)}
     acts = sorted(corpus["acts"], key=lambda a: order[a["slug"]])
