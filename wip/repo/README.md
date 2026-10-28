@@ -56,7 +56,7 @@ After a rebuild, refresh tags with `git fetch --force --tags`: a plain fetch kee
 The author of a commit is the law or decree that made the change, with an e-mail address that cannot exist (`ley-27551@infoleg.invalid`), so `git blame` and `git log --author` name laws. The committer is always Lexifina.
 
 - **Credits come from the amending norm itself.** A changed article is credited to the norm whose instruction changed it, and InfoLEG's note on the article in the consolidated text names the same norm for its last change.
-- **Decrees of necessity and urgency (DNU)** are commits of kind "decree", labelled "(DNU)". Under Ley 26.122 a DNU stays in force unless both chambers of Congress reject it; none of those here was rejected as of the retrieval day, so none is marked temporary.
+- **Decrees of necessity and urgency (DNU)** are commits of kind "decree", cited as "DNU 70/2023". Under Ley 26.122 a DNU stays in force unless both chambers of Congress reject it, so none is marked temporary; InfoLEG's consolidated text of the retrieval day carries the changes of every DNU here.
 - **Unexplained changes** would be committed by the publisher, InfoLEG, and labelled "unexplained". There are none.
 - Blame credits whole lines (one paragraph per line). In an article written by several laws, use `git log -p --word-diff` to see exactly which words each law changed.
 

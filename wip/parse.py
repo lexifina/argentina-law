@@ -301,9 +301,9 @@ def law_entry(nid: int) -> dict:
     if r["tipo_norma"] == "Ley":
         label = f"Ley {thousands(r['numero_norma'])}"
     else:
-        label = f"{r['tipo_norma']} {r['numero_norma']}/{(r['fecha_sancion'] or r['fecha_boletin'])[:4]}"
-        if r["clase_norma"] == "DNU":
-            label += " (DNU)"
+        year = (r["fecha_sancion"] or r["fecha_boletin"])[:4]
+        # a decree of necessity and urgency is cited "DNU 70/2023"
+        label = f"{'DNU' if r['clase_norma'] == 'DNU' else r['tipo_norma']} {r['numero_norma']}/{year}"
     title = r["titulo_sumario"].strip()
     if r["titulo_resumido"].strip():
         title += ": " + r["titulo_resumido"].strip()
@@ -654,7 +654,7 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
         "The replayed text of today is checked against texact.htm article by article; the result for each act is in its README table and in these decisions. Where the words are the same and only typography differs (quotes, case, accents, punctuation, the thousands dot), the texact.htm wording is used from the version in which the article last changed.",
         "In-force dates: a norm's own vigencia clause where it has one; otherwise the default rule (publication in the Boletín Oficial + 9 days: Código Civil art. 2 before 2015-08-01, Código Civil y Comercial arts. 5 and 6 after). Per norm: " + "; ".join(f"{IN_FORCE[n][1]} -> {in_force(n)}" for n in IN_FORCE if law_key(n) in laws) + ".",
         "Decreto 70/2023 (DNU), published 2023-12-21, has no vigencia clause, so the default rule gives 2023-12-30. The Government and the press announced 29 December 2023 (eight days counted from publication); we keep the statutory count and record the difference here.",
-        "Decrees of necessity and urgency (DNU) are kind \"decree\" without temporary_until: under Ley 26.122 a DNU stays in force unless both chambers reject it, and none of those here was rejected as of the retrieval day.",
+        "Decrees of necessity and urgency (DNU) are kind \"decree\" without temporary_until: under Ley 26.122 a DNU stays in force unless both chambers reject it, and InfoLEG's consolidated text of the retrieval day carries the changes of every DNU here.",
         "Decreto 70/2023 art. 249 abrogated Ley 27.551, but InfoLEG's consolidated text keeps the Code articles that Ley 27.551 wrote and that Decreto 70/2023 did not replace (arts. 1203, 1209, 1222, 1351); we follow InfoLEG.",
         "Units: one file per article (art-NNN; art-NNNN in the Código Civil y Comercial), plus the Preamble, the transitional provisions and the closing formula of the Constitution. Headings of books, titles, chapters, sections and parágrafos are not kept. InfoLEG's notes (\"Artículo sustituido por …\", \"Nota Infoleg: …\") are removed from the text; NBSP, quotes and dashes are normalised.",
         "Código Civil y Comercial: arts. 2277 and 2446 differ in norma.htm only by InfoLEG transcription errors (\"testa-mento\", \"Iegitimarios\"); the first version uses the texact.htm wording. Neither article was amended.",

@@ -47,7 +47,7 @@
    "note": null
   },
   "decreto-1017-2024": {
-   "label": "Decreto 1017/2024 (DNU)",
+   "label": "DNU 1017/2024",
    "title": "PODER EJECUTIVO NACIONAL: HIPOTECAS - DISPOSICIONES",
    "kind": "decree",
    "enacted": "2024-11-12",
@@ -58,7 +58,7 @@
    "note": null
   },
   "decreto-338-2025": {
-   "label": "Decreto 338/2025 (DNU)",
+   "label": "DNU 338/2025",
    "title": "CODIGO AERONAUTICO: LEY N° 17.285 Y CODIGO CIVIL Y COMERCIAL DE LA NACION -  MODIFICACION",
    "kind": "decree",
    "enacted": "2025-05-19",
@@ -69,7 +69,7 @@
    "note": null
   },
   "decreto-62-2019": {
-   "label": "Decreto 62/2019 (DNU)",
+   "label": "DNU 62/2019",
    "title": "REGIMEN PROCESAL DE LA ACCION CIVIL DE EXTINCION DE DOMINIO: APRUEBASE",
    "kind": "decree",
    "enacted": "2019-01-21",
@@ -80,7 +80,7 @@
    "note": null
   },
   "decreto-70-2023": {
-   "label": "Decreto 70/2023 (DNU)",
+   "label": "DNU 70/2023",
    "title": "BASES PARA LA RECONSTRUCCION DE LA ECONOMIA ARGENTINA: DISPOSICIONES",
    "kind": "decree",
    "enacted": "2023-12-20",
@@ -162163,7 +162163,7 @@
   "The replayed text of today is checked against texact.htm article by article; the result for each act is in its README table and in these decisions. Where the words are the same and only typography differs (quotes, case, accents, punctuation, the thousands dot), the texact.htm wording is used from the version in which the article last changed.",
   "In-force dates: a norm's own vigencia clause where it has one; otherwise the default rule (publication in the Boletín Oficial + 9 days: Código Civil art. 2 before 2015-08-01, Código Civil y Comercial arts. 5 and 6 after). Per norm: Ley 26.343 has no vigencia clause -> 2008-01-18; Ley 27.271, art. 25: rige desde su publicación en el Boletín Oficial -> 2016-09-15; Ley 27.363 has no vigencia clause (its art. 3 is about application to pending situations) -> 2017-07-05; Ley 27.440 has no vigencia clause for its Title on the Code -> 2018-05-20; Decreto 62/2019, art. 6: a partir de la fecha de su publicación -> 2019-01-22; Ley 27.551, art. 23: a partir del día siguiente al de su publicación -> 2020-07-01; Ley 27.586 has no vigencia clause -> 2020-12-25; Ley 27.587 has no vigencia clause -> 2020-12-25; Ley 27.737, art. 12: a partir del día siguiente al de su publicación -> 2023-10-18; Decreto 70/2023 (DNU) has no vigencia clause -> 2023-12-30; Decreto 1017/2024, art. 22: a partir del día de su publicación -> 2024-11-13; Decreto 338/2025, art. 12: a partir del día de su publicación -> 2025-05-20; Ley 27.799, art. 45: a partir del día de su publicación -> 2026-01-02.",
   "Decreto 70/2023 (DNU), published 2023-12-21, has no vigencia clause, so the default rule gives 2023-12-30. The Government and the press announced 29 December 2023 (eight days counted from publication); we keep the statutory count and record the difference here.",
-  "Decrees of necessity and urgency (DNU) are kind \"decree\" without temporary_until: under Ley 26.122 a DNU stays in force unless both chambers reject it, and none of those here was rejected as of the retrieval day.",
+  "Decrees of necessity and urgency (DNU) are kind \"decree\" without temporary_until: under Ley 26.122 a DNU stays in force unless both chambers reject it, and InfoLEG's consolidated text of the retrieval day carries the changes of every DNU here.",
   "Decreto 70/2023 art. 249 abrogated Ley 27.551, but InfoLEG's consolidated text keeps the Code articles that Ley 27.551 wrote and that Decreto 70/2023 did not replace (arts. 1203, 1209, 1222, 1351); we follow InfoLEG.",
   "Units: one file per article (art-NNN; art-NNNN in the Código Civil y Comercial), plus the Preamble, the transitional provisions and the closing formula of the Constitution. Headings of books, titles, chapters, sections and parágrafos are not kept. InfoLEG's notes (\"Artículo sustituido por …\", \"Nota Infoleg: …\") are removed from the text; NBSP, quotes and dashes are normalised.",
   "Código Civil y Comercial: arts. 2277 and 2446 differ in norma.htm only by InfoLEG transcription errors (\"testa-mento\", \"Iegitimarios\"); the first version uses the texact.htm wording. Neither article was amended.",
