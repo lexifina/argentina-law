@@ -363,7 +363,18 @@ def law_key(nid: int) -> str:
     if r["tipo_norma"] == "Ley":
         return f"ley-{r['numero_norma']}"
     year = (r["fecha_sancion"] or r["fecha_boletin"])[:4]
+    if r["tipo_norma"].startswith("Resoluci"):
+        return f"resolucion-{organ(r)[0]}-{r['numero_norma']}-{year}"
     return f"{fold(r['tipo_norma']).replace(' ', '-')}-{r['numero_norma']}-{year}"
+
+
+def organ(r: dict) -> tuple[str, str]:
+    o = fold(r["organismo_origen"])
+    if "comision bicameral" in o:
+        return "cb", "Comisión Bicameral de Monitoreo e Implementación del Código Procesal Penal Federal"
+    if "ministerio de justicia" in o:
+        return "mj", "Ministerio de Justicia"
+    return "x", r["organismo_origen"].title()
 
 
 def thousands(n: str) -> str:
@@ -378,6 +389,8 @@ def law_entry(nid: int) -> dict:
         year = (r["fecha_sancion"] or r["fecha_boletin"])[:4]
         # a decree of necessity and urgency is cited "DNU 70/2023"
         label = f"{'DNU' if r['clase_norma'] == 'DNU' else r['tipo_norma']} {r['numero_norma']}/{year}"
+        if r["tipo_norma"].startswith("Resoluci"):
+            label += " (" + ("Comisión Bicameral" if organ(r)[0] == "cb" else organ(r)[1]) + ")"
     title = r["titulo_sumario"].strip()
     if r["titulo_resumido"].strip():
         title += ": " + r["titulo_resumido"].strip()
@@ -923,6 +936,10 @@ def replay(act: dict) -> dict:
                     report["base_gaps"].append(k)
     versions = [{"from": act["first_day"], "source_url": url0, "sha256": sha0,
                  "state": {k: dict(v) for k, v in state.items()}, "credits": {}, "laws": [act["first_law"]]}]
+    for st in act.get("steps", []):
+        ops.append({"op": "step", "nid": st["nid"], "law": law_key(st["nid"]), "from": st["from"], "art": 0, "sub": 0,
+                    "units": st.get("units"), "instruction": st["note"]})
+    ops.sort(key=lambda o: (o["from"], o.get("order", 0), bulk()[o["nid"]]["fecha_boletin"], o["nid"], o["art"], o["sub"]))
     report["nids"] = sorted({o["nid"] for o in ops if o["op"] not in ("heading", "unknown", "skip")})
     report["fines_nids"] = sorted({o["nid"] for o in ops if o["op"] == "fines"})
     patches = act.get("patches", {})
@@ -948,6 +965,13 @@ def replay(act: dict) -> dict:
             if o["op"] in ("unknown", "skip"):
                 (report["not_applied"] if o["op"] == "unknown" else report["headings"]).append(
                     f"{tag}: {o['op']}: {o['instruction'][:160]}")
+                continue
+            if o["op"] == "step":
+                ks = sorted(state) if o["units"] is None else [key_of(n, None, None, width) for n in o["units"]]
+                for k in ks:
+                    if k in state:
+                        credit(k, o["law"], quiet)
+                report["ops"].append(f"{tag}: in-force step for {'all' if o['units'] is None else len(ks)} provisions")
                 continue
             if o["op"] == "fines":
                 for k in o["keys"]:
@@ -1208,6 +1232,8 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
         amenders_used |= set(r["report"]["nids"])
         for nid in r["report"]["nids"]:
             laws[law_key(nid)] = law_entry(nid)
+        for st in act.get("steps", []):
+            laws[law_key(st["nid"])]["note"] = st["note"]
         for nid in r["report"].get("fines_nids", []):
             laws[law_key(nid)]["note"] = (
                 "Fixed new minimum and maximum amounts for the fines of the articles credited here, without rewriting "
