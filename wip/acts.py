@@ -49,6 +49,18 @@ ACTS = [
         "texact": True,
         "target": r"C[oó]digo Penal",
     },
+    {
+        "slug": "ley-20744",
+        "short": "LCT",
+        "id": 25552,
+        "title": "Ley de Contrato de Trabajo (Ley 20.744, texto ordenado 1976)",
+        # the texto ordenado approved by Decreto 390/1976 (id 229909) is the base of the replay
+        "base_id": 229909,
+        "start": r"(?i)^art[ií]culo 1\s*[º°]\s*\.?\s*-?\s*Fuentes de regulaci",
+        "end": r"^(Antecedentes Normativos)$",
+        "texact": True,
+        "target": r"(?:Ley\s+de\s+Contrato\s+de\s+Trabajo|R[eé]gimen\s+de\s+Contrato\s+de\s+Trabajo|[Ll]ey\s*(?:N[°º]\s*)?20\.?744)",
+    },
 ]
 
 

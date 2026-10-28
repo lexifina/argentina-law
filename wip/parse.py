@@ -1115,6 +1115,15 @@ ACT_SETUP = {
 }
 
 
+ACT_SETUP["ley-20744"] = {
+    "first_day": "1976-05-21", "first_law": None, "earlier_ids": [25552, 229909], "base_published": "1976-05-21",
+    "base_from_texact": True,
+    "note": ("The Ley de Contrato de Trabajo (Ley 20.744 of 1974, as amended by Ley 21.297) in the texto ordenado approved "
+             "by Decreto 390/1976 (B.O. 1976-05-21), the oldest full text of the act as amended that InfoLEG publishes. A "
+             "texto ordenado changes no law; this version is dated by its publication."),
+}
+
+
 def requests_by_host() -> dict[str, int]:
     out: dict[str, int] = {}
     p = F.CACHE / "requests.jsonl"
@@ -1158,8 +1167,16 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
                 "only where this is the last norm its notes name for the article.")
         versions = []
         for i, v in enumerate(r["versions"]):
-            out = {"from": v["from"], "source_url": v["source_url"], "sha256": v["sha256"],
-                   "units": {k: unit_out(u) for k, u in sorted(v["state"].items())}, "credits": {}}
+            out = {"from": v["from"], "source_url": v["source_url"], "sha256": v["sha256"]}
+            if i == 0:
+                out["units"] = {k: unit_out(u) for k, u in sorted(v["state"].items())}
+            else:
+                # SCHEMA "Large acts": only what differs from the version before ({key: unit, or null to remove})
+                pv = r["versions"][i - 1]["state"]
+                out["changes"] = {k: (unit_out(v["state"][k]) if k in v["state"] else None)
+                                  for k in sorted(set(pv) | set(v["state"]))
+                                  if (unit_out(pv[k]) if k in pv else None) != (unit_out(v["state"][k]) if k in v["state"] else None)}
+            out["credits"] = {}
             if i == 0:
                 out["note"] = act["note"]
             else:
