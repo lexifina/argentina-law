@@ -90,7 +90,7 @@ NOTE_ANY = re.compile(r"^\([^()]{0,80}?\b(?:derogad|sustituid|incorporad|vetad|o
                       r"[oa]s?\s+(?:por|como)\b", re.I)
 
 
-INLINE_NOTE_RE = re.compile(r"\s*(\((?:[^()]|\([^()]*\))*\))\s*$")
+INLINE_NOTE_RE = re.compile(r"\s*(\((?:[^()]|\([^()]*\))*\)|\((?:Inciso|Incisos|Punto|Apartado)\s+\S{1,4}\)\s[^()]*(?:\([^()]*\)[^()]*)?\))\s*$")
 
 
 def act_lines(nid: int, page: str, start: str, end: str) -> tuple[list[str], str, str]:
@@ -329,7 +329,8 @@ def auto_rule(nid: int) -> tuple[str, str]:
         return "default", f"{label}: its text is not on InfoLEG, so the default rule is used"
     for num, lines in amender_articles(nid):
         t = re.sub(r"^(?:Entrada en vigencia|Entrada en vigor|Vigencia)\s*\.\s*-?\s*", "", lines[0], flags=re.I)
-        if not VIG_RE.search(t):
+        if not VIG_RE.search(t) and not re.match(r"^salvo disposici[oó]n en contrario,?\s+(?:los\s+art[ií]culos\s+de\s+)?la\s+"
+                                                  r"presente\s+ley\s+entrar[aá]n?\s+en\s+vigencia", t, re.I):
             continue
         f = fold(t)
         if re.search(r"dia siguiente", f):
@@ -387,9 +388,9 @@ REF = r"(\d+)(?:\s*[°º])?(?:\s+\(?(" + SUF + r")\)?)?(?:\s*\((\d)\))?"   # "26
 ORD = {"primer": 1, "primero": 1, "segundo": 2, "tercer": 3, "tercero": 3, "cuarto": 4, "quinto": 5, "sexto": 6,
        "septimo": 7, "octavo": 8, "noveno": 9, "decimo": 10, "ultimo": "last", "ultimos": "last"}
 ORD_RE = r"(primer|primero|segundo|tercer|tercero|cuarto|quinto|sexto|s[eé]ptimo|octavo|noveno|d[eé]cimo|[uú]ltimos?)"
-V_REPLACE = r"(?:Sustit[uú]y[ae]n?se|Reempl[aá]c[ae]n?se|Modif[ií]c[ae]n?se|Modif[ií]qu[ae]n?se)"
-V_INSERT = r"(?:Incorp[oó]r[ae]n?se|Agr[eé]gu?[ae]n?se)"
-V_REPEAL = r"(?:Der[oó]g[ae]n?se|Supr[ií]m[ae]n?se)"
+V_REPLACE = r"(?:Sustit[uú]y[ae]n?se|Reempl[aá]c[ae]n?se|Modif[ií]c[ae]n?se|Modif[ií]qu[ae]n?se|Sustituir|Modificar|Reemplazar)"
+V_INSERT = r"(?:Incorp[oó]r[ae]n?se|Agr[eé]gu?[ae]n?se|Incorporar|Agregar)"
+V_REPEAL = r"(?:Der[oó]g[ae]n?se|Supr[ií]m[ae]n?se|Derogar|Suprimir)"
 V_RENUMBER = r"(?:Renum[eé]r[ae]n?se)"
 
 
@@ -451,7 +452,8 @@ def amender_articles(nid: int) -> list[tuple[int, list[str]]]:
             cur = None
             continue
         m = ART_RE.match(dehead(s)) if not s.startswith('"') else None
-        if m and int(m.group(1)) == expect and not m.group(2):
+        waiting = cur is not None and len(cur) == 1 and cur[0].rstrip().endswith(":")  # "… por el siguiente:" and no text yet
+        if m and int(m.group(1)) == expect and not m.group(2) and not waiting:
             cur = [m.group(3).strip()]
             out.append((base + expect, cur))
             expect += 1
@@ -594,7 +596,7 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
         return ops
     text = new_text(body)
     # items (incisos)
-    m = re.search(r"incisos?\s+(.+?)\s+(?:del|al)\s+art[ií]culo\s+" + REF, h, re.I)
+    m = re.search(r"incisos?\s+(.+?)\s+(?:(?:del|al)\s+)?art[ií]culo\s+" + REF, h, re.I)
     if m:
         ks = refs("artículo " + h[m.start(2):], width)[:1]
         items = re.findall(r"(\d+)", m.group(1)) or re.findall(r"\b([a-z])\)", m.group(1))
@@ -644,7 +646,7 @@ def instruction(text: str, body: list[str], target: str, width: int, implicit: b
     t = dethousand(text)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\s*,?\s*(?=C[oó]digo Penal)", " del ", t, flags=re.I)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\b", " del Código Penal", t, flags=re.I) if "Penal" in target else t
-    VERB = r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se\b"
+    VERB = r"(?:(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se|(?:Incorporar|Sustituir|Derogar|Modificar|Reemplazar|Agregar|Suprimir))\b"
     if not re.search(target, t, re.I) and implicit and re.search(VERB, t, re.I) and re.search(r"art[ií]culo", t, re.I) and \
             not re.search(r"\b(?:ley|decreto|c[oó]digo|r[eé]gimen)\b", t, re.I):
         # a norm that amends only this act ("Incorpórase el artículo 127 ter."): its articles need not name it
@@ -679,8 +681,7 @@ def instruction(text: str, body: list[str], target: str, width: int, implicit: b
     if mv:
         t = t[mv.start():]
     head = re.split(r"\s+(?:del?|al)\s+(?:la\s+)?(?:" + target + ")", t, maxsplit=1, flags=re.I)[0]
-    if not re.search(r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se\b",
-                     head, re.I):
+    if not re.search(VERB, head, re.I):
         return None  # the article only mentions the act
     if re.search(r"\b(?:de|del)\s+(?:la\s+)?(?:ley|decreto)(?:\s+N[°º])?\s*\d", head, re.I):
         return None  # it amends another norm and only mentions the act
@@ -688,6 +689,16 @@ def instruction(text: str, body: list[str], target: str, width: int, implicit: b
     for o in ops:
         o["instruction"] = text
     return ops
+
+
+def repealed_in_texact(u: dict) -> bool:
+    """InfoLEG keeps a repealed article as its heading, at most its epigraph, and a note "(Artículo derogado por …)"."""
+    b = body_of(u)
+    notes = " ".join(H.strip_links(n) for n in u.get("notes", []))
+    if re.search(r"(?:Art[ií]culo|Cap[ií]tulo\s+\S+|T[ií]tulo\s+\S+)\s+derogad", notes, re.I) and len(b) <= 1:
+        return True
+    return bool(re.search(r"derogad", notes, re.I)) and (not b or (len(b) == 1 and len(b[0]) < 90 and b[0].endswith(".")
+                                                                   and not re.search(r"\b(ser[aá]|deber[aá]|tendr[aá])\b", b[0])))
 
 
 def amenders_of(act: dict) -> list[int]:
@@ -866,6 +877,23 @@ def replay(act: dict) -> dict:
                     continue
                 ops.append(o)
                 report["from_notes"].append(f"{k}: {o['op']} by {o['law']} (from InfoLEG's note; its text is not on InfoLEG)")
+        # an article InfoLEG shows as repealed ("(Artículo derogado por …)", "(Capítulo VIII derogado por …)") that no
+        # replayed instruction repeals by its number: repealed on the day of the norm the note names
+        for k, u in tex0.items():
+            if not repealed_in_texact(u):
+                continue
+            rep_ids = [n["id"] for raw in u["notes"] for n in parse_note(raw) if n["verb"].startswith("derogad") and n["id"]]
+            if not rep_ids or rep_ids[-1] not in bulk():
+                continue
+            nid = rep_ids[-1]
+            if any(o["op"] == "repeal" and k in o.get("keys", []) for o in ops) or nid in unreadable and \
+                    any(o.get("art") == 0 and k in o.get("keys", []) for o in ops):
+                continue
+            if nid not in amenders:
+                continue
+            ops.append({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": 0, "sub": 0, "keys": [k], "op": "repeal",
+                        "instruction": " ".join(H.strip_links(n) for n in u["notes"])})
+            report["from_notes"].append(f"{k}: repeal by {law_key(nid)} (from InfoLEG's note: the article, or its chapter, derogado)")
         ops.sort(key=lambda o: (o["from"], o.get("order", 0), bulk()[o["nid"]]["fecha_boletin"], o["nid"], o["art"], o["sub"]))
         # articles InfoLEG's consolidated text shows with no note that are missing from its transcription of the
         # base text and that no replayed norm adds: in force before the base text; added to the first version
@@ -974,7 +1002,7 @@ def replay(act: dict) -> dict:
     if act.get("texact"):
         T, turl, tsha = act_lines(act["id"], "texact.htm", act["start"], act["end"])
         tex_all = split_units(T, width=width, transitorias=act.get("transitorias", False))
-        tex = {k: u for k, u in tex_all.items() if body_of(u)}
+        tex = {k: u for k, u in tex_all.items() if body_of(u) and not repealed_in_texact(u)}
         report["texact"] = {"url": turl, "sha256": tsha}
         final = versions[-1]["state"]
         for k in sorted(set(final) | set(tex)):
@@ -1118,6 +1146,9 @@ ACT_SETUP = {
 ACT_SETUP["ley-20744"] = {
     "first_day": "1976-05-21", "first_law": None, "earlier_ids": [25552, 229909], "base_published": "1976-05-21",
     "base_from_texact": True,
+    # Decreto 773/1996 repeals Decreto 1477/1989, which had added an art. 105 bis; that decree is not replayed (InfoLEG
+    # does not list it as amending the act), so the repeal has nothing to remove here
+    "overrides": {(37882, 1): [{"op": "skip"}]},
     "note": ("The Ley de Contrato de Trabajo (Ley 20.744 of 1974, as amended by Ley 21.297) in the texto ordenado approved "
              "by Decreto 390/1976 (B.O. 1976-05-21), the oldest full text of the act as amended that InfoLEG publishes. A "
              "texto ordenado changes no law; this version is dated by its publication."),
