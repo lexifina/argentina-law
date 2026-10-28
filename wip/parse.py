@@ -367,7 +367,7 @@ def new_text(body: list[str]) -> list[str]:
         if i == 0 and s.startswith('"'):
             s = s[1:]
         if end:
-            s = re.sub(r'\s*"([.;]?)$', r"", s)
+            s = re.sub(r'\s*"([.;]?)$', r"\1", s)
         out.append(s)
         if end:
             break
