@@ -324,6 +324,12 @@ def dethousand(s: str) -> str:
     return re.sub(r"\b(\d{1,2})\.(\d{3})\b", r"\1\2", s)
 
 
+def dehead(s: str) -> str:
+    """Drop only the thousands dot of a leading article number ("Artículo 1.196: …"), keeping the rest as written."""
+    m = re.match(r"^\"?((?:ART[IÍ]CULO|Art[ií]culo|Art\.)\s*\d{1,2})\.(\d{3})", s)
+    return s[:m.end(1)] + s[m.end(1) + 1:] if m else s
+
+
 def amender_articles(nid: int) -> list[tuple[int, list[str]]]:
     """The amending norm's own articles, in order: (number, [first line after the heading, following lines…]).
 
@@ -335,7 +341,7 @@ def amender_articles(nid: int) -> list[tuple[int, list[str]]]:
     out, expect, cur = [], 1, None
     for raw in H.lines(b):
         s = H.strip_links(raw)
-        m = ART_RE.match(dethousand(s)) if not s.startswith('"') else None
+        m = ART_RE.match(dehead(s)) if not s.startswith('"') else None
         if m and int(m.group(1)) == expect and not m.group(2):
             cur = [m.group(3).strip()]
             out.append((expect, cur))
@@ -356,17 +362,17 @@ def new_text(body: list[str]) -> list[str]:
             break
         if is_note(s):
             continue
-        end = quoted and s.rstrip().endswith('"')
         s = s.strip()
+        end = quoted and bool(re.search(r'"[.;]?$', s))
         if i == 0 and s.startswith('"'):
             s = s[1:]
         if end:
-            s = s.rstrip()[:-1].rstrip()
+            s = re.sub(r'\s*"([.;]?)$', r"", s)
         out.append(s)
         if end:
             break
     if out:
-        m = ART_RE.match(dethousand(out[0]))
+        m = ART_RE.match(dehead(out[0]))
         if m:
             rest = m.group(3).strip()
             out = ([rest] if rest else []) + out[1:]
@@ -388,6 +394,8 @@ def instruction(text: str, body: list[str], target: str, width: int) -> dict | N
     if not re.search(target, t, re.I):
         return None
     head = re.split(r"\s+del?\s+(?:la\s+)?(?:" + target + ")", t, maxsplit=1, flags=re.I)[0]
+    if not re.search(r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m)[ae]n?se\b", head, re.I):
+        return None  # the article only mentions the act
     m = re.search(r"Der[oó]g[ae]se\s+el\s+[uú]ltimo\s+p[aá]rrafo\s+del\s+art[ií]culo\s+(\d+)" + SUF_WORDS, head, re.I)
     if m:
         return {"op": "drop_last_paragraph", "keys": [unit_key_w(int(m.group(1)), m.group(2), width)]}
