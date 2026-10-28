@@ -597,9 +597,9 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
             return [{"op": "lines", "action": action, "keys": ks, "items": items, "text": clean_body(body)}]
     # paragraphs
     m = re.search(r"(?:p[aá]rrafos?\s+" + ORD_RE + r"(?:\s+y\s+" + ORD_RE + r")?|" + ORD_RE + r"(?:\s+y\s+" + ORD_RE +
-                  r")?\s+p[aá]rrafos?)\s+(?:del|al)\s+art[ií]culo\s+" + REF, h, re.I)
+                  r")?\s+p[aá]rrafos?)\s+(?:del|al)\s+(?:art[ií]culo|art\.)\s*" + REF, h, re.I)
     if m:
-        ks = refs(re.search(r"art[ií]culo\s+.*$", h[m.start():], re.I).group(0), width)[:1]
+        ks = refs(re.search(r"(?:art[ií]culo|art\.)\s*.*$", h[m.start():], re.I).group(0), width)[:1]
         paras = ordinals(h[m.start():m.end()].split("del")[0].split("al artículo")[0])
         after = bool(re.search(r"a\s+continuaci[oó]n\s+del", h, re.I))
         if re.search(V_INSERT, h, re.I):
@@ -610,6 +610,10 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
             action = None
         if action:
             return [{"op": "lines", "action": action, "keys": ks, "paras": paras, "text": text}]
+    m = re.search(V_REPLACE + r"\s+(?:el\s+)?(?:art[ií]culo|art\.)\s*" + REF + r"\s+in\s+fine", h, re.I)
+    if m:  # "Sustitúyese el artículo 80 in fine": its last paragraph
+        k = key_of(int(m.group(1)), m.group(2), m.group(3), width)
+        return [{"op": "lines", "action": "replace", "keys": [k], "paras": ["last"], "text": text}]
     # whole articles
     if re.search(V_INSERT, h, re.I):
         m = re.search(r"(?:como\s+)?(?:nuevo\s+)?art[ií]culo\s+" + REF, h, re.I)
@@ -641,6 +645,22 @@ def instruction(text: str, body: list[str], target: str, width: int) -> list[dic
         for j, i in enumerate(subs):
             end = subs[j + 1] if j + 1 < len(subs) else len(body)
             ops += instruction(re.sub(r"^\d+\s*[.)-]\s*", "", body[i]), body[i + 1:end], target, width) or []
+        return ops
+    groups = [i for i, l in enumerate(body) if re.match(r"^ART[IÍ]CULO\s+\d+(?:\s+(?:" + SUF + r"))?\s*[°º]?$", l)]
+    if groups and re.search(r"siguientes\s+modificaciones", t, re.I):
+        ops = []
+        for j, i in enumerate(groups):
+            end = groups[j + 1] if j + 1 < len(groups) else len(body)
+            art = re.sub(r"^ART[IÍ]CULO\s+", "", body[i]).strip(" °º")
+            if i + 1 >= end:
+                continue
+            ins = body[i + 1]
+            if re.search(r"inciso|p[aá]rrafo", ins, re.I):
+                ins = re.sub(r"((?:incisos?\s+[\d°º\s,y]+?|p[aá]rrafo\s+\w+|\w+\s+p[aá]rrafo))(\s+(?:el|la|los|por)\b)",
+                             r"\1 del artículo " + art + r"\2", ins, count=1, flags=re.I)
+            else:
+                ins = re.sub(r"^(\w+)\s+", r"\1 el artículo " + art + " ", ins, count=1)
+            ops += parse_head(ins, ins, body[i + 2:end], width)
         return ops
     mv = re.search(VERB, t, re.I)
     if mv:
@@ -721,6 +741,7 @@ def apply_lines(body: list[str], o: dict) -> list[str] | None:
     """A change to some lines of an article (items or paragraphs). None if it cannot be placed."""
     body, new = list(body), list(o.get("text", []))
     if "items" in o:
+        new = [l for l in new if not (heading(l) and not item_no(l))]
         idx = {item_no(l): i for i, l in reversed(list(enumerate(body))) if item_no(l)}
         if o["action"] == "delete":
             pos = [idx.get(it) for it in o["items"]]
@@ -791,13 +812,45 @@ def replay(act: dict) -> dict:
             state.pop(key, None)
         else:
             state[key]["body"] = [b for b in state[key]["body"] if not re.match(drop, b)]
-    versions = [{"from": act["first_day"], "source_url": url0, "sha256": sha0,
-                 "state": {k: dict(v) for k, v in state.items()}, "credits": {}, "laws": [act["first_law"]]}]
-    ops = amendments(act, amenders_of(act)) if act.get("texact") else []
+    amenders = amenders_of(act) if act.get("texact") else []
+    ops = amendments(act, amenders) if amenders else []
     for o in ops:
         if o["op"] == "fines":
             o["body"] = next(l for n, l in amender_articles(o["nid"]) if n == o["art"])[1:]
             o["keys"] = fine_keys(o, width)
+    report["base_gaps"], report["from_notes"] = [], []
+    if act.get("texact"):
+        T0, _, _ = act_lines(act["id"], "texact.htm", act["start"], act["end"])
+        tex0 = split_units(T0, width=width, transitorias=act.get("transitorias", False))
+        # norms InfoLEG names but whose own text it does not serve ("No se pudo acceder al archivo solicitado"): the
+        # change is taken from the note and the consolidated text (a repeal, or the article's whole current text when
+        # the note names no other norm)
+        unreadable = {n for n in amenders if not amender_articles(n)}
+        for k, u in tex0.items():
+            named = [int(x) for n in u["notes"] for x in H.LINK_RE.findall(n)]
+            for nid in sorted(set(named) & unreadable):
+                o = {"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": 0, "sub": 0, "keys": [k],
+                     "instruction": " ".join(H.strip_links(n) for n in u["notes"])}
+                if not body_of(u) and re.search(r"derogad", o["instruction"], re.I):
+                    o["op"] = "repeal"
+                elif len(set(named)) == 1 and body_of(u):
+                    o.update(op="replace", text=body_of(u), label=u["label"])
+                else:
+                    continue
+                ops.append(o)
+                report["from_notes"].append(f"{k}: {o['op']} by {o['law']} (from InfoLEG's note; its text is not on InfoLEG)")
+        ops.sort(key=lambda o: (o["from"], o.get("order", 0), bulk()[o["nid"]]["fecha_boletin"], o["nid"], o["art"], o["sub"]))
+        # articles InfoLEG's consolidated text shows with no note that are missing from its transcription of the
+        # base text and that no replayed norm adds: in force before the base text; added to the first version
+        added = {k for o in ops if o["op"] in ("insert", "replace") for k in o.get("keys", [])} | \
+            {b for o in ops if o["op"] == "renumber" for _, b in o["pairs"]}
+        if act.get("base_from_texact"):
+            for k, u in tex0.items():
+                if body_of(u) and not u["notes"] and k not in state and k not in added:
+                    state[k] = {"label": u["label"], "kind": u["kind"], "body": body_of(u)}
+                    report["base_gaps"].append(k)
+    versions = [{"from": act["first_day"], "source_url": url0, "sha256": sha0,
+                 "state": {k: dict(v) for k, v in state.items()}, "credits": {}, "laws": [act["first_law"]]}]
     report["nids"] = sorted({o["nid"] for o in ops if o["op"] not in ("heading", "unknown", "skip")})
     report["fines_nids"] = sorted({o["nid"] for o in ops if o["op"] == "fines"})
     patches = act.get("patches", {})
@@ -997,6 +1050,8 @@ ACT_SETUP = {
             (192139, 10): [{"op": "renumber", "pairs": [("art-306", "art-314"), ("art-307", "art-315"),
                                                          ("art-308", "art-316")], "order": -1}],
             (192137, 4): [{"op": "skip"}],
+            # Decreto 1059/2002 vetoed ("observó") art. 4 of Ley 25.602, which would have added art. 174 bis
+            (75212, 4): [{"op": "skip"}],
             **{(193841, n): [{"op": "skip"}] for n in range(1, 9)},
         },
         "patches": {
