@@ -104,7 +104,7 @@ def act_lines(nid: int, page: str, start: str, end: str) -> tuple[list[str], str
     b = F.cached(url)
     if b is None:
         raise SystemExit(f"not cached: {url} (run fetch.py acts)")
-    L = H.lines(b)
+    L = [x for l in H.lines(b) for x in re.split(r"(?<=\.)\s+(?=ART[IÍ]CULO\s+\d+\s*[º°]?\s*\.-)", l)]  # "… Nación. ARTÍCULO 387.- …"
     i = next(i for i, l in enumerate(L) if re.search(start, H.strip_links(l)))
     j = next((j for j in range(i + 1, len(L)) if re.search(end, H.strip_links(L[j]))), len(L))
     return L[i:j], url, hashlib.sha256(b).hexdigest()
