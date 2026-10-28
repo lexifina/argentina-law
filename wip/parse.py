@@ -296,8 +296,10 @@ def in_force(nid: int) -> str:
 
 NUMBER_WORDS = {"un": 1, "uno": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8,
                 "nueve": 9, "diez": 10, "quince": 15, "veinte": 20, "treinta": 30, "sesenta": 60, "noventa": 90,
-                "ciento ochenta": 180}
-VIG_RE = re.compile(r"(presente\s+(?:ley|decreto)|esta\s+ley|la\s+ley)\b.{0,60}?\b(vigencia|vigor|regir[aá]|rige)", re.I)
+                "ciento ochenta": 180, "ciento veinte": 120}
+VIG_RE = re.compile(r"^(?:las\s+disposiciones\s+de\s+)?(?:la\s+|el\s+)?(?:presente\s+(?:ley|decreto|medida)|esta\s+ley)\s+"
+                    r"(?:entrar[aá]n?\s+en\s+(?:vigencia|vigor)|regir[aá]n?\b|rige\b|tendr[aá]\s+vigencia|"
+                    r"comenzar[aá]\s+a\s+regir|cobrar[aá]\s+vigencia)", re.I)
 
 
 def auto_rule(nid: int) -> tuple[str, str]:
