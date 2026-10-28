@@ -966,7 +966,7 @@ def replay(act: dict) -> dict:
     amenders = amenders_of(act) if act.get("texact") else []
     ops = amendments(act, amenders) if amenders else []
     for o in ops:
-        if o["op"] == "fines":
+        if o["op"] == "fines" and not o.get("amount_note"):
             o["body"] = next(l for n, l in amender_articles(o["nid"]) if n == o["art"])[1:]
             o["keys"] = fine_keys(o, width)
     report["base_gaps"], report["from_notes"] = [], []
@@ -1020,6 +1020,32 @@ def replay(act: dict) -> dict:
                         ops.append({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": 0, "sub": 0, "keys": [kk],
                                     "op": "repeal", "instruction": H.strip_links(raw)})
                 report["from_notes"].append(f"arts. {m.group(1)}-{m.group(2)}: repeal by {law_key(nid)} (from InfoLEG's note on {k})")
+        if act.get("amount_notes"):
+            # amounts (capital, fines) that a decree or ministerial resolution updates under a power the act grants:
+            # InfoLEG notes them on the article ("(Monto … sustituido por art. 1° del Decreto N° 209/2024 …)") and in
+            # "Antecedentes Normativos" ("- Artículo 186, Monto del Capital Social sustituido por …"). Each is a
+            # commit for that article; the amounts written in are those of the consolidated text.
+            AM = re.compile(r"Monto[^⟦()]*?(?:sustituid|fijad|actualizad)[oa]\s+por\s+art\.?\s*\S+\s+de(?:l|\s+la)\s+[^⟦]*?⟦(\d+)⟧")
+            page = H.lines(F.cached(F.norma_url(act["id"], "texact.htm")))
+            found = []
+            for k, u in tex0.items():
+                for raw in u["notes"] + [b for b in u["body"]]:
+                    for m in AM.finditer(raw):
+                        found.append((k, int(m.group(1)), H.strip_links(raw)))
+            for raw in page[[H.strip_links(l) for l in page].index("Antecedentes Normativos"):]:
+                m0 = re.match(r"^-\s*Art[ií]culo\s+(\d+)", H.strip_links(raw))
+                if m0:
+                    for m in AM.finditer(raw):
+                        found.append((key_of(int(m0.group(1)), None, None, width), int(m.group(1)), H.strip_links(raw)))
+            for k, nid, text in found:
+                if nid not in bulk() or F.cached(F.norma_url(nid)) is None:
+                    report["not_applied"].append(f"{k}: amount update by norm {nid} not cached")
+                    continue
+                if any(o["op"] == "fines" and o["nid"] == nid and k in o["keys"] for o in ops):
+                    continue
+                ops.append({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": 0, "sub": 0, "keys": [k],
+                            "op": "fines", "body": [], "instruction": text, "amount_note": True})
+                report["from_notes"].append(f"{k}: amount set by {law_key(nid)} (from InfoLEG's note)")
         ops.sort(key=lambda o: (o["from"], o.get("order", 0), bulk()[o["nid"]]["fecha_boletin"], o["nid"], o["art"], o["sub"]))
         # articles InfoLEG's consolidated text shows with no note that are missing from its transcription of the
         # base text and that no replayed norm adds: in force before the base text; added to the first version
@@ -1180,7 +1206,9 @@ def replay(act: dict) -> dict:
             if loose(a) != loose(t):
                 if k in act.get("transcription", {}):
                     report["transcription"].append(k)
-                elif k not in worded and act.get("base_from_texact") and all(
+                elif k not in worded and act.get("base_from_texact") and not (
+                        {law_key(n) for n in named if n in bulk()} &
+                        ({l for v in versions for l in v["credits"].get(k, [])} | {l for _, l in touched.get(k, [])})) and all(
                         re.match(r"^\(?\s*(?:Cap[ií]tulo|T[ií]tulo|R[uú]brica|Ep[ií]grafe|Denominaci|Art[ií]culo \S+ renumerado|Nota Infoleg|Secci[oó]n\s*-\s*arts)",
                                  H.strip_links(n), re.I) for n in tex[k]["notes"]):
                     last = 0  # from the first version, under the article's earlier numbers
@@ -1366,6 +1394,7 @@ ACT_SETUP["ley-19550"] = {
     "first_day": "1984-03-30", "first_law": None, "earlier_ids": [25553, 78064], "base_published": "1984-03-30",
     "base_from_texact": True,
     "epigraphs": True,  # its epigraphs are printed above each article heading
+    "amount_notes": True,
     "note": ("The Ley de Sociedades Comerciales (Ley 19.550 of 1972, as amended by Ley 22.903) in the texto ordenado "
              "approved by Decreto 841/1984 (B.O. 1984-03-30), the oldest full text of the act InfoLEG publishes. A texto "
              "ordenado changes no law; this version is dated by its publication. Ley 26.994 renamed it Ley General de "
@@ -1513,6 +1542,27 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
         "Applicability: Ley 27.551 art. 23 (its changes apply to contracts concluded from its entry into force) and Ley 27.363 art. 3 (applies to pending situations) are recorded in `applies`.",
     ]
     for r in reports:
+        if r["act"] == "ley-19550":
+            decisions += [
+                "Ley General de Sociedades: InfoLEG does not serve the act of 1972 (norma.htm of Ley 19.550 is an error page); the history starts at the texto ordenado approved by Decreto 841/1984 (B.O. 1984-03-30), committed by the publisher as the oldest version available.",
+                "Ley General de Sociedades, epigraphs: the act prints each article's title above its heading (\"Forma.\", \"Inscripción en el Registro Público.\"); a short title line just before an article heading is read as the first line of that article, in both InfoLEG texts and in the amending texts of Ley 26.994.",
+                f"Ley General de Sociedades, InfoLEG's two transcriptions: {len(r['transcription'])} articles that no replayed norm changed differ between InfoLEG's transcription of the 1984 texto ordenado and its consolidated text, mostly in the article titles the texto ordenado transcription lacks or places elsewhere; their consolidated wording is used from the first version. Those below 0.90 word similarity: " + ", ".join(t for t in r["transcription"] if float(t.split("(")[1][:-1]) < 0.9) + ".",
+                f"Ley General de Sociedades, partial changes: {len(r['reconciled'])} articles take InfoLEG's consolidated wording from the last norm its note names ({', '.join(r['reconciled'])}).",
+                "Ley General de Sociedades, from InfoLEG's notes: " + "; ".join(r["from_notes"]) + ". Amounts (minimum capital, fines) updated by decrees and Ministerio de Justicia resolutions under powers the act grants are commits for the article concerned, with the consolidated amounts from the last such norm.",
+                "Ley General de Sociedades: Ley 26.994 amended it in numbered points of its Anexo II (2.1 to 2.25), replayed like articles, in force with the Código Civil y Comercial on 1 August 2015; its art. 3 inc. b) repealed arts. 361 to 383. Ley 24.435 art. 1 replaced only the paragraph under the title \"Plazo de ejercicio\" in art. 194.",
+            ]
+        if r["act"] == "ley-24240":
+            decisions += [
+                "Ley de Defensa del Consumidor: the first version is the bill as promulgated by Decreto 2089/1993, whose arts. 1 to 10 vetoed art. 10 inc. c), the first paragraph of art. 11 and the opening sentence of its second, art. 13, a sentence of art. 14, the first five paragraphs of art. 31, art. 40, a sentence of art. 52, the last paragraph of art. 53, art. 54 and a sentence of art. 56 inc. g); InfoLEG's consolidated text still prints the vetoed sentence of art. 56 inc. g) with a note, and the record leaves it out.",
+                "Ley de Defensa del Consumidor: Ley 26.994 Anexo II points 3.1 to 3.4 are replayed (in force 2015-08-01). Ley 27.444 art. 134 repealed chapter XXII of DNU 27/2018, whose art. 169 had replaced art. 4; following InfoLEG, art. 4 gets the words of Ley 27.250 again on Ley 27.444's day. Changes to the act's Reglamentación (Decreto 1798/1994, e.g. Decreto 377/2026) are not changes to the act.",
+                f"Ley de Defensa del Consumidor, partial changes: {len(r['reconciled'])} articles take InfoLEG's consolidated wording from the last norm its note names ({', '.join(r['reconciled'])}).",
+            ]
+        if r["act"] == "ley-19549":
+            decisions += [
+                "Ley de Procedimientos Administrativos: the act as enacted (B.O. 1972-04-27) is the first version. Art. 34 (\"Comuníquese, publíquese …\" and the signatures) is left out. The name of the section after art. 21 (\"Revisión.\", renamed \"Prescripción.\" by Ley 27.742) is a heading, not text.",
+                f"Ley de Procedimientos Administrativos, partial changes: {len(r['reconciled'])} articles take InfoLEG's consolidated wording from the last norm its note names ({', '.join(r['reconciled'])}).",
+                "Código Aduanero (Ley 22.415): not built. InfoLEG serves neither its text as enacted (norma.htm is an error page) nor any texto ordenado; its consolidated text is split over sub-pages, with no full text before today.",
+            ]
         if r["act"] == "codigo-procesal-penal-federal":
             decisions += [
                 "Código Procesal Penal Federal: the base is the texto ordenado approved by Decreto 118/2019 (B.O. 2019-02-08), which already contains the changes of Leyes 27.272 and 27.482 and renumbers the code; InfoLEG's consolidated text keeps its numbering. The code changed no one's law before it first applied, so its history starts on 10 June 2019, the day it applied in full in the federal district of Salta (Salta and Jujuy). That date is not on InfoLEG: it is the date the Comisión Bicameral set on 26 March 2019, as Resolución PGN 127/2019 of the Procuración General de la Nación records it (a text PDF, no OCR).",

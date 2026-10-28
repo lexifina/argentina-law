@@ -14,6 +14,9 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `codigo-penal/` | Código Penal (Ley 11.179, texto ordenado 1984) | 72 | From the texto ordenado of Decreto 3992/1984 (published 16 January 1985) to today: 78 amending laws and decrees, the last Ley 27.786 (11 March 2025) |
 | `ley-20744/` | Ley de Contrato de Trabajo (Ley 20.744, texto ordenado 1976) | 39 | From the texto ordenado of Decreto 390/1976 (published 21 May 1976) to today: 42 amending laws and decrees, the last Ley 27.802 de Modernización Laboral (6 March 2026) |
 | `codigo-procesal-penal-federal/` | Código Procesal Penal Federal (Ley 27.063, texto ordenado 2019) | 18 | From its first application (Salta and Jujuy, 10 June 2019) through each step of its staged entry into force and Leyes 27.784 and 27.785 (March 2025); three steps still to come (Paraná, Buenos Aires, Córdoba) are on the branch `futuro` |
+| `ley-19550/` | Ley General de Sociedades (Ley 19.550, texto ordenado 1984) | 14 | From the texto ordenado of Decreto 841/1984 (30 March 1984), through Ley 26.994 (2015), to the updated fine of 2024 |
+| `ley-24240/` | Ley 24.240 de Defensa del Consumidor | 12 | As promulgated with the vetoes of Decreto 2089/1993 (in force 24 October 1993) to today |
+| `ley-19549/` | Ley 19.549 de Procedimientos Administrativos | 5 | As enacted (in force 6 May 1972) to Ley 27.742 (2024) |
 
 The per-act `README.md` in each folder lists every provision, how often it changed and when.
 
@@ -70,6 +73,7 @@ The author of a commit is the law or decree that made the change, with an e-mail
 ## What it does not show
 
 - **The Código Penal before 1985.** The code of 1921 and its amendments to 1984 (including de facto laws and their repeal) are in the first commit, the texto ordenado of 1984, not one by one. Headings of the code's books, titles and chapters, and the 23 instructions that only renamed them, are not kept.
+- **The Código Aduanero (Ley 22.415).** InfoLEG serves no full text of it before today, so it is not included.
 - **The Código Procesal Civil y Comercial de la Nación.** InfoLEG serves neither its text as enacted (1967) nor its texto ordenado of 1981, only today's text, so its history cannot be rebuilt from this source and it is not included.
 - **The Ley de Contrato de Trabajo before 1976**, the unnumbered articles that Ley 24.576 added in 1995 (a Chapter VIII on training, repealed by Ley 27.802 in 2026), and court rulings on the labour chapter of DNU 70/2023, which are not modelled: the record follows InfoLEG's consolidated text.
 - **The Constitution before 1994.** InfoLEG publishes only the current text (1853, with the reforms of 1860, 1866, 1898, 1957 and 1994). Those earlier texts are named in the first commit, not shown. Ley 24.430 art. 2 states that the official text includes the second paragraph of art. 77, which the August 1994 printing had omitted; the 1994 printing is not in our sources, so that omission is not shown.
