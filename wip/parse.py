@@ -82,7 +82,12 @@ def is_note(line: str) -> bool:
         # an item whose whole text was replaced by a note: "2. (Punto vetado por …)"
         m = re.match(r"^[a-z0-9]{1,3}[.)]\s*(\(.*\))\s*$", s, re.I)
         return bool(m and NOTE_RE.search(m.group(1)))
-    return bool(NOTE_RE.search(s)) or s.lower().startswith("(nota infoleg")
+    return bool(NOTE_RE.search(s)) or s.lower().startswith("(nota infoleg") or bool(NOTE_ANY.search(s))
+
+
+# any parenthesised note that says what a norm did: "(Segundo y tercer párrafos derogados por art. 3° de la Ley …)"
+NOTE_ANY = re.compile(r"^\([^()]{0,80}?\b(?:derogad|sustituid|incorporad|vetad|observad|modificad|suprimid|renumerad)"
+                      r"[oa]s?\s+(?:por|como)\b", re.I)
 
 
 INLINE_NOTE_RE = re.compile(r"\s*(\((?:[^()]|\([^()]*\))*\))\s*$")
@@ -125,6 +130,7 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
                 cur["body"].append(s)
                 continue
             cur = units[key] = {"label": label, "kind": "art", "body": [], "notes": []}
+            rest = rest.lstrip(".-: ") if re.match(r"^[.\-:\s]+\(", rest) else rest
             if rest:
                 if is_note(rest):
                     cur["notes"].append(raw)
@@ -135,8 +141,9 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
                             break
                         cur["notes"].append(mm.group(1))
                         rest = rest.rstrip(". ")[:mm.start()].rstrip()
-                        rest = rest if rest.endswith(".") else rest + "."
-                    cur["body"].append(rest)
+                        rest = rest if rest.endswith(".") or not rest else rest + "."
+                    if rest:
+                        cur["body"].append(rest)
             after_marker = False
             continue
         if transitorias and in_trans:
@@ -153,6 +160,9 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
                 continue
         if re.match(r"^DADA EN LA SALA", s):  # the closing formula of the constituent convention
             cur = units["cierre"] = {"label": "Cierre", "kind": "closing", "body": [s], "notes": []}
+            continue
+        if after_marker and cur is not None and is_note(raw):
+            cur["notes"].append(raw)  # a note on the heading ("(Título incorporado por …)"); the title line follows
             continue
         if after_marker and not re.search(r"[.;:,]$", s) and len(s) < 120:
             after_marker = False  # the heading's title line
@@ -390,7 +400,8 @@ def dehead(s: str) -> str:
 
 def heading(s: str) -> tuple[int, str | None, str | None, str] | None:
     """An article heading at the start of a line: (number, suffix word, "(n)" sub-number, rest of the line)."""
-    s = dehead(s.lstrip('"'))
+    s = dehead(s.lstrip('"\''))
+    s = re.sub(r"^((?:ART[IÍ]CULO|Art[ií]culo)\s*\d+)\s*:\s*(" + SUF + r")\s*:", r"\1 \2:", s)
     sub = None
     m0 = re.match(r"^((?:ART[IÍ]CULO|Art[ií]culo|Art\.)\s*\d+\s*[°º]?)\s*\((\d)\)", s)
     if m0:
@@ -447,6 +458,7 @@ def amender_articles(nid: int) -> list[tuple[int, list[str]]]:
 def clean_body(body: list[str]) -> list[str]:
     """The new wording given after an instruction, as lines: quotes, notes and the amending law's own headings and
     closing formulas removed. Article headings inside it are kept (see split_articles)."""
+    body = ['"' + b[1:] if i == 0 and b.startswith("'") else b for i, b in enumerate(body)]
     out, quoted = [], bool(body) and body[0].startswith('"')
     for i, s in enumerate(body):
         if MARKER_RE.match(s) and not s.startswith('"') and not quoted and heading(s) is None:
@@ -458,11 +470,11 @@ def clean_body(body: list[str]) -> list[str]:
         if is_note(s):
             continue
         s = s.strip()
-        end = quoted and bool(re.search(r'"[.;]?$', s)) and not (i == 0 and len(s) < 3)
+        end = quoted and bool(re.search(r'["\'][.;]?$', s)) and not (i == 0 and len(s) < 3)
         if i == 0 and s.startswith('"'):
             s = s[1:]
         if end:
-            s = re.sub(r'\s*"([.;]?)$', r"\1", s)
+            s = re.sub(r'\s*["\']([.;]?)$', r"\1", s)
         out.append(s)
         if end:
             break
@@ -499,7 +511,7 @@ def split_articles(body: list[str], width: int) -> list[tuple[str, str, list[str
 
 def refs(s: str, width: int) -> list[str]:
     """Article references in an instruction: "artículos 303, 304 y 305", "artículo 268 (2)", "art. 107"."""
-    s = re.sub(r"(incisos?|inc\.)\s*[\d°º,y\s]+(?:\)\s*)?", " ", dethousand(s), flags=re.I)
+    s = re.sub(r"(incisos?|inc\.)\s*\d+\s*[°º]?\)?(?:\s*(?:,|y)\s*\d+\s*[°º]?\)?(?=\s*(?:,|y|del|de)\b))*", " ", dethousand(s), flags=re.I)
     return [key_of(int(n), suf, sub, width) for n, suf, sub in re.findall(REF, s)]
 
 
@@ -804,6 +816,8 @@ def replay(act: dict) -> dict:
             if o["op"] == "heading":
                 report["headings"].append(f"{tag}: {o['instruction'][:120]}")
                 continue
+            if o["op"] in ("replace", "insert") and not o.get("text"):
+                o["op"] = "skip"  # "Modifícase el artículo 24 … para los casos comprendidos en esta ley": no new words
             if o["op"] in ("unknown", "skip"):
                 (report["not_applied"] if o["op"] == "unknown" else report["headings"]).append(
                     f"{tag}: {o['op']}: {o['instruction'][:160]}")
