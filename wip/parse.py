@@ -41,7 +41,7 @@ BULK_MODIF = ("https://datos.jus.gob.ar/dataset/d9a963ea-8b1d-4ca3-9dd9-07a4773e
 
 # ------------------------------------------------------------------ text splitting
 
-SUFFIXES = ["bis", "ter", "quater", "quinquies", "sexies", "septies", "octies", "nonies", "decies"]
+SUFFIXES = ["bis", "ter", "quater", "quinquies", "quinto", "sexies", "septies", "octies", "nonies", "decies"]
 SUF_RE = "|".join(SUFFIXES) + r"|qu[aá]ter"
 ART_RE = re.compile(
     r"^(?:ART[IÍ]CULO|Art[ií]culo|ARTÍCULO|Art\.)\s*(\d+)\s*(?:[°º]|o\b)?\s*\.?\s*(" + SUF_RE + r")?\s*[°º]?"
@@ -160,6 +160,10 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
                 continue
         if re.match(r"^DADA EN LA SALA", s):  # the closing formula of the constituent convention
             cur = units["cierre"] = {"label": "Cierre", "kind": "closing", "body": [s], "notes": []}
+            continue
+        if cur is not None and len(s) < 120 and not s.endswith(".") and len(s.split()) >= 3 and \
+                not re.search(r"[a-záéíóúñ\d]", s) and cur["kind"] == "art":
+            after_marker = False  # a title's heading in capitals ("DELITOS CONTRA LOS PODERES PUBLICOS …")
             continue
         if after_marker and cur is not None and is_note(raw):
             cur["notes"].append(raw)  # a note on the heading ("(Título incorporado por …)"); the title line follows
@@ -376,7 +380,7 @@ def law_entry(nid: int) -> dict:
 
 # ------------------------------------------------------------------ the amending norms
 
-SUF = r"bis|ter|qu[aá]ter|quinquies|sexies|septies|octies"
+SUF = r"bis|ter|qu[aá]ter|quinquies|quinto|sexies|septies|octies"
 REF = r"(\d+)(?:\s*[°º])?(?:\s+\(?(" + SUF + r")\)?)?(?:\s*\((\d)\))?"   # "268 (2)", "204 ter", "41 quinquies"
 ORD = {"primer": 1, "primero": 1, "segundo": 2, "tercer": 3, "tercero": 3, "cuarto": 4, "quinto": 5, "sexto": 6,
        "septimo": 7, "octavo": 8, "noveno": 9, "decimo": 10, "ultimo": "last", "ultimos": "last"}
@@ -986,7 +990,7 @@ def replay(act: dict) -> dict:
                     last = 0  # from the first version, under the article's earlier numbers
                     # never amended since the base text (no change replayed, and InfoLEG's consolidated text names
                     # no norm for it): InfoLEG's two transcriptions of the same words differ; take the consolidated one
-                    ratio = difflib.SequenceMatcher(None, loose(a), loose(t)).ratio()
+                    ratio = difflib.SequenceMatcher(None, loose(a).split(), loose(t).split(), autojunk=False).ratio()
                     report["transcription"].append(f"{k} ({ratio:.2f})")
                 else:
                     # InfoLEG's consolidated text gives the article as left by the last norm its note names; if the
@@ -1073,7 +1077,9 @@ ACT_SETUP = {
         "first_day": "1985-01-16", "first_law": None, "earlier_ids": [16546, 38033], "base_published": "1985-01-16",
         "base_from_texact": True,
         # InfoLEG's transcription of the texto ordenado heads art. 22 bis "Artículo 20 bis" (art. 20 bis is earlier)
-        "base_fixes": [(r"^Artículo 20 bis\. - (Si el hecho ha sido cometido con ánimo de lucro)", r"Artículo 22 bis. - \1")],
+        "base_fixes": [(r"^Artículo 20 bis\. - (Si el hecho ha sido cometido con ánimo de lucro)", r"Artículo 22 bis. - \1"),
+                       # it writes "144 tercero", "144 cuarto" for 144 ter, 144 quater (InfoLEG's consolidated text keeps "144 quinto")
+                       (r"^Artículo 144 tercero\.", "Artículo 144 ter."), (r"^Artículo 144 cuarto\.", "Artículo 144 quater.")],
         "overrides": {
             # Leyes 26.733 and 26.734 (both B.O. 2011-12-28) each added an art. 306 and renumbered the closing
             # articles 306-308; Decreto 169/2012 (B.O. 2012-02-06) fixed the numbering: 26.734's new article is 306,
