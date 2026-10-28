@@ -54,7 +54,7 @@ ORDINAL_LABELS = ["primera", "segunda", "tercera", "cuarta", "quinta", "sexta", 
 TRANS_RE = re.compile(r"^(" + "|".join(o[:-1] + "[ao]" for o in ORDINALS) + r")\s*\.\s*-?\s*(.*)$", re.I)  # "Undécimo." is masculine in the source
 MARKER_RE = re.compile(
     r"^(LIBRO|PRIMERA PARTE|SEGUNDA PARTE|PARTE\b|T[IÍ]TULO|CAP[IÍ]TULO|SECCI[OÓ]N|PAR[AÁ]GRAFO|"
-    r"DISPOSICIONES TRANSITORIAS|AUTORIDADES DE LA NACI)", re.I)
+    r"DISPOSICIONES TRANSITORIAS|DISPOSICIONES COMPLEMENTARIAS|AUTORIDADES DE LA NACI)", re.I)
 NOTE_RE = re.compile(
     r"^\(?\s*(?:(?:Art[ií]culo|Arts?\.|Inciso|Incisos|Inc\.|P[aá]rrafo|[UÚ]ltimo p[aá]rrafo|Primer p[aá]rrafo|"
     r"Segundo p[aá]rrafo|Tercer p[aá]rrafo|Punto|Apartado|Expresi[oó]n|T[eé]rmino|Denominaci[oó]n|Ap\.|"
@@ -128,6 +128,13 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
                 if is_note(rest):
                     cur["notes"].append(raw)
                 else:
+                    while True:  # trailing notes on the heading line: "… (Artículo 306 renumerado …). (…)"
+                        mm = INLINE_NOTE_RE.search(rest.rstrip(". "))
+                        if not (mm and NOTE_RE.search(mm.group(1))):
+                            break
+                        cur["notes"].append(mm.group(1))
+                        rest = rest.rstrip(". ")[:mm.start()].rstrip()
+                        rest = rest if rest.endswith(".") else rest + "."
                     cur["body"].append(rest)
             after_marker = False
             continue
@@ -278,8 +285,47 @@ IN_FORCE = {
 
 def in_force(nid: int) -> str:
     pub = bulk()[nid]["fecha_boletin"]
-    rule = IN_FORCE[nid][0]
-    return {"pub": pub, "pub+1": plus(pub, 1), "default": plus(pub, 9)}[rule]
+    rule = rule_of(nid)[0]
+    m = re.fullmatch(r"pub\+(\d+)", rule)
+    if m:
+        return plus(pub, int(m.group(1)))
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", rule):
+        return rule
+    return {"pub": pub, "default": plus(pub, 9)}[rule]
+
+
+NUMBER_WORDS = {"un": 1, "uno": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8,
+                "nueve": 9, "diez": 10, "quince": 15, "veinte": 20, "treinta": 30, "sesenta": 60, "noventa": 90,
+                "ciento ochenta": 180}
+VIG_RE = re.compile(r"(presente\s+(?:ley|decreto)|esta\s+ley|la\s+ley)\b.{0,60}?\b(vigencia|vigor|regir[aá]|rige)", re.I)
+
+
+def auto_rule(nid: int) -> tuple[str, str]:
+    """The norm's own vigencia clause, read from the first line of each of its articles (never from quoted text).
+
+    Returns (rule, citation): "pub", "pub+N" or "default" (no clause found). Anything else is "unknown"."""
+    r = bulk()[nid]
+    label = law_entry(nid)["label"]
+    for num, lines in amender_articles(nid):
+        t = lines[0]
+        if not VIG_RE.search(t):
+            continue
+        f = fold(t)
+        if re.search(r"dia siguiente", f):
+            return "pub+1", f"{label}, art. {num}: a partir del día siguiente al de su publicación"
+        m = re.search(r"a los\s+([a-z ]+?)\s*(?:\(\d+\)\s*)?dias?\s+(?:corridos\s+)?(?:de|desde|contados)", f)
+        if m and m.group(1).strip() in NUMBER_WORDS:
+            n = NUMBER_WORDS[m.group(1).strip()]
+            return f"pub+{n}", f"{label}, art. {num}: a los {m.group(1).strip()} días de su publicación"
+        if re.search(r"(desde|a partir de)\s+(el dia de\s+|la fecha de\s+|el momento de\s+)?su publicacion", f) or \
+                re.search(r"dia de su publicacion", f):
+            return "pub", f"{label}, art. {num}: desde su publicación"
+        return "unknown", f"{label}, art. {num}: {t[:200]}"
+    return "default", f"{label} has no vigencia clause"
+
+
+def rule_of(nid: int) -> tuple[str, str]:
+    return IN_FORCE.get(nid) or auto_rule(nid)
 
 
 # ------------------------------------------------------------------ laws
@@ -447,7 +493,7 @@ def body_of(u: dict | None) -> list[str]:
 def replay(act: dict) -> dict:
     """Replay the amending norms on the act as enacted. Returns versions, the laws used and a report."""
     width = act.get("width", 3)
-    L, url0, sha0 = act_lines(act["id"], "norma.htm", act["start"], act["end"])
+    L, url0, sha0 = act_lines(act.get("base_id", act["id"]), "norma.htm", act["start"], act["end"])
     state = {k: {"label": u["label"], "kind": u["kind"], "body": body_of(u)}
              for k, u in split_units(L, width=width, transitorias=act.get("transitorias", False)).items()}
     report = {"act": act["slug"], "ops": [], "mismatches": [], "typography": [], "transcription": []}
@@ -459,6 +505,7 @@ def replay(act: dict) -> dict:
     versions = [{"from": act["first_day"], "source_url": url0, "sha256": sha0, "state": {k: dict(v) for k, v in state.items()},
                  "credits": {}, "laws": [act["first_law"]]}]
     ops = amendments(act, act.get("amenders", [])) if act.get("texact") else []
+    report["nids"] = sorted({o["nid"] for o in ops})
     for day in sorted({o["from"] for o in ops}):
         day_ops = [o for o in ops if o["from"] == day]
         credits: dict[str, list[str]] = {}
@@ -599,7 +646,7 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
         laws[k] = {"label": v["label"], "title": v["title"], "kind": "law", "enacted": v.get("enacted"),
                    "published": v.get("published"), "url": v.get("url"), "temporary_until": None, "restores": None,
                    "note": None}
-    acts_out, reports = [], []
+    acts_out, reports, amenders_used = [], [], set()
     for act in act_order():
         if only and act["slug"] not in only:
             continue
@@ -611,6 +658,7 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
             laws[law_key(nid)] = law_entry(nid)
         r = replay(act)
         reports.append(r["report"])
+        amenders_used |= set(r["report"]["nids"])
         versions = []
         for i, v in enumerate(r["versions"]):
             out = {"from": v["from"], "source_url": v["source_url"], "sha256": v["sha256"],
@@ -652,7 +700,7 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
     decisions = [
         "Source: InfoLEG only. It keeps the original text (norma.htm) and today's text (texact.htm) of each norm, but no intermediate versions, so every version after the first is rebuilt by applying, in order of entry into force, the instructions of each amending norm as written in that norm's own text on InfoLEG (\"Sustitúyese el artículo N …\", \"Incorpórase …\", \"Derógase …\"). The amending norms are those InfoLEG's notes on texact.htm name for each act.",
         "The replayed text of today is checked against texact.htm article by article; the result for each act is in its README table and in these decisions. Where the words are the same and only typography differs (quotes, case, accents, punctuation, the thousands dot), the texact.htm wording is used from the version in which the article last changed.",
-        "In-force dates: a norm's own vigencia clause where it has one; otherwise the default rule (publication in the Boletín Oficial + 9 days: Código Civil art. 2 before 2015-08-01, Código Civil y Comercial arts. 5 and 6 after). Per norm: " + "; ".join(f"{IN_FORCE[n][1]} -> {in_force(n)}" for n in IN_FORCE if law_key(n) in laws) + ".",
+        "In-force dates: a norm's own vigencia clause where it has one; otherwise the default rule (publication in the Boletín Oficial + 9 days: Código Civil art. 2 before 2015-08-01, Código Civil y Comercial arts. 5 and 6 after). Per norm: " + "; ".join(f"{rule_of(n)[1]} -> {in_force(n)}" for n in sorted(amenders_used) if law_key(n) in laws) + ".",
         "Decreto 70/2023 (DNU), published 2023-12-21, has no vigencia clause, so the default rule gives 2023-12-30. The Government and the press announced 29 December 2023 (eight days counted from publication); we keep the statutory count and record the difference here.",
         "Decrees of necessity and urgency (DNU) are kind \"decree\" without temporary_until: under Ley 26.122 a DNU stays in force unless both chambers reject it, and InfoLEG's consolidated text of the retrieval day carries the changes of every DNU here.",
         "Decreto 70/2023 art. 249 abrogated Ley 27.551, but InfoLEG's consolidated text keeps the Code articles that Ley 27.551 wrote and that Decreto 70/2023 did not replace (arts. 1203, 1209, 1222, 1351); we follow InfoLEG.",

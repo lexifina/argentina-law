@@ -36,6 +36,19 @@ ACTS = [
         "texact": True,
         "target": r"[Ll]ey\s*(N[°º]\s*)?25\.?326",
     },
+    {
+        "slug": "codigo-penal",
+        "short": "CP",
+        "id": 16546,
+        "title": "Código Penal de la Nación Argentina (Ley 11.179, texto ordenado 1984)",
+        # norma.htm of 16546 is the code of 1921; the oldest full text InfoLEG has of the code as later amended is
+        # the texto ordenado approved by Decreto 3992/1984 (id 38033), which is the base of the replay
+        "base_id": 38033,
+        "start": r"(?i)^art[ií]culo 1\s*[º°]\s*\.?\s*-?\s*Este c[oó]digo",
+        "end": r"^(INDICE DE ORDENAMIENTO|Antecedentes Normativos)$",
+        "texact": True,
+        "target": r"C[oó]digo Penal",
+    },
 ]
 
 
