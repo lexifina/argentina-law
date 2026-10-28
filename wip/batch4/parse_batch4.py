@@ -55,6 +55,16 @@ ACTS = [
         "texact": True,
         "target": r"(?:[Ll]ey\s*(?:N[°º]\s*)?26\.?485)",
     },
+    {
+        "slug": "ley-24449",
+        "short": "LNT",
+        "id": 818,
+        "title": "Ley 24.449 de Tránsito",
+        "start": r"^TITULO I$",
+        "end": r"^DADA EN LA SALA",
+        "texact": True,
+        "target": r"(?:[Ll]ey\s+(?:Nacional\s+)?de\s+Tr[aá]nsito|[Ll]ey\s*(?:N[°º]\s*)?24\.?449)",
+    },
 ]
 
 SETUP = {
@@ -119,6 +129,51 @@ SETUP = {
         "note": ("Ley 26.485 as enacted (sancionada 2009-03-11, promulgada de hecho 2009-04-01, B.O. 2009-04-14). Art. "
                  "44: \"La ley entrará en vigencia a partir de su publicación en el Boletín Oficial\"."),
     },
+    "ley-24449": {
+        # Decreto 779/1995 art. 2: the law and its reglamentación "entrarán en vigencia el 1° de Diciembre de 1995"
+        "first_day": "1995-12-01", "first_law": "ley-24449", "base_published": "1995-02-10",
+        # the laws and decrees InfoLEG's consolidated text names (notes and "Antecedentes Normativos"); its
+        # verVinculos list (1,533 norms) holds no other law or decree that changes the act's words
+        "amenders": [42480, 68751, 91608, 102148, 140098, 305055, 305736, 311585, 327260, 345366, 383043, 414868, 417102],
+        # the name of Title IX ("DISPOSICIONES TRANSITORIAS Y COMPLEMENTARIAS") is a heading; parse.split_units would
+        # otherwise read the articles after it as transitional provisions
+        "drop_lines": [r"^DISPOSICIONES TRANSITORIAS Y COMPLEMENTARIAS$"],
+        # Decreto 179/1995 arts. 1-10 ("Obsérvase …"), applied to the bill's text in norma.htm; the remaining words
+        # are those InfoLEG's consolidated text prints ("coches de bebés, y demás", "la cédula, de identificación")
+        "vetoed": {"art-011": r"^d\) Doce años para circular", "art-013": r"^c\) A partir de la edad de 65 años",
+                   "art-014": r"^6\.[34]\. Conducción (?:en área urbana de tránsito medio|nocturna)\.$",
+                   "art-033": r"^f\) Los automotores homologados", "art-050": r"^El desarrollo de velocidades superiores"},
+        "vetoed_words": [
+            ("art-014", r",\s*otorgada por profesional médico habilitado\.$", "."),
+            ("art-015", r"\s*acreditado por profesional competente;$", ";"),
+            ("art-038", r"rodados propulsados por menores de 10 años ", ""),
+            ("art-040", r"vencida o no, o documento ", ""),
+            ("art-094", r"\s*nuevas, que con respecto a la legislación reemplazada crea esta ley\.$", "."),
+        ],
+        "overrides": {
+            # "inciso 11 bis)": the definitions are lettered and InfoLEG's text of Ley 25.965 reads "ll" as "11"
+            (102148, 1): [{"op": "lines", "action": "insert", "keys": ["art-005"], "after_line": r"^ll\) ",
+                           "text_fix": [(r"^11 bis\)", "ll bis)")]}],
+            # "Artículo 40 bis) Requisitos …": the new article's heading is closed by a bracket (text set in build())
+            (102148, 7): [{"op": "insert", "keys": ["art-040-bis"], "label": "Art. 40 bis"}],
+            # Ley 24.788 writes the new inciso as "Inciso a): …"; InfoLEG's consolidated text and later laws write "a)"
+            (42480, 17): [{"op": "lines", "action": "replace", "keys": ["art-048"], "items": ["a"],
+                           "text_fix": [(r"^Inciso a\):\s*", "a) ")]}],
+            # Decreto 461/2025 art. 34 repeals, among many other norms, "el artículo 96 de la Ley N° 24.449"
+            (414868, 34): [{"op": "repeal", "keys": ["art-096"]}],
+            # Decreto 627/2025 art. 1 restores the provisions Decreto 461/2025 had repealed, replaced or amended
+            (417102, 1): [{"op": "restore", "keys": ["art-002", "art-002-bis", "art-096"], "undoes": "decreto-461-2025"}],
+        },
+        "note": ("Ley 24.449 as promulgated by Decreto 179/1995 (B.O. 1995-02-10), which vetoed (\"observó\") parts of "
+                 "arts. 11, 13, 14, 15, 33, 38, 40, 50 and 94 of the bill: that text never took effect and is not shown. Art. "
+                 "94 left its entry into force to its reglamentación; Decreto 779/1995 art. 2 set it at 1 December 1995."),
+    },
+}
+
+# in-force rules read by hand where parse.auto_rule cannot classify the norm's own clause (added to parse.IN_FORCE)
+IN_FORCE = {
+    42480: ("default", "Ley 24.788, art. 22 is about where it applies (art. 17 only where provinces adhere under art. 91 "
+                       "of Ley 24.449), not when; no vigencia date, so the default rule"),
 }
 
 ANNEXES = {
@@ -127,15 +182,34 @@ ANNEXES = {
 }
 
 _replay = P.replay
+_act_lines = P.act_lines
+
+
+def act_lines(nid: int, page: str, start: str, end: str):
+    """parse.act_lines, plus two layout fixes in InfoLEG's consolidated text of Ley 24.449: a note closed by ")."
+    is not read as a note by parse.split_units, and "ARTICULO 40 bis)" is not read as a heading."""
+    L, url, sha = _act_lines(nid, page, start, end)
+    if nid == 818 and page == "texact.htm":
+        L = [re.sub(r"(\((?:[^()]|\([^()]*\))*(?:sustituid|incorporad|vetad|derogad)[oa]s?\s+por\b(?:[^()]|\([^()]*\))*\))\.$", r"\1", l)
+             for l in L]
+        L = [re.sub(r"^(ARTICULO 40 bis)\)", r"\1.-", l) for l in L]
+    return L, url, sha
+
+
 _apply_lines = P.apply_lines
 
 
 def apply_lines(body: list[str], o: dict) -> list[str] | None:
     """parse.apply_lines, plus two keys for batch 4's overrides: "within"/"until" (regexes) limit the change to the
-    lines of one numbered point of the article; "check" (regex) must match the paragraph a positional change targets; "text_fix" [(regex, replacement)] corrects
+    lines of one numbered point of the article; "check" (regex) must match the paragraph a positional change
+    targets; "after_line" (regex) places the new lines after the first line it matches; "text_fix" [(regex,
+    replacement)] corrects
     a transcription slip in the amending norm's text on InfoLEG."""
     if o.get("text_fix"):
         o = dict(o, text=[re.sub(pat, rep, l) for l in o["text"] for pat, rep in o["text_fix"]])
+    if "after_line" in o:  # new lines placed after the first line that matches
+        i = next((i for i, l in enumerate(body) if re.match(o["after_line"], l)), None)
+        return None if i is None else body[:i + 1] + list(o["text"]) + body[i + 1:]
     if "within" not in o:
         if "check" in o and not (o["paras"][0] <= len(body) and re.match(o["check"], body[o["paras"][0] - 1])):
             return None
@@ -164,8 +238,14 @@ def replay(act: dict) -> dict:
 def build() -> tuple[dict, list[dict]]:
     A.ACTS[:] = [a for a in A.ACTS if a["slug"] not in SETUP] + ACTS
     P.ACT_SETUP.update(SETUP)
+    P.IN_FORCE.update(IN_FORCE)
     P.replay = replay
     P.apply_lines = apply_lines
+    P.act_lines = act_lines
+    # Ley 25.965 art. 7: "Artículo 40 bis) Requisitos …" -> the new article's words, its heading removed
+    lines = next(ls for n, ls in P.amender_articles(102148) if n == 7)
+    SETUP["ley-24449"]["overrides"][(102148, 7)][0]["text"] = P.new_text(
+        [re.sub(r"^(Artículo 40 bis)\)", r"\1.-", lines[1])] + lines[2:])
     corpus, reports = P.build_corpus(set(SETUP))
     order = {a["slug"]: i for i, a in enumerate(ACTS)}
     acts = sorted(corpus["acts"], key=lambda a: order[a["slug"]])
