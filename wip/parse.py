@@ -110,7 +110,16 @@ def act_lines(nid: int, page: str, start: str, end: str) -> tuple[list[str], str
     return L[i:j], url, hashlib.sha256(b).hexdigest()
 
 
-def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False) -> dict[str, dict]:
+EPIGRAPH_RE = re.compile(r"^[A-ZÁÉÍÓÚÑ][^.;:,]{0,90}(?:\.[^.;:]{1,60})?\.?$")
+
+
+def is_epigraph(line: str) -> bool:
+    """A short title line ("Forma.", "Plazos para la inscripción. Toma de razón.") rather than a sentence."""
+    return bool(EPIGRAPH_RE.match(line)) and len(line.split()) <= 12 and not re.search(
+        r"\b(ser[aá]n?|deber[aá]n?|podr[aá]n?|tendr[aá]n?|es|son|se)\b", line)
+
+
+def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False, epigraphs: bool = False) -> dict[str, dict]:
     """Ordered units: key -> {label, kind, body: [lines], notes: [lines]}."""
     units: dict[str, dict] = {}
     cur = None
@@ -135,7 +144,10 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
             if key in units:  # a repeated heading: keep the first, treat the rest as body
                 cur["body"].append(s)
                 continue
-            cur = units[key] = {"label": label, "kind": "art", "body": [], "notes": []}
+            carried = []
+            if epigraphs and cur is not None and cur["body"] and is_epigraph(cur["body"][-1]) and cur.get("last_was_body"):
+                carried = [cur["body"].pop()]  # the epigraph printed above this article's heading
+            cur = units[key] = {"label": label, "kind": "art", "body": carried, "notes": []}
             rest = rest.lstrip(".-: ") if re.match(r"^[.\-:\s]+\(", rest) else rest
             if rest:
                 if is_note(rest):
@@ -182,12 +194,16 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
             continue
         if is_note(raw):
             cur["notes"].append(raw)
+            cur["last_was_body"] = False
             continue
         m = INLINE_NOTE_RE.search(raw)
         if m and note_like(m.group(1)):
             cur["notes"].append(m.group(1))
             s = H.strip_links(raw[:m.start()]).strip()
         cur["body"].append(s)
+        cur["last_was_body"] = True
+    for u in units.values():
+        u.pop("last_was_body", None)
     return units
 
 
@@ -301,6 +317,7 @@ IN_FORCE = {
     406267: ("pub", "Decreto 1017/2024, art. 22: a partir del día de su publicación"),
     412944: ("pub", "Decreto 338/2025, art. 12: a partir del día de su publicación"),
     422008: ("pub", "Ley 27.799, art. 45: a partir del día de su publicación"),
+    235975: ("2015-08-01", "Ley 26.994, art. 7 as replaced by Ley 27.077: in force from 1 August 2015 (its Anexo II too)"),
     60847: ("pub+8", "Ley 25.188, art. 43: its Capítulo IX (reformas al Código Penal) entra en vigencia a los ocho días de su publicación"),
     143873: ("2009-02-26", "Ley 26.394, art. 7: comenzará a regir a los seis meses de su promulgación (promulgada el 26 de agosto de 2008)"),
 }
@@ -511,6 +528,10 @@ def clean_body(body: list[str]) -> list[str]:
 def new_text(body: list[str]) -> list[str]:
     """The new wording of one article: the heading of the article itself removed."""
     out = clean_body(body)
+    if len(out) > 1 and heading(out[0]) is None and heading(out[1]) and is_epigraph(out[0]):
+        h = heading(out[1])
+        rest = h[3].lstrip("-– ").strip()
+        return [out[0]] + ([rest] if rest else []) + out[2:]
     if out:
         h = heading(out[0])
         if h:
@@ -651,6 +672,10 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
             return [{"op": "insert", "keys": [k], "label": label_of(int(m.group(1)), m.group(2), m.group(3)), "text": text}]
         if arts:
             return [{"op": "insert", "keys": [k], "label": lab, "text": t} for k, lab, t in arts]
+    if re.search(V_REPLACE + r"\s+los\s+art[ií]culos\s", h, re.I):
+        arts = split_articles(body, width)
+        if arts:
+            return [{"op": "replace", "keys": [k], "label": lab, "text": t} for k, lab, t in arts]
     m = re.search(V_REPLACE + r"\s+(?:(?:al|el|como)\s+)?(?:texto\s+del\s+)?(?:art[ií]culo|art\.)\s*" + REF, h, re.I)
     if m:
         k = key_of(int(m.group(1)), m.group(2), m.group(3), width)
@@ -745,12 +770,33 @@ def amenders_of(act: dict) -> list[int]:
     return out
 
 
+POINT_AMENDERS = {235975}  # Ley 26.994: its Anexo II amends other laws in numbered points
+
+
+def anexo_points(nid: int) -> list[tuple[int, list[str]]]:
+    """The numbered points of an annex that amends other laws, as (number, [instruction, new text …])."""
+    L = [H.strip_links(l) for l in H.lines(F.cached(F.norma_url(nid)))]
+    i = max(i for i, l in enumerate(L) if l.strip() == "ANEXO II")
+    out, cur = [], None
+    for l in L[i + 1:]:
+        m = re.match(r"^(\d+)\.(\d+)\.?\s*-?\s*(.*)$", l)
+        if m:
+            cur = [m.group(3)]
+            out.append((int(m.group(1)) * 1000 + int(m.group(2)), cur))
+        elif re.match(r"^\d+\.-\s", l):
+            cur = None  # "2.- MODIFICACIONES A LA LEY Nº 19.550": the heading of a group
+        elif cur is not None:
+            cur.append(l)
+    return out
+
+
 def amendments(act: dict, ids: list[int]) -> list[dict]:
     """Every instruction aimed at `act` in the norms `ids`, with the law's key and in-force day, in force order."""
     out = []
     overrides = act.get("overrides", {})
     for nid in ids:
-        for num, lines in amender_articles(nid):
+        arts = anexo_points(nid) if nid in POINT_AMENDERS else amender_articles(nid)
+        for num, lines in arts:
             if (nid, num) in overrides:
                 ops = [dict(o, instruction=lines[0]) for o in overrides[(nid, num)]]
                 for o in ops:
@@ -872,7 +918,8 @@ def replay(act: dict) -> dict:
     for pat, repl in act.get("base_fixes", []):
         L = [re.sub(pat, repl, l) for l in L]
     state = {k: {"label": u["label"], "kind": u["kind"], "body": body_of(u)}
-             for k, u in split_units(L, width=width, transitorias=act.get("transitorias", False)).items()}
+             for k, u in split_units(L, width=width, transitorias=act.get("transitorias", False),
+                                     epigraphs=act.get("epigraphs", False)).items()}
     report = {"act": act["slug"], "ops": [], "mismatches": [], "typography": [], "transcription": [], "reconciled": [],
               "headings": [], "not_applied": []}
     for key, drop in act.get("vetoed", {}).items():
@@ -893,7 +940,7 @@ def replay(act: dict) -> dict:
     report["base_gaps"], report["from_notes"] = [], []
     if act.get("texact"):
         T0, _, _ = act_lines(act["id"], "texact.htm", act["start"], act["end"])
-        tex0 = split_units(T0, width=width, transitorias=act.get("transitorias", False))
+        tex0 = split_units(T0, width=width, transitorias=act.get("transitorias", False), epigraphs=act.get("epigraphs", False))
         # norms InfoLEG names but whose own text it does not serve ("No se pudo acceder al archivo solicitado"): the
         # change is taken from the note and the consolidated text (a repeal, or the article's whole current text when
         # the note names no other norm)
@@ -1046,7 +1093,7 @@ def replay(act: dict) -> dict:
     # today's official text: InfoLEG's texto actualizado
     if act.get("texact"):
         T, turl, tsha = act_lines(act["id"], "texact.htm", act["start"], act["end"])
-        tex_all = split_units(T, width=width, transitorias=act.get("transitorias", False))
+        tex_all = split_units(T, width=width, transitorias=act.get("transitorias", False), epigraphs=act.get("epigraphs", False))
         tex = {k: u for k, u in tex_all.items() if body_of(u) and not repealed_in_texact(u)}
         report["texact"] = {"url": turl, "sha256": tsha}
         final = versions[-1]["state"]
@@ -1248,6 +1295,7 @@ ACT_SETUP["codigo-procesal-penal-federal"] = {
 ACT_SETUP["ley-19550"] = {
     "first_day": "1984-03-30", "first_law": None, "earlier_ids": [25553, 78064], "base_published": "1984-03-30",
     "base_from_texact": True,
+    "epigraphs": True,  # its epigraphs are printed above each article heading
     "note": ("The Ley de Sociedades Comerciales (Ley 19.550 of 1972, as amended by Ley 22.903) in the texto ordenado "
              "approved by Decreto 841/1984 (B.O. 1984-03-30), the oldest full text of the act InfoLEG publishes. A texto "
              "ordenado changes no law; this version is dated by its publication. Ley 26.994 renamed it Ley General de "
