@@ -880,6 +880,10 @@ def replay(act: dict) -> dict:
             state.pop(key, None)
         else:
             state[key]["body"] = [b for b in state[key]["body"] if not re.match(drop, b)]
+    for key, pat, repl in act.get("vetoed_words", []):  # a vetoed sentence or paragraph inside a line
+        nb = [re.sub(pat, repl, b).strip() for b in state[key]["body"]]
+        assert nb != state[key]["body"], (key, pat)
+        state[key]["body"] = [b for b in nb if b]
     amenders = amenders_of(act) if act.get("texact") else []
     ops = amendments(act, amenders) if amenders else []
     for o in ops:
@@ -1240,6 +1244,39 @@ ACT_SETUP["codigo-procesal-penal-federal"] = {
              "Resolución PGN 127/2019 of the Procuración General de la Nación; elsewhere it took effect article by "
              "article and district by district, each step a later commit."),
 }
+
+ACT_SETUP["ley-19550"] = {
+    "first_day": "1984-03-30", "first_law": None, "earlier_ids": [25553, 78064], "base_published": "1984-03-30",
+    "base_from_texact": True,
+    "note": ("The Ley de Sociedades Comerciales (Ley 19.550 of 1972, as amended by Ley 22.903) in the texto ordenado "
+             "approved by Decreto 841/1984 (B.O. 1984-03-30), the oldest full text of the act InfoLEG publishes. A texto "
+             "ordenado changes no law; this version is dated by its publication. Ley 26.994 renamed it Ley General de "
+             "Sociedades from 1 August 2015."),
+}
+ACT_SETUP["ley-24240"] = {
+    "first_day": None, "first_law": "ley-24240", "base_published": "1993-10-15",
+    # Decreto 2089/1993 arts. 1-10 (the "observaciones"), applied to the bill's text in norma.htm
+    "vetoed": {"art-010": r"^c\) El nombre y domicilio del fabricante", "art-013": None, "art-040": None, "art-054": None,
+               "art-053": r"^Las actuaciones judiciales que se inicien de conformidad con la presente ley gozarán del beneficio"},
+    "vetoed_words": [
+        ("art-011", r"^(Garantías\.)\s+Cuando se comercialicen.*$", r"\1"),
+        ("art-011", r"^La garantía legal tendrá vigencia por seis \(6\) meses a partir de la entrega, pudiendo las partes convenir un plazo mayor\.\s*", ""),
+        ("art-014", r"\s*La falta de notificación, no libera al fabricante o importador de la responsabilidad solidaria establecida en el artículo 13\.", ""),
+        ("art-031", r"^(Facturación de Consumo Excesivo\.)\s+Cuando una empresa.*$", r"\1"),
+        ("art-031", r"^(En tal caso, el usuario debe abonar|A los efectos de ejercer este derecho|En el caso que la empresa prestadora reclamare|La empresa prestadora dispondrá de un plazo).*$", ""),
+        ("art-052", r"\s*Las asociaciones de consumidores estarán habilitadas como litisconsorte de cualesquiera de las partes\.", ""),
+        ("art-056", r"\s*En los estudios sobre controles de calidad, previo a su divulgación, se requerirá la certificación de los mismos por los organismos de contralor correspondientes, quienes se expedirán en los plazos que establezca la reglamentación;", ""),
+    ],
+    "note": ("Ley 24.240 as promulgated by Decreto 2089/1993 (B.O. 1993-10-15), which vetoed (\"observó\") art. 10 "
+             "inc. c), parts of arts. 11, 14, 31, 52 and 56 inc. g), the last paragraph of art. 53 and arts. 13, 40 and "
+             "54 of the bill: that text never took effect and is not shown. No vigencia clause: in force from the ninth "
+             "day after publication (Código Civil art. 2)."),
+}
+ACT_SETUP["ley-19549"] = {
+    "first_day": None, "first_law": "ley-19549", "base_published": "1972-04-27",
+    "note": ("Ley 19.549 de Procedimientos Administrativos as enacted (B.O. 1972-04-27)."),
+}
+
 
 def requests_by_host() -> dict[str, int]:
     out: dict[str, int] = {}

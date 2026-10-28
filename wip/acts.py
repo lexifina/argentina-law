@@ -73,6 +73,39 @@ ACTS = [
         "texact": True,
         "target": r"C[oó]digo\s+Procesal\s+Penal\s+Federal",
     },
+    {
+        "slug": "ley-19550",
+        "short": "LGS",
+        "id": 25553,
+        "title": "Ley General de Sociedades (Ley 19.550, texto ordenado 1984)",
+        # InfoLEG does not serve the act of 1972 (norma.htm answers an error page); the base is the texto ordenado
+        # approved by Decreto 841/1984 (id 78064)
+        "base_id": 78064,
+        "start": r"(?i)^art[ií]culo 1\s*[º°]\s*\.?\s*-?\s*Habr[aá] sociedad",
+        "end": r"^(INDICE DE ORDENAMIENTO DE LA LEY 19\.550|Antecedentes Normativos)$",
+        "texact": True,
+        "target": r"(?:[Ll]ey\s+(?:General\s+)?de\s+Sociedades(?:\s+Comerciales)?|[Ll]ey\s*(?:N[°º]\s*)?19\.?550)",
+    },
+    {
+        "slug": "ley-24240",
+        "short": "LDC",
+        "id": 638,
+        "title": "Ley 24.240 de Defensa del Consumidor",
+        "start": r"(?i)^art[ií]culo 1\s*[º°]\s*\.?\s*-?\s*Objeto",
+        "end": r"^DADA EN LA SALA",
+        "texact": True,
+        "target": r"(?:[Ll]ey\s+de\s+Defensa\s+del\s+Consumidor|[Ll]ey\s*(?:N[°º]\s*)?24\.?240)",
+    },
+    {
+        "slug": "ley-19549",
+        "short": "LPA",
+        "id": 22363,
+        "title": "Ley 19.549 de Procedimientos Administrativos",
+        "start": r"(?i)^art[ií]culo 1\s*[º°]?\s*\.?\s*-",
+        "end": r"^Antecedentes Normativos$",
+        "texact": True,
+        "target": r"(?:[Ll]ey\s+(?:Nacional\s+)?de\s+Procedimiento(?:s)?\s+Administrativos?|[Ll]ey\s*(?:N[°º]\s*)?19\.?549)",
+    },
 ]
 
 
