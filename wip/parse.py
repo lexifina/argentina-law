@@ -325,6 +325,8 @@ def auto_rule(nid: int) -> tuple[str, str]:
     Returns (rule, citation): "pub", "pub+N" or "default" (no clause found). Anything else is "unknown"."""
     r = bulk()[nid]
     label = law_entry(nid)["label"]
+    if not amender_articles(nid):
+        return "default", f"{label}: its text is not on InfoLEG, so the default rule is used"
     for num, lines in amender_articles(nid):
         t = re.sub(r"^(?:Entrada en vigencia|Entrada en vigor|Vigencia)\s*\.\s*-?\s*", "", lines[0], flags=re.I)
         if not VIG_RE.search(t):
@@ -960,7 +962,10 @@ def replay(act: dict) -> dict:
             for l in ls:
                 if l not in credits[k]:
                     credits[k].append(l)
-        nids = sorted({o["nid"] for o in day_ops}, key=lambda n: (bulk()[n]["fecha_boletin"], n))
+        nids = sorted({o["nid"] for o in day_ops if o["op"] not in ("heading", "skip", "unknown")},
+                      key=lambda n: (bulk()[n]["fecha_boletin"], n))
+        if not credits and state == versions[-1]["state"]:
+            continue  # nothing in force changed that day (only headings or superseded instructions)
         b = F.cached(F.norma_url(nids[0]))
         versions.append({"from": day, "source_url": F.norma_url(nids[0]), "sha256": hashlib.sha256(b).hexdigest(),
                          "state": {k: dict(v) for k, v in state.items()}, "credits": credits,
@@ -974,6 +979,10 @@ def replay(act: dict) -> dict:
         final = versions[-1]["state"]
         for k in sorted(set(final) | set(tex)):
             a, t = body_of(final.get(k)), body_of(tex.get(k))
+            for plist in patches.values():  # a vetoed word InfoLEG leaves in its text with a note
+                for pk, pat, rp in plist:
+                    if pk == k:
+                        t = [re.sub(pat, rp, l) for l in t]
             if a == t:
                 continue
             if not a or not t:
@@ -1165,7 +1174,8 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
             versions.append(out)
         acts_out.append({"slug": act["slug"], "short": act["short"], "title": act["title"],
                          "url": F.norma_url(act["id"], "texact.htm" if act.get("texact") else "norma.htm"),
-                         "first_law": act["first_law"], "earlier_laws": act.get("earlier_laws", []),
+                         "first_law": act["first_law"],
+                         "earlier_laws": act.get("earlier_laws", []) + [law_key(n) for n in act.get("earlier_ids", [])],
                          "versions": versions})
     used = {act["first_law"] for act in acts_out if act["first_law"]} | {l for act in acts_out for l in act["earlier_laws"]} | \
         {l for act in acts_out for v in act["versions"] for ls in v["credits"].values() for l in ls}
@@ -1199,6 +1209,20 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
         "Constitución: a single version, the 1994 text in force from 1994-08-24 (Disposición transitoria decimosexta: in force the day after publication; the Boletín Oficial of 1994-08-23 is not on InfoLEG and that publication day is not checked against a cached source). Its earlier texts are not on InfoLEG. Leyes 27.044 (2014) and 27.700 (2022) gave treaties constitutional hierarchy under art. 75 inc. 22 without changing its words, so they get no commit.",
         "Applicability: Ley 27.551 art. 23 (its changes apply to contracts concluded from its entry into force) and Ley 27.363 art. 3 (applies to pending situations) are recorded in `applies`.",
     ]
+    for r in reports:
+        if r["act"] != "codigo-penal":
+            continue
+        short = lambda xs: ", ".join(x.split(" ")[0].replace("art-", "").lstrip("0").replace("-", " ") for x in xs)
+        decisions += [
+            "Código Penal: InfoLEG's text of the code itself (norma.htm of Ley 11.179) is the code of 1921, and the history from 1921 to 1984 runs through de facto laws and restorations it does not publish as texts. The history starts at the texto ordenado approved by Decreto 3992/1984 (B.O. 1985-01-16), the oldest full text of the code as amended on InfoLEG, dated by its publication and committed by the publisher as the oldest version available. Every later norm that InfoLEG names in the consolidated text's notes, or lists as modifying the code, and that is a law or decree published after the texto ordenado, is replayed.",
+            f"Código Penal, InfoLEG's two transcriptions: {len(r['transcription'])} articles that no replayed norm changed and that InfoLEG's consolidated text shows with no amendment note differ from InfoLEG's transcription of the texto ordenado only by transcription (word-level similarity in brackets): {', '.join(r['transcription'])}. Their consolidated wording is used from the first version. InfoLEG's transcription of the texto ordenado also heads art. 22 bis \"Artículo 20 bis\" and writes \"144 tercero\", \"144 cuarto\" for arts. 144 ter and 144 quater; those headings are corrected.",
+            f"Código Penal, partial changes: where a norm replaced or added an inciso or a paragraph, the replay places it in the article; InfoLEG's consolidated wording of the article is then used from the version of the last norm its note names, when that is the last norm the replay applied to it ({len(r['reconciled'])} articles: {', '.join(r['reconciled'])}). Earlier versions of those articles carry the wording the replay built. Where an instruction gives only an inciso's number (\"Incorpórase como inciso 10 …\") the number is written at the start of the line.",
+            "Código Penal, fines: Leyes 23.479 (1987), 23.974 (1991) and 24.286 (1994) fixed new minimum and maximum amounts for the fines of listed articles without rewriting them. Each is credited to the articles it lists in a commit with no words changed; InfoLEG's consolidated text writes in only the amounts of Ley 24.286, which appear from that law's commit in the articles whose last note names it.",
+            "Código Penal, norms whose text InfoLEG does not serve (\"No se pudo acceder al archivo solicitado\"): " + "; ".join(r["from_notes"]) + ". In-force dates use the default rule.",
+            "Código Penal, numbering in 2012: Leyes 26.733 and 26.734 (both B.O. 2011-12-28) each added an art. 306 and renumbered the closing articles; Decreto 169/2012 (B.O. 2012-02-06) fixed the numbering, which InfoLEG follows. The replay applies that numbering from the two laws' own day: 26.734's article is 306, 26.733's arts. 306 to 312 are 307 to 313, and the closing articles 306 to 308 become 314 to 316 (credited to Ley 26.733 art. 10, as InfoLEG's notes do). Decreto 169/2012 itself changes no words and gets no commit.",
+            "Código Penal, vetoes: Decreto 1059/2002 vetoed art. 4 of Ley 25.602 (an art. 174 bis that never took effect); Decreto 14/2021 vetoed the word \"integral\" after \"salud\" in art. 86 inc. 2 as written by Ley 27.610. Both are applied to the laws' texts. Ley 24.390 art. 8 (\"Modifícase el artículo 24 … para los casos comprendidos en esta ley\") gives no new words and is not a change to the text.",
+            f"Código Penal, headings: {len(r['headings'])} instructions change only the name of a book, title or chapter, or are superseded; headings are not kept, so they have no commit. They are listed in the replay report of tools/parse.py.",
+        ]
     applies = []
     if "ley-27551" in laws:
         applies.append({"law": "ley-27551", "provision": "",

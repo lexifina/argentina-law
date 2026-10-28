@@ -4,7 +4,7 @@
   "name": "Argentina",
   "level": "country",
   "repo": "https://github.com/lexifina/argentina-law",
-  "build": "built: Constitución 1994 (1 version), Código Civil y Comercial 2015-2026 (12 versions, rebuilt by replaying the amending norms and checked against InfoLEG's consolidated text), Ley 25.326 2000-2008 (2)",
+  "build": "built: Constitución 1994 (1 version), Código Civil y Comercial 2015-2026 (12 versions, rebuilt by replaying the amending norms and checked against InfoLEG's consolidated text), Ley 25.326 2000-2008 (2), Código Penal 1985-2025 (72, from the texto ordenado of 1984)",
   "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
   "register_date": "2026-10-28",
   "sources": 2
