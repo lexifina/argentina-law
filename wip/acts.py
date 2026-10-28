@@ -102,7 +102,7 @@ ACTS = [
         "id": 22363,
         "title": "Ley 19.549 de Procedimientos Administrativos",
         "start": r"(?i)^art[ií]culo 1\s*[º°]?\s*\.?\s*-",
-        "end": r"^Antecedentes Normativos$",
+        "end": r"^(ART[IÍ]CULO 34\b|Antecedentes Normativos$)",  # art. 34 is the closing formula (Comuníquese …)
         "texact": True,
         "target": r"(?:[Ll]ey\s+(?:Nacional\s+)?de\s+Procedimiento(?:s)?\s+Administrativos?|[Ll]ey\s*(?:N[°º]\s*)?19\.?549)",
     },

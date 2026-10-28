@@ -87,7 +87,7 @@ def is_note(line: str) -> bool:
 
 # any parenthesised note that says what a norm did: "(Segundo y tercer párrafos derogados por art. 3° de la Ley …)"
 NOTE_ANY = re.compile(r"^\([^()]{0,80}?\b(?:derogad|sustituid|incorporad|vetad|observad|modificad|suprimid|renumerad)"
-                      r"[oa]s?\s+(?:por|como)\b", re.I)
+                      r"[oa]s?\s+(?:por|como)\b|^\((?:La|El|Los|Las)\s+(?:parte|párrafo|inciso|frase|expresión)\b.*\b(?:observad|vetad)[oa]s?\b", re.I)
 
 
 def note_like(x: str) -> bool:
@@ -645,6 +645,14 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
         if action:
             return [{"op": "lines", "action": action, "keys": ks, "items": items, "text": clean_body(body)}]
     # paragraphs
+    m = re.search(r"al\s+finalizar\s+(?:el\s+)?" + ORD_RE + r"\s+p[aá]rrafo\s+del\s+art[ií]culo\s+" + REF, h, re.I)
+    if m and re.search(V_INSERT, h, re.I):
+        k = key_of(int(m.group(2)), m.group(3), m.group(4), width)
+        return [{"op": "lines", "action": "append_to", "keys": [k], "paras": ordinals(m.group(1)), "text": text}]
+    m = re.search(r"al\s+art[ií]culo\s+" + REF + r".*?como\s+" + ORD_RE + r"\s+p[aá]rrafo", h, re.I)
+    if m and re.search(V_INSERT, h, re.I):
+        k = key_of(int(m.group(1)), m.group(2), m.group(3), width)
+        return [{"op": "lines", "action": "insert", "keys": [k], "paras": ordinals(m.group(4)), "text": text}]
     m = re.search(r"(?:p[aá]rrafos?\s+" + ORD_RE + r"(?:\s+y\s+" + ORD_RE + r")?|" + ORD_RE + r"(?:\s+y\s+" + ORD_RE +
                   r")?\s+p[aá]rrafos?)\s+(?:del|al)\s+(?:art[ií]culo|art\.)\s*" + REF, h, re.I)
     if m:
@@ -663,6 +671,12 @@ def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
     if m:  # "Sustitúyese el artículo 80 in fine": its last paragraph
         k = key_of(int(m.group(1)), m.group(2), m.group(3), width)
         return [{"op": "lines", "action": "replace", "keys": [k], "paras": ["last"], "text": text}]
+    m = re.search(r"al\s+art[ií]culo\s+" + REF, h, re.I)
+    if m and re.search(V_INSERT, h, re.I) and re.search(r"siguientes?\s+incisos?", full, re.I):
+        k = key_of(int(m.group(1)), m.group(2), m.group(3), width)
+        items = [item_no(l) for l in clean_body(body) if item_no(l)]
+        if items:
+            return [{"op": "lines", "action": "insert", "keys": [k], "items": items, "text": clean_body(body)}]
     # whole articles
     if re.search(V_INSERT, h, re.I):
         m = re.search(r"(?:como\s+)?(?:nuevo\s+)?art[ií]culo\s+" + REF, h, re.I)
@@ -728,7 +742,7 @@ def instruction(text: str, body: list[str], target: str, width: int, implicit: b
     head = re.split(r"\s+(?:del?|al)\s+(?:la\s+)?(?:" + target + ")", t, maxsplit=1, flags=re.I)[0]
     if not re.search(VERB, head, re.I):
         return None  # the article only mentions the act
-    if re.search(r"\b(?:de|del)\s+(?:la\s+)?(?:ley|decreto)(?:\s+N[°º])?\s*\d", head, re.I):
+    if re.search(r"\b(?:de|del)\s+(?:la\s+)?(?:ley|decreto)(?:\s+N[°º])?\s*\d|\bReglamentaci[oó]n\b", head, re.I):
         return None  # it amends another norm and only mentions the act
     ops = parse_head(head, t, body, width)
     for o in ops:
@@ -755,12 +769,13 @@ def amenders_of(act: dict) -> list[int]:
     T = H.lines(F.cached(F.norma_url(act["id"], "texact.htm")))  # the whole page, with "Antecedentes Normativos"
     ids = {int(x) for l in T for x in H.LINK_RE.findall(l)} | {m["id"] for m in modifiers(act["id"])}
     plain = [H.strip_links(l) for l in T]
-    if "Antecedentes Normativos" in plain:  # earlier amendments, named by number only
+    if True:  # laws named by number only, in the notes and in "Antecedentes Normativos"
         laws_by_no = {}
         for k, r in B.items():
             if r["tipo_norma"] == "Ley":
                 laws_by_no.setdefault(r["numero_norma"], k)
-        for l in plain[plain.index("Antecedentes Normativos"):]:
+        tail = plain[plain.index("Antecedentes Normativos"):] if "Antecedentes Normativos" in plain else []
+        for l in tail + [l for l in plain if l.startswith("(")]:
             for n in re.findall(r"Ley\s*N?[°º]?\s*([\d.]+)", l):
                 if n.replace(".", "") in laws_by_no:
                     ids.add(laws_by_no[n.replace(".", "")])
@@ -778,7 +793,7 @@ def anexo_points(nid: int) -> list[tuple[int, list[str]]]:
     L = [H.strip_links(l) for l in H.lines(F.cached(F.norma_url(nid)))]
     i = max(i for i, l in enumerate(L) if l.strip() == "ANEXO II")
     out, cur = [], None
-    for l in L[i + 1:]:
+    for l in [x for l in L[i + 1:] for x in re.split(r"(?<=:)\s+(?=\d+\.\d+\.?-\s)", l)]:  # "3.- MODIFICACIONES …: 3.1.- …"
         m = re.match(r"^(\d+)\.(\d+)\.?\s*-?\s*(.*)$", l)
         if m:
             cur = [m.group(3)]
@@ -802,8 +817,12 @@ def amendments(act: dict, ids: list[int]) -> list[dict]:
                 for o in ops:
                     if o["op"] in ("insert", "replace") and "text" not in o:
                         o["text"] = new_text(lines[1:])
+                    if o["op"] == "lines" and "text" not in o:
+                        o["text"] = clean_body(lines[1:])
             else:
-                implicit = bool(re.search(act["target"], bulk()[nid]["titulo_sumario"] + " " + bulk()[nid]["titulo_resumido"], re.I))
+                title = bulk()[nid]["titulo_sumario"] + " " + bulk()[nid]["titulo_resumido"]
+                implicit = bool(re.search(act["target"], title, re.I) or
+                                (act.get("implicit_title") and re.search(act["implicit_title"], title, re.I)))
                 ops = instruction(lines[0], lines[1:], act["target"], act.get("width", 3), implicit) or []
             for i, op in enumerate(ops):
                 op.update({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": num, "sub": i})
@@ -881,9 +900,9 @@ def apply_lines(body: list[str], o: dict) -> list[str] | None:
                 else:
                     return None
             return body
-    if "paras" in o:
+    if "paras" in o or "title" in o:
         n = len(body)
-        pos = [n if p == "last" else p for p in o["paras"]]
+        pos = [n if p == "last" else p for p in o.get("paras", [])]
         if o["action"] == "delete":
             if any(p < 1 or p > n for p in pos):
                 return None
@@ -908,6 +927,18 @@ def apply_lines(body: list[str], o: dict) -> list[str] | None:
             if p > n:
                 return None
             return body[:p] + new + body[p:]
+        if o["action"] == "replace_section":
+            if o["title"] not in body:
+                return None
+            i = body.index(o["title"]) + 1
+            j = next((x for x in range(i, n) if is_epigraph(body[x]) and not body[x].endswith(".")), n)
+            return body[:i] + new + body[j:]
+        if o["action"] == "append_to":  # words added at the end of a paragraph
+            p = pos[0]
+            if p < 1 or p > n or not new:
+                return None
+            body[p - 1] = body[p - 1].rstrip() + " " + " ".join(new)
+            return body
     return None
 
 
@@ -917,6 +948,7 @@ def replay(act: dict) -> dict:
     L, url0, sha0 = act_lines(act.get("base_id", act["id"]), "norma.htm", act["start"], act["end"])
     for pat, repl in act.get("base_fixes", []):
         L = [re.sub(pat, repl, l) for l in L]
+    L = [l for l in L if not any(re.match(p, H.strip_links(l)) for p in act.get("drop_lines", []))]
     state = {k: {"label": u["label"], "kind": u["kind"], "body": body_of(u)}
              for k, u in split_units(L, width=width, transitorias=act.get("transitorias", False),
                                      epigraphs=act.get("epigraphs", False)).items()}
@@ -940,6 +972,7 @@ def replay(act: dict) -> dict:
     report["base_gaps"], report["from_notes"] = [], []
     if act.get("texact"):
         T0, _, _ = act_lines(act["id"], "texact.htm", act["start"], act["end"])
+        T0 = [l for l in T0 if not any(re.match(p, H.strip_links(l)) for p in act.get("drop_lines", []))]
         tex0 = split_units(T0, width=width, transitorias=act.get("transitorias", False), epigraphs=act.get("epigraphs", False))
         # norms InfoLEG names but whose own text it does not serve ("No se pudo acceder al archivo solicitado"): the
         # change is taken from the note and the consolidated text (a repeal, or the article's whole current text when
@@ -975,6 +1008,18 @@ def replay(act: dict) -> dict:
             ops.append({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": 0, "sub": 0, "keys": [k], "op": "repeal",
                         "instruction": " ".join(H.strip_links(n) for n in u["notes"])})
             report["from_notes"].append(f"{k}: repeal by {law_key(nid)} (from InfoLEG's note: the article, or its chapter, derogado)")
+        for k, u in tex0.items():
+            for raw in u["notes"]:
+                m = re.search(r"arts?\.\s*(\d+)\s*a\s*(\d+),?\s*inclusiv\w*-?\s*\)?\s*derogad[oa]s?\s+por\b.*?⟦(\d+)⟧", raw)
+                if not m or int(m.group(3)) not in amenders:
+                    continue
+                nid = int(m.group(3))
+                for n in range(int(m.group(1)), int(m.group(2)) + 1):
+                    kk = key_of(n, None, None, width)
+                    if not any(o["op"] == "repeal" and kk in o.get("keys", []) for o in ops):
+                        ops.append({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": 0, "sub": 0, "keys": [kk],
+                                    "op": "repeal", "instruction": H.strip_links(raw)})
+                report["from_notes"].append(f"arts. {m.group(1)}-{m.group(2)}: repeal by {law_key(nid)} (from InfoLEG's note on {k})")
         ops.sort(key=lambda o: (o["from"], o.get("order", 0), bulk()[o["nid"]]["fecha_boletin"], o["nid"], o["art"], o["sub"]))
         # articles InfoLEG's consolidated text shows with no note that are missing from its transcription of the
         # base text and that no replayed norm adds: in force before the base text; added to the first version
@@ -996,6 +1041,7 @@ def replay(act: dict) -> dict:
     patches = act.get("patches", {})
     renames: list[tuple[int, str, str]] = []  # (index of the version that renumbers, old key, new key)
     worded: set[str] = set()                   # keys whose words a replayed norm set
+    touched: dict[str, list] = {}              # key -> [(index of the version being built, law)] for every instruction
     for day in sorted({o["from"] for o in ops}):
         day_ops = [o for o in ops if o["from"] == day]
         credits: dict[str, list[str]] = {}
@@ -1016,6 +1062,22 @@ def replay(act: dict) -> dict:
             if o["op"] in ("unknown", "skip"):
                 (report["not_applied"] if o["op"] == "unknown" else report["headings"]).append(
                     f"{tag}: {o['op']}: {o['instruction'][:160]}")
+                continue
+            if o["op"] == "restore":
+                for k in o["keys"]:
+                    idx = [i for i, v in enumerate(versions) if o["undoes"] in v["credits"].get(k, [])]
+                    if not idx:
+                        report["not_applied"].append(f"{tag}: restore {k}: {o['undoes']} never changed it")
+                        continue
+                    before = state.get(k)
+                    prev = versions[idx[-1] - 1]["state"].get(k)
+                    if prev is None:
+                        state.pop(k, None)
+                    else:
+                        state[k] = dict(prev)
+                    if state.get(k) != before:
+                        credit(k, o["law"])
+                    report["ops"].append(f"{tag}: restore {k} as before {o['undoes']}")
                 continue
             if o["op"] == "step":
                 ks = sorted(state) if o["units"] is None else [key_of(n, None, None, width) for n in o["units"]]
@@ -1068,6 +1130,7 @@ def replay(act: dict) -> dict:
                 if state.get(k) != before:
                     credit(k, o["law"])
                     worded.add(k)
+                touched.setdefault(k, []).append((len(versions), o["law"]))
                 report["ops"].append(f"{tag}: {o['op']} {o.get('action', '')} {k}".replace("  ", " "))
         for law, k, pat, rep in [(law_key(n), *x) for n in sorted({o["nid"] for o in day_ops})
                                  for x in patches.get(n, [])]:
@@ -1093,6 +1156,7 @@ def replay(act: dict) -> dict:
     # today's official text: InfoLEG's texto actualizado
     if act.get("texact"):
         T, turl, tsha = act_lines(act["id"], "texact.htm", act["start"], act["end"])
+        T = [l for l in T if not any(re.match(p, H.strip_links(l)) for p in act.get("drop_lines", []))]
         tex_all = split_units(T, width=width, transitorias=act.get("transitorias", False), epigraphs=act.get("epigraphs", False))
         tex = {k: u for k, u in tex_all.items() if body_of(u) and not repealed_in_texact(u)}
         report["texact"] = {"url": turl, "sha256": tsha}
@@ -1103,6 +1167,9 @@ def replay(act: dict) -> dict:
                 for pk, pat, rp in plist:
                     if pk == k:
                         t = [re.sub(pat, rp, l) for l in t]
+            for pk, pat, rp in act.get("vetoed_words", []):  # the same, for vetoes in the act as promulgated
+                if pk == k:
+                    t = [x for x in (re.sub(pat, rp, l).strip() for l in t) if x]
             if a == t:
                 continue
             if not a or not t:
@@ -1114,7 +1181,7 @@ def replay(act: dict) -> dict:
                 if k in act.get("transcription", {}):
                     report["transcription"].append(k)
                 elif k not in worded and act.get("base_from_texact") and all(
-                        re.match(r"^\(?\s*(?:Cap[ií]tulo|T[ií]tulo|R[uú]brica|Ep[ií]grafe|Denominaci|Art[ií]culo \S+ renumerado)",
+                        re.match(r"^\(?\s*(?:Cap[ií]tulo|T[ií]tulo|R[uú]brica|Ep[ií]grafe|Denominaci|Art[ií]culo \S+ renumerado|Nota Infoleg|Secci[oó]n\s*-\s*arts)",
                                  H.strip_links(n), re.I) for n in tex[k]["notes"]):
                     last = 0  # from the first version, under the article's earlier numbers
                     # never amended since the base text (no change replayed, and InfoLEG's consolidated text names
@@ -1125,7 +1192,8 @@ def replay(act: dict) -> dict:
                     # InfoLEG's consolidated text gives the article as left by the last norm its note names; if the
                     # replay's last change to it was by that norm, take InfoLEG's wording from that change on
                     lastlaws = set(versions[last]["credits"].get(k, [])) if last else set()
-                    if last and any(law_key(n) in lastlaws for n in named):
+                    lastlaws |= {l for vi, l in touched.get(k, []) if vi >= last}  # same words given again later
+                    if last and any(law_key(n) in lastlaws for n in named if n in bulk()):
                         report["reconciled"].append(f"{k} ({', '.join(sorted(lastlaws))})")
                     else:
                         report["mismatches"].append(f"{k}: words differ from texact")
@@ -1293,6 +1361,8 @@ ACT_SETUP["codigo-procesal-penal-federal"] = {
 }
 
 ACT_SETUP["ley-19550"] = {
+    # Ley 24.435 art. 1: "Modifícase parcialmente el artículo 194 …, en lo atinente al 'Plazo de ejercicio'"
+    "overrides": {(814, 1): [{"op": "lines", "action": "replace_section", "keys": ["art-194"], "title": "Plazo de ejercicio"}]},
     "first_day": "1984-03-30", "first_law": None, "earlier_ids": [25553, 78064], "base_published": "1984-03-30",
     "base_from_texact": True,
     "epigraphs": True,  # its epigraphs are printed above each article heading
@@ -1303,6 +1373,10 @@ ACT_SETUP["ley-19550"] = {
 }
 ACT_SETUP["ley-24240"] = {
     "first_day": None, "first_law": "ley-24240", "base_published": "1993-10-15",
+    "implicit_title": r"DEFENSA DEL CONSUMIDOR",
+    # Ley 27.444 art. 134 repealed chapter XXII of DNU 27/2018, whose art. 169 had replaced art. 4; InfoLEG's consolidated
+    # text and its "Antecedentes Normativos" give art. 4 the words of Ley 27.250 again
+    "overrides": {(311587, 134): [{"op": "restore", "keys": ["art-004"], "undoes": "decreto-27-2018"}]},
     # Decreto 2089/1993 arts. 1-10 (the "observaciones"), applied to the bill's text in norma.htm
     "vetoed": {"art-010": r"^c\) El nombre y domicilio del fabricante", "art-013": None, "art-040": None, "art-054": None,
                "art-053": r"^Las actuaciones judiciales que se inicien de conformidad con la presente ley gozarán del beneficio"},
@@ -1322,6 +1396,8 @@ ACT_SETUP["ley-24240"] = {
 }
 ACT_SETUP["ley-19549"] = {
     "first_day": None, "first_law": "ley-19549", "base_published": "1972-04-27",
+    # the name of the section after art. 21 ("Revisión.", renamed "Prescripción." by Ley 27.742) is a heading
+    "drop_lines": [r"^(Revisión|Prescripción)\.$"],
     "note": ("Ley 19.549 de Procedimientos Administrativos as enacted (B.O. 1972-04-27)."),
 }
 
