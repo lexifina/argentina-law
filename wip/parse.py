@@ -90,6 +90,12 @@ NOTE_ANY = re.compile(r"^\([^()]{0,80}?\b(?:derogad|sustituid|incorporad|vetad|o
                       r"[oa]s?\s+(?:por|como)\b", re.I)
 
 
+def note_like(x: str) -> bool:
+    x = H.strip_links(x)
+    return bool(NOTE_RE.search(x) or NOTE_ANY.search(x) or re.match(
+        r"^\((?:Inciso|Incisos|Punto|Apartado)\s+\S{1,4}\)\s+(?:sustituid|incorporad|derogad|vetad|observad|modificad)", x, re.I))
+
+
 INLINE_NOTE_RE = re.compile(r"\s*(\((?:[^()]|\([^()]*\))*\)|\((?:Inciso|Incisos|Punto|Apartado)\s+\S{1,4}\)\s[^()]*(?:\([^()]*\)[^()]*)?\))\s*$")
 
 
@@ -137,7 +143,7 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
                 else:
                     while True:  # trailing notes on the heading line: "… (Artículo 306 renumerado …). (…)"
                         mm = INLINE_NOTE_RE.search(rest.rstrip(". "))
-                        if not (mm and NOTE_RE.search(mm.group(1))):
+                        if not (mm and note_like(mm.group(1))):
                             break
                         cur["notes"].append(mm.group(1))
                         rest = rest.rstrip(". ")[:mm.start()].rstrip()
@@ -178,7 +184,7 @@ def split_units(lines: list[str], *, width: int = 3, transitorias: bool = False)
             cur["notes"].append(raw)
             continue
         m = INLINE_NOTE_RE.search(raw)
-        if m and NOTE_RE.search(m.group(1)):
+        if m and note_like(m.group(1)):
             cur["notes"].append(m.group(1))
             s = H.strip_links(raw[:m.start()]).strip()
         cur["body"].append(s)
@@ -479,8 +485,8 @@ def clean_body(body: list[str]) -> list[str]:
             continue
         s = s.strip()
         end = quoted and bool(re.search(r'["\'][.;]?$', s)) and not (i == 0 and len(s) < 3)
-        if i == 0 and s.startswith('"'):
-            s = s[1:]
+        if s.startswith('"') and (i == 0 or quoted):  # Spanish style reopens the quote on each paragraph
+            s = s[1:].lstrip()
         if end:
             s = re.sub(r'\s*["\']([.;]?)$', r"\1", s)
         out.append(s)
@@ -495,7 +501,8 @@ def new_text(body: list[str]) -> list[str]:
     if out:
         h = heading(out[0])
         if h:
-            out = ([h[3]] if h[3] else []) + out[1:]
+            rest = h[3].lstrip("-– ").strip()
+            out = ([rest] if rest else []) + out[1:]
     return out
 
 
@@ -646,7 +653,7 @@ def instruction(text: str, body: list[str], target: str, width: int, implicit: b
     t = dethousand(text)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\s*,?\s*(?=C[oó]digo Penal)", " del ", t, flags=re.I)
     t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\b", " del Código Penal", t, flags=re.I) if "Penal" in target else t
-    VERB = r"(?:(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se|(?:Incorporar|Sustituir|Derogar|Modificar|Reemplazar|Agregar|Suprimir))\b"
+    VERB = r"(?:(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se|^(?:Incorporar|Sustituir|Derogar|Modificar|Reemplazar|Agregar|Suprimir))\b"
     if not re.search(target, t, re.I) and implicit and re.search(VERB, t, re.I) and re.search(r"art[ií]culo", t, re.I) and \
             not re.search(r"\b(?:ley|decreto|c[oó]digo|r[eé]gimen)\b", t, re.I):
         # a norm that amends only this act ("Incorpórase el artículo 127 ter."): its articles need not name it
@@ -707,8 +714,18 @@ def amenders_of(act: dict) -> list[int]:
     if "amenders" in act:
         return act["amenders"]
     B = bulk()
-    T, _, _ = act_lines(act["id"], "texact.htm", act["start"], act["end"])
+    T = H.lines(F.cached(F.norma_url(act["id"], "texact.htm")))  # the whole page, with "Antecedentes Normativos"
     ids = {int(x) for l in T for x in H.LINK_RE.findall(l)} | {m["id"] for m in modifiers(act["id"])}
+    plain = [H.strip_links(l) for l in T]
+    if "Antecedentes Normativos" in plain:  # earlier amendments, named by number only
+        laws_by_no = {}
+        for k, r in B.items():
+            if r["tipo_norma"] == "Ley":
+                laws_by_no.setdefault(r["numero_norma"], k)
+        for l in plain[plain.index("Antecedentes Normativos"):]:
+            for n in re.findall(r"Ley\s*N?[°º]?\s*([\d.]+)", l):
+                if n.replace(".", "") in laws_by_no:
+                    ids.add(laws_by_no[n.replace(".", "")])
     since = act["base_published"]
     out = [i for i in sorted(ids) if i in B and B[i]["tipo_norma"] in ("Ley", "Decreto")
            and (B[i]["fecha_boletin"] or "") > since and F.cached(F.norma_url(i)) is not None]
@@ -869,7 +886,7 @@ def replay(act: dict) -> dict:
             for nid in sorted(set(named) & unreadable):
                 o = {"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": 0, "sub": 0, "keys": [k],
                      "instruction": " ".join(H.strip_links(n) for n in u["notes"])}
-                if not body_of(u) and re.search(r"derogad", o["instruction"], re.I):
+                if repealed_in_texact(u):
                     o["op"] = "repeal"
                 elif len(set(named)) == 1 and body_of(u):
                     o.update(op="replace", text=body_of(u), label=u["label"])
@@ -1258,6 +1275,15 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
         "Applicability: Ley 27.551 art. 23 (its changes apply to contracts concluded from its entry into force) and Ley 27.363 art. 3 (applies to pending situations) are recorded in `applies`.",
     ]
     for r in reports:
+        if r["act"] == "ley-20744":
+            decisions += [
+                "Ley de Contrato de Trabajo: InfoLEG's text of Ley 20.744 itself is the act of 1974; the history starts at the texto ordenado approved by Decreto 390/1976 (B.O. 1976-05-21), the oldest full text of the act as amended on InfoLEG, dated by its publication and committed by the publisher as the oldest version available. Every later law or decree InfoLEG names in the consolidated text (its notes and its \"Antecedentes Normativos\"), or lists as modifying the act, is replayed.",
+                f"Ley de Contrato de Trabajo, InfoLEG's two transcriptions: {len(r['transcription'])} articles that no replayed norm changed and that the consolidated text shows with no amendment note differ from InfoLEG's transcription of the texto ordenado only by transcription and layout (word-level similarity in brackets, all 0.90 or more): {', '.join(r['transcription'])}. Their consolidated wording is used from the first version.",
+                f"Ley de Contrato de Trabajo, partial changes: {len(r['reconciled'])} articles take InfoLEG's consolidated wording from the last norm its note names ({', '.join(r['reconciled'])}).",
+                "Ley de Contrato de Trabajo, taken from InfoLEG's notes: " + "; ".join(r["from_notes"]) + ". Ley 24.522 (Concursos y Quiebras) is not served by InfoLEG as text.",
+                "Ley de Contrato de Trabajo: Ley 24.576 (1995) added a Chapter VIII to Title II with unnumbered articles (\"Artículo : …\", numbering left to the Executive) and Ley 27.802 (2026) repealed that chapter; neither is shown, because the articles have no numbers to file them under. InfoLEG marks art. 89 as repealed with that chapter, and the record follows it. Decreto 773/1996 repealed Decreto 1477/1989 (an art. 105 bis), which InfoLEG does not list as amending the act; neither is shown.",
+                "Ley de Contrato de Trabajo: court rulings on the labour chapter of DNU 70/2023 are not modelled; the record follows InfoLEG's consolidated text, in which Ley 27.742 (2024) and Ley 27.802 (2026) later rewrote most of the same articles.",
+            ]
         if r["act"] != "codigo-penal":
             continue
         short = lambda xs: ", ".join(x.split(" ")[0].replace("art-", "").lstrip("0").replace("-", " ") for x in xs)
