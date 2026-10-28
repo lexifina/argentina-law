@@ -1,0 +1,1281 @@
+{
+ "laws": {
+  "decreto-342-2025": {
+   "label": "Decreto 342/2025",
+   "title": "PODER EJECUTIVO NACIONAL: LEY 23551 Y DECRETO 467/1988 - MODIFICACION",
+   "kind": "decree",
+   "enacted": "2025-05-20",
+   "published": "2025-05-21",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/412998/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "decreto-585-2024": {
+   "label": "DNU 585/2024",
+   "title": "PODER EJECUTIVO: LEY DE MINISTERIOS - MODIFICACION",
+   "kind": "decree",
+   "enacted": "2024-07-04",
+   "published": "2024-07-05",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401216/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "decreto-70-2023": {
+   "label": "DNU 70/2023",
+   "title": "BASES PARA LA RECONSTRUCCION DE LA ECONOMIA ARGENTINA: DISPOSICIONES",
+   "kind": "decree",
+   "enacted": "2023-12-20",
+   "published": "2023-12-21",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-23551": {
+   "label": "Ley 23.551",
+   "title": "ASOCIACIONES SINDICALES: REGIMEN",
+   "kind": "law",
+   "enacted": "1988-03-23",
+   "published": "1988-04-22",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20993/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-25164": {
+   "label": "Ley 25.164",
+   "title": "MARCO DE REGULACION DEL EMPLEO PUBLICO NACIONAL: MARCO NORMATIVO",
+   "kind": "law",
+   "enacted": "1999-09-15",
+   "published": "1999-10-08",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60458/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-25674": {
+   "label": "Ley 25.674",
+   "title": "ASOCIACIONES SINDICALES: REGLAMENTASE LA PARTICIPACION FEMENINA",
+   "kind": "law",
+   "enacted": "2002-11-06",
+   "published": "2002-11-29",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/80000-84999/80046/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-26390": {
+   "label": "Ley 26.390",
+   "title": "PROHIBICION DEL TRABAJO INFANTIL Y PROTECCION DEL TRABAJO ADOLESCENTE: LEYES - MODIFICACION",
+   "kind": "law",
+   "enacted": "2008-06-04",
+   "published": "2008-06-25",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/141792/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-26657": {
+   "label": "Ley 26.657",
+   "title": "SALUD PUBLICA: DERECHO A LA PROTECCION DE LA SALUD MENTAL",
+   "kind": "law",
+   "enacted": "2010-11-25",
+   "published": "2010-12-03",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175977/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-27742": {
+   "label": "Ley 27.742",
+   "title": "LEY DE BASES Y PUNTOS DE PARTIDA PARA LA LIBERTAD DE LOS ARGENTINOS: DISPOSICIONES",
+   "kind": "law",
+   "enacted": "2024-06-27",
+   "published": "2024-07-08",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401266/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-27802": {
+   "label": "Ley 27.802",
+   "title": "LEY DE MODERNIZACION LABORAL: DISPOSICIONES",
+   "kind": "law",
+   "enacted": "2026-02-27",
+   "published": "2026-03-06",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  }
+ },
+ "acts": [
+  {
+   "slug": "ley-23551",
+   "short": "LAS",
+   "title": "Ley 23.551 de Asociaciones Sindicales",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20993/texact.htm",
+   "first_law": "ley-23551",
+   "earlier_laws": [],
+   "versions": [
+    {
+     "from": "1988-04-23",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20993/norma.htm",
+     "sha256": "811f15c5ceb4e22585a4873551a8277a0ee3758b06dbdfd66b321a1625067b9b",
+     "units": {
+      "art-001": {
+       "label": "Art. 1",
+       "kind": "art",
+       "text": "# Art. 1\nLa libertad sindical será garantizada por todas las normas que se refieren a la organización y acción de las asociaciones sindicales.\n"
+      },
+      "art-002": {
+       "label": "Art. 2",
+       "kind": "art",
+       "text": "# Art. 2\nLas asociaciones que tengan por objeto la defensa de los intereses de los trabajadores se regirán por esta Ley.\n"
+      },
+      "art-003": {
+       "label": "Art. 3",
+       "kind": "art",
+       "text": "# Art. 3\nEntiéndese por interés de los trabajadores todo cuanto se relacione con sus condiciones de vida y de trabajo. La acción sindical contribuirá a remover los obstáculos que dificulten la realización plena del trabajador.\n"
+      },
+      "art-004": {
+       "label": "Art. 4",
+       "kind": "art",
+       "text": "# Art. 4\nLos trabajadores tienen los siguientes derechos sindicales:\na) Constituir libremente y sin necesidad de autorización previa, asociaciones sindicales;\nb) Afiliarse a las ya constituidas, no afiliarse o desafiliarse;\nc) Reunirse y desarrollar actividades sindicales;\nd) Peticionar ante las autoridades y los empleadores;\ne) Participar en la vida interna de las asociaciones sindicales, elegir libremente a sus representantes, ser elegidos y postular candidatos.\n"
+      },
+      "art-005": {
+       "label": "Art. 5",
+       "kind": "art",
+       "text": "# Art. 5\nLas asociaciones sindicales tienen los siguientes derechos:\na) Determinar su nombre, no pudiendo utilizar los ya adoptados ni aquellos que pudieran inducir a error o confusión;\nb) Determinar su objeto, ámbito de representación personal y de actuación territorial;\nc) Adoptar el tipo de organización que estimen apropiado, aprobar sus estatutos y constituir asociaciones de grado superior, afiliarse a las ya constituidas o desafiliarse;\nd) Formular su programa de acción, y realizar todas las actividades lícitas en defensa del interés de los trabajadores. En especial, ejercer el derecho a negociar colectivamente, el de participar, el de huelga y el de adoptar demás medidas legítimas de acción sindical.\n"
+      },
+      "art-006": {
+       "label": "Art. 6",
+       "kind": "art",
+       "text": "# Art. 6\nLos poderes públicos y en especial la autoridad administrativa del trabajo, los empleadores y sus asociaciones y toda persona física o jurídica deberán abstenerse de limitar la autonomía de las asociaciones sindicales, más allá de lo establecido en la legislación vigente.\n"
+      },
+      "art-007": {
+       "label": "Art. 7",
+       "kind": "art",
+       "text": "# Art. 7\nLas asociaciones sindicales no podrán establecer diferencias por razones ideológicas, políticas, sociales, de credo, nacionalidad, raza o sexo, debiendo abstenerse de dar un trato discriminatorio a los afiliados.\nLo dispuesto regirá también respecto de la relación entre una asociación de grado superior y otra de grado inferior.\n"
+      },
+      "art-008": {
+       "label": "Art. 8",
+       "kind": "art",
+       "text": "# Art. 8\nLas asociaciones sindicales garantizarán la efectiva democracia interna. Sus estatutos deberán garantizar:\na) Una fluida comunicación entre los órganos internos de la asociación y sus afiliados;\nb) Que los delegados a los órganos deliberativos obren con mandato de sus representados y les informen luego de su gestión;\nc) La efectiva participación de todos los afiliados en la vida de la asociación, garantizando la elección directa de los cuerpos directivos en los sindicatos locales y seccionales;\nd) La representación de las minorías en los cuerpos deliberativos.\n"
+      },
+      "art-009": {
+       "label": "Art. 9",
+       "kind": "art",
+       "text": "# Art. 9\nLas asociaciones sindicales no podrán recibir ayuda económica de empleadores, ni de organismos políticos nacionales o extranjeros.\nEsta prohibición no alcanza a los aportes que los empleadores efectúen en virtud de normas legales o convencionales.\n"
+      },
+      "art-010": {
+       "label": "Art. 10",
+       "kind": "art",
+       "text": "# Art. 10\nSe considerarán asociaciones sindicales de trabajadores las constituidas por:\na) Trabajadores de una misma actividad o actividades afines;\nb) Trabajadores de un mismo oficio, profesión o categoría, aunque se desempeñen en actividades distintas;\nc) Trabajadores que presten servicios en una misma empresa.\n"
+      },
+      "art-011": {
+       "label": "Art. 11",
+       "kind": "art",
+       "text": "# Art. 11\nLas asociaciones sindicales pueden asumir algunas de las siguientes formas:\na) Sindicatos o uniones;\nb) Federaciones, cuando agrupen asociaciones de primer grado;\nc) Confederaciones, cuando agrupen a las asociaciones contempladas en los incisos que preceden a éste.\n"
+      },
+      "art-012": {
+       "label": "Art. 12",
+       "kind": "art",
+       "text": "# Art. 12\nLas asociaciones sindicales deberán admitir la libre afiliación, de acuerdo a esta ley y a sus estatutos, los que deberá conformarse a la misma.\n"
+      },
+      "art-013": {
+       "label": "Art. 13",
+       "kind": "art",
+       "text": "# Art. 13\nLas personas mayores de catorce años, sin necesidad de autorización, podrán afiliarse.\n"
+      },
+      "art-014": {
+       "label": "Art. 14",
+       "kind": "art",
+       "text": "# Art. 14\nEn caso de jubilación, accidente, enfermedad, invalidez, desocupación o servicio militar, los afiliados no perderán por esas circunstancias el derecho de pertenecer a la asociación respectiva, pero gozarán de los derechos y estarán sujetos a las obligaciones que el estatuto establezca.\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Art. 15\nEl trabajador que dejare de pertenecer a una asociación sindical no tendrá derecho al reintegro de las cuotas o aportes abonados. Lo dispuesto será aplicable a las relaciones entre asociaciones de diverso grado.\n"
+      },
+      "art-016": {
+       "label": "Art. 16",
+       "kind": "art",
+       "text": "# Art. 16\nLos estatutos deberán ajustarse a lo establecido en el artículo 8° y contener:\na) Denominación, domicilio, objeto y zona de actuación;\nb) Actividad, oficio, profesión o categoría de los trabajadores que represente;\nc) Derechos y obligaciones de los afiliados, requisitos para su admisión y procedimiento para su separación que garanticen el derecho de defensa.\nd) Determinación de las autoridades y especificación de sus funciones con indicación de las que ejerzan su representación legal, duración de los mandatos, recaudos para su revocación y procedimientos para la designación y reemplazos de los directivos e integrantes de los congresos;\ne) Modo de constitución, administración y control del patrimonio social y su destino en caso de disolución y régimen de cotizaciones de sus afiliados y contribuciones;\nf) Epoca y forma de presentación, aprobación y publicación de memorias y balances; órganos para su revisión y fiscalización;\ng) Régimen electoral que asegure la democracia interna de acuerdo con los principios de la presente ley, no pudiendo contener como exigencia para presentar listas de candidatos a órganos asociacionales, avales que superen el tres por ciento (3%) de sus afiliados;\nh) Régimen de convocatoria y funcionamiento de asambleas, y congresos;\ni) Procedimiento para disponer medidas legítimas de acción sindical;\nj) Procedimiento para la modificación de los estatutos y disolución de la asociación.\n"
+      },
+      "art-017": {
+       "label": "Art. 17",
+       "kind": "art",
+       "text": "# Art. 17\nLa dirección y administración serán ejercidas por un órgano compuesto por un mínimo de cinco (5) miembros, elegidos en forma que asegure la voluntad de la mayoría de los afiliados o delegados congresales mediante el voto directo y secreto.\nLos mandatos no podrán exceder de cuatro (4) años, teniendo derecho a ser reelegidos.\n"
+      },
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Art. 18\nPara integrar los órganos directivos, se requerirá:\na) Mayoría de edad;\nb) No tener inhibiciones civiles ni penales;\nc) Estar afiliado, tener dos (2) años de antigüedad en la afiliación y encontrarse desempeñando la actividad durante dos (2) años.\nEl setenta y cinco por cinto (75%) de los cargos directivos y representativos deberán ser desempeñados por ciudadanos argentinos, el titular del cargo de mayor jerarquía y su reemplazante estatutario deberán se ciudadanos argentinos.\n"
+      },
+      "art-019": {
+       "label": "Art. 19",
+       "kind": "art",
+       "text": "# Art. 19\nLas asambleas y congresos deberán reunirse:\na) En sesión ordinaria, anualmente;\nb) En sesión extraordinaria, cuando los convoque el órgano directivo de la asociación por propia decisión o a solicitud del número de afiliados o delegados congresales que fije el estatuto, el que no podrá ser superior al quince por ciento (15%) en asamblea de afiliados y al treinta y tres por ciento (33%) en asamblea de delegados congresales.\n"
+      },
+      "art-020": {
+       "label": "Art. 20",
+       "kind": "art",
+       "text": "# Art. 20\nSerá privativo de las asambleas o congresos:\na) Fijar criterios generales de actuación;\nb) Considerar los anteproyectos de convenciones colectivas de trabajo;\nc) Aprobar y modificar los estatutos, memorias y balances; la fusión con otras asociaciones, afiliación o desafiliación a asociaciones, nacionales o internacionales;\nd) Dar mandato a los delegados a congresos de asociaciones de grado superior y recibir el informe de su desempeño;\ne) Fijar el monto de las cotizaciones ordinarias y extraordinarias de los afiliados.\n"
+      },
+      "art-021": {
+       "label": "Art. 21",
+       "kind": "art",
+       "text": "# Art. 21\nLas asociaciones presentarán ante la autoridad administrativa del trabajo solicitud de inscripción haciendo constar:\na) Nombre, domicilio, patrimonio y antecedentes de su fundación;\nb) Lista de afiliados;\nc) Nómina y nacionalidad de los integrantes de su organismo directivo;\nd) Estatutos.\n"
+      },
+      "art-022": {
+       "label": "Art. 22",
+       "kind": "art",
+       "text": "# Art. 22\nCumplidos los recaudos del artículo anterior, la autoridad administrativa del trabajo, dentro de los noventa (90) días de presentada la solicitud, dispondrá la inscripción en el registro especial y la publicación, sin cargo, de la resolución que autorice la inscripción y extracto de los estatutos en el Boletín Oficial.\n"
+      },
+      "art-023": {
+       "label": "Art. 23",
+       "kind": "art",
+       "text": "# Art. 23\nLa asociación a partir de su inscripción, adquirirá personería jurídica y tendrá los siguientes derechos:\na) Peticionar y representar, a solicitud de parte, los intereses individuales de sus afiliados;\nb) Representar los intereses colectivos, cuando no hubiere en la misma actividad o categoría asociación con personería gremial;\nc) Promover:\n1º La formación de sociedades cooperativas y mutuales.\n2º El perfeccionamiento de la legislación laboral, previsional de seguridad social.\n3º La educación general y la formación profesional de los trabajadores;\nd) Imponer cotizaciones a sus afiliados;\ne) Realizar reuniones o asambleas sin necesidad de autorización previa\n"
+      },
+      "art-024": {
+       "label": "Art. 24",
+       "kind": "art",
+       "text": "# Art. 24\nLas asociaciones sindicales están obligadas a remitir o comunicar a la autoridad administrativa del trabajo:\na) Los estatutos y sus modificaciones a los efectos de control de la legislación;\nb) La integración de los órganos directivos y sus modificaciones;\nc) Dentro de los ciento veinte (120) días de cerrado el ejercicio, copia autenticada de la memoria, balance y nómina de afiliados;\nd) La convocatoria a elecciones para la renovación de sus órganos en los plazos estatutarios;\ne) Los libros de contabilidad y registros de afiliados a efectos de su rubricación.\n"
+      },
+      "art-025": {
+       "label": "Art. 25",
+       "kind": "art",
+       "text": "# Art. 25\nLa asociación que en su ámbito territorial y personal de actuación sea la más representativa, obtendrá personería gremial, siempre que cumpla los siguientes requisitos:\na) Se encuentre inscripta de acuerdo a lo prescripto en esta ley y haya actuado durante un período no menor de seis (6) meses;\nb) Afilie a más de veinte por ciento (20%) de los trabajadores que intente representar.\nc) La calificación de más representativa se atribuirá a la asociación que cuente con mayor número promedio de afiliados cotizantes, sobre la cantidad promedio de trabajadores que intente representar.\nLos promedios se determinarán sobre los seis meses anteriores a la solicitud.\nAl reconocerse personería gremial la autoridad administrativa del trabajo o judicial, deberá precisar el ámbito de representación personal y territorial. Estos no excederán de los establecidos en los estatutos, pero podrán ser reducidos si existiere superposición con otra asociación sindical.\nCuando los ámbitos pretendidos se superpongan con los de otra asociación sindical con personería gremial, no podrá reconocerse a la peticionante la amplitud de representación, sin antes dar intervención a la asociación afectada y proceder al cotejo necesario para determinar cuál es la más representativa conforme al procedimiento del artículo 28. La omisión de los recaudos indicados determinará la nulidad del acto administrativo o judicial.\n"
+      },
+      "art-026": {
+       "label": "Art. 26",
+       "kind": "art",
+       "text": "# Art. 26\nCumplidos los recaudos, la autoridad administrativa dictará resolución dentro de los noventa (90) días.\n"
+      },
+      "art-027": {
+       "label": "Art. 27",
+       "kind": "art",
+       "text": "# Art. 27\nOtorgada la personería gremial se inscribirá la asociación en el registro que prevé esta ley, publicándose en el Boletín Oficial, sin cargo, la resolución administrativa y los estatutos.\n"
+      },
+      "art-028": {
+       "label": "Art. 28",
+       "kind": "art",
+       "text": "# Art. 28\nEn caso de que existiera una asociación sindical de trabajadores con personería gremial, sólo podrá concederse igual personería a otra asociación, para actuar en la misma zona y actividad o categoría, en tanto que la cantidad de afiliados contizantes de la peticionante, durante un período mínimo y continuado de seis (6) meses anteriores a su presentación, fuere considerablemente superior a la de la asociación con personería preexistente.\nPresentado el requerimiento del mismo se dará traslado a la asociación con personería gremial por el término de veinte (20) días, a fin de que ejerza su defensa y ofrezca pruebas.\nDe la contestación se dará traslado por cinco (5) días a la peticionante. Las pruebas se sustanciarán con el control de ambas asociaciones.\nCuando se resolviere otorgar la personería a la solicitante, la que la poseía continuará como inscripta.\nLa personería peticionada se acordará sin necesidad del trámite previsto en este artículo, cuando mediare conformidad expresa máximo órgano deliberativo de la asociación que la poseía.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Art. 29\nSólo podrá otorgarse personería a un sindicato de empresa, cuando no obrare en la zona de actuación y en la actividad o en la categoría una asociación sindical de primer grado o unión.\n"
+      },
+      "art-030": {
+       "label": "Art. 30",
+       "kind": "art",
+       "text": "# Art. 30\nCuando la asociación sindical de trabajadores con personería gremial invista la forma de unión, asociación o sindicato de actividad y la peticionante hubiera adoptado la forma de sindicato de oficio, profesión o categoría, la personería podrá concedérsele si existieran intereses sindicales diferenciados como para justificar una representación específica y se cumplimenten los requisitos exigidos por el artículo 25, y siempre que la unión o sindicato preexistente no comprenda en su personería la representación de dichos trabajadores.\n"
+      },
+      "art-031": {
+       "label": "Art. 31",
+       "kind": "art",
+       "text": "# Art. 31\nSon derechos exclusivos de la asociación sindical con personería gremial:\na) Defender y representar ante el Estado y los empleadores los intereses individuales y colectivos de los trabajadores;\nb) Participar en instituciones de planificación y control de conformidades con lo que dispongan las normas respectivas;\nc) Intervenir en negociaciones colectivas y vigilar el cumplimiento de la normativa laboral y de seguridad social;\nd) Colaborar con el Estado en el estudio y solución de los problemas de los trabajadores;\ne) Constituir patrimonios de afectación que tendrán los mismos derechos que las cooperativas y mutualidades;\nf) Administrar sus propias obras sociales y, según el caso, participar en la administración de las creadas por ley o por convenciones colectivas de trabajo.\n"
+      },
+      "art-032": {
+       "label": "Art. 32",
+       "kind": "art",
+       "text": "# Art. 32\nLas federaciones y confederaciones más representativas, adquirirán personería gremial en las condiciones del artículo 25.\n"
+      },
+      "art-033": {
+       "label": "Art. 33",
+       "kind": "art",
+       "text": "# Art. 33\nSe considerarán federaciones más representativas, las que estén integradas por asociaciones de primer grado que afilien a la mayor cantidad de los trabajadores contizantes comprendidos en su ámbito\nSe considerarán confederaciones más representativas las que afilien a entidades con personería gremial que cuenten con la mayor cantidad de trabajadores cotizantes.\n"
+      },
+      "art-034": {
+       "label": "Art. 34",
+       "kind": "art",
+       "text": "# Art. 34\nLas federaciones con personería gremial podrán ejercer los derechos que la presente ley acuerde a las asociaciones de primer grado con personería gremial, con las limitaciones que en relación los respectivos sindicatos y federaciones establezcan los estatutos de las mismas.\nPor su parte, las asociaciones de segundo y tercer grado podrán representar a las entidades de grado inferior adheridas a ellas, en toda tramitación de índole administrativa, pudiendo a tal efecto deducir y proseguir los recursos que fuese conveniente interponer y adoptar las medidas que hubiere menester para la mayor defensa de los derechos de las mismas.\n"
+      },
+      "art-035": {
+       "label": "Art. 35",
+       "kind": "art",
+       "text": "# Art. 35\nLas federaciones con personería gremial podrán asumir la representación de los trabajadores de la actividad o categoría por ellas representadas, en aquellas zonas o empresas donde no actuare una asociación sindical de primer grado con personería gremial.\n"
+      },
+      "art-036": {
+       "label": "Art. 36",
+       "kind": "art",
+       "text": "# Art. 36\nEl máximo órgano deliberativo de las asociaciones sindicales de grado superior podrá disponer la intervención de las de grado inferior solo cuando los estatutos consagren esta facultad y por las causales que dichos estatutos determinen, garantizando el debido proceso. Esta resolución será recurrible ante la Cámara nacional de Apelaciones del Trabajo.\n"
+      },
+      "art-037": {
+       "label": "Art. 37",
+       "kind": "art",
+       "text": "# Art. 37\nEl patrimonio de las asociaciones sindicales de trabajadores estará constituido por:\na) Las cotizaciones ordinarias y extraordinarias de los afiliados y contribuciones de solidaridad que pacten en los términos de la ley de convenciones colectivas;\nb) Los bienes adquiridos y sus frutos;\nc) Las donaciones, legados, aportes y recursos no prohibidos por esta.\n"
+      },
+      "art-038": {
+       "label": "Art. 38",
+       "kind": "art",
+       "text": "# Art. 38\nLos empleadores estarán obligados a actuar como \"agente de retención\" de los importes que, en concepto de cuotas afiliación u otros aportes deban tributar los trabajadores a las asociaciones sindicales de trabajadores con personería gremial.\nPara que la obligación indicada sea exigible, deberá mediar una resolución del Ministerio de Trabajo y Seguridad Social de la Nación, disponiendo la retención. Esta resolución se adoptará a solicitud de la asociación sindical interesada. El ministerio citado deberá pronunciarse dentro de los treinta (30) días de recibida la misma. Si así no lo hiciere, se tendrá por tácitamente dispuesta la retención.\nEl incumplimiento por parte del empleador de la obligación de obrar como agente de retención, o - en su caso- de efectuar en tiempo propio el pago de lo retenido, tornará a aquél en deudor directo. La mora en tal caso se producirá de pleno derecho.\n"
+      },
+      "art-039": {
+       "label": "Art. 39",
+       "kind": "art",
+       "text": "# Art. 39\nLos actos y bienes de las asociaciones sindicales con personería gremial destinados al ejercicio específico de las funciones propias previstas en los artículos 5° y 23, estarán exentos de toda clase, gravamen, contribución o impuesto. La exención es automática y por la sola obtención de dicha personería gremial.\nEl Poder Ejecutivo Nacional gestionará con los gobiernos provinciales por su intermedio de las municipalidades, que recepten en su régimen fiscal el principio admitido en este artículo.\n"
+      },
+      "art-040": {
+       "label": "Art. 40",
+       "kind": "art",
+       "text": "# Art. 40\nLos delegados del personal, las comisiones internas y organismos similares, ejercerán en los lugares de trabajo según el caso, en la sede de la empresa o del establecimiento al que estén afectados la siguiente representación:\na) De los trabajadores ante el empleador, la autoridad administrativa del trabajo cuando ésta actúa de oficio en los sitios mencionados y ante la asociación sindical.\nb) De la asociación sindical ante el empleador y el trabajador.\n"
+      },
+      "art-041": {
+       "label": "Art. 41",
+       "kind": "art",
+       "text": "# Art. 41\nPara ejercer las funciones indicadas en el artículo 40 se requiere:\na) Estar afiliado a la respectiva asociación sindical con personería gremial y ser elegido en comicios convocados por éstas, en el lugar donde se presten los servicios o con relación al cual esté afectado y en horas de trabajo, por el voto directo y secreto de los trabajadores cuya representación deberá ejercer. La autoridad de aplicación podrá autorizar, a pedido de la asociación sindical, la celebración en lugar y horas distintos, cuando existiere circunstancias atendibles que lo justificaran.\nCuando con relación al empleador respecto del cual deberá obrar el representante, no existiera una asociación sindical con personería gremial, la función podrá ser cumplida por afiliados a una simplemente inscripta.\nEn todos los casos se deberá contar con una antigüedad mínima en la afiliación de un (1) año:\nb) Tener dieciocho (18) años de edad como mínimo y revistar al servicio de la empresa durante todo el año aniversario anterior a la elección.\nEn los establecimientos de reciente instalación no se exigirá contar con una antigüedad mínima en el empleo. Lo mismo ocurrirá cuando por la índole de la actividad en las que presten servicios los trabajadores a representar la relación laboral comience y termine con la realización de la obra, la ejecución del acto o la prestación de servicio para el que fueron contratados o cuando el vínculo configure un contrato de trabajo de temporada.\n"
+      },
+      "art-042": {
+       "label": "Art. 42",
+       "kind": "art",
+       "text": "# Art. 42\nEl mandato de los delegados no podrá exceder de dos (2) años y podrá ser revocado mediante asamblea de sus mandantes convocada por el órgano directivo de la asociación sindical, por propia decisión o a petición del diez por ciento (10%) del total de los representados. Asimismo, en el caso que lo prevean los estatutos el mandato de los delegados podrá ser revocado por determinación votada por los dos tercios de la asamblea o del congreso de la asociación sindical. El delegado cuestionado deberá tener la posibilidad cierta de ejercitar su defensa.\n"
+      },
+      "art-043": {
+       "label": "Art. 43",
+       "kind": "art",
+       "text": "# Art. 43\nQuienes ejerzan las funciones a que se refiere el artículo 40 de este ley, tendrán derecho a:\na) Verificar, la aplicación de las normas legales o convencionales, pudiendo participar en las inspecciones que disponga la autoridad administrativa del trabajo;\nb) Reunirse periódicamente con el empleador o su representante;\nc) Presentar ante los empleadores o sus representantes las reclamaciones de los trabajadores en cuyo nombre actúen, previa autorización de la asociación sindical respectiva.\n"
+      },
+      "art-044": {
+       "label": "Art. 44",
+       "kind": "art",
+       "text": "# Art. 44\nSin perjuicio de lo acordado en convenciones colectivas de trabajo, los empleadores estarán obligados a:\na) Facilitar un lugar para el desarrollo de las tareas de los delegados del personal en la medida en que, habida cuenta de la cantidad de trabajadores ocupados y la modalidad de la prestación de los servicios, las características del establecimiento lo tornen necesarios;\nb) Concretar las reuniones periódicas con esos delegados asistiendo personalmente o haciéndose representar;\nc) conceder a cada uno de los delegados del personal, para el ejercicio de sus funciones, un crédito de horas mensuales retribuidas de conformidad con lo que se disponga en la convención colectiva aplicable.\n"
+      },
+      "art-045": {
+       "label": "Art. 45",
+       "kind": "art",
+       "text": "# Art. 45\nA falta de normas en las convenciones colectivas o en otros acuerdos, el número mínimo de los trabajadores que representen la asociación profesional respectiva en cada establecimiento será:\na) De diez (10) a cincuenta (50) trabajadores, un (1) representante;\nb) De cincuenta y uno (51) a cien (100) trabajadores, dos (2) representantes;\nc) De ciento uno (101) en adelante, un (1) representante más cada cien (100) trabajadores, que excedan de cien (100) a los que deberán adicionarse los establecidos en el inciso anterior.\nEn los establecimientos que tengan más de un turno de trabajo habrá un delegado por turno, como mínimo.\nCuando un representante sindical está compuesto por tres o más trabajadores, funcionará como cuerpo colegiado.\nSus decisiones se adoptarán en la forma que determinen los estatutos.\n"
+      },
+      "art-046": {
+       "label": "Art. 46",
+       "kind": "art",
+       "text": "# Art. 46\nLa reglamentación de lo relativo a los delegados del personal deberá posibilitar una adecuada tutela de los intereses y derechos de los trabajadores teniendo en cuenta la diversidad de sectores, turnos y demás circunstancias de hecho que hagan a la organización de la explotación o del servicio.\n"
+      },
+      "art-047": {
+       "label": "Art. 47",
+       "kind": "art",
+       "text": "# Art. 47\nTodo trabajador o asociación sindical que fuere impedido u obstaculizado en el ejercicio regular de los derechos de la libertad sindical garantizados por la presente ley, podrá recabar el amparo de estos derechos ante el tribunal judicial competente, conforme al procedimiento sumarísimo establecido en el artículo 498 del Código de Procedimientos Civil y Comercial de la Nación o equivalente de los códigos procesales civiles provinciales, a fin de que éste disponga, si correspondiere, el cese inmediato del comportamiento antisindical.\n"
+      },
+      "art-048": {
+       "label": "Art. 48",
+       "kind": "art",
+       "text": "# Art. 48\nLos trabajadores que, por ocupar cargos electivos o representativos en asociaciones sindicales con personería gremial, en organismos que requieran representación gremial, o en cargos políticos en los poderes públicos, dejaran de prestar servicios, tendrán derecho de gozar de licencia automática sin goce de haberes, a la reserva del puesto y ser reincorporado al finalizar el ejercicio de sus funciones, no pudiendo ser despedidos durante el término de un (1) año a partir de la cesación de sus mandatos, salvo que mediare justa causa de despido.\nEl tiempo de desempeño de dichas funciones, será considerado período de trabajo a todos los efectos, excepto para determinar promedio de remuneraciones.\nLos representantes sindicales en la empresa elegidos de conformidad con lo establecido en el artículo 41 de la presente ley continuarán prestando servicios y no podrán ser suspendidos, modificadas sus condiciones de trabajo, ni despedidos durante el tiempo que dure el ejercicio de su mandato y hasta un año más, salvo que mediare justa causa.\n"
+      },
+      "art-049": {
+       "label": "Art. 49",
+       "kind": "art",
+       "text": "# Art. 49\nPara que surta efecto la garantía antes establecida se deberá observar los siguientes requisitos:\na) Que la designación se haya efectuado cumpliendo con los recaudos legales;\nb) Que haya sido comunicada al empleador. La comunicación se probará mediante telegramas o cartas documento u otra forma escrita.\n"
+      },
+      "art-050": {
+       "label": "Art. 50",
+       "kind": "art",
+       "text": "# Art. 50\nA partir de su postulación para un cargo de representación sindical, cualquiera sea dicha representación, el trabajador no podrá ser despedido, suspendido sin justa causa, ni modificadas sus condiciones de trabajo, por el término de seis (6) meses. Esta protección cesará para aquellos trabajadores para cuya postulación no hubiere sido oficializada según el procedimiento electoral aplicable y desde el momento de determinarse definitivamente dicha falta de oficialización. La asociación sindical deberá comunicar al empleador el nombre de los postulantes; lo propio podrán hacer los candidatos.\n"
+      },
+      "art-051": {
+       "label": "Art. 51",
+       "kind": "art",
+       "text": "# Art. 51\nLa estabilidad en el empleo no podrá ser invocada en los casos de cesación de actividades del establecimiento o de suspensión general de las tareas del mismo. Cuando no se trate de una suspensión general de actividades, pero se proceda a reducir personal por vía de suspensiones o despidos y deba atenderse al orden de antigüedades, se excluirá para la determinación de ese orden a los trabajadores que se encuentren amparados por la estabilidad instituida en esta ley.\n"
+      },
+      "art-052": {
+       "label": "Art. 52",
+       "kind": "art",
+       "text": "# Art. 52\nLos trabajadores amparados por las garantías previstas en los artículos 40, 48 y 50 de la presente ley, no podrán ser suspendidos, despedidos ni con relación a ellos podrán modificarse las condiciones de trabajo, si no mediare resolución judicial previa que los excluya de la garantía, conforme al procedimiento establecido en el artículo 47. El juez o tribunal interviniente, a pedido el empleador, dentro del plazo de cinco (5) días podrá disponer la suspensión de la prestación laboral con el carácter de medida cautelar, cuando la permanencia del cuestionado en su puesto o en mantenimiento de las condiciones de trabajo pudiere ocasionar peligro para la seguridad de las personas o bienes de la empresa.\nLa violación por parte del empleador de las garantías establecidas en los artículos citados en el párrafo anterior, dará derecho al afectado a demandar judicialmente, por vía sumarísima, la reinstalación de su puesto, con más los salarios caídos durante la tramitación judicial, o el restablecimiento de las condiciones de trabajo.\nSi se decidiere la reinstalación, el juez podrá aplicar al empleador que no cumpliere con la decisión firme, las disposiciones del artículo 666 bis del Código Civil, durante el período de vigencia de su estabilidad.\nEl trabajador, salvo que se trate de un candidato no electo, podrá optar por considerar extinguido el vínculo laboral en virtud de la decisión del empleador, colocándose en situación de despido indirecto, en cuyo caso tendrá derecho a percibir, además de indemnizaciones por despido, una suma equivalente al importe de las remuneraciones que le hubieren correspondido durante el tiempo faltante del mandato y el año de estabilidad posterior. Si el trabajador fuese un candidato no electo tendrá derecho a percibir, además de las indemnizaciones y de las remuneraciones imputables al período de estabilidad aún no agotado, el importe de un año más de remuneraciones.\nLa promoción de las acciones por reinstalación o por restablecimiento de las condiciones de trabajo a las que refieren los párrafos anteriores interrumpe la prescripción de las acciones por cobro de indemnización y salarios caídos allí previstas. El curso de la prescripción comenzará una vez que recayere pronunciamiento firme en cualquiera de los supuestos.\n"
+      },
+      "art-053": {
+       "label": "Art. 53",
+       "kind": "art",
+       "text": "# Art. 53\nSerán consideradas prácticas desleales y contrarias a la ética de las relaciones profesionales del trabajo por parte de los empleadores, o en su caso, de las asociaciones profesionales que los represente:\na) Subvencionar en forma directa o indirecta a una asociación sindical de trabajadores;\nb) Intervenir o interferir en la constitución, funcionamiento o administración de un ente de este tipo;\nc) Obstruir, dificultar o impedir la afiliación de los trabajadores a una de las asociaciones por ésta reguladas;\nd) Promover o auspiciar la afiliación de los trabajadores a determinada asociación sindical;\ne) Adoptar represalias contra los trabajadores en razón de su participación en medidas legítimas de acción sindical o en otras actividades sindicales o de haber acusado, testimoniado o intervenido en los procedimientos vinculados a juzgamiento de las prácticas desleales;\nf) Rehusarse a negociar colectivamente con la asociación sindical capacitada para hacerlo o provocar dilaciones que tiendan a obstruir el proceso de negociación;\ng) Despedir, suspender o modificar las condiciones de trabajo de su personal, con el fin de impedir o dificultar el ejercicio de los derechos a que se refiere esta ley;\nh) Negare a reservar el empleo o no permitir que el trabajador reanude la prestación de los servicios cuando hubiese terminado de estar en uso de la licencia por desempeño de funciones gremiales;\ni) Despedir, suspender o modificar las condiciones de trabajo de los representantes sindicales que gocen de estabilidad de acuerdo con los términos establecidos por este régimen cuando las causas del despido, suspensión o modificación no sean de aplicación general o simultánea a todo el personal;\nj) Practicar trato discriminatorio, cualquiera sea su forma, en razón del ejercicio de los derechos sindicales tutelados por este régimen;\nk) Negarse a suministrar la nómina del personal a los efectos de la elección de los delegados del mismo en los lugares de trabajo.\n"
+      },
+      "art-054": {
+       "label": "Art. 54",
+       "kind": "art",
+       "text": "# Art. 54\nLa asociación sindical de trabajadores o el damnificado, conjunta o indistintamente, podrán promover querella por práctica desleal ante el juez o tribunal competente.\n"
+      },
+      "art-055": {
+       "label": "Art. 55",
+       "kind": "art",
+       "text": "# Art. 55\n1º - Las prácticas desleales se sancionarán con multas que serán fijadas de acuerdo con los artículos 4 y siguiente de la ley N° 18.694 de infracciones a las leyes de trabajo, salvo las modificaciones que aquí se establecen.\nEn el supuesto de prácticas desleales múltiples, o de reincidencia, la multa podrá elevarse hasta el quíntuplo del máximo previsto en la ley N° 18.694.\n2º - Cuando la práctica desleal fuera cometida por entidades representativas de empleadores, la multa será fijada razonablemente por el juez hasta un máximo del equivalente al veinte por ciento de los ingresos provenientes de las cuotas que deban pagar los afiliados en el mes en que se cometió la infracción.\nLos importes de las multas serán actualizados a la fecha del efectivo pago, de acuerdo con las disposiciones sobre índice de actualización de los créditos laborales. Cuando la práctica desleal pudiera ser reparada mediante el cese de la medida que la hubiere producido o la realización de los actos que resulten idóneos, conforme a la decisión calificadora, y el infractor mantuviera las medidas o dejare de cumplir los actos tendientes a la cesación de sus efectos, el importe originario se incrementará automáticamente en un diez por ciento por cada cinco días de mora, mientras se mantenga el incumplimiento del empleador o entidad representativa de los empleadores.\nSin perjuicio de ello, el juez, a petición de parte, podrá también aplicar lo dispuesto por el artículo 666 bis del Código Civil, quedando los importes que así se establezcan en favor del damnificado.\n3º - El importe de las multas será percibido por la autoridad administrativa del trabajo, e ingresado en una cuenta especial, y será destinado al mejoramiento de los servicios de inspección del trabajo, a cuyo fin la autoridad administrativa tomará intervención en el expediente judicial, previa citación del juez.\n4º - Cuando la práctica desleal fuese reparada mediante el cese de los actos motivantes, dentro del plazo que al efecto establezca la decisión judicial, el importe de la sanción podrá reducirse hasta el cincuenta por ciento.\n"
+      },
+      "art-056": {
+       "label": "Art. 56",
+       "kind": "art",
+       "text": "# Art. 56\nEl Ministerio de Trabajo y Seguridad Social de la Nación será la autoridad de aplicación de la presente ley y estará facultado para:\n1º Inscribir asociaciones, otorgarles personería gremial y llevar los registros respectivos.\n2º Requerir a las asociaciones sindicales que dejen sin efecto las medidas que importen:\na) Violación de las disposiciones legales o estatutarias;\nb) Incumplimiento a las disposiciones dictadas por la autoridad competente en el ejercicio de facultades legales\n3º Peticionar en sede judicial la suspensión o cancelación de una personería gremial o la intervención de una asociación sindical, en los siguientes supuestos:\na) Incumplimiento de las intimaciones a que se refiere el inciso 2 de este artículo;\nb) Cuando haya comprobado que en las asociaciones se ha incurrido en graves irregularidades administrativas. En el proceso judicial será parte de la asociación sindical afectada. No obstante lo antes prescripto, cuando existiera peligro de serios perjuicios a la asociación sindical o a sus miembros, solicitar judicialmente medidas cautelares a fin que se disponga la suspensión en el ejercicio de sus funciones de quienes integran el órgano de conducción y se designa un funcionario con facultades para ejercer los actos conservatorios y de administración necesarios para subsanar las irregularidades que determinen se adopte esa medida cautelar.\n4º - Disponer la convocatoria a elecciones de los cuerpos que en gobierno, la administración y la fiscalización de los actos que realicen estos últimos, como así también ejecutar los demás actos que hubiere menester para que mediante el proceso electoral se designen a los integrantes de esos cuerpos. Al efecto asimismo podrán nombrar las personas que deban ejecutar esos actos. Todo ello cuando el órgano de asociación facultado para ejecutarlo, después que hubiese sido intimado para que lo hiciere, dentro de un lapso determinado, incumpliera el requerimiento.\nEn caso de que se produjere un estado de acefalía con relación a la comisión directiva de una asociación sindical de trabajadores o al órgano que tenga asignadas las funciones propias de un cuerpo de conducción, y en tanto en los estatutos de la asociación de que se trate o en los de la federación de la que ésta forme parte, no se haya previsto el modo de regularizar la situación, la autoridad de aplicación también podrá designar un funcionario para que efectúe lo que sea necesaria o para regularizar la situación. Por su parte si el órgano encargado de convocar a reunión del asamblea de la asociación o al congreso de la misma, no lo hubiera hecho en el tiempo propio, y ese órgano no de cumplimiento a la intimación que deberá cursársele para que lo efectúe, la autoridad de aplicación estará facultada para hacerlo para adoptar las demás medidas que correspondan para que la reunión tenga lugar.\n"
+      },
+      "art-057": {
+       "label": "Art. 57",
+       "kind": "art",
+       "text": "# Art. 57\nEn tanto no se presente alguna de las situaciones antes previstas, la autoridad administrativa del trabajo no podrá intervenir en la dirección y administración de las asociaciones sindicales a que se refiere esta ley, y en especial restringir el manejo de los fondos sindicales.\n"
+      },
+      "art-058": {
+       "label": "Art. 58",
+       "kind": "art",
+       "text": "# Art. 58\nEl control de las asociaciones sindicales, aunque hubieren obtenido personería jurídica en virtud de las disposiciones del derecho común, estará a cargo exclusivo del Ministerio de Trabajo y Seguridad Social de la Nación.\n"
+      },
+      "art-059": {
+       "label": "Art. 59",
+       "kind": "art",
+       "text": "# Art. 59\nPara someter las cuestiones de encuadramiento sindical a la autoridad administrativa, las asociaciones interesadas deberán agotar previamente la vía asociacional, mediante el pronunciamiento de la organización gremial de grado superior a la que se encuentren adheridas, o a la que estén adheridas las federaciones que integren.\nSi el diferendo no hubiera sido resuelto dentro de los sesenta (60) días hábiles, cualquiera de las asociaciones sindicales en conflicto, podrá someter la cuestión a conocimiento y resolución del Ministerio de Trabajo y Seguridad Social de la Nación, el que deberá pronunciarse dentro de los sesenta (60) días hábiles, rigiendo en caso de silencio lo dispuesto en el Artículo 10 de la Ley N° 19.549 y su reglamentación. Agotado el procedimiento administrativo, quedará expedita la acción judicial prevista en el Artículo 62, inciso e) de la presente Ley.\nLa resolución de encuadramiento, emana de la autoridad administrativa del trabajo o de la vía asociacional, será directamente recurrible ante la Cámara Nacional de Apelaciones del Trabajo.\nLa resolución que ponga fin al conflicto de encuadramiento sindical sólo tendrá por efecto determinar la aptitud representativa de la asociación gremial respectiva con relación al ámbito en conflicto.\n"
+      },
+      "art-060": {
+       "label": "Art. 60",
+       "kind": "art",
+       "text": "# Art. 60\nSin perjuicio de lo que dispongan los estatutos, en los diferendos que puedan plantearse entre los afiliados a una asociación sindical de trabajadores y éstas, o entre una asociación de grado inferior y otra de grado superior será de aplicación lo dispuesto en el artículo anterior.\n"
+      },
+      "art-061": {
+       "label": "Art. 61",
+       "kind": "art",
+       "text": "# Art. 61\nTodas las resoluciones definitivas de la autoridad administrativa del trabajo en la materia regulada por esta ley, una vez agotada la instancia administrativa, son impugnables ante la justicia, por vías de recurso de apelación o de acción sumaria, según los casos, y en la forma establecida en los artículos 62 y 63 de la presente ley.\n"
+      },
+      "art-062": {
+       "label": "Art. 62",
+       "kind": "art",
+       "text": "# Art. 62\nSerá competencia exclusiva de la Cámara Nacional de Apelaciones del Trabajo conocer los siguientes casos:\na) Las acciones que promueva la autoridad administrativa del trabajo;\nb) Los recursos contra resoluciones administrativas definitivas que decidan sobre el otorgamiento, de personería gremial, encuadramiento sindical u otros actos administrativos de igual carácter, una vez agotada la instancia administrativa;\nc) La demanda por denegatoria tácita de una personería gremial;\nd) La demanda por denegatoria tácita de una inscripción;\ne) Las acciones de encuadramiento sindical que se promuevan por haber vencido el plazo establecido para que se pronuncie la autoridad administrativa, sin que ésta lo hubiera hecho;\nf) Los recursos previstos en el artículo 36 de esta ley.\nLas actuaciones de los incisos a), c), d) y e) del párrafo anterior se sustanciarán por las normas del proceso sumario del Código Procesal Civil y Comercial de la Nación.\nEn este proceso la Cámara podrá ordenar las medidas para mejor proveer que considere convenientes. Asimismo proveerán la producción de las pruebas ofrecidas por las partes que sean conducentes, pudiendo disponer su recepción por el juzgado de primera instancia que corresponda, el que deberá elevar las actuaciones dentro de las cuarenta y ocho (48) horas de finalizada su sustanciación.\nLas acciones previstas en los incisos c) y d) de este artículo deberán deducirse dentro de los ciento veinte (120) días hábiles del vencimiento del plazo otorgado a la autoridad administrativa para resolver.\nTratándose de recursos, éstos deberán ser fundados e interponerse ante la autoridad administrativa, dentro de los quince (15) días hábiles de notificada la resolución. Dentro de los diez (10) días hábiles contados desde la interposición del recurso, la autoridad administrativa, deberá remitir a esa Cámara las respectivas actuaciones. Cuando la decisión recurrida afecte los alcances de una personería, radicado el expediente en sede judicial, deberá darse traslado a las asociaciones afectadas, por el término de cinco (5) días.\n"
+      },
+      "art-063": {
+       "label": "Art. 63",
+       "kind": "art",
+       "text": "# Art. 63\n1º - Los jueces o tribunales con competencia en lo laboral en las respectivas jurisdicciones conocerán en:\na) Las cuestiones referentes a prácticas desleales;\nb) Las acciones previstas en el artículo 52;\nc) En las acciones previstas en el artículo 47.\n2º - Estas acciones se sustanciarán por el procedimiento sumario previsto en la legislación local.\n"
+      },
+      "art-064": {
+       "label": "Art. 64",
+       "kind": "art",
+       "text": "# Art. 64\nLas asociaciones sindicales deberán adecuar sus estatutos a las disposiciones de la presente ley, dentro de los ciento ochenta (180) días de publicada su reglamentación, la que deberá ser dictada dentro de los noventa (90) días por el Poder Ejecutivo nacional.\nMientras no se realice la mencionada adecuación y su aprobación por la autoridad administrativa, prevalecerán de pleno derecho las disposiciones de la presente Ley sobre las normas estatutarias, en cuanto pudieren oponerse.\n"
+      },
+      "art-065": {
+       "label": "Art. 65",
+       "kind": "art",
+       "text": "# Art. 65\nLa presente ley entrará en vigencia al día siguiente de su publicación.\n"
+      },
+      "art-066": {
+       "label": "Art. 66",
+       "kind": "art",
+       "text": "# Art. 66\nDerógase la ley de facto 22.105 y toda otra disposición que se oponga a la presente.\n"
+      },
+      "art-067": {
+       "label": "Art. 67",
+       "kind": "art",
+       "text": "# Art. 67\nComuníquese al Poder Ejecutivo.\n"
+      }
+     },
+     "credits": {},
+     "note": "Ley 23.551 as enacted (sancionada 1988-03-23, promulgada 1988-04-14, B.O. 1988-04-22). Art. 65: \"La presente ley entrará en vigencia al día siguiente de su publicación\"."
+    },
+    {
+     "from": "2002-12-08",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/80000-84999/80046/norma.htm",
+     "sha256": "97a08a9fb5512502270b7c5db320a3f5dabd468325bfd56d1a54c114a714f2b3",
+     "changes": {
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Art. 18\nPara integrar los órganos directivos, se requerirá:\na) Mayoría de edad;\nb) No tener inhibiciones civiles ni penales;\nc) Estar afiliado/a, tener dos (2) años de antigüedad en la afiliación y encontrarse desempeñando la actividad durante dos (2) años.\nEl setenta y cinco por ciento (75%) de los cargos directivos y representativos deberán ser desempeñados por ciudadanos/as argentinos, el/la titular del cargo de mayor jerarquía y su reemplazante estatutario deberán ser ciudadanos/as argentinos.\nLa representación femenina en los cargos electivos y representativos de las asociaciones sindicales será de un mínimo del 30% (treinta por ciento), cuando el número de mujeres alcance o supere ese porcentual sobre el total de los trabajadores.\nCuando la cantidad de trabajadoras no alcanzare el 30% del total de trabajadores, el cupo para cubrir la participación femenina en las listas de candidatos y su representación en los cargos electivos y representativos de la asociación sindical, será proporcional a esa cantidad.\nAsimismo, las listas que se presenten deberán incluir mujeres en esos porcentuales mínimos y en lugares que posibiliten su elección.\nNo podrá oficializarse ninguna lista que no cumpla con los requisitos estipulados en este artículo.\n"
+      }
+     },
+     "credits": {
+      "art-018": [
+       "ley-25674"
+      ]
+     }
+    },
+    {
+     "from": "2008-07-04",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/141792/norma.htm",
+     "sha256": "fb22b6d0479228a59d8b7bf1a97f8f9ab177788112acff3e5074b3c524ab20d1",
+     "changes": {
+      "art-013": {
+       "label": "Art. 13",
+       "kind": "art",
+       "text": "# Art. 13\nLas personas mayores de dieciséis (16) años, sin necesidad de autorización, podrán afiliarse.\n"
+      }
+     },
+     "credits": {
+      "art-013": [
+       "ley-26390"
+      ]
+     }
+    },
+    {
+     "from": "2023-12-30",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b",
+     "changes": {
+      "art-020-bis": {
+       "label": "Art. 20 bis",
+       "kind": "art",
+       "text": "# Art. 20 bis\nDerecho de realizar Asambleas, Congresos. Los representantes sindicales dentro de la empresa, delegados, comisiones internas u organismos similares, así como las autoridades de las distintas seccionales de las asociaciones sindicales tendrán derecho a convocar a asambleas y congresos de delegados sin perjudicar las actividades normales de la empresa o afectar a terceros.\n"
+      },
+      "art-020-ter": {
+       "label": "Art. 20 ter",
+       "kind": "art",
+       "text": "# Art. 20 ter\nAcciones prohibidas. Las siguientes conductas están prohibidas y serán consideradas infracciones muy graves:\na. Afectar la libertad de trabajo de quienes no adhieran a una medida de fuerza, mediante actos, hechos, intimidaciones o amenazas;\nb. Provocar el bloqueo o tomar un establecimiento; impedir u obstruir total o parcialmente el ingreso o egreso de personas y/o cosas al establecimiento;\nc. Ocasionar daños en personas o en cosas de propiedad de la empresa o de terceros situadas en el establecimiento (instalaciones, mercaderías, insumos y materias primas, herramientas, etc.) o retenerlas indebidamente.\nVerificadas dichas acciones como medidas de acción directa sindical, la entidad responsable será pasible de la aplicación de las sanciones que establezca la reglamentación, una vez cumplimentado el procedimiento que se disponga al efecto a cargo de la Autoridad de Aplicación, sin perjuicio de las responsabilidades civiles y/o penales que pudieran corresponder.\n"
+      }
+     },
+     "credits": {
+      "art-020-bis": [
+       "decreto-70-2023"
+      ],
+      "art-020-ter": [
+       "decreto-70-2023"
+      ]
+     }
+    },
+    {
+     "from": "2025-05-21",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/412998/norma.htm",
+     "sha256": "02b5111100e435ba7e914a6fd4e28f0aa7dfc1e2153e810afdd6ce4c96504399",
+     "changes": {
+      "art-056": {
+       "label": "Art. 56",
+       "kind": "art",
+       "text": "# Art. 56\nEl Ministerio de Trabajo y Seguridad Social de la Nación será la autoridad de aplicación de la presente ley y estará facultado para:\n1º Inscribir asociaciones, otorgarles personería gremial y llevar los registros respectivos.\n2º Requerir a las asociaciones sindicales que dejen sin efecto las medidas que importen:\na) Violación de las disposiciones legales o estatutarias;\nb) Incumplimiento a las disposiciones dictadas por la autoridad competente en el ejercicio de facultades legales\n3º Peticionar en sede judicial la suspensión o cancelación de una personería gremial o la intervención de una asociación sindical, en los siguientes supuestos:\na) Incumplimiento de las intimaciones a que se refiere el inciso 2 de este artículo;\nb) Cuando haya comprobado que en las asociaciones se ha incurrido en graves irregularidades administrativas. En el proceso judicial será parte de la asociación sindical afectada. No obstante lo antes prescripto, cuando existiera peligro de serios perjuicios a la asociación sindical o a sus miembros, solicitar judicialmente medidas cautelares a fin que se disponga la suspensión en el ejercicio de sus funciones de quienes integran el órgano de conducción y se designa un funcionario con facultades para ejercer los actos conservatorios y de administración necesarios para subsanar las irregularidades que determinen se adopte esa medida cautelar.\n4º - Designar un funcionario con carácter excepcional, en caso de que se produjere un estado de acefalía con relación a la comisión directiva de una asociación sindical de trabajadores o al órgano que tenga asignadas las funciones propias de un cuerpo de conducción, y en tanto en los estatutos de la asociación de que se trate o en los de la federación de la que esta forme parte no se haya previsto el modo de regularizar la situación, para que disponga la convocatoria a elecciones y realice los demás actos tendientes a hacer cesar la situación de acefalía. El funcionario designado deberá cumplir su cometido en un plazo que no podrá exceder de CIENTO VEINTE (120) días hábiles, prorrogables por el mismo plazo en caso de que resulte necesario y se encuentre debidamente fundado.\n"
+      }
+     },
+     "credits": {
+      "art-056": [
+       "decreto-342-2025"
+      ]
+     }
+    },
+    {
+     "from": "2026-03-06",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e",
+     "changes": {
+      "art-020-bis": {
+       "label": "Art. 20 bis",
+       "kind": "art",
+       "text": "# Art. 20 bis\nDerecho de realizar Asambleas, Congresos. La asociación sindical, legalmente reconocida, podrá convocar a asambleas de personal y congresos de delegados, siempre que ello no afecte el normal desarrollo de las actividades de la empresa ni cause perjuicio a terceros. En caso de celebrarse una asamblea dentro o fuera del establecimiento del empleador, deberá contarse con su autorización previa, tanto del horario y el tiempo de su duración.\nAdemás, en caso de que se realice dentro del establecimiento deberá requerirse también autorización respecto del lugar.\nPara ejercer dicha facultad deberá estar al día en el cumplimiento de pago de haberes.\nEl trabajador no devengará salarios durante el tiempo de la misma.\n"
+      },
+      "art-020-ter": {
+       "label": "Art. 20 ter",
+       "kind": "art",
+       "text": "# Art. 20 ter\nSerán consideradas infracciones muy graves:\na. Afectar la libertad de trabajo de quienes no adhieran a una medida de fuerza mediante actos y/o hechos y/o intimidaciones o amenazas;\nb. Provocar, y/o instar y/u organizar el bloqueo o tomar un establecimiento; impedir u obstruir total o parcialmente el ingreso o egreso de personas y/o cosas al establecimiento;\nc. Ocasionar daños en personas o en cosas de propiedad de la empresa o de terceros, se encuentren o no en el establecimiento del empleador (instalaciones, mercaderías, insumos y materias primas, herramientas, etc.) o retenerlas indebidamente. Verificadas dichas acciones como medidas de acción directa sindical, la entidad responsable será pasible de la aplicación de las sanciones que establezca la reglamentación, una vez cumplimentado el procedimiento que disponga al efecto la Autoridad de Aplicación, sin perjuicio de las responsabilidades civiles y/o penales que pudieran corresponder.\n"
+      },
+      "art-023": {
+       "label": "Art. 23",
+       "kind": "art",
+       "text": "# Art. 23\nLa asociación a partir de su inscripción, adquirirá personería jurídica y tendrá los siguientes derechos:\na) Peticionar y representar, a solicitud de parte, los intereses individuales de sus afiliados;\nb) Representar los intereses colectivos de sus afiliados en su ámbito personal y territorial;\nc) Promover:\n1° La formación de sociedades cooperativas y mutuales,\n2° El perfeccionamiento de la legislación laboral, previsional de seguridad social,\n3° La educación general y la formación profesional de los trabajadores;\nd) Imponer cotizaciones a sus afiliados;\ne) Realizar reuniones o asambleas conforme a las normas que regulen su ejercicio.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Art. 29\nPodrá otorgarse personería gremial a un sindicato de empresa cuando su cantidad de afiliados cotizantes fuere, durante un período mínimo y continuado de seis (6) meses anteriores a su presentación, superior a la cantidad de afiliados cotizantes en el ámbito de la misma empresa a la asociación con personería preexistente, cualquiera sea el grado o el ámbito material, territorial y personal de actuación de esta última.\nA tales fines, se aplicará en lo pertinente las reglas de procedimiento previstas en el artículo anterior, con el efecto establecido en su párrafo cuarto respecto del ámbito de la empresa.\n"
+      },
+      "art-044": {
+       "label": "Art. 44",
+       "kind": "art",
+       "text": "# Art. 44\nSin perjuicio de lo acordado en convenciones colectivas de trabajo, los empleadores estarán obligados a:\na) Facilitar un lugar para el desarrollo de las tareas de los delegados del personal en la medida en que, habida cuenta de la cantidad de trabajadores ocupados y la modalidad de la prestación de los servicios, las características del establecimiento lo tornen necesarios;\nb) Concretar las reuniones periódicas con esos delegados asistiendo personalmente o haciéndose representar;\nc) Conceder a cada uno de los delegados del personal, para el ejercicio de sus funciones un crédito de hasta diez (10) horas mensuales retribuidas, salvo que el convenio colectivo aplicable disponga una cantidad mayor. El ejercicio de este derecho no podrá generar la interrupción de actividades en el área de trabajo.\n"
+      },
+      "art-050": {
+       "label": "Art. 50",
+       "kind": "art",
+       "text": "# Art. 50\nA partir de la notificación fehaciente al empleador de su postulación para un cargo de representación sindical, cualquiera sea dicha representación y por el término de seis (6) meses, el trabajador no podrá ser despedido ni suspendido sin justa causa, ni modificadas sus condiciones de trabajo, salvo que mediare una reorganización total del establecimiento o sector. Esta protección cesará para aquellos trabajadores cuya postulación no hubiere sido oficializada según el procedimiento electoral aplicable desde el momento de determinarse definitivamente dicha falta de oficialización y/o que el candidato hubiere obtenido menos del cinco por ciento (5%) de los votos válidos emitidos. La asociación sindical deberá comunicar al empleador el nombre de los postulantes; lo propio podrán hacer los candidatos.\n"
+      },
+      "art-052": {
+       "label": "Art. 52",
+       "kind": "art",
+       "text": "# Art. 52\nLos trabajadores amparados por las garantías previstas en los artículos 40, 48 y 50 de la presente ley, no podrán ser suspendidos, despedidos ni con relación a ellos podrán modificarse las condiciones de trabajo, en los términos y con los alcances que definen las citadas normas, si no mediare resolución judicial previa que los excluya de la garantía, conforme al procedimiento establecido en el artículo 47. El juez o tribunal interviniente, a pedido el empleador, dentro del plazo de cinco (5) días podrá disponer la suspensión de la prestación laboral con el carácter de medida cautelar, cuando la permanencia del cuestionado en su puesto o en mantenimiento de las condiciones de trabajo pudiere ocasionar peligro potencial para la seguridad de las personas o bienes de la empresa o el funcionamiento normal de esta.\nEsta tutela regirá solamente para los delegados o representantes gremiales legalmente electos y que ocupen los cargos de titulares y para hasta dos (2) congresales titulares en grandes empresas y un (1) congresal titular en las pymes en los términos de la ley 24.467 y sus modificatorias. En este último caso la tutela solo podrá ser invocada exclusivamente durante el tiempo en que el trabajador asista al congreso en cuestión, debiendo notificar al empleador la fecha de inicio y conclusión del mismo. A aquellos que sean designados suplentes no les será aplicable la tutela sindical prevista en la presente ley. La violación por parte del empleador de las garantías establecidas en los artículos citados en el párrafo anterior, dará derecho al afectado a demandar judicialmente, por vía sumarísima, la reinstalación en su puesto, con más los salarios caídos durante la tramitación judicial, o el restablecimiento de las condiciones de trabajo.\nSi se decidiere la reinstalación del trabajador, el juez podrá aplicar al empleador que no cumpliere con la decisión firme, las disposiciones del artículo 804 del Código Civil y Comercial de la Nación, durante el período de vigencia de su tutela sindical.\nEl trabajador con cargo de delegado de personal o titular en la organización sindical con personería gremial representativa en el ámbito personal y territorial, salvo que se trate de un candidato no electo, podrá optar por considerar extinguido el vínculo laboral en virtud de la decisión del empleador, colocándose en situación de despido indirecto, en cuyo caso tendrá derecho a percibir, además de indemnizaciones por despido, una suma equivalente al importe de las remuneraciones que le hubieren correspondido durante el tiempo faltante del mandato y el año de estabilidad posterior. Si el trabajador fuese un candidato no electo tendrá derecho a percibir, además de las indemnizaciones y de las remuneraciones imputables al período de tutela aún no agotado, el importe de un (1) año más de remuneraciones, no siendo las mismas acumulables a las dispuestas en el artículo 245 bis de la Ley de Contrato de Trabajo N° 20.744 (t.o. 1976) y sus modificatorias. La promoción de las acciones por reinstalación o por restablecimiento de las condiciones de trabajo a las que refieren los párrafos anteriores interrumpe la prescripción de las acciones por cobro de indemnización y salarios caídos allí previstas.\nEl curso de la prescripción comenzará una vez que recayere pronunciamiento firme en cualquiera de los supuestos.\nEn cualquier caso, el empleador podrá liberar de prestar servicios al trabajador amparado por las garantías previstas en los artículos 40, 48 o 50 de la ley, en cuyo caso deberá comunicarlo, dentro de las cuarenta y ocho (48) horas hábiles, al Ministerio de Capital Humano y mantener el cumplimiento de la totalidad de los deberes que la ley o convenciones colectivas ponen a su cargo como consecuencia de la relación laboral. En este supuesto, dentro del plazo de caducidad de diez (10) días de ocurridos los hechos en que funda su decisión, deberá promover ante el juez competente acción declarativa para que se compruebe la concurrencia de los motivos fundados que autoriza el artículo 78 de la Ley de Contrato de Trabajo N° 20.744 (t.o. 1976) y sus modificatorias o, en su caso, requerir la exclusión de la garantía con el alcance que justifique la causa que invoque.\n"
+      },
+      "art-053-bis": {
+       "label": "Art. 53 bis",
+       "kind": "art",
+       "text": "# Art. 53 bis\nSerán consideradas prácticas desleales y contrarias a la ética de las relaciones profesionales del trabajo por parte de las asociaciones sindicales, o en su caso, de quienes las representen:\na) Incurrir en alguna de las acciones previstas en el artículo 20 ter de la presente ley;\nb) Intervenir o interferir intencionalmente afectando el desenvolvimiento de la actividad de la empresa mediante la convocatoria a asambleas violando los términos del artículo 20 bis de la presente ley, u otras medidas de acción directa;\nc) Promover la afiliación compulsiva e involuntaria de trabajadores, en forma directa o indirecta;\nd) Incurrir en conductas y/o mecanismos extorsivos a los fines de lograr la afiliación compulsiva y/o involuntaria de trabajadores;\ne) Incurrir en conductas y/o mecanismos extorsivos en contra de los empleadores;\nf) Adoptar represalias contra los trabajadores que no se adhieran a una medida de fuerza;\ng) Rehusarse a negociar colectivamente con los representantes de la parte empleadora legitimados para hacerlo o provocar dilaciones que tiendan a obstruir el proceso de negociación;\nh) No acatar la conciliación obligatoria dispuesta por la autoridad con facultades suficientes.\n"
+      },
+      "art-054": {
+       "label": "Art. 54",
+       "kind": "art",
+       "text": "# Art. 54\nTodo damnificado por una acción y/u omisión que la presente ley define como práctica desleal podrá promover una querella ante el juez o tribunal competente.\n"
+      },
+      "art-055": {
+       "label": "Art. 55",
+       "kind": "art",
+       "text": "# Art. 55\nLas prácticas desleales se sancionarán con multas que serán fijadas de acuerdo con el Régimen General de Sanciones por Infracciones Laborales previsto en el Anexo II de la ley 25.212 y sus modificatorias de infracciones a las leyes de trabajo, salvo las modificaciones que aquí se establecen.\nEn el supuesto de prácticas desleales múltiples, o de reincidencia, la multa podrá elevarse hasta el quíntuplo del máximo previsto en la ley 25.212 y sus modificatorias.\nLa multa será fijada por el juez hasta un máximo del equivalente al veinte por ciento (20%) de los ingresos provenientes de las cuotas sindicales que deban pagar los afiliados en el mes en que se cometió la infracción.\nLos importes de las multas serán actualizados a la fecha del efectivo pago, de acuerdo a las pautas de ajuste que correspondan a los créditos laborales. Cuando la práctica desleal pudiera ser reparada mediante el cese de la medida que la hubiere producido o la realización de los actos que resulten idóneos, conforme a la decisión calificadora, y el infractor mantuviera las medidas o dejare de cumplir los actos tendientes a la cesación de sus efectos, el importe originario se incrementará automáticamente en un diez por ciento (10%) por cada cinco (5) días de mora, mientras se mantenga el incumplimiento.\nSin perjuicio de ello, el juez, a petición de parte, podrá también aplicar lo dispuesto por el artículo 804 del Código Civil y Comercial de la Nación, quedando los importes que así se establezcan en favor del damnificado.\nEl importe de las multas será percibido por la autoridad administrativa del trabajo, e ingresado en una cuenta especial, y será destinado al mejoramiento de los servicios de inspección del trabajo, a cuyo fin la autoridad administrativa tomará intervención en el expediente judicial, previa citación del juez.\nCuando la práctica desleal fuese reparada mediante el cese de los actos motivantes, dentro del plazo que al efecto establezca la decisión judicial, el importe de la sanción podrá reducirse hasta el cincuenta por ciento (50%).\nEn aquellos casos en los que la asociación sindical o el empleado incurra reiteradamente en las conductas estipuladas en el artículo 53 bis del presente cuerpo normativo, la Justicia Nacional del Trabajo podrá revocarle la personería y/o la inscripción gremial.\n"
+      },
+      "art-059": {
+       "label": "Art. 59",
+       "kind": "art",
+       "text": "# Art. 59\nPara someter las cuestiones de encuadramiento sindical a la autoridad administrativa, las asociaciones interesadas deberán agotar previamente la vía asociacional, mediante el pronunciamiento de la organización gremial de grado superior a la que se encuentren adheridas, o a la que estén adheridas las federaciones que integren.\nSi el diferendo no hubiera sido resuelto dentro de los sesenta (60) días hábiles, cualquiera de las asociaciones sindicales en conflicto, podrá someter la cuestión a conocimiento y resolución de la autoridad administrativa, que deberá pronunciarse dentro de los veinte (20) días hábiles, rigiendo en caso de silencio lo dispuesto en el artículo 10 de la ley 19.549 y su reglamentación. Agotado el procedimiento administrativo, quedará expedita la acción judicial prevista en el artículo 62, inciso e) de la presente ley.\nLa resolución de encuadramiento emanada de la autoridad administrativa del trabajo o de la vía asociacional, será directamente recurrible ante la Cámara Nacional de Apelaciones del Trabajo. La resolución que ponga fin al conflicto de encuadramiento sindical sólo tendrá por efecto determinar la aptitud representativa de la asociación gremial respectiva con relación al ámbito en conflicto.\nEl derecho de encuadramiento sindical no implica afectación de los procesos productivos y/o de servicios que se brindan por el colectivo en conflicto en el ámbito territorial y/o personal, por cuanto, será sancionable por la Secretaría de Trabajo, Empleo y Seguridad Social del Ministerio de Capital Humano toda conducta gremial que afecte a terceros -empleador, trabajadores, clientes, proveedores, consumidores- para cual, deberá adoptar todas las medidas conducentes para evitar situaciones de abuso de derechos.\n"
+      }
+     },
+     "credits": {
+      "art-020-bis": [
+       "ley-27802"
+      ],
+      "art-020-ter": [
+       "ley-27802"
+      ],
+      "art-023": [
+       "ley-27802"
+      ],
+      "art-029": [
+       "ley-27802"
+      ],
+      "art-044": [
+       "ley-27802"
+      ],
+      "art-050": [
+       "ley-27802"
+      ],
+      "art-052": [
+       "ley-27802"
+      ],
+      "art-053-bis": [
+       "ley-27802"
+      ],
+      "art-054": [
+       "ley-27802"
+      ],
+      "art-055": [
+       "ley-27802"
+      ],
+      "art-059": [
+       "ley-27802"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ley-26657",
+   "short": "LNSM",
+   "title": "Ley 26.657 Nacional de Salud Mental",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175977/norma.htm",
+   "first_law": "ley-26657",
+   "earlier_laws": [],
+   "versions": [
+    {
+     "from": "2010-12-12",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175977/norma.htm",
+     "sha256": "abf36c3040f7ef0e6786d70b6ebdbc4498949de7620101ba75ce1566b6bfd2c9",
+     "units": {
+      "art-001": {
+       "label": "Art. 1",
+       "kind": "art",
+       "text": "# Art. 1\nLa presente ley tiene por objeto asegurar el derecho a la protección de la salud mental de todas las personas, y el pleno goce de los derechos humanos de aquellas con padecimiento mental que se encuentran en el territorio nacional, reconocidos en los instrumentos internacionales de derechos humanos, con jerarquía constitucional, sin perjuicio de las regulaciones más beneficiosas que para la protección de estos derechos puedan establecer las provincias y la Ciudad Autónoma de Buenos Aires.\n"
+      },
+      "art-002": {
+       "label": "Art. 2",
+       "kind": "art",
+       "text": "# Art. 2\nSe consideran parte integrante de la presente ley los Principios de Naciones Unidas para la Protección de los Enfermos Mentales y para el Mejoramiento de la Atención de Salud Mental, adoptado por la Asamblea General en su resolución 46/119 del 17 de diciembre de 1991. Asimismo, la Declaración de Caracas de la Organización Panamericana de la Salud y de la Organización Mundial de la Salud, para la Reestructuración de la Atención Psiquiátrica dentro de los Sistemas Locales de Salud, del 14 de noviembre de 1990, y los Principios de Brasilia Rectores; para el Desarrollo de la Atención en Salud Mental en las Américas, del 9 de noviembre de 1990, se consideran instrumentos de orientación para la planificación de políticas públicas.\n"
+      },
+      "art-003": {
+       "label": "Art. 3",
+       "kind": "art",
+       "text": "# Art. 3\nEn el marco de la presente ley se reconoce a la salud mental como un proceso determinado por componentes históricos, socio-económicos, culturales, biológicos y psicológicos, cuya preservación y mejoramiento implica una dinámica de construcción social vinculada a la concreción de los derechos humanos y sociales de toda persona.\nSe debe partir de la presunción de capacidad de todas las personas.\nEn ningún caso puede hacerse diagnóstico en el campo de la salud mental sobre la base exclusiva de:\na) Status político, socio-económico, pertenencia a un grupo cultural, racial o religioso;\nb) Demandas familiares, laborales, falta de conformidad o adecuación con valores morales, sociales, culturales, políticos o creencias religiosas prevalecientes en la comunidad donde vive la persona;\nc) Elección o identidad sexual;\nd) La mera existencia de antecedentes de tratamiento u hospitalización.\n"
+      },
+      "art-004": {
+       "label": "Art. 4",
+       "kind": "art",
+       "text": "# Art. 4\nLas adicciones deben ser abordadas como parte integrante de las políticas de salud mental. Las personas con uso problemático de drogas, legales e ilegales, tienen todos los derechos y garantías que se establecen en la presente ley en su relación con los servicios de salud.\n"
+      },
+      "art-005": {
+       "label": "Art. 5",
+       "kind": "art",
+       "text": "# Art. 5\nLa existencia de diagnóstico en el campo de la salud mental no autoriza en ningún caso a presumir riesgo de daño o incapacidad, lo que sólo puede deducirse a partir de una evaluación interdisciplinaria de cada situación particular en un momento determinado.\n"
+      },
+      "art-006": {
+       "label": "Art. 6",
+       "kind": "art",
+       "text": "# Art. 6\nLos servicios y efectores de salud públicos y privados, cualquiera sea la forma jurídica que tengan, deben adecuarse a los principios establecidos en la presente ley.\n"
+      },
+      "art-007": {
+       "label": "Art. 7",
+       "kind": "art",
+       "text": "# Art. 7\nEl Estado reconoce a las personas con padecimiento mental los siguientes derechos:\na) Derecho a recibir atención sanitaria y social integral y humanizada, a partir del acceso gratuito, igualitario y equitativo a las prestaciones e insumos necesarios, con el objeto de asegurar la recuperación y preservación de su salud;\nb) Derecho a conocer y preservar su identidad, sus grupos de pertenencia, su genealogía y su historia;\nc) Derecho a recibir una atención basada en fundamentos científicos ajustados a principios éticos;\nd) Derecho a recibir tratamiento y a ser tratado con la alternativa terapéutica más conveniente, que menos restrinja sus derechos y libertades, promoviendo la integración familiar, laboral y comunitaria;\ne) Derecho a ser acompañado antes, durante y luego del tratamiento por sus familiares, otros afectos o a quien la persona con padecimiento mental designe;\nf) Derecho a recibir o rechazar asistencia o auxilio espiritual o religioso;\ng) Derecho del asistido, su abogado, un familiar, o allegado que éste designe, a acceder a sus antecedentes familiares, fichas e historias clínicas;\nh) Derecho a que en el caso de internación involuntaria o voluntaria prolongada, las condiciones de la misma sean supervisadas periódicamente por el órgano de revisión;\ni) Derecho a no ser identificado ni discriminado por un padecimiento mental actual o pasado;\nj) Derecho a ser informado de manera adecuada y comprensible de los derechos que lo asisten, y de todo lo inherente a su salud y tratamiento, según las normas del consentimiento informado, incluyendo las alternativas para su atención, que en el caso de no ser comprendidas por el paciente se comunicarán a los familiares, tutores o representantes legales;\nk) Derecho a poder tomar decisiones relacionadas con su atención y su tratamiento dentro de sus posibilidades;\nl) Derecho a recibir un tratamiento personalizado en un ambiente apto con resguardo de su intimidad, siendo reconocido siempre como sujeto de derecho, con el pleno respeto de su vida privada y libertad de comunicación;\nm) Derecho a no ser objeto de investigaciones clínicas ni tratamientos experimentales sin un consentimiento fehaciente;\nn) Derecho a que el padecimiento mental no sea considerado un estado inmodificable;\no) Derecho a no ser sometido a trabajos forzados;\np) Derecho a recibir una justa compensación por su tarea en caso de participar de actividades encuadradas como laborterapia o trabajos comunitarios, que impliquen producción de objetos, obras o servicios que luego sean comercializados.\n"
+      },
+      "art-008": {
+       "label": "Art. 8",
+       "kind": "art",
+       "text": "# Art. 8\nDebe promoverse que la atención en salud mental esté a cargo de un equipo interdisciplinario integrado por profesionales, técnicos y otros trabajadores capacitados con la debida acreditación de la autoridad competente. Se incluyen las áreas de psicología, psiquiatría, trabajo social, enfermería, terapia ocupacional y otras disciplinas o campos pertinentes.\n"
+      },
+      "art-009": {
+       "label": "Art. 9",
+       "kind": "art",
+       "text": "# Art. 9\nEl proceso de atención debe realizarse preferentemente fuera del ámbito de internación hospitalario y en el marco de un abordaje interdisciplinario e intersectorial, basado en los principios de la atención primaria de la salud. Se orientará al reforzamiento, restitución o promoción de los lazos sociales.\n"
+      },
+      "art-010": {
+       "label": "Art. 10",
+       "kind": "art",
+       "text": "# Art. 10\nPor principio rige el consentimiento informado para todo tipo de intervenciones, con las únicas excepciones y garantías establecidas en la presente ley.\nLas personas con discapacidad tienen derecho a recibir la información a través de medios y tecnologías adecuadas para su comprensión.\n"
+      },
+      "art-011": {
+       "label": "Art. 11",
+       "kind": "art",
+       "text": "# Art. 11\nLa Autoridad de Aplicación debe promover que las autoridades de salud de cada jurisdicción, en coordinación con las áreas de educación, desarrollo social, trabajo y otras que correspondan, implementen acciones de inclusión social, laboral y de atención en salud mental comunitaria. Se debe promover el desarrollo de dispositivos tales como: consultas ambulatorias; servicios de inclusión social y laboral para personas después del alta institucional; atención domiciliaria supervisada y apoyo a las personas y grupos familiares y comunitarios; servicios para la promoción y prevención en salud mental, así como otras prestaciones tales como casas de convivencia, hospitales de día, cooperativas de trabajo, centros de capacitación socio-laboral, emprendimientos sociales, hogares y familias sustitutas.\n"
+      },
+      "art-012": {
+       "label": "Art. 12",
+       "kind": "art",
+       "text": "# Art. 12\nLa prescripción de medicación sólo debe responder a las necesidades fundamentales de la persona con padecimiento mental y se administrará exclusivamente con fines terapéuticos y nunca como castigo, por conveniencia de terceros, o para suplir la necesidad de acompañamiento terapéutico o cuidados especiales. La indicación y renovación de prescripción de medicamentos sólo puede realizarse a partir de las evaluaciones profesionales pertinentes y nunca de forma automática. Debe promoverse que los tratamientos psicofarmacológicos se realicen en el marco de abordajes interdisciplinarios.\n"
+      },
+      "art-013": {
+       "label": "Art. 13",
+       "kind": "art",
+       "text": "# Art. 13\nLos profesionales con título de grado están en igualdad de condiciones para ocupar los cargos de conducción y gestión de los servicios y las instituciones, debiendo valorarse su idoneidad para el cargo y su capacidad para integrar los diferentes saberes que atraviesan el campo de la salud mental. Todos los trabajadores integrantes de los equipos asistenciales tienen derecho a la capacitación permanente y a la protección de su salud integral, para lo cual se deben desarrollar políticas específicas.\n"
+      },
+      "art-014": {
+       "label": "Art. 14",
+       "kind": "art",
+       "text": "# Art. 14\nLa internación es considerada como un recurso terapéutico de carácter restrictivo, y sólo puede llevarse a cabo cuando aporte mayores beneficios terapéuticos que el resto de las intervenciones realizables en su entorno familiar, comunitario o social. Debe promoverse el mantenimiento de vínculos, contactos y comunicación de las personas internadas con sus familiares, allegados y con el entorno laboral y social, salvo en aquellas excepciones que por razones terapéuticas debidamente fundadas establezca el equipo de salud interviniente.\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Art. 15\nLa internación debe ser lo más breve posible, en función de criterios terapéuticos interdisciplinarios. Tanto la evolución del paciente como cada una de las intervenciones del equipo interdisciplinario deben registrarse a diario en la historia clínica. En ningún caso la internación puede ser indicada o prolongada para resolver problemáticas sociales o de vivienda, para lo cual el Estado debe proveer los recursos adecuados a través de los organismos públicos competentes.\n"
+      },
+      "art-016": {
+       "label": "Art. 16",
+       "kind": "art",
+       "text": "# Art. 16\nToda disposición de internación, dentro de las CUARENTA Y OCHO (48) horas, debe cumplir con los siguientes requisitos:\na) Evaluación, diagnóstico interdisciplinario e integral y motivos que justifican la internación, con la firma de al menos dos profesionales del servicio asistencial donde se realice la internación, uno de los cuales debe ser necesariamente psicólogo o médico psiquiatra;\nb) Búsqueda de datos disponibles acerca de la identidad y el entorno familiar;\nc) Consentimiento informado de la persona o del representante legal cuando corresponda. Sólo se considera válido el consentimiento cuando se presta en estado de lucidez y con comprensión de la situación, y se considerará invalidado si durante el transcurso de la internación dicho estado se pierde, ya sea por el estado de salud de la persona o por efecto de los medicamentos o terapéuticas aplicadas. En tal caso deberá procederse como si se tratase de una internación involuntaria.\n"
+      },
+      "art-017": {
+       "label": "Art. 17",
+       "kind": "art",
+       "text": "# Art. 17\nEn los casos en que la persona no estuviese acompañada por familiares o se desconociese su identidad, la institución que realiza la internación, en colaboración con los organismos públicos que correspondan, debe realizar las averiguaciones tendientes a conseguir datos de los familiares o lazos afectivos que la persona tuviese o indicase, o esclarecer su identidad, a fin de propiciar su retorno al marco familiar y comunitario lo antes posible. La institución debe brindar colaboración a los requerimientos de información que solicite el órgano de revisión que se crea en el artículo 38 de la presente ley.\n"
+      },
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Art. 18\nLa persona internada bajo su consentimiento podrá en cualquier momento decidir por sí misma el abandono de la internación. En todos los casos en que las internaciones voluntarias se prolonguen por más de SESENTA (60) días corridos, el equipo de salud a cargo debe comunicarlo al órgano de revisión creado en el artículo 38 y al juez. El juez debe evaluar, en un plazo no mayor de CINCO (5) días de ser notificado, si la internación continúa teniendo carácter voluntario o si la misma debe pasar a considerarse involuntaria, con los requisitos y garantías establecidos para esta última situación. En caso de que la prolongación de la internación fuese por problemáticas de orden social, el juez deberá ordenar al órgano administrativo correspondiente la inclusión en programas sociales y dispositivos específicos y la externación a la mayor brevedad posible, comunicando dicha situación al órgano de revisión creado por esta ley.\n"
+      },
+      "art-019": {
+       "label": "Art. 19",
+       "kind": "art",
+       "text": "# Art. 19\nEl consentimiento obtenido o mantenido con dolo, debidamente comprobado por autoridad judicial, o el incumplimiento de la obligación de informar establecida en los capítulos VII y VIII de la presente ley, harán pasible al profesional responsable y al director de la institución de las acciones civiles y penales que correspondan.\n"
+      },
+      "art-020": {
+       "label": "Art. 20",
+       "kind": "art",
+       "text": "# Art. 20\nLa internación involuntaria de una persona debe concebirse como recurso terapéutico excepcional en caso de que no sean posibles los abordajes ambulatorios, y sólo podrá realizarse cuando a criterio del equipo de salud mediare situación de riesgo cierto e inminente para sí o para terceros. Para que proceda la internación involuntaria, además de los requisitos comunes a toda internación, debe hacerse constar:\na) Dictamen profesional del servicio asistencial que realice la internación. Se debe determinar la situación de riesgo cierto e inminente a que hace referencia el primer párrafo de este artículo, con la firma de dos profesionales de diferentes disciplinas, que no tengan relación de parentesco, amistad o vínculos económicos con la persona, uno de los cuales deberá ser psicólogo o médico psiquiatra;\nb) Ausencia de otra alternativa eficaz para su tratamiento;\nc) Informe acerca de las instancias previas implementadas si las hubiera.\n"
+      },
+      "art-021": {
+       "label": "Art. 21",
+       "kind": "art",
+       "text": "# Art. 21\nLa internación involuntaria debidamente fundada debe notificarse obligatoriamente en un plazo de DIEZ (10) horas al juez competente y al órgano de revisión, debiendo agregarse a las CUARENTA Y OCHO (48) horas como máximo todas las constancias previstas en el artículo 20. El juez en un plazo máximo de TRES (3) días corridos de notificado debe:\na) Autorizar, si evalúa que están dadas las causales previstas por esta ley;\nb) Requerir informes ampliatorios de los profesionales tratantes o indicar peritajes externos, siempre que no perjudiquen la evolución del tratamiento, tendientes a evaluar si existen los supuestos necesarios que justifiquen la medida extrema de la internación involuntaria y/o;\nc) Denegar, en caso de evaluar que no existen los supuestos necesarios para la medida de internación involuntaria, en cuyo caso debe asegurar la externación de forma inmediata.\nEl juez sólo puede ordenar por sí mismo una internación involuntaria cuando, cumplidos los requisitos establecidos en el artículo 20, el servicio de salud responsable de la cobertura se negase a realizarla.\n"
+      },
+      "art-022": {
+       "label": "Art. 22",
+       "kind": "art",
+       "text": "# Art. 22\nLa persona internada involuntariamente o su representante legal, tiene derecho a designar un abogado. Si no lo hiciera, el Estado debe proporcionarle uno desde el momento de la internación. El defensor podrá oponerse a la internación y solicitar la externación en cualquier momento. El juzgado deberá permitir al defensor el control de las actuaciones en todo momento.\n"
+      },
+      "art-023": {
+       "label": "Art. 23",
+       "kind": "art",
+       "text": "# Art. 23\nEl alta, externación o permisos de salida son facultad del equipo de salud que no requiere autorización del juez. El mismo deberá ser informado si se tratase de una internación involuntaria, o voluntaria ya informada en los términos de los artículos 18 ó 26 de la presente ley. El equipo de salud está obligado a externar a la persona o transformar la internación en voluntaria, cumpliendo los requisitos establecidos en el artículo 16 apenas cesa la situación de riesgo cierto e inminente. Queda exceptuado de lo dispuesto en el presente artículo, las internaciones realizadas en el marco de lo previsto en el artículo 34 del Código Penal.\n"
+      },
+      "art-024": {
+       "label": "Art. 24",
+       "kind": "art",
+       "text": "# Art. 24\nHabiendo autorizado la internación involuntaria, el juez debe solicitar informes con una periodicidad no mayor a TREINTA (30) días corridos a fin de reevaluar si persisten las razones para la continuidad de dicha medida, y podrá en cualquier momento disponer su inmediata externación.\nSi transcurridos los primeros NOVENTA (90) días y luego del tercer informe continuase la internación involuntaria, el juez deberá pedir al órgano de revisión que designe un equipo interdisciplinario que no haya intervenido hasta el momento, y en lo posible independiente del servicio asistencial interviniente, a fin de obtener una nueva evaluación. En caso de diferencia de criterio, optará siempre por la que menos restrinja la libertad de la persona internada.\n"
+      },
+      "art-025": {
+       "label": "Art. 25",
+       "kind": "art",
+       "text": "# Art. 25\nTranscurridos los primeros SIETE (7) días en el caso de internaciones involuntarias, el juez, dará parte al órgano de revisión que se crea en el artículo 38 de la presente ley.\n"
+      },
+      "art-026": {
+       "label": "Art. 26",
+       "kind": "art",
+       "text": "# Art. 26\nEn caso de internación de personas menores de edad o declaradas incapaces, se debe proceder de acuerdo a lo establecido por los artículos 20, 21, 22, 23, 24 y 25 de la presente ley. En el caso de niños, niñas y adolescentes, además se procederá de acuerdo a la normativa nacional e internacional de protección integral de derechos.\n"
+      },
+      "art-027": {
+       "label": "Art. 27",
+       "kind": "art",
+       "text": "# Art. 27\nQueda prohibida por la presente ley la creación de nuevos manicomios, neuropsiquiátricos o instituciones de internación monovalentes, públicos o privados. En el caso de los ya existentes se deben adaptar a los objetivos y principios expuestos, hasta su sustitución definitiva por los dispositivos alternativos. Esta adaptación y sustitución en ningún caso puede significar reducción de personal ni merma en los derechos adquiridos de los mismos.\n"
+      },
+      "art-028": {
+       "label": "Art. 28",
+       "kind": "art",
+       "text": "# Art. 28\nLas internaciones de salud mental deben realizarse en hospitales generales. A tal efecto los hospitales de la red pública deben contar con los recursos necesarios. El rechazo de la atención de pacientes, ya sea ambulatoria o en internación, por el solo hecho de tratarse de problemática de salud mental, será considerado acto discriminatorio en los términos de la ley 23.592.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Art. 29\nA los efectos de garantizar los derechos humanos de las personas en su relación con los servicios de salud mental, los integrantes, profesionales y no profesionales del equipo de salud son responsables de informar al órgano de revisión creado por la presente ley y al juez competente, sobre cualquier sospecha de irregularidad que implicara un trato indigno o inhumano a personas bajo tratamiento o limitación indebida de su autonomía. La sola comunicación a un superior jerárquico dentro de la institución no relevará al equipo de salud de tal responsabilidad si la situación irregular persistiera. Dicho procedimiento se podrá realizar bajo reserva de identidad y contará con las garantías debidas del resguardo a su fuente laboral y no será considerado como violación al secreto profesional.\nDebe promoverse la difusión y el conocimiento de los principios, derechos y garantías reconocidos y las responsabilidades establecidas en la presente ley a todos los integrantes de los equipos de salud, dentro de un lapso de NOVENTA (90) días de la sanción de la presente ley, y al momento del ingreso de cada uno de los trabajadores al sistema.\n"
+      },
+      "art-030": {
+       "label": "Art. 30",
+       "kind": "art",
+       "text": "# Art. 30\nLas derivaciones para tratamientos ambulatorios o de internación que se realicen fuera del ámbito comunitario donde vive la persona sólo corresponden si se realizan a lugares donde la misma cuenta con mayor apoyo y contención social o familiar. Los traslados deben efectuarse con acompañante del entorno familiar o afectivo de la persona. Si se trata de derivaciones con internación, debe procederse del modo establecido en el Capítulo VII de la presente ley. Tanto el servicio o institución de procedencia como el servicio o institución de destino, están obligados a informar dicha derivación al Organo de Revisión, cuando no hubiese consentimiento de la persona.\n"
+      },
+      "art-031": {
+       "label": "Art. 31",
+       "kind": "art",
+       "text": "# Art. 31\nEl Ministerio de Salud de la Nación es la Autoridad de Aplicación de la presente ley, a partir del área específica que designe o cree a tal efecto, la que debe establecer las bases para un Plan Nacional de Salud Mental acorde a los principios establecidos.\n"
+      },
+      "art-032": {
+       "label": "Art. 32",
+       "kind": "art",
+       "text": "# Art. 32\nEn forma progresiva y en un plazo no mayor a TRES (3) años a partir de la sanción de la presente ley, el Poder Ejecutivo debe incluir en los proyectos de presupuesto un incremento en las partidas destinadas a salud mental hasta alcanzar un mínimo del DIEZ POR CIENTO (10 %) del presupuesto total de salud. Se promoverá que las provincias y la Ciudad Autónoma de Buenos Aires adopten el mismo criterio.\n"
+      },
+      "art-033": {
+       "label": "Art. 33",
+       "kind": "art",
+       "text": "# Art. 33\nLa Autoridad de Aplicación debe desarrollar recomendaciones dirigidas a las universidades públicas y privadas, para que la formación de los profesionales en las disciplinas involucradas sea acorde con los principios, políticas y dispositivos que se establezcan en cumplimiento de la presente ley, haciendo especial hincapié en el conocimiento de las normas y tratados internacionales en derechos humanos y salud mental. Asimismo, debe promover espacios de capacitación y actualización para profesionales, en particular para los que se desempeñen en servicios públicos de salud mental en todo el país.\n"
+      },
+      "art-034": {
+       "label": "Art. 34",
+       "kind": "art",
+       "text": "# Art. 34\nLa Autoridad de Aplicación debe promover, en consulta con la Secretaría de Derechos Humanos de la Nación y con la colaboración de las jurisdicciones, el desarrollo de estándares de habilitación y supervisión periódica de los servicios de salud mental públicos y privados.\n"
+      },
+      "art-035": {
+       "label": "Art. 35",
+       "kind": "art",
+       "text": "# Art. 35\nDentro de los CIENTO OCHENTA (180) días corridos de la sanción de la presente ley, la Autoridad de Aplicación debe realizar un censo nacional en todos los centros de internación en salud mental del ámbito público y privado para relevar la situación de las personas internadas, discriminando datos personales, sexo, tiempo de internación, existencia o no de consentimiento, situación judicial, situación social y familiar, y otros datos que considere relevantes. Dicho censo debe reiterarse con una periodicidad máxima de DOS (2) años y se debe promover la participación y colaboración de las jurisdicciones para su realización.\n"
+      },
+      "art-036": {
+       "label": "Art. 36",
+       "kind": "art",
+       "text": "# Art. 36\nLa Autoridad de Aplicación, en coordinación con los ministerios de Educación, Desarrollo Social y Trabajo, Empleo y Seguridad Social, debe desarrollar planes de prevención en salud mental y planes específicos de inserción socio-laboral para personas con padecimiento mental. Dichos planes, así como todo el desarrollo de la política en salud mental, deberá contener mecanismos claros y eficientes de participación comunitaria, en particular de organizaciones de usuarios y familiares de los servicios de salud mental. Se promoverá que las provincias y la Ciudad Autónoma de Buenos Aires adopten el mismo criterio.\n"
+      },
+      "art-037": {
+       "label": "Art. 37",
+       "kind": "art",
+       "text": "# Art. 37\nLa Autoridad de Aplicación, en coordinación con la Superintendencia de Servicios de Salud, debe promover la adecuación de la cobertura en salud mental de las obras sociales a los principios establecidos en la presente ley, en un plazo no mayor a los NOVENTA (90) días corridos a partir de la sanción de la presente.\n"
+      },
+      "art-038": {
+       "label": "Art. 38",
+       "kind": "art",
+       "text": "# Art. 38\nCréase en el ámbito del Ministerio Público de la Defensa el Organo de Revisión con el objeto de proteger los derechos humanos de los usuarios de los servicios de salud mental.\n"
+      },
+      "art-039": {
+       "label": "Art. 39",
+       "kind": "art",
+       "text": "# Art. 39\nEl Organo de Revisión debe ser multidisciplinario, y estará integrado por representantes del Ministerio de Salud de la Nación, de la Secretaría de Derechos Humanos de la Nación, del Ministerio Público de la Defensa, de asociaciones de usuarios y familiares del sistema de salud, de los profesionales y otros trabajadores de la salud y de organizaciones no gubernamentales abocadas a la defensa de los derechos humanos.\n"
+      },
+      "art-040": {
+       "label": "Art. 40",
+       "kind": "art",
+       "text": "# Art. 40\nSon funciones del Organo de Revisión:\na) Requerir información a las instituciones públicas y privadas que permita evaluar las condiciones en que se realizan los tratamientos;\nb) Supervisar de oficio o por denuncia de particulares las condiciones de internación por razones de salud mental, en el ámbito público y privado;\nc) Evaluar que las internaciones involuntarias se encuentren debidamente justificadas y no se prolonguen más del tiempo mínimo necesario, pudiendo realizar las denuncias pertinentes en caso de irregularidades y eventualmente, apelar las decisiones del juez;\nd) Controlar que las derivaciones que se realizan fuera del ámbito comunitario cumplan con los requisitos y condiciones establecidos en el artículo 30 de la presente ley;\ne) Informar a la Autoridad de Aplicación periódicamente sobre las evaluaciones realizadas y proponer las modificaciones pertinentes;\nf) Requerir la intervención judicial ante situaciones irregulares;\ng) Hacer presentaciones ante el Consejo de la Magistratura o el Organismo que en cada jurisdicción evalúe y sancione la conducta de los jueces en las situaciones en que hubiera irregularidades;\nh) Realizar recomendaciones a la Autoridad de Aplicación;\ni) Realizar propuestas de modificación a la legislación en salud mental tendientes a garantizar los derechos humanos;\nj) Promover y colaborar para la creación de órganos de revisión en cada una de las jurisdicciones, sosteniendo espacios de intercambio, capacitación y coordinación, a efectos del cumplimiento eficiente de sus funciones;\nk) Controlar el cumplimiento de la presente ley, en particular en lo atinente al resguardo de los derechos humanos de los usuarios del sistema de salud mental;\nl) Velar por el cumplimiento de los derechos de las personas en procesos de declaración de inhabilidad y durante la vigencia de dichas sentencias.\n"
+      },
+      "art-041": {
+       "label": "Art. 41",
+       "kind": "art",
+       "text": "# Art. 41\nEl Estado nacional debe promover convenios con las jurisdicciones para garantizar el desarrollo de acciones conjuntas tendientes a implementar los principios expuestos en la presente ley. Dichos convenios incluirán:\na) Cooperación técnica, económica y financiera de la Nación para la implementación de la presente ley;\nb) Cooperación para la realización de programas de capacitación permanente de los equipos de salud, con participación de las universidades;\nc) Asesoramiento para la creación en cada una de las jurisdicciones de áreas específicas para la aplicación de políticas de salud mental, las que actuarán en coordinación con la Autoridad de Aplicación nacional de la presente ley.\n"
+      },
+      "art-042": {
+       "label": "Art. 42",
+       "kind": "art",
+       "text": "# Art. 42\nIncorpórase como artículo 152 ter del Código Civil:\nArtículo 152 ter: Las declaraciones judiciales de inhabilitación o incapacidad deberán fundarse en un examen de facultativos conformado por evaluaciones interdisciplinarias. No podrán extenderse por más de TRES (3) años y deberán especificar las funciones y actos que se limitan, procurando que la afectación de la autonomía personal sea la menor posible.\n"
+      },
+      "art-043": {
+       "label": "Art. 43",
+       "kind": "art",
+       "text": "# Art. 43\nSustitúyese el artículo 482 del Código Civil, el que quedará redactado de la siguiente manera:\nArtículo 482: No podrá ser privado de su libertad personal el declarado incapaz por causa de enfermedad mental o adicciones, salvo en los casos de riesgo cierto e inminente para sí o para terceros, quien deberá ser debidamente evaluado por un equipo interdisciplinario del servicio asistencial con posterior aprobación y control judicial.\nLas autoridades públicas deberán disponer el traslado a un establecimiento de salud para su evaluación a las personas que por padecer enfermedades mentales o adicciones se encuentren en riesgo cierto e inminente para sí o para terceros.\nA pedido de las personas enumeradas en el artículo 144 el juez podrá, previa información sumaria, disponer la evaluación de un equipo interdisciplinario de salud para las personas que se encuentren afectadas de enfermedades mentales y adicciones, que requieran asistencia en establecimientos adecuados aunque no justifiquen la declaración de incapacidad o inhabilidad.\n"
+      },
+      "art-044": {
+       "label": "Art. 44",
+       "kind": "art",
+       "text": "# Art. 44\nDerógase la Ley 22.914.\n"
+      },
+      "art-045": {
+       "label": "Art. 45",
+       "kind": "art",
+       "text": "# Art. 45\nLa presente ley es de orden público.\n"
+      },
+      "art-046": {
+       "label": "Art. 46",
+       "kind": "art",
+       "text": "# Art. 46\nComuníquese al Poder Ejecutivo nacional.\n"
+      }
+     },
+     "credits": {},
+     "note": "Ley 26.657 as enacted (sancionada 2010-11-25, promulgada 2010-12-02 by Decreto 1855/2010, B.O. 2010-12-03). It has no vigencia clause: in force from the ninth day after publication (Código Civil art. 2)."
+    }
+   ]
+  },
+  {
+   "slug": "ley-25164",
+   "short": "LMEP",
+   "title": "Ley 25.164 Marco de Regulación de Empleo Público Nacional",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60458/texact.htm",
+   "first_law": "ley-25164",
+   "earlier_laws": [],
+   "versions": [
+    {
+     "from": "1999-10-17",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60458/norma.htm",
+     "sha256": "3bf3748320418bdd4a1fa0eebb6bd624fd55551510f7b068a225e3d979bb941d",
+     "units": {
+      "art-001": {
+       "label": "Art. 1",
+       "kind": "art",
+       "text": "# Art. 1\nLa relación de empleo público queda sujeta a los principios generales establecidos en la presente ley, los que deberán ser respetados en las negociaciones colectivas que se celebren en el marco de la Ley 24.185. Los derechos y garantías acordados en esta ley a los trabajadores que integran el servicio civil de la Nación constituirán mínimos que no podrán ser desplazados en perjuicio de éstos en las negociaciones colectivas que se celebren en el marco de la citada Ley 24.185.\n"
+      },
+      "art-002": {
+       "label": "Art. 2",
+       "kind": "art",
+       "text": "# Art. 2\nEl Poder Ejecutivo establecerá el órgano rector en materia de empleo público y autoridad de aplicación e interpretación de las disposiciones de este régimen, en el ámbito de la Jefatura de Gabinete de Ministros.\n"
+      },
+      "art-003": {
+       "label": "Art. 3",
+       "kind": "art",
+       "text": "# Art. 3\nLa presente normativa regula los deberes y derechos del personal que integra el Servicio Civil de la Nación. Este está constituido por las personas que habiendo sido designadas conforme lo previsto en la presente ley, prestan servicios en dependencias del Poder Ejecutivo, inclusive entes jurídicamente descentralizados.\nQuedan exceptuados de lo establecido en el párrafo anterior:\na) El Jefe de Gabinete de Ministros, los Ministros, el Secretario General de la Presidencia de la Nación, los Secretarios, Subsecretarios, el Jefe de la Casa Militar, las máximas autoridades de organismos descentralizados e instituciones de la Seguridad Social y los miembros integrantes de los cuerpos colegiados.\nb) Las personas que por disposición legal o reglamentaria ejerzan funciones de jerarquía equivalente a la de los cargos mencionados en el inciso precedente.\nc) El personal militar en actividad y el retirado que prestare servicios militares.\nd) El personal perteneciente a las Fuerzas de Seguridad y Policiales, en actividad y retirado que prestare servicios por convocatoria.\ne) El personal diplomático en actividad comprendido en la Ley del Servicio Exterior de la Nación.\nf) El personal comprendido en convenciones colectivas de trabajo aprobadas en el marco de la Ley 14.250 (t.o. decreto 198/88) o la que se dicte en su reemplazo.\ng) El clero.\nAl personal que preste servicios en organismos pertenecientes a la Administración Pública Nacional, y esté regido por los preceptos de la Ley de Contrato de Trabajo Nº 20.744 (t.o. 1976), y modificatorias o la que se dicte en su reemplazo, se les aplicarán las previsiones contenidas en ese régimen normativo.\nEn los supuestos contemplados en el párrafo anterior y en el inciso f), las partes, de común acuerdo, podrán insertarse en el régimen de empleo público, a través de la firma de convenios colectivos de trabajo, tal como lo regula el inciso j) de la Ley 24.185 y de acuerdo con las disposiciones de dicha norma.\n"
+      },
+      "art-004": {
+       "label": "Art. 4",
+       "kind": "art",
+       "text": "# Art. 4\nEl ingreso a la Administración Pública Nacional estará sujeto a la previa acreditación de las siguientes condiciones:\na) Ser argentino nativo, por opción o naturalizado. El Jefe de Gabinete de Ministros podrá exceptuar del cumplimiento de este requisito mediante fundamentación precisa y circunstanciada de la jurisdicción solicitante.\nb) Condiciones de conducta e idoneidad para el cargo, que se acreditará mediante los regímenes de selección que se establezcan, asegurando el principio de igualdad en el acceso a la función pública. El convenio colectivo de trabajo, deberá prever los mecanismos de participación y de control de las asociaciones sindicales en el cumplimiento de los criterios de selección y evaluación a fin de garantizar la efectiva igualdad de oportunidades.\nc) Aptitud psicofísica para el cargo.\n"
+      },
+      "art-005": {
+       "label": "Art. 5",
+       "kind": "art",
+       "text": "# Art. 5\nSin perjuicio de lo establecido en el artículo anterior no podrán ingresar:\na) El que haya sido condenado por delito doloso, hasta el cumplimiento de la pena privativa de la libertad, o el término previsto para la prescripción de la pena.\nb) El condenado por delito en perjuicio de la Administración Pública Nacional, Provincial o Municipal.\nc) El que tenga proceso penal pendiente que pueda dar lugar a condena por los delitos enunciados en los incisos a) y b) del presente artículo.\nd) El inhabilitado para el ejercicio de cargos públicos.\ne) El sancionado con exoneración o cesantía en la Administración Pública Nacional, Provincial o Municipal, mientras no sea rehabilitado conforme lo previsto en los artículos 32 y 33 de la presente ley.\nf) El que tenga la edad prevista en la ley previsional para acceder al beneficio de la jubilación o el que gozare de un beneficio previsional, salvo aquellas personas de reconocida aptitud, las que no podrán ser incorporadas al régimen de estabilidad.\ng) El que se encuentre en infracción a las leyes electorales y del servicio militar, en el supuesto del artículo 19 de la Ley 24.429.\nh) El deudor moroso del Fisco Nacional mientras se encuentre en esa situación.\ni) Los que hayan incurrido en actos de fuerza contra el orden institucional y el sistema democrático, conforme lo previsto en el artículo 36 de la Constitución Nacional y el Título X del Código Penal, aun cuando se hubieren beneficiado por el indulto o la condonación de la pena.\n"
+      },
+      "art-006": {
+       "label": "Art. 6",
+       "kind": "art",
+       "text": "# Art. 6\nLas designaciones efectuadas en violación a lo dispuesto en los artículos 4º y 5º o de cualquier otra norma vigente, podrán ser declaradas nulas, cualquiera sea el tiempo transcurrido, sin perjuicio de la validez de los actos y de las prestaciones cumplidas durante el ejercicio de sus funciones.\n"
+      },
+      "art-007": {
+       "label": "Art. 7",
+       "kind": "art",
+       "text": "# Art. 7\nEl personal podrá revistar en el régimen de estabilidad, en el régimen de contrataciones, o como personal de gabinete de las autoridades superiores. La situación del personal designado con carácter ad honorem será reglamentada por el Poder Ejecutivo, de conformidad con las características propias de la naturaleza de su relación.\n"
+      },
+      "art-008": {
+       "label": "Art. 8",
+       "kind": "art",
+       "text": "# Art. 8\nEl régimen de estabilidad comprende al personal que ingrese por los mecanismos de selección que se establezcan, a cargos pertenecientes al régimen de carrera cuya financiación será prevista para cada jurisdicción u organismos descentralizados en la Ley de Presupuesto.\nLa carrera administrativa básica y las específicas deberán contemplar la aplicación de criterios que incorporen los principios de transparencia, publicidad y mérito en los procedimientos de selección para determinar la idoneidad de la función a cubrir, de la promoción o avance en la carrera basada en la evaluación de la eficiencia, eficacia, rendimiento laboral y de exigencias de capacitación acorde con las necesidades de las tareas o funciones a desarrollar, así como la previsión de sistemas basados en el mérito y la capacidad de los agentes, que motiven la promoción de los mismos en la carrera.\n"
+      },
+      "art-009": {
+       "label": "Art. 9",
+       "kind": "art",
+       "text": "# Art. 9\nEl régimen de contrataciones de personal por tiempo determinado comprenderá exclusivamente la prestación de servicios de carácter transitorio o estacionales, no incluidos en las funciones propias del régimen de carrera, y que no puedan ser cubiertos por personal de planta permanente.\nEl personal contratado en esta modalidad no podrá superar en ningún caso el porcentaje que se establezca en el convenio colectivo de trabajo, el que tendrá directa vinculación con el número de trabajadores que integren la planta permanente del organismo.\nDicho personal será equiparado en los niveles y grados de la planta permanente y percibirá la remuneración de conformidad con la correspondiente al nivel y grado respectivo.\nLa Ley de Presupuesto fijará anualmente los porcentajes de las partidas correspondientes que podrán ser afectados por cada jurisdicción u organismo descentralizado para la aplicación del referido régimen.\n"
+      },
+      "art-010": {
+       "label": "Art. 10",
+       "kind": "art",
+       "text": "# Art. 10\nEl régimen de prestación de servicios del personal de gabinete de las autoridades superiores, que será reglamentado por el Poder Ejecutivo, solamente comprende funciones de asesoramiento, o de asistencia administrativa. El personal cesará en sus funciones simultáneamente con la autoridad cuyo gabinete integra y su designación podrá ser cancelada en cualquier momento.\n"
+      },
+      "art-011": {
+       "label": "Art. 11",
+       "kind": "art",
+       "text": "# Art. 11\nEl personal alcanzado por el régimen de estabilidad que resulte afectado por medidas de reestructuración que comporten la supresión de organismos, dependencias o de las funciones asignadas a las mismas, con la eliminación de los respectivos cargos, será reubicado en las condiciones reglamentarias que se establezcan. A este objeto se garantizará la incorporación del agente afectado para ocupar cargos vacantes. Asimismo en los convenios colectivos de trabajo se preverán acciones de reconversión laboral que permitan al agente insertarse en dichos cargos.\nEn el supuesto de no concretarse la reubicación, el agente quedará en situación de disponibilidad.\nEl período de disponibilidad se asignará según la antigüedad del trabajador, no pudiendo ser menor a seis (6) meses ni mayor a doce (12) meses.\nSi durante el período de disponibilidad se produjeran vacantes en la Administración Pública Central y Organismos descentralizados, deberá priorizarse el trabajador que se encuentre en situación de disponibilidad para la cobertura de dichas vacantes.\nVencido el término de la disponibilidad, sin que haya sido reubicado, o en el caso que el agente rehusare el ofrecimiento de ocupar un cargo o no existieran vacantes, se producirá la baja, generándose el derecho a percibir una indemnización igual a un (1) mes de sueldo por cada año de servicio o fracción mayor de tres meses, tomando como base la mejor remuneración mensual, normal y habitual percibida durante el último año o durante el tiempo de prestación de servicios si éste fuera menor, salvo el mejor derecho que se estableciere en el Convenio Colectivo de Trabajo y las indemnizaciones especiales que pudieren regularse por dicha vía.\n"
+      },
+      "art-012": {
+       "label": "Art. 12",
+       "kind": "art",
+       "text": "# Art. 12\nPara los supuestos previstos en el artículo anterior, los delegados de personal con mandato vigente o pendiente el año posterior de la tutela sindical no podrán ser afectados en el ejercicio de sus funciones ni puestos en disponibilidad. En el caso de supresión del organismo deberán ser afectados a otro, dentro de la misma jurisdicción y zona de actuación.\nAsimismo aquellos agentes que se encuentren de licencia por enfermedad o accidente, por embarazo y por matrimonio, hasta vencido el período de su licencia no podrán ser puestos en situación de disponibilidad.\nEn el caso de licencias sin goce de haberes, la situación de disponibilidad surtirá efecto desde su notificación, correspondiendo desde ese momento la percepción de los haberes mensuales.\n"
+      },
+      "art-013": {
+       "label": "Art. 13",
+       "kind": "art",
+       "text": "# Art. 13\nNo podrán ser puestos en disponibilidad los agentes cuya renuncia se encuentre pendiente de resolución, ni los que estuvieran en condiciones de jubilarse o pudieren estarlo dentro del período máximo de doce meses contados desde la fecha en que pudieron ser afectados por la disponibilidad.\n"
+      },
+      "art-014": {
+       "label": "Art. 14",
+       "kind": "art",
+       "text": "# Art. 14\nLos organismos o dependencias suprimidos y los cargos o funciones eliminados no podrán ser creados nuevamente, ni con la misma asignación ni con otra distinta por un plazo de dos años a partir de la fecha de su supresión.\nLos cargos o funciones eliminados no podrán ser cumplidos por personal contratado ni personal de gabinete.\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Art. 15\nLos agentes serán destinados a las tareas propias de la categoría o nivel que hayan alcanzado y al desarrollo de tareas complementarias o instrumentales, para la consecución de los objetivos del trabajo. Pueden ser destinados por decisión fundada de sus superiores a desarrollar transitoriamente tareas específicas del nivel superior percibiendo la diferencia de haberes correspondiente. La movilidad del personal de una dependencia a otra dentro o fuera de la misma jurisdicción presupuestaria, dentro del ámbito de aplicación del presente régimen, estará sujeta a la regulación que se establezca en los convenios colectivos celebrados en el marco de la Ley 24.185, debiendo contemplarse en todos los casos la ausencia de perjuicio material y moral al trabajador.\nPara la movilidad geográfica se requerirá el consentimiento expreso del trabajador.\nEl Poder Ejecutivo podrá celebrar convenios con los otros poderes del Estado, Provincias y Municipios, que posibiliten la movilidad interjurisdiccional de los agentes, sin perjuicio del cumplimiento de las disposiciones contenidas en la presente ley. La movilidad del personal que se instrumente a través de la adscripción de su respectivo ámbito a otro poder del Estado nacional, Estados provinciales y/o Gobierno Autónomo de la Ciudad de Buenos Aires no podrá exceder los trescientos sesenta y cinco (365) días corridos salvo excepción fundada en requerimientos extraordinarios de servicios y estará sujeta a las reglamentaciones que dicten en sus respectivas jurisdicciones los Poderes Ejecutivo, Legislativo y Judicial.\n"
+      },
+      "art-016": {
+       "label": "Art. 16",
+       "kind": "art",
+       "text": "# Art. 16\nLas personas vinculadas laboralmente con la Administración Pública Nacional, según el régimen al que hubieren ingresado, tendrán los siguientes derechos, de conformidad con las modalidades establecidas en las leyes, en las normas reglamentarias y, en cuanto corresponda, en los convenios colectivos de trabajo:\na) Estabilidad.\nb) Retribución justa por sus servicios, con más los adicionales que correspondan.\nc) Igualdad de oportunidades en la carrera.\nd) Capacitación permanente.\ne) Libre afiliación sindical y negociación colectiva.\nf) Licencias, justificaciones y franquicias.\ng) Compensaciones, indemnizaciones y subsidios.\nh) Asistencia social para sí y su familia.\ni) Interposición de recursos.\nj) Jubilación o retiro.\nk) Renuncia.\nl) Higiene y seguridad en el trabajo.\nm) Participación, por intermedio de las organizaciones sindicales, en los procedimientos de calificaciones y disciplinarios de conformidad con que se establezca en el Convenio Colectivo Trabajo.\nLa presente enumeración no tiene carácter taxativo, pudiendo ser ampliada por vía de la negociación colectiva.\nAl personal comprendido en el régimen de contrataciones y en el de gabinete de las autoridades superiores sólo le alcanzarán los derechos enunciados en los incisos b), e), f), i), j), k) y l) con salvedades que se establezcan por vía reglamentaria.\n"
+      },
+      "art-017": {
+       "label": "Art. 17",
+       "kind": "art",
+       "text": "# Art. 17\nEl personal comprendido en régimen de estabilidad tendrá derecho a conservar el empleo, el nivel y grado de la carrera alcanzado. La estabilidad en la función, será materia de regulación convencional.\nLa adquisición de la estabilidad en el empleo se producirá cuando se cumplimenten las siguientes condiciones:\na) Acredite condiciones de idoneidad a través de las evaluaciones periódicas de desempeño, capacitación y del cumplimiento de las metas objetivos establecidos para la gestión durante transcurso de un período de prueba de doce (12) meses de prestación de servicios efectivos, como de la aprobación de las actividades de formación profesional que se establezcan.\nb) La obtención del certificado definitivo de aptitud psicofísica para el cargo.\nc) La ratificación de la designación mediante acto expreso emanado de la autoridad competente con facultades para efectuar designaciones, vencimiento del plazo establecido en el inciso a).\nTranscurridos treinta (30) días de vencido el plazo previsto en el inciso citado sin que la administración dicte el acto administrativo pertinente, designación se considerará efectuada, adquiriendo el agente el derecho a la estabilidad.\nDurante el período en que el agente no goce estabilidad, su designación podrá ser cancelada.\nEl personal que goce de estabilidad la retendrá cuando fuera designado para cumplir funciones sin dicha garantía.\nNo será considerado como ingresante el agente que cambie su situación de revista presupuestaria, sin que hubiera mediado interrupción de relación de empleo público dentro del ámbito presente régimen.\nLa estabilidad en el empleo cesa únicamente cuando se configura alguna de las causales previstas en la presente ley.\n"
+      },
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Art. 18\nEl personal tiene derecho igualdad de oportunidades en el desarrollo de carrera administrativa, a través de los mecanismos que se determinen. Las promociones a cargos vacantes sólo procederán mediante sistemas de selección de antecedentes, méritos y aptitudes. El Convenio Colectivo de Trabajo deberá prever los mecanismos de participación y de control que permitan a las asociaciones sindicales verificar el cumplimiento de los criterios indicados.\n"
+      },
+      "art-019": {
+       "label": "Art. 19",
+       "kind": "art",
+       "text": "# Art. 19\nEl régimen de licencias, justificaciones y franquicias será materia de regulación en el Convenio Colectivo de Trabajo, que contemplará las características propias de la función pública, y de los diferentes organismos.\nHasta tanto se firmen los convenios colectivos de trabajo, se mantiene vigente el régimen rige actualmente para el sector público.\n"
+      },
+      "art-020": {
+       "label": "Art. 20",
+       "kind": "art",
+       "text": "# Art. 20\nEl personal podrá ser intimado a iniciar los trámites jubilatorios cuando reúna requisitos exigidos para obtener la jubilación ordinaria, autorizándolos a que continúen en la prestación de sus servicios por el período de un año partir de la intimación respectiva.\nIgual previsión regirá para el personal solicitare voluntariamente su jubilación o retiro.\n"
+      },
+      "art-021": {
+       "label": "Art. 21",
+       "kind": "art",
+       "text": "# Art. 21\nEl personal que goza de jubilación o retiro no tiene derecho a la estabilidad. La designación podrá ser cancelada en cualquier momento, por razones de oportunidad, mérito o conveniencia. En ese supuesto el agente tendrá derecho al pago de una indemnización que se calculará de conformidad con lo normado en el artículo 11 de la presente ley, computándose a los fines del cálculo de la antigüedad, el último período trabajado en la administración.\n"
+      },
+      "art-022": {
+       "label": "Art. 22",
+       "kind": "art",
+       "text": "# Art. 22\nLa renuncia es el derecho a concluir la relación de empleo produciéndose la baja automática del agente a los treinta (30) días corridos de su presentación, si con anterioridad no hubiera sido aceptada por autoridad competente.\nLa aceptación de la renuncia podrá ser dejada en suspenso por un término no mayor de ciento ochenta (180) días corridos si al momento de presentar la renuncia se encontrara involucrado en una investigación sumarial.\n"
+      },
+      "art-023": {
+       "label": "Art. 23",
+       "kind": "art",
+       "text": "# Art. 23\nLos agentes tienen los siguientes deberes, sin perjuicio de los que en función de las particularidades de la actividad desempeñada, se establezcan en las convenciones colectivas de trabajo:\na) Prestar el servicio personalmente, encuadrando su cumplimiento en principios de eficiencia, eficacia y rendimiento laboral, en las condiciones y modalidades que se determinen.\nb) Observar las normas legales y reglamentarias y conducirse con colaboración, respeto y cortesía en sus relaciones con el público y con el resto del personal.\nc) Responder por la eficacia, rendimiento de la gestión y del personal del área a su cargo.\nd) Respetar y hacer cumplir, dentro del marco de competencia de su función, el sistema jurídico vigente.\ne) Obedecer toda orden emanada del superior jerárquico competente, que reúna las formalidades del caso y tenga por objeto la realización de actos de servicio compatibles con la función del agente.\nf) Observar el deber de fidelidad que se derive de la índole de las tareas que le fueron asignadas y guardar la discreción correspondiente o la reserva absoluta, en su caso, de todo asunto del servicio que así lo requiera, en función de su naturaleza o de instrucciones específicas, con independencia de lo que establezcan las disposiciones vigentes en materia de secreto o reserva administrativa.\ng) Declarar bajo juramento su situación patrimonial y modificaciones ulteriores con los alcances que determine la reglamentación.\nh) Llevar a conocimiento de la superioridad todo acto, omisión o procedimiento que causare o pudiere causar perjuicio al Estado, configurar delito, o resultar una aplicación ineficiente de los recursos públicos. Cuando el acto, omisión o procedimiento involucrase a sus superiores inmediatos podrá hacerlo conocer directamente a la Sindicatura General de la Nación, Fiscalía Nacional de Investigaciones Administrativas y/o a la Auditoría General de la Nación.\ni) Concurrir a la citación por la instrucción de un sumario, cuando se lo requiera en calidad de testigo.\nj) Someterse a examen psicofísico en la forma que determine la reglamentación.\nk) Excusarse de intervenir en toda actuación que pueda originar interpretaciones de parcialidad.\nl) Velar por el cuidado y la conservación de los bienes que integran el patrimonio del Estado y de los terceros que específicamente se pongan bajo su custodia.\nm) Seguir la vía jerárquica correspondiente en las peticiones y tramitaciones realizadas.\nn) Encuadrarse en las disposiciones legales y reglamentarias sobre incompatibilidad y acumulación de cargos.\n"
+      },
+      "art-024": {
+       "label": "Art. 24",
+       "kind": "art",
+       "text": "# Art. 24\nEl personal queda sujeto a las siguientes prohibiciones, sin perjuicio de las que en función de las particularidades de la actividad desempeñada se establezcan en las convenciones colectivas de trabajo:\na) Patrocinar trámites o gestiones administrativas referentes a asuntos de terceros que se vinculen con sus funciones.\nb) Dirigir, administrar, asesorar, patrocinar, representar o prestar servicio remunerados o no, personas de existencia visible o jurídica que gestionen o exploten concesiones o privilegios de administración en el orden nacional, provincial municipal, o que fueran proveedores o contratistas de las mismas.\nc) Recibir directa o indirectamente beneficios originados en contratos, concesiones o franquicias que celebre u otorgue la administración en orden nacional, provincial o municipal.\nd) Mantener vinculaciones que le signifiquen beneficios u obligaciones con entidades directamente fiscalizadas por el ministerio, dependencia o entidad en el que se encuentre prestando servicios.\ne) Valerse directa o indirectamente de facultades o prerrogativas inherentes a sus funciones para fines ajenos a dicha función o para realizar proselitismo o acción política.\nf) Aceptar dádivas, obsequios u otros beneficios u obtener ventajas de cualquier índole con motivo u ocasión del desempeño de sus funciones.\ng) Representar, patrocinar a litigantes o intervenir en gestiones extrajudiciales contra la Administración Pública Nacional.\nh) Desarrollar toda acción u omisión que suponga discriminación por razón de raza, religión, nacionalidad, opinión, sexo o cualquier otra condición o circunstancia personal o social.\ni) Hacer uso indebido o con fines particulares del patrimonio estatal.\n"
+      },
+      "art-025": {
+       "label": "Art. 25",
+       "kind": "art",
+       "text": "# Art. 25\nEs incompatible el desempeño de un cargo remunerado en la Administración Pública Nacional, con el ejercicio de otro de igual carácter en el orden nacional, provincial o municipal, con excepción de los supuestos que se determinen por vía reglamentaria, o que se establezca en el Convenio Colectivo de Trabajo.\n"
+      },
+      "art-026": {
+       "label": "Art. 26",
+       "kind": "art",
+       "text": "# Art. 26\nEl Sistema Nacional de la Profesión Administrativa vigente, podrá ser revisado, adecuado y modificado de resultar procedente, el ámbito de la negociación colectiva, con excepción de las materias reservadas a la potestad reglamentaria del Estado por la Ley 24.185. En los organismos previstos por dicho sistema deberán tener participación todas las asociaciones sindicales signatarias de los convenios colectivos de trabajo de conformidad con lo normado en la Ley 24.185.\n"
+      },
+      "art-027": {
+       "label": "Art. 27",
+       "kind": "art",
+       "text": "# Art. 27\nEl personal vinculado por una relación de empleo público regulada por la presente ley, y que revista en la planta permanente, no podrá ser privado de su empleo ni ser objeto de medidas disciplinarias, sino por las causas en las condiciones que expresamente se establecen.\nAl personal comprendido en el régimen contrataciones, y de gabinete se le aplicarán los preceptos del presente capítulo, en las condiciones que establezcan las respectivas reglamentaciones.\n"
+      },
+      "art-028": {
+       "label": "Art. 28",
+       "kind": "art",
+       "text": "# Art. 28\nEl personal no podrá ser sancionado más de una vez por la misma causa, debiendo graduarse la sanción en base a la gravedad de la falta cometida, y los antecedentes del agente.\n"
+      },
+      "art-029": {
+       "label": "Art. 29",
+       "kind": "art",
+       "text": "# Art. 29\nEl personal comprendido en ámbito de aplicación del presente régimen tiene derecho a que se le garantice el debido proceso adjetivo, en los términos del artículo 1º inciso f) de la Ley 19.549 o la que la sustituya.\n"
+      },
+      "art-030": {
+       "label": "Art. 30",
+       "kind": "art",
+       "text": "# Art. 30\nEl personal podrá ser objeto de las siguientes medidas disciplinarias:\na) Apercibimiento.\nb) Suspensión de hasta treinta (30) días en un año, contados a partir de la primera suspensión.\nc) Cesantía.\nd) Exoneración.\nLa suspensión se hará efectiva sin prestación de servicios ni goce de haberes, en las normas y términos que se determinen y sin perjuicio de las responsabilidades penales y civiles que fije la legislación vigente.\n"
+      },
+      "art-031": {
+       "label": "Art. 31",
+       "kind": "art",
+       "text": "# Art. 31\nSon causas para imponer el apercibimiento o la suspensión hasta 30 días:\na) Incumplimiento reiterado del horario establecido.\nb) Inasistencias injustificadas que no exceden de diez (10) días discontinuos en el lapso de doce meses inmediatos anteriores y siempre que no configuren abandono de tareas.\nc) Incumplimiento de los deberes determinados en el art. 23 de esta ley, salvo que la gravedad y magnitud de los hechos justifiquen la aplicación de la causal de cesantía.\n"
+      },
+      "art-032": {
+       "label": "Art. 32",
+       "kind": "art",
+       "text": "# Art. 32\nSon causales para imponer cesantía:\na) Inasistencias injustificadas que excedan de 10 (diez) días discontinuos, en los 12 (doce) meses inmediatos anteriores.\nb) Abandono de servicio, el cual se considerará consumado cuando el agente registrare más de cinco (5) inasistencias continuas sin causa que lo justifique y fuera intimado previamente en forma fehaciente a retomar sus tareas.\nc) Infracciones reiteradas en el cumplimiento de sus tareas, que hayan dado lugar a treinta (30) días de suspensión en los doce meses anteriores.\nd) Concurso civil o quiebra no causal, salvo casos debidamente justificados por la autoridad administrativa.\ne) Incumplimiento de los deberes establecidos en los artículos 23 y 24 cuando por la magnitud y gravedad de la falta así correspondiere.\nf) Delito doloso no referido a la Administración Pública, cuando por sus circunstancias afecte el prestigio de la función o del agente.\ng) Calificaciones deficientes como resultado de evaluaciones que impliquen desempeño ineficaz durante tres (3) años consecutivos o cuatro (4) alternados en los últimos diez (10) años de servicio y haya contado con oportunidades de capacitación adecuada para el desempeño de las tareas.\nEn todos los casos podrá considerarse la solicitud de rehabilitación a partir de los dos (2) años de consentido el acto por el que se dispusiera la cesantía o de declarada firme la sentencia judicial, en su caso.\n"
+      },
+      "art-033": {
+       "label": "Art. 33",
+       "kind": "art",
+       "text": "# Art. 33\nSon causales para imponer la exoneración:\na) Sentencia condenatoria firme por delito contra la Administración Pública Nacional, Provincial o Municipal.\nb) Falta grave que perjudique materialmente a la Administración Pública.\nc) Pérdida de la ciudadanía.\nd) Violación de las prohibiciones previstas en el artículo 24.\ne) Imposición como pena principal o accesoria de inhabilitación absoluta o especial para la función pública.\nEn todos los casos podrá considerarse la solicitud de rehabilitación a partir de los cuatro (4) años de consentido el acto por el que se dispusiera la exoneración o de declarada firme la sentencia judicial, en su caso.\nLa exoneración conllevará necesariamente la baja en todos los cargos públicos que ejerciere el agente sancionado.\n"
+      },
+      "art-034": {
+       "label": "Art. 34",
+       "kind": "art",
+       "text": "# Art. 34\nLa substanciación de los sumarios por hechos que puedan configurar delitos y la imposición de las sanciones pertinentes en el orden administrativo, son independientes de la causa criminal, excepto en aquellos casos en que de la sentencia definitiva surja la configuración de una causal más grave que la sancionada; en tal supuesto se podrá sustituir la medida aplicada por otra de mayor gravedad.\n"
+      },
+      "art-035": {
+       "label": "Art. 35",
+       "kind": "art",
+       "text": "# Art. 35\nLa aplicación de apercibimiento y suspensión hasta el máximo de cinco (5) días, no requerirá la instrucción de sumario.\nLas suspensiones que excedan de dicho plazo serán aplicadas previa instrucción de un sumario, salvo que se funden en las causales previstas en los incisos a) y b) del art. 31.\nLa cesantía será aplicada previa instrucción de sumario, salvo que medien las causales previstas en los incisos a), b) y c) del art. 32.\n"
+      },
+      "art-036": {
+       "label": "Art. 36",
+       "kind": "art",
+       "text": "# Art. 36\nEl personal sumariado podrá ser suspendido preventivamente o trasladado dentro de su zona por la autoridad administrativa competente cuando su alejamiento sea necesario para el esclarecimiento de los hechos investigados o cuando su permanencia en funciones fuera evaluada como peligrosa o riesgosa. Esta decisión deberá ser tomada por la autoridad competente con los debidos fundamentos y tendrá los efectos de una medida precautoria, no pudiendo extenderse en ningún caso, durante más de tres (3) meses desde la fecha de iniciación del sumario. Vencido dicho plazo, si el sumario no hubiera sido concluido, el trabajador deberá ser reincorporado a sus tareas habituales. Una vez concluido el sumario, si del mismo no resulta la aplicación de sanciones o las que se determinen no impliquen la pérdida de los haberes, el trabajador que hubiera sido afectado por una suspensión preventiva tendrá derecho a que se le abonen los salarios caídos durante el lapso de vigencia de la misma, o la parte proporcional de los mismos, según le corresponda.\n"
+      },
+      "art-037": {
+       "label": "Art. 37",
+       "kind": "art",
+       "text": "# Art. 37\nLos plazos de prescripción para la aplicación de las sanciones disciplinarias, con las salvedades que determine la reglamentación, se computarán de la siguiente forma:\na) Causales que dieran lugar a la aplicación de apercibimiento y suspensión: seis (6) meses.\nb) Causales que dieran lugar a la cesantía: un (1) año.\nc) Causales que dieran lugar a la exoneración: dos (2) años.\nEn todos los casos, el plazo se contará a partir del momento de la comisión de la falta.\n"
+      },
+      "art-038": {
+       "label": "Art. 38",
+       "kind": "art",
+       "text": "# Art. 38\nPor vía reglamentaria se determinará las autoridades con atribuciones para aplicar las sanciones a que se refiere este capítulo, como así también el procedimiento de investigación aplicable. Este procedimiento deberá garantizar el derecho de defensa en juicio y establecerá plazos perentorios e improrrogables para resolver los sumarios administrativos, que nunca podrán exceder de seis (6) meses de cometido el hecho o la conducta imputada.\n"
+      },
+      "art-039": {
+       "label": "Art. 39",
+       "kind": "art",
+       "text": "# Art. 39\nContra los actos administrativos que dispongan la aplicación de sanciones al personal amparado por la estabilidad prevista en este régimen, el agente afectado podrá optar por impugnarlo por la vía administrativa común y una vez agotada ésta acudir a sede judicial, o recurrir directamente por ante la Cámara Nacional de Apelaciones en lo Contencioso Administrativo Federal o por ante las cámaras federales con asiento en las provincias, según corresponda conforme al lugar de prestación de servicios del agente. La opción formulada es excluyente e inhibe la utilización de cualquier otra vía o acción.\nEl recurso judicial directo sólo podrá fundarse en la ilegitimidad de la sanción, con expresa indicación de las normas presuntamente violadas o de los vicios que se atribuyen al sumario instruido.\n"
+      },
+      "art-040": {
+       "label": "Art. 40",
+       "kind": "art",
+       "text": "# Art. 40\nEl recurso judicial directo deberá interponerse ante el Tribunal dentro de los noventa (90) días de notificada la sanción, debiendo la autoridad administrativa enviar al Tribunal el expediente con el legajo personal del recurrente, dentro de los diez (10) días de requerido.\nRecibidos los antecedentes, el Tribunal correrá traslado por su orden por diez (10) días perentorios al recurrente y a la administración.\nVencido este plazo y cumplidas las medidas para mejor proveer que pudiera haber dispuesto el Tribunal, llamará autos para sentencia, la que se dictará dentro de los sesenta (60) días. Todos los términos fijados en el presente artículo se computarán en días hábiles judiciales.\n"
+      },
+      "art-041": {
+       "label": "Art. 41",
+       "kind": "art",
+       "text": "# Art. 41\nSi la sentencia fuera favorable al recurrente, en caso de ordenar su reincorporación, la administración deberá habilitar una vacante de igual categoría a la que revistaba. Este podrá optar por percibir la indemnización prevista en el artículo 11 renunciando al derecho de reincorporación.\n"
+      },
+      "art-042": {
+       "label": "Art. 42",
+       "kind": "art",
+       "text": "# Art. 42\nLa relación de empleo del agente con la Administración Pública Nacional concluye por las siguientes causas:\na) Cancelación de la designación del personal sin estabilidad en los términos del artículo 17.\nb) Renuncia aceptada o vencimiento del plazo de conformidad con lo previsto en el artículo 22.\nc) Conclusión o rescisión del contrato en el caso del personal bajo el régimen de contrataciones.\nd) Vencimiento del plazo que le correspondiere de conformidad con lo previsto en el artículo 11 por reestructuración o disolución de organismos.\ne) Razones de salud que lo imposibiliten para el cumplimiento de tareas laborales.\nf) Aplicación de sanciones de cesantía o exoneración.\ng) Baja por jubilación, retiro o vencimiento del plazo previsto en el artículo 20.\nh) Por fallecimiento.\n"
+      },
+      "art-043": {
+       "label": "Art. 43",
+       "kind": "art",
+       "text": "# Art. 43\nFacúltase al Poder Ejecutivo, a crear un fondo de capacitación permanente y recalificación laboral que funcionará en el ámbito de la Jefatura de Gabinete de Ministros.\n"
+      },
+      "art-044": {
+       "label": "Art. 44",
+       "kind": "art",
+       "text": "# Art. 44\nEl fondo tendrá por objetivo elaborar programas de capacitación, recalificación de puestos de trabajo y toda otra acción tendiente a facilitar la movilidad funcional y la readaptación de los empleados públicos a los cambios tecnológicos, funcionales u organizacionales propios de la administración moderna.\n"
+      },
+      "art-045": {
+       "label": "Art. 45",
+       "kind": "art",
+       "text": "# Art. 45\nEl órgano de administración de este fondo, su composición y modalidades de funcionamiento, será establecido en el marco de la negociación colectiva y los recursos a asignar deberán responder al carácter de los diferentes programas de modernización de los organismos jurisdicciones.\n"
+      },
+      "ley-art-001": {
+       "label": "Ley 25.164, art. 1",
+       "kind": "art",
+       "text": "# Ley 25.164, art. 1\nApruébase la ley marco de regulación de empleo público nacional que, como anexo, forma parte integrante de la presente.\n"
+      },
+      "ley-art-002": {
+       "label": "Ley 25.164, art. 2",
+       "kind": "art",
+       "text": "# Ley 25.164, art. 2\nDentro de los ciento ochenta (180) días de su entrada en vigencia, el Poder Ejecutivo reglamentará las disposiciones de la presente y del régimen anexo y el Jefe de Gabinete de Ministros, dentro del mismo plazo, dictará los reglamentos de su competencia que sean necesarios a los fines de la presente ley.\n"
+      },
+      "ley-art-003": {
+       "label": "Ley 25.164, art. 3",
+       "kind": "art",
+       "text": "# Ley 25.164, art. 3\nLas disposiciones de la ley marco de regulación del empleo público tienen carácter general. Sus disposiciones serán adecuadas a los sectores de la administración pública que presenten características particulares por medio de la negociación colectiva sectorial prevista en la Ley 24.185, excepto en cuanto fueren alcanzados por lo dispuesto en el inciso i) del artículo 3ºde la Ley 24.185. En este último caso, previo el dictado del acto administrativo que excluye al personal deberá consultarse a la comisión negociadora del convenio colectivo general. En cualquier caso, la resolución que el Poder Ejecutivo adoptare en los términos de esta última disposición, será recurrible ante la Justicia.\n"
+      },
+      "ley-art-004": {
+       "label": "Ley 25.164, art. 4",
+       "kind": "art",
+       "text": "# Ley 25.164, art. 4\nDeróganse las Leyes 22.140 y su modificatoria 24.150; 22.251 y 17.409; 20.239 y 20.464.\nSin perjuicio de lo establecido precedentemente, dichos ordenamientos y sus respectivas reglamentaciones continuarán rigiendo la relación laboral del personal de que se trate, hasta que se firmen los convenios colectivos de trabajo, o se dicte un nuevo ordenamiento legal que reemplace al anterior.\nEn ningún caso se entenderá que las normas de esta ley modifican las de la Ley 24.185.\n"
+      },
+      "ley-art-005": {
+       "label": "Ley 25.164, art. 5",
+       "kind": "art",
+       "text": "# Ley 25.164, art. 5\nQuedan expresamente excluidos del ámbito de aplicación de la presente ley el personal del Poder Legislativo nacional y del Poder Judicial de la Nación, que se rigen por sus respectivos ordenamientos especiales.\n"
+      },
+      "ley-art-006": {
+       "label": "Ley 25.164, art. 6",
+       "kind": "art",
+       "text": "# Ley 25.164, art. 6\nComuníquese al Poder Ejecutivo.\n"
+      }
+     },
+     "credits": {},
+     "note": "Ley 25.164 as enacted (sancionada 1999-09-15, promulgada de hecho 1999-10-06, B.O. 1999-10-08): the six articles of the law and the Ley Marco de Regulación de Empleo Público Nacional it approves as its Anexo. No vigencia clause: in force from the ninth day after publication (Código Civil art. 2)."
+    },
+    {
+     "from": "2024-07-05",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401216/norma.htm",
+     "sha256": "9dac4f4b087d853023a4a8ed1b47340a3955f23d6cbe2c88ee3fa13fafc8f5b1",
+     "changes": {
+      "art-002": {
+       "label": "Art. 2",
+       "kind": "art",
+       "text": "# Art. 2\nEl Poder Ejecutivo establecerá el órgano rector en materia de empleo público y autoridad de aplicación e interpretación de las disposiciones de este régimen.\n"
+      }
+     },
+     "credits": {
+      "art-002": [
+       "decreto-585-2024"
+      ]
+     }
+    },
+    {
+     "from": "2024-07-09",
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401266/norma.htm",
+     "sha256": "3decefb455bf96aada12b630851becd4a65e695d57a0b8868b78216715bb620c",
+     "changes": {
+      "art-011": {
+       "label": "Art. 11",
+       "kind": "art",
+       "text": "# Art. 11\nEl personal alcanzado por el régimen de estabilidad que resulte afectado por las medidas de reestructuración que comporten la supresión de órganos, organismos o de las funciones a ellos asignadas; o de reducción por encontrarse excedida, conforme surja del informe fundado del órgano competente en la materia, la dotación óptima necesaria, quedará, automáticamente, en situación de disponibilidad por un período máximo de hasta doce (12) meses, conforme lo establezca la reglamentación.\nLos agentes que se encontraren en situación de disponibilidad deberán (i) recibir la capacitación que se les imparta; o (ii) desarrollar tareas en servicios tercerizados del Estado.\nCumplido el término de disponibilidad, sin que el trabajador hubiera formalizado una nueva relación de trabajo, quedará automáticamente desvinculado de la Administración Pública nacional. Tendrá derecho a percibir una indemnización igual a un (1) mes de sueldo por cada año de servicio o fracción mayor de tres (3) meses, tomando como base la mejor remuneración mensual, normal y habitual percibida durante el último año o durante el tiempo de prestación de servicios si éste fuera menor, salvo el mejor derecho que se estableciere en el Convenio Colectivo de Trabajo y las indemnizaciones especiales que pudieren regularse por dicha vía.\nLa presente norma será de aplicación supletoria al personal alcanzado por el régimen de estabilidad propia en virtud de leyes o estatutos especiales o convenciones colectivas de trabajo.\n"
+      },
+      "art-012": {
+       "label": "Art. 12",
+       "kind": "art",
+       "text": "# Art. 12\nPara los supuestos previstos en el artículo anterior, los delegados de personal con mandato vigente o pendiente el año posterior de la tutela sindical no podrán ser afectados en el ejercicio de sus funciones ni puestos en disponibilidad.\nAsimismo aquellos agentes que se encuentren de licencia por enfermedad o accidente, por embarazo y por matrimonio, hasta vencido el período de su licencia no podrán ser puestos en situación de disponibilidad.\nEn el caso de licencias sin goce de haberes, la situación de disponibilidad surtirá efecto desde su notificación, correspondiendo desde ese momento la percepción de los haberes mensuales.\n"
+      },
+      "art-015": {
+       "label": "Art. 15",
+       "kind": "art",
+       "text": "# Art. 15\nLos agentes serán destinados a las tareas propias de la categoría o nivel que hayan alcanzado y al desarrollo de tareas complementarias o instrumentales, para la consecución de los objetivos del trabajo. Pueden ser destinados por decisión fundada de sus superiores a desarrollar transitoriamente tareas específicas del nivel superior percibiendo la diferencia de haberes correspondiente. La movilidad del personal de una dependencia a otra dentro o fuera de la misma jurisdicción presupuestaria, es una atribución del empleador, pero estará sujeta a la regulación que se establezca en los convenios colectivos celebrados en el marco de la ley 24.185.\nEl Poder Ejecutivo nacional podrá celebrar convenios con los otros poderes del Estado, provincias y municipios, que posibiliten la movilidad interjurisdiccional de los agentes, sin perjuicio del cumplimiento de las disposiciones contenidas en la presente ley. La movilidad del personal que se instrumente a través de la adscripción de su respectivo ámbito a otro poder del Estado nacional, estados provinciales y/o Gobierno de la Ciudad Autónoma de Buenos Aires no podrá exceder los trescientos sesenta y cinco (365) días corridos salvo excepción fundada en requerimientos extraordinarios de servicios y estará sujeta a las reglamentaciones que dicten en sus respectivas jurisdicciones los poderes Ejecutivo, Legislativo y Judicial.\n"
+      },
+      "art-018": {
+       "label": "Art. 18",
+       "kind": "art",
+       "text": "# Art. 18\nEl personal tiene derecho a igualdad de oportunidades en el desarrollo de la carrera administrativa, a través de los mecanismos que se determinen. Las promociones a cargos vacantes sólo procederán mediante sistemas de selección de antecedentes, méritos y aptitudes.\n"
+      },
+      "art-020": {
+       "label": "Art. 20",
+       "kind": "art",
+       "text": "# Art. 20\nEl personal podrá ser intimado a iniciar los trámites jubilatorios cuando reúna los requisitos exigidos para obtener la jubilación ordinaria.\n"
+      },
+      "art-024": {
+       "label": "Art. 24",
+       "kind": "art",
+       "text": "# Art. 24\nEl personal queda sujeto a las siguientes prohibiciones, sin perjuicio de las que en función de las particularidades de la actividad desempeñada se establezcan en las convenciones colectivas de trabajo:\na) Patrocinar trámites o gestiones administrativas referentes a asuntos de terceros que se vinculen con sus funciones.\nb) Dirigir, administrar, asesorar, patrocinar, representar o prestar servicio remunerados o no, personas de existencia visible o jurídica que gestionen o exploten concesiones o privilegios de administración en el orden nacional, provincial municipal, o que fueran proveedores o contratistas de las mismas.\nc) Recibir directa o indirectamente beneficios originados en contratos, concesiones o franquicias que celebre u otorgue la administración en orden nacional, provincial o municipal.\nd) Mantener vinculaciones que le signifiquen beneficios u obligaciones con entidades directamente fiscalizadas por el ministerio, dependencia o entidad en el que se encuentre prestando servicios.\ne) Valerse directa o indirectamente de facultades o prerrogativas inherentes a sus funciones para fines ajenos a dicha función o para realizar proselitismo o acción política.\nf) Aceptar dádivas, obsequios u otros beneficios u obtener ventajas de cualquier índole con motivo u ocasión del desempeño de sus funciones.\ng) Representar, patrocinar a litigantes o intervenir en gestiones extrajudiciales contra la Administración Pública Nacional.\nh) Desarrollar toda acción u omisión que suponga discriminación por razón de raza, religión, nacionalidad, opinión, sexo o cualquier otra condición o circunstancia personal o social.\ni) Hacer uso indebido o con fines particulares del patrimonio estatal.\nj) Realizar durante sus horas laborales del servicio público cualquier tipo de tareas vinculadas a campañas electorales y/o partidarias.\n"
+      },
+      "art-031": {
+       "label": "Art. 31",
+       "kind": "art",
+       "text": "# Art. 31\nSe podrá imponer el apercibimiento o la suspensión hasta treinta (30) días cuando se verifique:\na) Incumplimiento reiterado del horario establecido;\nb) Inasistencias injustificadas que no excedan de cinco (5) días discontinuos en el lapso de doce (12) meses inmediatos anteriores y siempre que no configuren abandono de tareas; y\nc) Incumplimiento de los deberes determinados en el artículo 23 de esta ley, salvo que la gravedad y magnitud de los hechos justifiquen la aplicación de la causal de cesantía.\n"
+      },
+      "art-032": {
+       "label": "Art. 32",
+       "kind": "art",
+       "text": "# Art. 32\nSon causales para imponer la cesantía:\na) Inasistencias injustificadas que excedan de cinco (5) días discontinuos, en los doce (12) meses inmediatos anteriores;\nb) Abandono de servicio, el cual se considerará consumado cuando el agente registrare más de tres (3) inasistencias continuas sin causa que lo justifique y fuera intimado previamente en forma fehaciente a retomar sus tareas;\nc) Infracciones reiteradas en el cumplimiento de sus tareas, que hayan dado lugar a treinta (30) días de suspensión en los doce (12) meses anteriores;\nd) Concurso civil o quiebra no causal, salvo casos debidamente justificados por la autoridad administrativa;\ne) Incumplimiento de los deberes establecidos en los artículos 23 y 24 cuando por la magnitud y gravedad de la falta así correspondiere;\nf) Delito doloso no referido a la Administración Pública, cuando por sus circunstancias afecte el prestigio de la función o del agente;\ng) Calificaciones deficientes como resultado de evaluaciones que impliquen desempeño ineficaz durante dos (2) años consecutivos o tres (3) alternados en los últimos diez (10) años de servicio y haya contado con oportunidades de capacitación adecuada para el desempeño de las tareas.\nEn todos los casos podrá considerarse la solicitud de rehabilitación a partir de los dos (2) años de consentido el acto por el que se dispusiera la cesantía o de declarada firme la sentencia judicial, en su caso.\n"
+      },
+      "art-033": {
+       "label": "Art. 33",
+       "kind": "art",
+       "text": "# Art. 33\nSon causales para imponer la exoneración:\na) Sentencia condenatoria firme por delito contra la Administración Pública Nacional, provincial o municipal;\nb) Falta grave que perjudique materialmente a la Administración Pública;\nc) Pérdida de la residencia permanente;\nd) Violación de las prohibiciones previstas en el artículo 24;\ne) Imposición como pena principal o accesoria de inhabilitación absoluta o especial para la función pública.\nEn todos los casos podrá considerarse la solicitud de rehabilitación a partir de los cuatro (4) años de consentido el acto por el que se dispusiera la exoneración o de declarada firme la sentencia judicial, en su caso.\nLa exoneración conllevará necesariamente la baja en todos los cargos públicos que ejerciere el agente sancionado.\n"
+      },
+      "art-037": {
+       "label": "Art. 37",
+       "kind": "art",
+       "text": "# Art. 37\nLos plazos de prescripción para la aplicación de las sanciones disciplinarias, con las salvedades que determine la reglamentación, se computarán de la siguiente forma:\na) Causales que dieran lugar a la aplicación de apercibimiento y suspensión: un (1) año;\nb) Causales que dieran lugar a la cesantía: dos (2) años;\nc) Causales que dieran lugar a la exoneración: cuatro (4) años.\nEn todos los casos, el plazo se contará a partir del momento de la comisión de la falta.\n"
+      }
+     },
+     "credits": {
+      "art-011": [
+       "ley-27742"
+      ],
+      "art-012": [
+       "ley-27742"
+      ],
+      "art-015": [
+       "ley-27742"
+      ],
+      "art-018": [
+       "ley-27742"
+      ],
+      "art-020": [
+       "ley-27742"
+      ],
+      "art-024": [
+       "ley-27742"
+      ],
+      "art-031": [
+       "ley-27742"
+      ],
+      "art-032": [
+       "ley-27742"
+      ],
+      "art-033": [
+       "ley-27742"
+      ],
+      "art-037": [
+       "ley-27742"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "decisions": [
+  "Batch 5 (corpus.d/60-batch5.json, built by tools/batch5/parse_batch5.py with the replay engine of tools/parse.py and the helpers of tools/batch4/parse_batch4.py): each act from InfoLEG's text as enacted (norma.htm), with every amending norm InfoLEG's consolidated text names replayed from that norm's own text and the result checked against texact.htm.",
+  "Batch 5 in-force dates of the amending norms: Ley 25.674 has no vigencia clause -> 2002-12-08; Ley 26.390 has no vigencia clause -> 2008-07-04; Decreto 70/2023 (DNU) has no vigencia clause -> 2023-12-30; DNU 585/2024, art. 14: desde su publicación -> 2024-07-05; Ley 27.742, art. 237: a partir del día siguiente al de su publicación -> 2024-07-09; Decreto 342/2025, art. 3: desde su publicación -> 2025-05-21; Ley 27.802, art. 217: desde su publicación -> 2026-03-06.",
+  "ley-23551: replay vs texact: 0 word mismatches; reconciled to InfoLEG's wording from the last norm its note names: art-056 (decreto-342-2025); typography-only: none; transcription: none.",
+  "ley-25164: replay vs texact: 0 word mismatches; reconciled to InfoLEG's wording from the last norm its note names: none; typography-only: art-012; transcription: none."
+ ],
+ "ai_use": [
+  "Batch 5: none at data-build time; parse_batch5.py is deterministic code written with Claude Code (claude-opus-5-5)."
+ ]
+}
