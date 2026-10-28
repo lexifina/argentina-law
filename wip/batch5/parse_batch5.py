@@ -65,7 +65,7 @@ SETUP = {
         # art. 65: "La presente ley entrará en vigencia al día siguiente de su publicación" (B.O. 1988-04-22)
         "first_day": "1988-04-23", "first_law": "ley-23551", "base_published": "1988-04-22",
         # the names of the act's chapters ("VI. - De la inscripción") are headings, not text
-        "drop_lines": [r"^[IVXL]+\.? - De(?:l| la| las| los)? "],
+        "drop_lines": [r"^[IVXL]+\.? - [A-Z][^.]*$"],
         "note": ("Ley 23.551 as enacted (sancionada 1988-03-23, promulgada 1988-04-14, B.O. 1988-04-22). Art. 65: "
                  "\"La presente ley entrará en vigencia al día siguiente de su publicación\"."),
     },
@@ -78,6 +78,7 @@ SETUP = {
     },
     "ley-25164": {
         "first_day": None, "first_law": "ley-25164", "base_published": "1999-10-08",
+        "drop_lines": [r"^PROHIBICIONES$"],  # the name of chapter V, printed after the chapter's own heading line
         # Ley 27.742 art. 53 replaces "el primer párrafo" of art. 12 but quotes two paragraphs, the second being the
         # old second paragraph again; InfoLEG's consolidated text reads both as replacing the first two
         "overrides": {(401266, 53): [{"op": "lines", "action": "replace", "keys": ["art-012"], "paras": [1, 2],
@@ -100,8 +101,16 @@ EXTRA = {
 _replay = P.replay
 
 
+# articles of another code quoted inside an amending article of the act: (act slug, quoted unit key, host unit key)
+QUOTED = {"ley-26657": [("art-152-ter", "art-042"), ("art-482", "art-043")]}
+
+
 def replay(act: dict) -> dict:
     r = _replay(act)
+    for quoted, host in QUOTED.get(act["slug"], []):
+        for v in r["versions"]:  # "Artículo 152 ter: …" is the Código Civil article art. 42 inserts: its words, not a unit
+            q = v["state"].pop(quoted)
+            v["state"][host]["body"] = v["state"][host]["body"] + [f"{q['label'].replace('Art.', 'Artículo')}: {q['body'][0]}"] + q["body"][1:]
     for key, label, kind, start, end in EXTRA.get(act["slug"], []):
         L = [H.strip_links(l) for l in H.lines(F.cached(F.norma_url(act["id"])))]
         i = next(n for n, l in enumerate(L) if re.match(start, l))
