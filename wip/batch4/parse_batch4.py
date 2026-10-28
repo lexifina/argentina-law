@@ -65,6 +65,12 @@ SETUP = {
     },
     "ley-25675": {
         "first_day": None, "first_law": "ley-25675", "base_published": "2002-11-28",
+        # the titles of the act's sections, printed between articles: headings, not text
+        "drop_lines": [r"^(?:Principios de la política ambiental|Presupuesto mínimo|Competencia judicial|"
+                       r"Instrumentos de la política y la gestión ambiental|Ordenamiento ambiental|"
+                       r"Evaluación de impacto ambiental|Educación ambiental|Información ambiental|Participación ciudadana|"
+                       r"Seguro ambiental y fondo de restauración|Sistema Federal Ambiental|"
+                       r"Ratificación de acuerdos federales|Autogestión|Daño ambiental|Del Fondo de Compensación Ambiental)$"],
         # Decreto 2413/2002 arts. 1-4 ("Obsérvase …"), applied to the bill's text in norma.htm
         "vetoed_words": [
             ("art-003", r"de orden público, operativas y se utilizarán", "de orden público, y se utilizarán"),
@@ -93,9 +99,15 @@ SETUP = {
             (322870, 4): [{"op": "lines", "action": "insert", "keys": ["art-011"], "items": ["f"],
                            "within": r"^5\.2\.", "until": r"^5\.3\."}],
             (333514, 3): [{"op": "lines", "action": "insert", "keys": ["art-005"], "items": ["6"]}],
-            (333514, 4): [{"op": "lines", "action": "insert", "keys": ["art-006"], "items": ["h"]}],
+            # Ley 27.533's text on InfoLEG ends inciso h) with a stray closing quote ("… entre otros.'")
+            (333514, 4): [{"op": "lines", "action": "insert", "keys": ["art-006"], "items": ["h"], "text_fix": [(r"'$", "")]}],
+            # inciso o) of art. 9 has two paragraphs since Ley 27.501; Ley 27.736 replaces both
+            (391774, 5): [{"op": "lines", "action": "replace", "keys": ["art-009"], "paras": [1, 2],
+                           "within": r"^ñ\)", "until": r"^p\)", "check": r"^o\)"}],
             (356020, 3): [{"op": "lines", "action": "replace", "keys": ["art-011"], "items": ["a"],
                            "within": r"^5\.1\.", "until": r"^5\.2\."}],
+            # inciso i) has two paragraphs: placed after inciso h), the 9th line of the article
+            (391774, 4): [{"op": "lines", "action": "insert_after", "keys": ["art-006"], "paras": [9], "check": r"^h\)"}],
             (391774, 6): [{"op": "lines", "action": "replace", "keys": ["art-011"], "items": ["f"],
                            "within": r"^3\.-", "until": r"^4\.-"}],
             (391774, 7): [{"op": "lines", "action": "insert", "keys": ["art-011"], "items": ["g"],
@@ -120,17 +132,20 @@ _apply_lines = P.apply_lines
 
 def apply_lines(body: list[str], o: dict) -> list[str] | None:
     """parse.apply_lines, plus two keys for batch 4's overrides: "within"/"until" (regexes) limit the change to the
-    lines of one numbered point of the article; "check" (regex) must match the paragraph a positional change targets."""
-    if "check" in o:
-        p = o["paras"][0]
-        if p > len(body) or not re.match(o["check"], body[p - 1]):
-            return None
+    lines of one numbered point of the article; "check" (regex) must match the paragraph a positional change targets; "text_fix" [(regex, replacement)] corrects
+    a transcription slip in the amending norm's text on InfoLEG."""
+    if o.get("text_fix"):
+        o = dict(o, text=[re.sub(pat, rep, l) for l in o["text"] for pat, rep in o["text_fix"]])
     if "within" not in o:
+        if "check" in o and not (o["paras"][0] <= len(body) and re.match(o["check"], body[o["paras"][0] - 1])):
+            return None
         return _apply_lines(body, o)
     h = next((i for i, l in enumerate(body) if re.match(o["within"], l)), None)
     if h is None:
         return None
     e = next((i for i in range(h + 1, len(body)) if re.match(o["until"], body[i])), len(body))
+    if "check" in o and not (o["paras"][0] <= e - h - 1 and re.match(o["check"], body[h + o["paras"][0]])):
+        return None
     seg = _apply_lines(body[h + 1:e], o)
     return None if seg is None else body[:h + 1] + seg + body[e:]
 
