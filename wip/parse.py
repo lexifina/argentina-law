@@ -365,8 +365,15 @@ def law_entry(nid: int) -> dict:
 
 # ------------------------------------------------------------------ the amending norms
 
-SUF_WORDS = r"(?:\s+(bis|ter|qu[aá]ter|quinquies))?"
-NUM_IN = r"(\d{1,2}\.\d{3}|\d+)"
+SUF = r"bis|ter|qu[aá]ter|quinquies|sexies|septies|octies"
+REF = r"(\d+)(?:\s*[°º])?(?:\s+(" + SUF + r"))?(?:\s*\((\d)\))?"   # "268 (2)", "204 ter", "41 quinquies"
+ORD = {"primer": 1, "primero": 1, "segundo": 2, "tercer": 3, "tercero": 3, "cuarto": 4, "quinto": 5, "sexto": 6,
+       "septimo": 7, "octavo": 8, "noveno": 9, "decimo": 10, "ultimo": "last", "ultimos": "last"}
+ORD_RE = r"(primer|primero|segundo|tercer|tercero|cuarto|quinto|sexto|s[eé]ptimo|octavo|noveno|d[eé]cimo|[uú]ltimos?)"
+V_REPLACE = r"(?:Sustit[uú]y[ae]n?se|Reempl[aá]c[ae]n?se|Modif[ií]c[ae]n?se|Modif[ií]qu[ae]n?se)"
+V_INSERT = r"(?:Incorp[oó]r[ae]n?se|Agr[eé]gu?[ae]n?se)"
+V_REPEAL = r"(?:Der[oó]g[ae]n?se|Supr[ií]m[ae]n?se)"
+V_RENUMBER = r"(?:Renum[eé]r[ae]n?se)"
 
 
 def dethousand(s: str) -> str:
@@ -378,6 +385,36 @@ def dehead(s: str) -> str:
     """Drop only the thousands dot of a leading article number ("Artículo 1.196: …"), keeping the rest as written."""
     m = re.match(r"^\"?((?:ART[IÍ]CULO|Art[ií]culo|Art\.)\s*\d{1,2})\.(\d{3})", s)
     return s[:m.end(1)] + s[m.end(1) + 1:] if m else s
+
+
+def heading(s: str) -> tuple[int, str | None, str | None, str] | None:
+    """An article heading at the start of a line: (number, suffix word, "(n)" sub-number, rest of the line)."""
+    s = dehead(s.lstrip('"'))
+    sub = None
+    m0 = re.match(r"^((?:ART[IÍ]CULO|Art[ií]culo|Art\.)\s*\d+\s*[°º]?)\s*\((\d)\)", s)
+    if m0:
+        sub = m0.group(2)
+        s = m0.group(1) + s[m0.end():]
+    m = ART_RE.match(s)
+    if not m:
+        return None
+    rest = m.group(3).strip()
+    if re.fullmatch(r"[.…\s]*", rest):
+        rest = ""
+    return int(m.group(1)), m.group(2), sub, rest
+
+
+def key_of(num: int, suf: str | None, sub: str | None, width: int) -> str:
+    return f"art-{num:0{width}d}" + (f"-{fold(suf)}" if suf else "") + (f"-{sub}" if sub else "")
+
+
+def label_of(num: int, suf: str | None, sub: str | None) -> str:
+    return f"Art. {num}" + (f" {fold(suf)}" if suf else "") + (f" ({sub})" if sub else "")
+
+
+def label_from_key(k: str) -> str:
+    m = re.fullmatch(r"art-0*(\d+)(?:-([a-z]+))?(?:-(\d))?", k)
+    return label_of(int(m.group(1)), m.group(2), m.group(3)) if m else k
 
 
 def amender_articles(nid: int) -> list[tuple[int, list[str]]]:
@@ -402,18 +439,21 @@ def amender_articles(nid: int) -> list[tuple[int, list[str]]]:
     return out
 
 
-def new_text(body: list[str]) -> list[str]:
-    """The new wording given after an instruction: quotes, the article heading and trailing headings removed."""
+def clean_body(body: list[str]) -> list[str]:
+    """The new wording given after an instruction, as lines: quotes, notes and the amending law's own headings and
+    closing formulas removed. Article headings inside it are kept (see split_articles)."""
     out, quoted = [], bool(body) and body[0].startswith('"')
     for i, s in enumerate(body):
-        if MARKER_RE.match(s) and not s.startswith('"') and (not quoted or i == 0 or not out):
-            break
-        if re.match(r"^(DADA EN LA SALA|Comun[ií]quese|- REGISTRAD)", s, re.I):
+        if MARKER_RE.match(s) and not s.startswith('"') and not quoted and heading(s) is None:
+            if out:
+                break
+            continue  # a chapter or title heading introducing the new articles
+        if re.match(r"^(DADA EN LA SALA|Comun[ií]quese|- ?REGISTRAD)", s, re.I):
             break
         if is_note(s):
             continue
         s = s.strip()
-        end = quoted and bool(re.search(r'"[.;]?$', s))
+        end = quoted and bool(re.search(r'"[.;]?$', s)) and not (i == 0 and len(s) < 3)
         if i == 0 and s.startswith('"'):
             s = s[1:]
         if end:
@@ -421,63 +461,199 @@ def new_text(body: list[str]) -> list[str]:
         out.append(s)
         if end:
             break
-    if out:
-        m = ART_RE.match(dehead(out[0]))
-        if m:
-            rest = m.group(3).strip()
-            out = ([rest] if rest else []) + out[1:]
     return [s for s in out if s]
 
 
-def unit_key_w(num: int, suf: str | None, width: int) -> str:
-    return f"art-{num:0{width}d}" + (f"-{fold(suf)}" if suf else "")
+def new_text(body: list[str]) -> list[str]:
+    """The new wording of one article: the heading of the article itself removed."""
+    out = clean_body(body)
+    if out:
+        h = heading(out[0])
+        if h:
+            out = ([h[3]] if h[3] else []) + out[1:]
+    return out
 
 
-def keys_in(s: str, width: int) -> list[str]:
-    s = dethousand(s)
-    return [unit_key_w(int(n), suf, width) for n, suf in re.findall(r"(\d+)" + SUF_WORDS, s)]
+def split_articles(body: list[str], width: int) -> list[tuple[str, str, list[str]]]:
+    """New articles given one after another ("Artículo 213 ter: … Artículo 213 quater: …"): [(key, label, lines)]."""
+    lines = clean_body(body)
+    if not lines or heading(lines[0]) is None:
+        return []
+    out = []
+    for s in lines:
+        h = heading(s)
+        if h and not re.match(r"^(inciso|\d)", s, re.I):
+            num, suf, sub, rest = h
+            out.append((key_of(num, suf, sub, width), label_of(num, suf, sub), [rest] if rest else []))
+        elif out:
+            out[-1][2].append(s.strip('"'))
+    return out
 
 
-def instruction(text: str, body: list[str], target: str, width: int) -> dict | None:
+def refs(s: str, width: int) -> list[str]:
+    """Article references in an instruction: "artículos 303, 304 y 305", "artículo 268 (2)", "art. 107"."""
+    s = re.sub(r"(incisos?|inc\.)\s*[\d°º,y\s]+(?:\)\s*)?", " ", dethousand(s), flags=re.I)
+    return [key_of(int(n), suf, sub, width) for n, suf, sub in re.findall(REF, s)]
+
+
+def item_no(line: str) -> str | None:
+    """The number or letter of an item ("1º …", "2) …", "3. …", "Inciso 6: …", "d) …")."""
+    m = re.match(r"^(?:inciso\s+)?(\d+)\s*(?:[º°]\.?|\)|\.(?!\d)|-|:)|^([a-z])\)", line.strip('"'), re.I)
+    return (m.group(1) or m.group(2).lower()) if m else None
+
+
+def ordinals(s: str) -> list:
+    return [ORD[fold(w)] for w in re.findall(ORD_RE, s, re.I)]
+
+
+def parse_head(head: str, full: str, body: list[str], width: int) -> list[dict]:
+    """Operations from one instruction. `head` is the text before the act's name, `full` the whole first line."""
+    h = re.sub(r"\s+", " ", head).strip(" -,")
+    hf = fold(h)
+    ops: list[dict] = []
+    if re.search(r"penas de multa", hf):
+        return [{"op": "fines"}]
+    if re.search(V_RENUMBER, h, re.I):
+        m = re.search(V_RENUMBER + r"\s+(?:el|los)\s+art[ií]culos?\s+(.+?)\s+(?:del\s+C[oó]digo[^,]*?,?\s+)?como\s+art[ií]culos?\s+"
+                      r"(.+?)(?:\s*,?\s*respectivamente|\s+e\s+incorp|\.|$)", dethousand(full), re.I)
+        if m:
+            a, b = refs(m.group(1), width), refs(m.group(2), width)
+            if len(a) == len(b):
+                ops.append({"op": "renumber", "pairs": list(zip(a, b))})
+        arts = split_articles(body, width)
+        ops += [{"op": "insert", "keys": [k], "label": lab, "text": t} for k, lab, t in arts]
+        return ops or [{"op": "unknown"}]
+    if re.search(r"r[uú]brica|denominaci[oó]n|ep[ií]grafe", h, re.I) or \
+            (re.search(r"\bt[ií]tulo\b|\bcap[ií]tulo\b", h, re.I) and not re.search(r"art[ií]culo", h, re.I)
+             and not split_articles(body, width)):
+        return [{"op": "heading"}]
+    # composite: "Modifícase el Código Penal de la siguiente manera: 1. Incorpórase … 2. Sustitúyese …"
+    if not re.search(r"art[ií]culo|art\.|inciso|p[aá]rrafo", h, re.I) and body and \
+            re.match(r"^\d+\s*\.\s*" + r"(?:" + V_REPLACE + "|" + V_INSERT + "|" + V_REPEAL + ")", body[0], re.I):
+        parts, cur = [], None
+        for s in body:
+            if re.match(r"^\d+\s*\.\s*(?:" + V_REPLACE + "|" + V_INSERT + "|" + V_REPEAL + ")", s, re.I):
+                cur = [re.sub(r"^\d+\s*\.\s*", "", s)]
+                parts.append(cur)
+            elif cur is not None:
+                cur.append(s)
+        for p in parts:
+            ops += parse_head(p[0], p[0], p[1:], width)
+        return ops
+    # new articles given one after another, with no article named in the instruction
+    if re.search(V_INSERT, h, re.I) and not re.search(r"art[ií]culo\s+\d|inciso|p[aá]rrafo", h, re.I):
+        arts = split_articles(body, width)
+        if arts:
+            return [{"op": "insert", "keys": [k], "label": lab, "text": t} for k, lab, t in arts]
+    # repeals, possibly several clauses: "Deróganse el artículo 78 bis y el inciso 1º del artículo 117 bis"
+    if re.search(V_REPEAL, h, re.I):
+        rest = re.split(V_REPEAL, h, maxsplit=1, flags=re.I)[1]
+        clauses = re.split(r"\s+y\s+(?=(?:el|la|los|las)\s)|,\s*(?=(?:el|la|los|las)\s)", rest)
+        for c in clauses:
+            c = c.strip()
+            m = re.search(r"incisos?\s+(.+?)\s+del\s+art[ií]culo\s+" + REF, c, re.I)
+            if m:
+                ks = refs("artículo " + c[m.start(2):], width)[:1]
+                items = re.findall(r"(\d+|[a-z])\s*[º°)]?", m.group(1))
+                ops.append({"op": "lines", "action": "delete", "keys": ks, "items": items})
+                continue
+            m = re.search(ORD_RE + r"(?:\s+y\s+" + ORD_RE + r")?\s+p[aá]rrafos?\s+del\s+art[ií]culo\s+" + REF, c, re.I)
+            if m:
+                ks = refs(c[c.lower().index("art"):], width)[:1]
+                ops.append({"op": "lines", "action": "delete", "keys": ks, "paras": ordinals(c[:m.end(2) or m.end(1)])})
+                continue
+            if re.search(r"art[ií]culos?|art\.", c, re.I):
+                ops.append({"op": "repeal", "keys": refs(c, width)})
+                continue
+            ops.append({"op": "unknown"})
+        return ops
+    text = new_text(body)
+    # items (incisos)
+    m = re.search(r"incisos?\s+(.+?)\s+(?:del|al)\s+art[ií]culo\s+" + REF, h, re.I)
+    if m:
+        ks = refs("artículo " + h[m.start(2):], width)[:1]
+        items = re.findall(r"(\d+|\b[a-z])\s*[º°)]?", m.group(1))
+        action = "insert" if re.search(V_INSERT, h, re.I) else "replace" if re.search(V_REPLACE, h, re.I) else None
+        if action:
+            return [{"op": "lines", "action": action, "keys": ks, "items": items, "text": clean_body(body)}]
+    # paragraphs
+    m = re.search(r"(?:p[aá]rrafos?\s+" + ORD_RE + r"(?:\s+y\s+" + ORD_RE + r")?|" + ORD_RE + r"(?:\s+y\s+" + ORD_RE +
+                  r")?\s+p[aá]rrafos?)\s+(?:del|al)\s+art[ií]culo\s+" + REF, h, re.I)
+    if m:
+        ks = refs(re.search(r"art[ií]culo\s+.*$", h[m.start():], re.I).group(0), width)[:1]
+        paras = ordinals(h[m.start():m.end()].split("del")[0].split("al artículo")[0])
+        after = bool(re.search(r"a\s+continuaci[oó]n\s+del", h, re.I))
+        if re.search(V_INSERT, h, re.I):
+            action = "insert_after" if after else "insert"
+        elif re.search(V_REPLACE, h, re.I):
+            action = "replace"
+        else:
+            action = None
+        if action:
+            return [{"op": "lines", "action": action, "keys": ks, "paras": paras, "text": text}]
+    # whole articles
+    if re.search(V_INSERT, h, re.I):
+        m = re.search(r"(?:como\s+)?(?:nuevo\s+)?art[ií]culo\s+" + REF, h, re.I)
+        arts = split_articles(body, width)
+        if m:
+            k = key_of(int(m.group(1)), m.group(2), m.group(3), width)
+            return [{"op": "insert", "keys": [k], "label": label_of(int(m.group(1)), m.group(2), m.group(3)), "text": text}]
+        if arts:
+            return [{"op": "insert", "keys": [k], "label": lab, "text": t} for k, lab, t in arts]
+    m = re.search(V_REPLACE + r"\s+(?:(?:al|el|como)\s+)?(?:texto\s+del\s+)?(?:art[ií]culo|art\.)\s*" + REF, h, re.I)
+    if m:
+        k = key_of(int(m.group(1)), m.group(2), m.group(3), width)
+        return [{"op": "replace", "keys": [k], "label": label_of(int(m.group(1)), m.group(2), m.group(3)), "text": text}]
+    return [{"op": "unknown"}]
+
+
+def instruction(text: str, body: list[str], target: str, width: int) -> list[dict] | None:
     """What one article of an amending norm does to the act, or None if it does not address it."""
     t = dethousand(text)
+    t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\s*,?\s*(?=C[oó]digo Penal)", " del ", t, flags=re.I)
+    t = re.sub(r"\s+de\s+la\s+ley\s+(?:N[°º]\s*)?11179\b", " del Código Penal", t, flags=re.I) if "Penal" in target else t
     if not re.search(target, t, re.I):
         return None
-    head = re.split(r"\s+del?\s+(?:la\s+)?(?:" + target + ")", t, maxsplit=1, flags=re.I)[0]
-    if not re.search(r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m)[ae]n?se\b", head, re.I):
+    head = re.split(r"\s+(?:del?|al)\s+(?:la\s+)?(?:" + target + ")", t, maxsplit=1, flags=re.I)[0]
+    if not re.search(r"(Sustit[uú]y|Reempl[aá]c|Modif[ií]c|Modif[ií]qu|Der[oó]g|Incorp[oó]r|Agr[eé]gu?|Supr[ií]m|Renum[eé]r)[ae]n?se\b",
+                     head, re.I):
         return None  # the article only mentions the act
-    m = re.search(r"Der[oó]g[ae]se\s+el\s+[uú]ltimo\s+p[aá]rrafo\s+del\s+art[ií]culo\s+(\d+)" + SUF_WORDS, head, re.I)
-    if m:
-        return {"op": "drop_last_paragraph", "keys": [unit_key_w(int(m.group(1)), m.group(2), width)]}
-    m = re.search(r"Incorp[oó]r[ae]se\s+como\s+inciso\s+([a-z])\)\s+del\s+art[ií]culo\s+(\d+)" + SUF_WORDS, head, re.I)
-    if m:
-        return {"op": "add_item", "keys": [unit_key_w(int(m.group(2)), m.group(3), width)], "text": new_text(body)}
-    if re.search(r"p[aá]rrafo|inciso|apartado|ep[ií]grafe|punto", head, re.I):
-        return {"op": "unknown", "keys": keys_in(head, width), "instruction": text}
-    m = re.search(r"Der[oó]g[ae]n?se\s+(?:el|los)\s+art[ií]culos?\s+(.*)$", head, re.I)
-    if m:
-        return {"op": "repeal", "keys": keys_in(m.group(1), width)}
-    if re.search(r"Incorp[oó]r[ae]se|Agr[eé]gu?[ae]se", head, re.I):
-        m = re.search(r"art[ií]culo\s+(\d+)" + SUF_WORDS, head, re.I)
-        if m:
-            return {"op": "insert", "keys": [unit_key_w(int(m.group(1)), m.group(2), width)], "text": new_text(body)}
-    m = re.search(r"(?:Sustit[uú]y[ae]se|Reempl[aá]c[ae]se|Modif[ií]c[ae]se|Modif[ií]qu[ae]se)\s+(?:el\s+)?(?:texto\s+del\s+)?"
-                  r"art[ií]culo\s+(\d+)" + SUF_WORDS, head, re.I)
-    if m:
-        return {"op": "replace", "keys": [unit_key_w(int(m.group(1)), m.group(2), width)], "text": new_text(body)}
-    return {"op": "unknown", "keys": keys_in(head, width), "instruction": text}
+    if re.search(r"\b(?:de|del)\s+(?:la\s+)?(?:ley|decreto)(?:\s+N[°º])?\s*\d", head, re.I):
+        return None  # it amends another norm and only mentions the act
+    ops = parse_head(head, t, body, width)
+    for o in ops:
+        o["instruction"] = text
+    return ops
+
+
+def amenders_of(act: dict) -> list[int]:
+    """The norms to replay: those named in the act's consolidated-text notes or listed by InfoLEG as modifying it, that
+    are laws or decrees, took effect after the base text, and are cached."""
+    if "amenders" in act:
+        return act["amenders"]
+    B = bulk()
+    T, _, _ = act_lines(act["id"], "texact.htm", act["start"], act["end"])
+    ids = {int(x) for l in T for x in H.LINK_RE.findall(l)} | {m["id"] for m in modifiers(act["id"])}
+    since = act["base_published"]
+    out = [i for i in sorted(ids) if i in B and B[i]["tipo_norma"] in ("Ley", "Decreto")
+           and (B[i]["fecha_boletin"] or "") > since and F.cached(F.norma_url(i)) is not None]
+    return out
 
 
 def amendments(act: dict, ids: list[int]) -> list[dict]:
     """Every instruction aimed at `act` in the norms `ids`, with the law's key and in-force day, in force order."""
     out = []
+    overrides = act.get("overrides", {})
     for nid in ids:
         for num, lines in amender_articles(nid):
-            op = instruction(lines[0], lines[1:], act["target"], act.get("width", 3))
-            if op:
-                op.update({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": num})
+            if (nid, num) in overrides:
+                ops = [dict(o, instruction=lines[0]) for o in overrides[(nid, num)]]
+            else:
+                ops = instruction(lines[0], lines[1:], act["target"], act.get("width", 3)) or []
+            for i, op in enumerate(ops):
+                op.update({"nid": nid, "law": law_key(nid), "from": in_force(nid), "art": num, "sub": i})
                 out.append(op)
-    out.sort(key=lambda o: (o["from"], bulk()[o["nid"]]["fecha_boletin"], o["nid"], o["art"]))
+    out.sort(key=lambda o: (o["from"], o.get("order", 0), bulk()[o["nid"]]["fecha_boletin"], o["nid"], o["art"], o["sub"]))
     return out
 
 
@@ -492,7 +668,79 @@ def body_of(u: dict | None) -> list[str]:
     return [b for b in (u or {}).get("body", []) if b]
 
 
+def fine_keys(o: dict, width: int) -> list[str]:
+    """Articles of the Código Penal whose fines a fines-update law sets ("… establecidas por los artículos 94, 99 inciso
+    1º … del Código Penal")."""
+    ks = []
+    for s in o.get("body", []):
+        for m in re.finditer(r"art[ií]culos?\.?\s+(.+?)\s+del\s+C[oó]digo\s+Penal", s, re.I):
+            seg = re.sub(r"(?:primer|segundo|tercer|[uú]ltimo)\s+p[aá]rrafo\s+del\s+", "", m.group(1), flags=re.I)
+            for k in refs(seg, width):
+                if k not in ks:
+                    ks.append(k)
+    return ks
+
+
 # ------------------------------------------------------------------ the replay
+
+def apply_lines(body: list[str], o: dict) -> list[str] | None:
+    """A change to some lines of an article (items or paragraphs). None if it cannot be placed."""
+    body, new = list(body), list(o.get("text", []))
+    if "items" in o:
+        idx = {item_no(l): i for i, l in reversed(list(enumerate(body))) if item_no(l)}
+        if o["action"] == "delete":
+            pos = [idx.get(it) for it in o["items"]]
+            if None in pos:
+                return None
+            return [l for i, l in enumerate(body) if i not in pos]
+        if o["action"] == "replace":
+            for line in new:
+                it = item_no(line) or (o["items"][0] if len(o["items"]) == 1 else None)
+                if it not in idx:
+                    return None
+                body[idx[it]] = line
+            return body
+        if o["action"] == "insert":
+            for line in new:
+                it = item_no(line) or o["items"][0]
+                prev = str(int(it) - 1) if it.isdigit() else chr(ord(it) - 1)
+                if prev in idx:
+                    # after the previous item's line and any lines that continue it (not items, not a closing paragraph)
+                    i = idx[prev] + 1
+                    body.insert(i, line)
+                    idx = {item_no(l): j for j, l in reversed(list(enumerate(body))) if item_no(l)}
+                else:
+                    return None
+            return body
+    if "paras" in o:
+        n = len(body)
+        pos = [n if p == "last" else p for p in o["paras"]]
+        if o["action"] == "delete":
+            if any(p < 1 or p > n for p in pos):
+                return None
+            return [l for i, l in enumerate(body, 1) if i not in pos]
+        if o["action"] == "replace":
+            if any(p < 1 or p > n for p in pos):
+                return None
+            if len(new) == len(pos):
+                for p, line in zip(pos, new):
+                    body[p - 1] = line
+                return body
+            return body[:pos[0] - 1] + new + body[pos[-1]:]
+        if o["action"] == "insert":
+            p = o["paras"][0]
+            if p == "last":
+                return body + new
+            if p - 1 > n:
+                return None
+            return body[:p - 1] + new + body[p - 1:]
+        if o["action"] == "insert_after":
+            p = pos[0]
+            if p > n:
+                return None
+            return body[:p] + new + body[p:]
+    return None
+
 
 def replay(act: dict) -> dict:
     """Replay the amending norms on the act as enacted. Returns versions, the laws used and a report."""
@@ -500,40 +748,95 @@ def replay(act: dict) -> dict:
     L, url0, sha0 = act_lines(act.get("base_id", act["id"]), "norma.htm", act["start"], act["end"])
     state = {k: {"label": u["label"], "kind": u["kind"], "body": body_of(u)}
              for k, u in split_units(L, width=width, transitorias=act.get("transitorias", False)).items()}
-    report = {"act": act["slug"], "ops": [], "mismatches": [], "typography": [], "transcription": []}
+    report = {"act": act["slug"], "ops": [], "mismatches": [], "typography": [], "transcription": [], "reconciled": [],
+              "headings": [], "not_applied": []}
     for key, drop in act.get("vetoed", {}).items():
         if drop is None:
             state.pop(key, None)
         else:
             state[key]["body"] = [b for b in state[key]["body"] if not re.match(drop, b)]
-    versions = [{"from": act["first_day"], "source_url": url0, "sha256": sha0, "state": {k: dict(v) for k, v in state.items()},
-                 "credits": {}, "laws": [act["first_law"]]}]
-    ops = amendments(act, act.get("amenders", [])) if act.get("texact") else []
-    report["nids"] = sorted({o["nid"] for o in ops})
+    versions = [{"from": act["first_day"], "source_url": url0, "sha256": sha0,
+                 "state": {k: dict(v) for k, v in state.items()}, "credits": {}, "laws": [act["first_law"]]}]
+    ops = amendments(act, amenders_of(act)) if act.get("texact") else []
+    for o in ops:
+        if o["op"] == "fines":
+            o["body"] = next(l for n, l in amender_articles(o["nid"]) if n == o["art"])[1:]
+            o["keys"] = fine_keys(o, width)
+    report["nids"] = sorted({o["nid"] for o in ops if o["op"] not in ("heading",)})
+    patches = act.get("patches", {})
     for day in sorted({o["from"] for o in ops}):
         day_ops = [o for o in ops if o["from"] == day]
         credits: dict[str, list[str]] = {}
+        quiet: dict[str, list[str]] = {}
+
+        def credit(k, law, to=credits):
+            to.setdefault(k, [])
+            if law not in to[k]:
+                to[k].append(law)
+
         for o in day_ops:
-            for k in o["keys"]:
+            tag = f"{day} {o['law']} art. {o['art']}"
+            if o["op"] == "heading":
+                report["headings"].append(f"{tag}: {o['instruction'][:120]}")
+                continue
+            if o["op"] in ("unknown", "skip"):
+                (report["not_applied"] if o["op"] == "unknown" else report["headings"]).append(
+                    f"{tag}: {o['op']}: {o['instruction'][:160]}")
+                continue
+            if o["op"] == "fines":
+                for k in o["keys"]:
+                    if k in state:
+                        credit(k, o["law"], quiet)
+                report["ops"].append(f"{tag}: fines {' '.join(o['keys'])}")
+                continue
+            if o["op"] == "renumber":
+                moved = {a: state.pop(a) for a, _ in o["pairs"] if a in state}
+                for a, b in o["pairs"]:
+                    if a in moved:
+                        state[b] = dict(moved[a], label=label_from_key(b))
+                        credit(a, o["law"])
+                        credit(b, o["law"])
+                    else:
+                        report["not_applied"].append(f"{tag}: renumber {a} -> {b}: {a} not in force")
+                report["ops"].append(f"{tag}: renumber {o['pairs']}")
+                continue
+            for k in o.get("keys", []) or [None]:
                 before = state.get(k)
+                if k is None:
+                    report["not_applied"].append(f"{tag}: {o['op']}: no article: {o['instruction'][:160]}")
+                    continue
                 if o["op"] in ("replace", "insert"):
-                    num = int(re.search(r"\d+", k).group(0))
-                    suf = k.split("-")[2] if k.count("-") == 2 else None
-                    state[k] = {"label": f"Art. {num}" + (f" {suf}" if suf else ""), "kind": "art", "body": list(o["text"])}
+                    state[k] = {"label": o.get("label") or label_from_key(k), "kind": "art", "body": list(o["text"])}
                 elif o["op"] == "repeal":
-                    state.pop(k, None)
-                elif o["op"] == "drop_last_paragraph" and before:
-                    state[k] = dict(before, body=before["body"][:-1])
-                elif o["op"] == "add_item" and before:
-                    state[k] = dict(before, body=before["body"] + list(o["text"]))
+                    if k not in state:
+                        report["not_applied"].append(f"{tag}: repeal {k}: not in force")
+                        continue
+                    state.pop(k)
+                elif o["op"] == "lines":
+                    nb = apply_lines(before["body"], o) if before else None
+                    if nb is None:
+                        report["not_applied"].append(f"{tag}: {o['action']} {o.get('items') or o.get('paras')} in {k}: "
+                                                     f"cannot place it: {o['instruction'][:120]}")
+                        continue
+                    state[k] = dict(before, body=nb)
                 else:
-                    report["mismatches"].append(f"{k}: {o['law']} art. {o['art']}: instruction not understood: {o.get('instruction', '')[:160]}")
                     continue
                 if state.get(k) != before:
-                    credits.setdefault(k, [])
-                    if o["law"] not in credits[k]:
-                        credits[k].append(o["law"])
-                report["ops"].append(f"{day} {o['law']} art. {o['art']}: {o['op']} {k}")
+                    credit(k, o["law"])
+                report["ops"].append(f"{tag}: {o['op']} {o.get('action', '')} {k}".replace("  ", " "))
+        for law, k, pat, rep in [(law_key(n), *x) for n in sorted({o["nid"] for o in day_ops})
+                                 for x in patches.get(n, [])]:
+            if k in state:
+                nb = [re.sub(pat, rep, l) for l in state[k]["body"]]
+                if nb != state[k]["body"]:
+                    state[k] = dict(state[k], body=nb)
+                    report["ops"].append(f"{day} {law}: veto in {k}: {pat!r} -> {rep!r}")
+        for k, ls in quiet.items():
+            if k not in credits:
+                credits[k] = []
+            for l in ls:
+                if l not in credits[k]:
+                    credits[k].append(l)
         nids = sorted({o["nid"] for o in day_ops}, key=lambda n: (bulk()[n]["fecha_boletin"], n))
         b = F.cached(F.norma_url(nids[0]))
         versions.append({"from": day, "source_url": F.norma_url(nids[0]), "sha256": hashlib.sha256(b).hexdigest(),
@@ -542,7 +845,8 @@ def replay(act: dict) -> dict:
     # today's official text: InfoLEG's texto actualizado
     if act.get("texact"):
         T, turl, tsha = act_lines(act["id"], "texact.htm", act["start"], act["end"])
-        tex = {k: u for k, u in split_units(T, width=width, transitorias=act.get("transitorias", False)).items() if body_of(u)}
+        tex_all = split_units(T, width=width, transitorias=act.get("transitorias", False))
+        tex = {k: u for k, u in tex_all.items() if body_of(u)}
         report["texact"] = {"url": turl, "sha256": tsha}
         final = versions[-1]["state"]
         for k in sorted(set(final) | set(tex)):
@@ -552,17 +856,24 @@ def replay(act: dict) -> dict:
             if not a or not t:
                 report["mismatches"].append(f"{k}: {'only in texact' if t else 'only in the replay'}")
                 continue
+            last = max(i for i, v in enumerate(versions) if i == 0 or k in v["credits"])
             if loose(a) != loose(t):
                 if k in act.get("transcription", {}):
                     report["transcription"].append(k)
                 else:
-                    report["mismatches"].append(f"{k}: words differ from texact")
-                    continue
+                    # InfoLEG's consolidated text gives the article as left by the last norm its note names; if the
+                    # replay's last change to it was by that norm, take InfoLEG's wording from that change on
+                    named = {int(x) for n in tex[k]["notes"] for x in H.LINK_RE.findall(n)}
+                    lastlaws = set(versions[last]["credits"].get(k, [])) if last else set()
+                    if last and any(law_key(n) in lastlaws for n in named):
+                        report["reconciled"].append(f"{k} ({', '.join(sorted(lastlaws))})")
+                    else:
+                        report["mismatches"].append(f"{k}: words differ from texact")
+                        continue
             else:
                 report["typography"].append(k)
             # same words (or a known InfoLEG transcription error in norma.htm): take texact's wording from the
             # version in which the unit last changed onwards, so today's file is the official consolidated text
-            last = max(i for i, v in enumerate(versions) if i == 0 or k in v["credits"])
             for v in versions[last:]:
                 v["state"][k] = dict(v["state"][k], body=list(t))
     return {"versions": versions, "report": report}
