@@ -61,6 +61,18 @@ ACTS = [
         "texact": True,
         "target": r"(?:Ley\s+de\s+Contrato\s+de\s+Trabajo|R[eé]gimen\s+de\s+Contrato\s+de\s+Trabajo|[Ll]ey\s*(?:N[°º]\s*)?20\.?744)",
     },
+    {
+        "slug": "codigo-procesal-penal-federal",
+        "short": "CPPF",
+        "id": 239340,
+        "title": "Código Procesal Penal Federal (Ley 27.063, texto ordenado 2019)",
+        # the code is Anexo I of Ley 27.063; the base is the texto ordenado approved by Decreto 118/2019 (id 319681)
+        "base_id": 319681,
+        "start": r"^ART[IÍ]CULO 1\s*[º°]\s*\.?-?\s*Juicio previo",
+        "end": r"^ANEXO II$",
+        "texact": True,
+        "target": r"C[oó]digo\s+Procesal\s+Penal\s+Federal",
+    },
 ]
 
 

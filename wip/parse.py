@@ -1196,6 +1196,51 @@ ACT_SETUP["ley-20744"] = {
 }
 
 
+ACT_SETUP["codigo-procesal-penal-federal"] = {
+    "first_day": "2019-06-10", "first_law": None, "earlier_ids": [239340, 268408, 318536, 319681],
+    "base_published": "2019-02-08", "base_from_texact": True,
+    # In-force steps that change no words, credited to the provisions they bring into force (InfoLEG's notes on
+    # art. 3 of Ley 27.063 and the resolutions themselves). Days after the retrieval day go on the future branch.
+    "steps": [
+        {"nid": 331847, "from": "2019-11-22", "units": [19, 21, 22, 31, 34, 54, 80, 81, 210, 221, 222],
+         "note": 'Brings arts. 19, 21, 22, 31, 34, 54, 80, 81, 210, 221 and 222 into force for every court with criminal jurisdiction in all federal jurisdictions, from the third business day after its publication (B.O. 2019-11-19). The words do not change.'},
+        {"nid": 344835, "from": "2020-12-10", "units": [285, 286, 287, 366],
+         "note": 'Brings arts. 285, 286 and 287 and art. 366 inc. f) into force for every federal court with criminal jurisdiction and the national criminal courts, from the third business day after its publication (B.O. 2020-12-03). The words do not change.'},
+        {"nid": 346923, "from": "2021-02-17", "units": [366, 367, 368, 369, 370, 375],
+         "note": 'Brings arts. 366 to 370 and 375 into force for every federal court with criminal jurisdiction and the national criminal courts, from the third business day after its publication (B.O. 2021-02-10). The words do not change.'},
+        {"nid": 397458, "from": "2024-03-18", "units": None,
+         "note": 'Brings the whole Código Procesal Penal Federal (T.O. 2019) into force in the jurisdiction of the Cámara Federal de Apelaciones de Rosario from 00:00 on 18 March 2024; Resolución 64/2024 deferred its practical operation to 6 May 2024, and Resoluciones 148/2024 and 277/2024 deferred the area of the Juzgado Federal de Reconquista to 1 March 2025. The words do not change.'},
+        {"nid": 399690, "from": "2024-08-05", "units": None,
+         "note": 'Brings the whole Código Procesal Penal Federal (T.O. 2019) into force in the federal district of the Cámara Federal de Apelaciones de Mendoza from 00:00 on 5 August 2024. The words do not change.'},
+        {"nid": 401479, "from": "2024-11-04", "units": None,
+         "note": 'Brings the whole Código Procesal Penal Federal (T.O. 2019) into force in the jurisdiction of the Cámara Federal de Apelaciones de General Roca from 00:00 on 4 November 2024 (art. 1), and in that of Comodoro Rivadavia from 2 December 2024 (art. 2). The words do not change.'},
+        {"nid": 403661, "from": "2025-03-01", "units": None,
+         "note": 'Defers the entry into force of the Código Procesal Penal Federal (T.O. 2019) in the area of the Juzgado Federal de Reconquista (Santa Fe) to 00:00 on 1 March 2025, when it took effect there. The words do not change.'},
+        {"nid": 407423, "from": "2025-04-07", "units": None,
+         "note": 'Brings the whole Código Procesal Penal Federal (T.O. 2019) into force in the jurisdiction of the Cámara Federal de Apelaciones de Mar del Plata from 00:00 on 7 April 2025 (art. 1); the date its art. 2 set for Bahía Blanca (5 May 2025) was deferred by Resolución 233/2025. The words do not change.'},
+        {"nid": 411917, "from": "2025-09-29", "units": None,
+         "note": 'Defers the entry into force of the Código Procesal Penal Federal (T.O. 2019) in the jurisdiction of the Cámara Federal de Apelaciones de Bahía Blanca to 00:00 on 29 September 2025, when it took effect there. The words do not change.'},
+        {"nid": 410832, "from": "2025-12-01", "units": None,
+         "note": 'Brings the whole Código Procesal Penal Federal (T.O. 2019) into force in the jurisdictions of the Cámaras Federales de Apelaciones de Corrientes and Resistencia from 00:00 on 1 December 2025 (arts. 3 and 4); the dates its arts. 1 and 2 set for the Ciudad Autónoma de Buenos Aires were deferred. The words do not change.'},
+        {"nid": 422117, "from": "2026-06-24", "units": None,
+         "note": 'Defers the entry into force of the Código Procesal Penal Federal (T.O. 2019) in the jurisdiction of the Cámara Federal de Apelaciones de Posadas (set by Resolución 530/2025 for 16 March 2026) to 00:00 on 24 June 2026, when it took effect there. The words do not change.'},
+        {"nid": 426706, "from": "2026-09-21", "units": None,
+         "note": 'Brings the whole Código Procesal Penal Federal (T.O. 2019) into force in the jurisdiction of the Cámara Federal de Apelaciones de La Plata from 00:00 on 21 September 2026. The words do not change.'},
+        {"nid": 429577, "from": "2026-11-30", "units": None,
+         "note": 'Brings the whole Código Procesal Penal Federal (T.O. 2019) into force in the jurisdiction of the Cámara Federal de Apelaciones de Paraná from 00:00 on 30 November 2026. The words do not change.'},
+        {"nid": 424970, "from": "2027-02-15", "units": None,
+         "note": 'Defers the entry into force of the Código Procesal Penal Federal (T.O. 2019) in the jurisdictions of the Cámara Federal de Apelaciones en lo Penal de la Ciudad Autónoma de Buenos Aires and the Cámara Federal de Apelaciones en lo Penal Económico to 00:00 on 15 February 2027. The words do not change.'},
+        {"nid": 426611, "from": "2027-03-08", "units": None,
+         "note": 'Defers the entry into force of the Código Procesal Penal Federal (T.O. 2019) in the jurisdiction of the Cámara Federal de Apelaciones de Córdoba to 00:00 on 8 March 2027. The words do not change.'},
+    ],
+    "note": ("The Código Procesal Penal Federal (Ley 27.063 of 2014, as amended by Leyes 27.272 and 27.482) in the "
+             "texto ordenado approved by Decreto 118/2019 (B.O. 2019-02-08). Ley 27.063 art. 3 and Ley 27.150 leave its "
+             "entry into force to a progressive timetable. It first applied in full in the federal district of Salta "
+             "(Salta and Jujuy) from 10 June 2019, the date the Comisión Bicameral set on 26 March 2019, as recorded in "
+             "Resolución PGN 127/2019 of the Procuración General de la Nación; elsewhere it took effect article by "
+             "article and district by district, each step a later commit."),
+}
+
 def requests_by_host() -> dict[str, int]:
     out: dict[str, int] = {}
     p = F.CACHE / "requests.jsonl"
@@ -1285,6 +1330,12 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
          "url": "https://datos.jus.gob.ar/dataset/base-de-datos-legislativos-infoleg", "retrieved": RETRIEVED,
          "requests": hosts.get("datos.jus.gob.ar", 0), "licence": "Creative Commons Attribution 4.0; Fuente https://www.infoleg.gob.ar",
          "notes": "CSV of every national norm (data updated to 2026-09-30): type, number, class (DNU), dates of sanción and Boletín Oficial, titles."},
+        {"name": "Procuración General de la Nación, Resolución PGN 127/2019", "url": "https://www.mpf.gob.ar/resoluciones/mp/2019/MP-0127-2019-001.pdf",
+         "retrieved": RETRIEVED, "requests": hosts.get("www.mpf.gob.ar", 0), "licence": "Official act of the Ministerio Público Fiscal",
+         "notes": "A PDF with a text layer (no OCR). Read only for the date the Comisión Bicameral set for the start of the Código Procesal Penal Federal in Salta (10 June 2019), which InfoLEG does not record."},
+        {"name": "Other lookups", "url": "https://archive.org/wayback/available", "retrieved": RETRIEVED,
+         "requests": hosts.get("archive.org", 0) + hosts.get("www.argentina.gob.ar", 0),
+         "licence": "n/a", "notes": "Wayback availability checks for texts InfoLEG does not serve (none archived), and the Ministerio de Justicia's implementation page for the Código Procesal Penal Federal (no dates used from it)."},
     ]
     decisions = [
         "Source: InfoLEG only. It keeps the original text (norma.htm) and today's text (texact.htm) of each norm, but no intermediate versions, so every version after the first is rebuilt by applying, in order of entry into force, the instructions of each amending norm as written in that norm's own text on InfoLEG (\"Sustitúyese el artículo N …\", \"Incorpórase …\", \"Derógase …\"). The amending norms are those InfoLEG's notes on texact.htm name for each act.",
@@ -1301,6 +1352,14 @@ def build_corpus(only: set[str] | None = None) -> tuple[dict, list[dict]]:
         "Applicability: Ley 27.551 art. 23 (its changes apply to contracts concluded from its entry into force) and Ley 27.363 art. 3 (applies to pending situations) are recorded in `applies`.",
     ]
     for r in reports:
+        if r["act"] == "codigo-procesal-penal-federal":
+            decisions += [
+                "Código Procesal Penal Federal: the base is the texto ordenado approved by Decreto 118/2019 (B.O. 2019-02-08), which already contains the changes of Leyes 27.272 and 27.482 and renumbers the code; InfoLEG's consolidated text keeps its numbering. The code changed no one's law before it first applied, so its history starts on 10 June 2019, the day it applied in full in the federal district of Salta (Salta and Jujuy). That date is not on InfoLEG: it is the date the Comisión Bicameral set on 26 March 2019, as Resolución PGN 127/2019 of the Procuración General de la Nación records it (a text PDF, no OCR).",
+                "Código Procesal Penal Federal, staged entry into force: each later step that InfoLEG records (Comisión Bicameral Resoluciones 2/2019, 1/2020 and 1/2021 for single articles nationwide; Ministerio de Justicia resolutions for each federal district, as listed in InfoLEG's notes on art. 3 of Ley 27.063) is a commit with no words changed, credited to the resolution and to the provisions it brings into force (all of them for a district). Where a resolution was deferred, the commit is on the final day and credited to the deferring resolution; the note names both. Steps after the retrieval day (Paraná 2026-11-30, Ciudad Autónoma de Buenos Aires 2027-02-15, Córdoba 2027-03-08) are on the branch futuro.",
+                "Código Procesal Penal Federal, business days: the Comisión Bicameral resolutions apply \"from the third business day after publication\". Counting national holidays: B.O. 2019-11-19 gives 2019-11-22; B.O. 2020-12-03 gives 2020-12-10 (7 December 2020 was a bridge holiday and 8 December a holiday); B.O. 2021-02-10 gives 2021-02-17 (15 and 16 February 2021 were Carnival).",
+                "Código Procesal Penal Federal: the record shows the code's words and the days they took effect somewhere; which district applies it on a given day is in the commit notes, not in the files.",
+                "Código Procesal Civil y Comercial de la Nación: not built. InfoLEG serves neither its text as enacted (Ley 17.454, id 16547) nor the texto ordenado of 1981 (Decreto 1042/1981, id 45332): both pages answer \"No se pudo acceder al archivo solicitado\", and the Wayback Machine has no copy. Without a full text before today there is no history to rebuild.",
+            ]
         if r["act"] == "ley-20744":
             decisions += [
                 "Ley de Contrato de Trabajo: InfoLEG's text of Ley 20.744 itself is the act of 1974; the history starts at the texto ordenado approved by Decreto 390/1976 (B.O. 1976-05-21), the oldest full text of the act as amended on InfoLEG, dated by its publication and committed by the publisher as the oldest version available. Every later law or decree InfoLEG names in the consolidated text (its notes and its \"Antecedentes Normativos\"), or lists as modifying the act, is replayed.",
