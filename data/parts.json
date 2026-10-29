@@ -1,0 +1,341 @@
+{
+ "parts": {
+  "50-batch4.json": {
+   "acts": [
+    "ley-24449",
+    "ley-25675",
+    "ley-26061",
+    "ley-26485"
+   ],
+   "sha256": "d4e6477cfc7d88feb3166ecb4bbbb464701f6d0b3381e2d0e669990f492810ca"
+  },
+  "60-batch5.json": {
+   "acts": [
+    "ley-23551",
+    "ley-25164",
+    "ley-26657"
+   ],
+   "sha256": "b3ef7ce7b612a3cd677c9fec00b46b44ea64f2a349f02f4c4455dda89b38e65e"
+  },
+  "70-batch6.json": {
+   "acts": [
+    "codigo-procesal-civil-y-comercial",
+    "codigo-procesal-penal",
+    "ley-24522"
+   ],
+   "sha256": "983106eb9f63161580e4f247005e2e6564b1dd5641cd42143e1cc236b4ef5075"
+  },
+  "80-batch7.json": {
+   "acts": [
+    "codigo-aduanero"
+   ],
+   "sha256": "c96cb6e2c2136361cb40293c9278ba588180f050c2a6607135abed5401231b47"
+  },
+  "90-batch8.json": {
+   "acts": [
+    "ley-22362",
+    "ley-24557",
+    "ley-24660"
+   ],
+   "sha256": "fd215b036f477ff068c2c4ddd9e74a447de0061aa352e46e84efdf3f9e0db81c"
+  },
+  "91-batch9.json": {
+   "acts": [
+    "ley-17418",
+    "ley-23592",
+    "ley-23661",
+    "ley-25520",
+    "ley-27275"
+   ],
+   "sha256": "319d21a7e0ffd0eef3b93b1e45da77116d91b01e2e9c7e1b956aebee7329a59a"
+  },
+  "92-batch10.json": {
+   "acts": [
+    "ley-23660",
+    "ley-23737",
+    "ley-24013",
+    "ley-25871"
+   ],
+   "sha256": "6b9eb2b613b146e03744e93be8600d1e306bd5bddde1e593ebdd37c42cf40c92"
+  },
+  "93-batch11.json": {
+   "acts": [
+    "ley-11723",
+    "ley-25246",
+    "ley-26522",
+    "ley-26831"
+   ],
+   "sha256": "a282d18b714b9df1b1d0760e12bebbb3daf6195ba080a08f07e0933a570c9f20"
+  },
+  "94-batch12.json": {
+   "acts": [
+    "ley-25188",
+    "ley-25506",
+    "ley-26206",
+    "ley-26364",
+    "ley-26529",
+    "ley-26743",
+    "ley-27078",
+    "ley-27401",
+    "ley-27442"
+   ],
+   "sha256": "de08b4f292644359982af26aff1e79aa525515038534a8bdc2c88ee75e78ecbc"
+  },
+  "95-batch13.json": {
+   "acts": [
+    "ley-23576",
+    "ley-24051",
+    "ley-24083",
+    "ley-24521",
+    "ley-26639",
+    "ley-27349",
+    "ley-27610"
+   ],
+   "sha256": "58eb1c42c10b1a068d215755a8c3293d1ee4c86b7da9a70e2428d750cac5ad1e"
+  },
+  "96-batch14.json": {
+   "acts": [
+    "ley-24156"
+   ],
+   "sha256": "cdb98182ff14e4aeab7f5233d16761f86b214e7f5d57086a6b42474a406c6668"
+  },
+  "97-batch15.json": {
+   "acts": [
+    "ley-24937",
+    "ley-25673",
+    "ley-25917",
+    "ley-26122",
+    "ley-26150",
+    "ley-26165",
+    "ley-26215",
+    "ley-26331",
+    "ley-26727",
+    "ley-26844",
+    "ley-27148",
+    "ley-27149",
+    "ley-27350",
+    "ley-27506",
+    "ley-27555"
+   ],
+   "sha256": "bbbf0851f837e9565a6daac6a06ecc85e11c871c6c6224ddc5efcfcaaa14b866"
+  },
+  "98-batch16.json": {
+   "acts": [
+    "ley-19945",
+    "ley-20091",
+    "ley-23298",
+    "ley-25065",
+    "ley-26571"
+   ],
+   "sha256": "8dc2ef34f8ed72ae8fe87058d18577a6f2f939384b74ba40f7929d8e98c9be05"
+  },
+  "98b-batch17a.json": {
+   "acts": [
+    "ley-23546",
+    "ley-25877",
+    "ley-26773"
+   ],
+   "sha256": "fb6c6180ea8917c2dcf4cf13738bec3595e6a3a23bf8add1bed8d9606654b8c2"
+  },
+  "98b-batch17ab.json": {
+   "acts": [
+    "ley-23098",
+    "ley-24059",
+    "ley-25612",
+    "ley-25831"
+   ],
+   "sha256": "732741524fc3ce6b1658bccbbee35543d6c5a7f49c8415933203a1bede3dc4fc"
+  },
+  "98b-batch17ac.json": {
+   "acts": [
+    "ley-22351",
+    "ley-24196",
+    "ley-25916"
+   ],
+   "sha256": "ba3f3ea0cacd2570c331c65b6216f18a29ab8f8061cb0a62b9b230e8b8bec883"
+  },
+  "98b-batch17ad.json": {
+   "acts": [
+    "ley-23947",
+    "ley-25674",
+    "ley-26005",
+    "ley-26427"
+   ],
+   "sha256": "6119ba7d0403be9ece4cc5b2d60979b6d9e944b9401b46c9b676f0adfa1c9676"
+  },
+  "98b-batch17ae.json": {
+   "acts": [
+    "ley-24741"
+   ],
+   "sha256": "c48aa5f1ba45542de9b2b06042e861737f0058fd6275ebe1b7a8261542b14aa9"
+  },
+  "98b-batch17b.json": {
+   "acts": [
+    "ley-24467",
+    "ley-26589",
+    "ley-27348"
+   ],
+   "sha256": "98940367a44013738758710cc232b6b58b47325aeaa4aea2e94a79bef4ab5030"
+  },
+  "98b-batch17c.json": {
+   "acts": [
+    "ley-14250",
+    "ley-18345"
+   ],
+   "sha256": "8ebdbe976a92e3e4e2bc4aa32566bd70e0263960aa3be2f796ba307e38d3f057"
+  },
+  "98b-batch17d.json": {
+   "acts": [
+    "ley-24901",
+    "ley-26413",
+    "ley-26682"
+   ],
+   "sha256": "e2b9d9447b9e92da53cc9c5ea88f4a1961b99728b1c1f7aafe323d258e0ca9c2"
+  },
+  "98b-batch17e.json": {
+   "acts": [
+    "ley-23302",
+    "ley-26130",
+    "ley-26588"
+   ],
+   "sha256": "c136964b73a6232845f32372f278ba75947ca3d0ea843ebb0f5344709243fa32"
+  },
+  "98b-batch17f.json": {
+   "acts": [
+    "ley-20321",
+    "ley-20337"
+   ],
+   "sha256": "44afa6414c43a2fef52b472dcedcb9b818ff99b78d2e7d3aa85f02c9cf88a6b7"
+  },
+  "98b-batch17g.json": {
+   "acts": [
+    "ley-20429",
+    "ley-26190"
+   ],
+   "sha256": "e5ce2e96deba165b58e3fd644ed4551eece197fb869ee81d72297da8ba93eae6"
+  },
+  "98b-batch17j.json": {
+   "acts": [
+    "ley-24452"
+   ],
+   "sha256": "f33e1c4149f2aa9714aae351cc3e83e9168da2fc13ce735c66643bada3ad28b9"
+  },
+  "98b-batch17k.json": {
+   "acts": [
+    "ley-16986",
+    "ley-26854"
+   ],
+   "sha256": "e48e9f0c85bf34ceb51c89d926e1885af1d3e04727f8d8400c823dcec756f728"
+  },
+  "98b-batch17l.json": {
+   "acts": [
+    "ley-19552",
+    "ley-21499"
+   ],
+   "sha256": "7ffb12c9c16967372bf7129434accfedaed640055c601e351f41999cd13d55e3"
+  },
+  "98b-batch17m.json": {
+   "acts": [
+    "ley-24515"
+   ],
+   "sha256": "12f77d50135ee90efd4d7272546d2caee783ec78a27af14cf0bc1b38a5b461a7"
+  },
+  "98b-batch17n.json": {
+   "acts": [
+    "ley-20680",
+    "ley-24946"
+   ],
+   "sha256": "d8655f25d7d9844871d4fa927acdf90468c3f5e409498daacce09d252244a603"
+  },
+  "98b-batch17o.json": {
+   "acts": [
+    "ley-24284"
+   ],
+   "sha256": "8dd06d5a8bb4626355e06801dd624156c4ad7afbeab4beb8bde3424bffabc187"
+  },
+  "98b-batch17p.json": {
+   "acts": [
+    "ley-23928"
+   ],
+   "sha256": "6056c380c66442e07930901bcd99e2136e652a056ddd6248612a6d6ca1aab3e8"
+  },
+  "98b-batch17q.json": {
+   "acts": [
+    "ley-26737"
+   ],
+   "sha256": "a260d6005e185137221db2fd84fdee4a88772fd313ea745b0cf1ca6e0110835c"
+  },
+  "98b-batch17r.json": {
+   "acts": [
+    "ley-24769",
+    "ley-25156",
+    "ley-26993"
+   ],
+   "sha256": "9c0653d04c08db31ac31e798bbcc99d4216e2513a3c3fb7636dfb1a060303fd0"
+  },
+  "98b-batch17s.json": {
+   "acts": [
+    "ley-22802"
+   ],
+   "sha256": "9ff9ea078e887d0d6095fb5e99d30f24cc703cb0b085ce1ca809492e5a31c7e8"
+  },
+  "98b-batch17t.json": {
+   "acts": [
+    "regimen-penal-tributario"
+   ],
+   "sha256": "a665626b817f5f65f7e1e4413738cd5d021815a050d53f8f2cdf2de138e8bcb4"
+  },
+  "98b-batch17u.json": {
+   "acts": [
+    "ley-25561"
+   ],
+   "sha256": "0b38a6bb7c5f40a77f7b0ba7891e1d44ec797ac10dd96b9e81535300d3816423"
+  },
+  "98b-batch17v.json": {
+   "acts": [
+    "ley-26160"
+   ],
+   "sha256": "28866693cb6c09d95a9bbbd4a1bb006541b7e8c9696cfbdcd64a7815309da6b3"
+  },
+  "98b-batch17w.json": {
+   "acts": [
+    "ley-19587",
+    "ley-26951",
+    "ley-27499",
+    "ley-27636"
+   ],
+   "sha256": "8b46010e0c143e9f0a5ced00b7af255fb41c72bf83a256460be3cd307077c1c8"
+  },
+  "98b-batch17x.json": {
+   "acts": [
+    "ley-25551",
+    "ley-26425",
+    "ley-26509"
+   ],
+   "sha256": "bccb7ba6dd4a4936308cf67b72be216e3a19b5d0dcb65bc5b0807cf0d2add2ef"
+  },
+  "98b-batch17y.json": {
+   "acts": [
+    "ley-24144"
+   ],
+   "sha256": "8be2713a897dcf315926f1ee52950ea6020712eb2285aa341f71f4e82ccdaeda"
+  },
+  "98b-batch17z.json": {
+   "acts": [
+    "ley-24788",
+    "ley-26687",
+    "ley-26862"
+   ],
+   "sha256": "7492e05b009787951adde81f87fd24542ffccb5dbfb4610652737ae289e089ec"
+  },
+  "98b-batch17za.json": {
+   "acts": [
+    "ley-25929",
+    "ley-26396",
+    "ley-27642"
+   ],
+   "sha256": "955ede3b29ca644896fa6bc50c5a40b3dc3f35390d0be01a92727d229f5ab13e"
+  }
+ },
+ "schema": 1
+}
