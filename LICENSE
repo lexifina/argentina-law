@@ -1,0 +1,20 @@
+The legal texts come from InfoLEG, Ministerio de Justicia de la Nación (Argentina):
+
+  Fuente: InfoLEG - Información Legislativa, Ministerio de Justicia de la Nación (www.infoleg.gob.ar),
+  https://servicios.infoleg.gob.ar/infolegInternet/, retrieved 28 October 2026.
+
+They are official legal texts of the Argentine Nation. InfoLEG's pages carry "Copyright 2005" and publish no licence;
+the InfoLEG dataset on datos.jus.gob.ar (norm types, numbers, dates and titles used here) is published under Creative
+Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/), with the attribution "Fuente
+https://www.infoleg.gob.ar". The copyright status of the legal texts themselves is not confirmed here; they are
+reproduced with the attribution above.
+
+Changes made by Lexifina: each text was converted to one Markdown file per provision, one paragraph per line; spacing,
+quotes and dashes were normalised; InfoLEG's amendment notes were removed from the text; the versions between the text
+as enacted and today's consolidated text were rebuilt by applying the amending norms' own published texts; and the
+versions were arranged as git commits credited to the norms that made each change. The wording of the law was not
+changed. The Ministerio de Justicia does not endorse this repository.
+
+Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are
+dedicated to the public domain under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
