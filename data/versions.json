@@ -1,0 +1,3847 @@
+{
+ "country": "AR",
+ "acts": [
+  {
+   "slug": "constitucion",
+   "short": "CN",
+   "title": "Constitución de la Nación Argentina",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/804/norma.htm",
+   "versions": [
+    {
+     "from": "1994-08-24",
+     "units": 149,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/804/norma.htm",
+     "sha256": "b9d72e39fce3248bb5d098db54e98dc46be738b7464ab2752c02908f0a577fd8"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-civil-y-comercial",
+   "short": "CCyC",
+   "title": "Código Civil y Comercial de la Nación",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/texact.htm",
+   "versions": [
+    {
+     "from": "2015-08-01",
+     "units": 2671,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/norma.htm",
+     "sha256": "cb0d963dd779b4f8ac44d049c3d1c449c250e7dc28a5ead280633115e9ba2967"
+    },
+    {
+     "from": "2016-09-15",
+     "units": 2671,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/265453/norma.htm",
+     "sha256": "701ab5458bc8fd56072e0cd5fbc84fc9782581b119e07056bbefcbef8365908b"
+    },
+    {
+     "from": "2017-07-05",
+     "units": 2672,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/275000-279999/276135/norma.htm",
+     "sha256": "681863ac4aa25fb86c3c94167d225436d028344043b5c754d210856aefb07c41"
+    },
+    {
+     "from": "2018-05-20",
+     "units": 2672,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310084/norma.htm",
+     "sha256": "84e4df817d231ce24390d57fbded8cdcf7d832ff7bce2bb75e5c0cf1cdeef8b8"
+    },
+    {
+     "from": "2019-01-22",
+     "units": 2672,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/319068/norma.htm",
+     "sha256": "923735b4a6d0626b874cda1f03c79c38622266f663be909d1270b0d6f1408fac"
+    },
+    {
+     "from": "2020-07-01",
+     "units": 2674,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/335000-339999/339378/norma.htm",
+     "sha256": "ace35b640675e9535cc76c6a639d558498440997c1c6034791ff1985a220e77d"
+    },
+    {
+     "from": "2020-12-25",
+     "units": 2674,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/345233/norma.htm",
+     "sha256": "f233f4e3dd15096ea5131b8f9c5fe1b38fced4c87e6d7ea3b672ed825ccdf2f2"
+    },
+    {
+     "from": "2023-10-18",
+     "units": 2674,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/391456/norma.htm",
+     "sha256": "c49ae2a5e34f928c3edf048925aac64e66a093cb679473eba6b57dbc8fae0448"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 2670,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2024-11-13",
+     "units": 2670,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/406267/norma.htm",
+     "sha256": "a0f91db77f2c43e9e2b09eaefeb51a21551ac7c5cf6e3189364fb1cfa70b29e5"
+    },
+    {
+     "from": "2025-05-20",
+     "units": 2670,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/412944/norma.htm",
+     "sha256": "d3115a7d4d8dd011478f33d3c324cc5a64678df4f9598409d52ff4fc1481331b"
+    },
+    {
+     "from": "2026-01-02",
+     "units": 2670,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/422008/norma.htm",
+     "sha256": "207db7b4afea7f4f849549e07ad82cefa94f46c00ddf37d4255fd23f29783239"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25326",
+   "short": "LPDP",
+   "title": "Ley 25.326 de Protección de los Datos Personales",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/texact.htm",
+   "versions": [
+    {
+     "from": "2000-11-11",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm",
+     "sha256": "7db8fce00971ce063cf40ed99199abc86197786dfe36a8d93531414a2c367d86"
+    },
+    {
+     "from": "2008-01-18",
+     "units": 48,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/136483/norma.htm",
+     "sha256": "09e1471d5e256763316f7b11c2a1056511e34a953d60ae5354d35886e36a3fc1"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-penal",
+   "short": "CP",
+   "title": "Código Penal de la Nación Argentina (Ley 11.179, texto ordenado 1984)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16546/texact.htm",
+   "versions": [
+    {
+     "from": "1985-01-16",
+     "units": 327,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/38033/norma.htm",
+     "sha256": "9a5e20a98b5ccfe424ef509e7648c716384ba9f8cd9ac6deb35094464076f9b0"
+    },
+    {
+     "from": "1987-02-04",
+     "units": 328,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/21874/norma.htm",
+     "sha256": "c3a1d168453d229c4965f070f4bac9fe1c797c155c01059403ec3265f60d4a0d"
+    },
+    {
+     "from": "1988-09-02",
+     "units": 328,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20469/norma.htm",
+     "sha256": "d7e3fb8e141f0516cd452128dc08d56c0245ab4e07c951c4f9976e23f5cb2407"
+    },
+    {
+     "from": "1989-10-20",
+     "units": 331,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/138/norma.htm",
+     "sha256": "2b3be17d88c0be1b0d365347136acf1b74085813b014b634f1cbf7ed9fe7272c"
+    },
+    {
+     "from": "1991-09-26",
+     "units": 331,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/373/norma.htm",
+     "sha256": "e67a6ee28a8ad703f52a2b2da18d952a217a94625311dc103941b67a8093ea46"
+    },
+    {
+     "from": "1992-01-26",
+     "units": 330,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/463/norma.htm",
+     "sha256": "a67203cb61d7eab5435209d5e3df9a620bdb191c0fa8a4c8749ecd26a770de47"
+    },
+    {
+     "from": "1993-06-12",
+     "units": 329,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/596/norma.htm",
+     "sha256": "29826e3013dc1f247d311f8acb12637fbf7e18b9c216be993ec998873551f53a"
+    },
+    {
+     "from": "1993-12-05",
+     "units": 329,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/668/norma.htm",
+     "sha256": "90baf06fa1b47914adca80fefd4b3da7b40ffadbe6db8fe42ebac353f6664d7e"
+    },
+    {
+     "from": "1994-01-07",
+     "units": 329,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/684/norma.htm",
+     "sha256": "a09a45b514d8fb882be34d31981750a3af280c8ccc25ad731d67b5e2f083f214"
+    },
+    {
+     "from": "1994-05-28",
+     "units": 333,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/715/norma.htm",
+     "sha256": "e1bab0f5d87a5dc049003f11741d64fc6811b6d225e5c0469fe93073d1ff27a2"
+    },
+    {
+     "from": "1995-01-11",
+     "units": 334,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/791/norma.htm",
+     "sha256": "466dddd652f19da4bcf9f3400e8e81047ba797b194afc58ca678c3ef96fa71a0"
+    },
+    {
+     "from": "1995-01-25",
+     "units": 334,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/812/norma.htm",
+     "sha256": "e5ce199a2df24739a59de4a4a27bdc41a0a48e047f2e648bf7ba92edce041453"
+    },
+    {
+     "from": "1995-03-16",
+     "units": 332,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/10000-14999/14900/norma.htm",
+     "sha256": "36077cd80a87323d2b2ee1de3384c9c09a176ec740e6695705b379a7d18d732d"
+    },
+    {
+     "from": "1995-09-17",
+     "units": 332,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/26777/norma.htm",
+     "sha256": "ce239cb097bebf26a94fad47a7c3e69e5ad43f3fb2f2a3e11753e202f8566637"
+    },
+    {
+     "from": "1996-11-27",
+     "units": 332,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/40382/norma.htm",
+     "sha256": "6b40e1bc5be8cabbd18767ed986fe558644a5fbdaf8cc7e28d9dd74c3a248ebc"
+    },
+    {
+     "from": "1997-05-13",
+     "units": 332,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/41347/norma.htm",
+     "sha256": "9fab898945b7f393b61fcdb9176663f08781cb1fc08c71a99d5afa4ac38303e9"
+    },
+    {
+     "from": "1999-05-23",
+     "units": 331,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/55000-59999/57552/norma.htm",
+     "sha256": "c488349811d42648517cdafb5bebae34afce4b5b0b35dcb205a1fdc4bf978890"
+    },
+    {
+     "from": "1999-11-06",
+     "units": 331,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60801/norma.htm",
+     "sha256": "4f2b2431196cab860ae292fe79c958a1b6d7668d389e9a71aadb1ce97a7f61bd"
+    },
+    {
+     "from": "1999-11-09",
+     "units": 334,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60847/norma.htm",
+     "sha256": "ed7ee6493ef1a461f292b3473f9e5968954550322f9883f557589b4efc939863"
+    },
+    {
+     "from": "2000-05-19",
+     "units": 334,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/62977/norma.htm",
+     "sha256": "c3f612504e30fb64647ad61923d9c17c0339a578f46f70ca339b4b5dda66e518"
+    },
+    {
+     "from": "2000-10-01",
+     "units": 335,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64368/norma.htm",
+     "sha256": "07e38bc89f660709029b2c31db8ebcc7a2b966ffaa8edf905c1a79b67dee344c"
+    },
+    {
+     "from": "2000-11-11",
+     "units": 337,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm",
+     "sha256": "7db8fce00971ce063cf40ed99199abc86197786dfe36a8d93531414a2c367d86"
+    },
+    {
+     "from": "2001-12-23",
+     "units": 338,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/70749/norma.htm",
+     "sha256": "a0ee1f37e0da02cf873ea94b2ebec751bc6bf54f0e70d58c93889494a830da6e"
+    },
+    {
+     "from": "2002-01-18",
+     "units": 338,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/71519/norma.htm",
+     "sha256": "026f1169105dd970c6fa1fecd733f975738e26888e5d8bac72082c165479ec35"
+    },
+    {
+     "from": "2002-06-20",
+     "units": 338,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/74977/norma.htm",
+     "sha256": "7b9c26f7c746cee3bb690ed0b640f14fcee405c33c1f0e593458d81e888bd32a"
+    },
+    {
+     "from": "2002-06-29",
+     "units": 338,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/75212/norma.htm",
+     "sha256": "7445296248f0bd1bccbb09bb3b140cff2db2bca67e1d7ed89a94ace27ef2d5e4"
+    },
+    {
+     "from": "2003-06-29",
+     "units": 339,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/85000-89999/86244/norma.htm",
+     "sha256": "f856225cb8275ffbd09882721414fdfa25eba75efcbc794d2c3ecc7603d6066f"
+    },
+    {
+     "from": "2003-09-10",
+     "units": 340,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/85000-89999/88075/norma.htm",
+     "sha256": "6f75f9bc2d6ab2f96de251fadae797fb5237e65c6cac589134a6c519207ec7d9"
+    },
+    {
+     "from": "2003-12-10",
+     "units": 340,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/90635/norma.htm",
+     "sha256": "579e99166e3923a53079be2d61c5a49b2bca94b767c79db16737127983d50214"
+    },
+    {
+     "from": "2003-12-18",
+     "units": 342,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/90864/norma.htm",
+     "sha256": "394df453180aab979d3e80b6eec1509d6c4756ce0d64767f890797c76128ae27"
+    },
+    {
+     "from": "2003-12-20",
+     "units": 342,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/90944/norma.htm",
+     "sha256": "ff26b72756b7f5fcfb9165c0ad7843f3557003f81cb46a7d593b86be75337da8"
+    },
+    {
+     "from": "2004-05-05",
+     "units": 342,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/94458/norma.htm",
+     "sha256": "2238612de8ae3634d51809a022b3595f67f9c31b1e6883c6ef0e4cd0481a3c31"
+    },
+    {
+     "from": "2004-05-14",
+     "units": 341,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/94769/norma.htm",
+     "sha256": "1cd08c778cb51e5311f7302fc4479d5879780fb7637ecd017474c9e67e29970c"
+    },
+    {
+     "from": "2004-05-30",
+     "units": 347,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/95000-99999/95203/norma.htm",
+     "sha256": "fef169067929b07a233c5809bcc47e888b06e64537748290dabad8441dfde81c"
+    },
+    {
+     "from": "2004-06-04",
+     "units": 347,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/95000-99999/95268/norma.htm",
+     "sha256": "804eebf015c417dd94e54e0a674e8f381627db033e9994372bd147c6a5037103"
+    },
+    {
+     "from": "2004-09-19",
+     "units": 347,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/95000-99999/98502/norma.htm",
+     "sha256": "3f262375897dc1ffd27d21c6336251f9d9260941585ed3a0e2420506627cd1da"
+    },
+    {
+     "from": "2004-09-30",
+     "units": 346,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/95000-99999/98807/norma.htm",
+     "sha256": "2e7d340382c83cb0c9dd9098badaf8f180d8c62de44281cc6825fe9a6bbcb9ae"
+    },
+    {
+     "from": "2005-01-20",
+     "units": 346,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/102819/norma.htm",
+     "sha256": "9e571c0bff7a8f0936aab0db81d137e66f0a0c86bebc0ec8bcd393e66a030e8f"
+    },
+    {
+     "from": "2006-05-03",
+     "units": 346,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/115744/norma.htm",
+     "sha256": "b87b0482bd9789461574619b63257b8fed8fb3c2142a09bb39d8514976372601"
+    },
+    {
+     "from": "2007-07-14",
+     "units": 348,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/125000-129999/129803/norma.htm",
+     "sha256": "b06d86298929788d1f948ad4dc4f0b91f1477b26c2807de3f50a739051d23e27"
+    },
+    {
+     "from": "2008-04-25",
+     "units": 349,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/139586/norma.htm",
+     "sha256": "a8f1b177c6d93571bd330984728daa714791be35ec00751944b1895cbe8102b8"
+    },
+    {
+     "from": "2008-05-09",
+     "units": 349,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/140100/norma.htm",
+     "sha256": "66a3b8e4c61f1fbaa9eea8c594bf61e76ced3423e408d2e4b0689fd0f9aea9ff"
+    },
+    {
+     "from": "2008-07-04",
+     "units": 349,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/141790/norma.htm",
+     "sha256": "541c1f2fb6deaa7f9637864d631f01a39eff74cedb1a6a766c87d6f61b63c3bd"
+    },
+    {
+     "from": "2009-01-29",
+     "units": 349,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/145000-149999/149566/norma.htm",
+     "sha256": "559b64976984dce9ca753e7b1a33ebc1617b93ace96de1e83ce363a7fabaf247"
+    },
+    {
+     "from": "2009-02-26",
+     "units": 358,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/143873/norma.htm",
+     "sha256": "8aae12d569fd6c2ea08fb1d25b7d5e44dcba081849654ac4a694d5cc609d0b4d"
+    },
+    {
+     "from": "2009-11-14",
+     "units": 360,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/155000-159999/159680/norma.htm",
+     "sha256": "bd72fcd33b987ca2b2c1c8dcce64c994013cbe9e8874e1e7ca953300b1e55c1c"
+    },
+    {
+     "from": "2009-12-06",
+     "units": 359,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/160774/norma.htm",
+     "sha256": "0fc24a6330678310397cab2f0cc01e9b8d56912fa0e2098b2adb688990f7132b"
+    },
+    {
+     "from": "2011-05-18",
+     "units": 360,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/180000-184999/181888/norma.htm",
+     "sha256": "4638c09a1933059fa4bde949489c9367824dbd17c7c6f8662ee08c2ba2518197"
+    },
+    {
+     "from": "2011-06-30",
+     "units": 362,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/180000-184999/183497/norma.htm",
+     "sha256": "b5904b3a7f36850f77a42af8b1e4a07103e304404f4577be4464a2d494d04c92"
+    },
+    {
+     "from": "2011-10-14",
+     "units": 362,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/185000-189999/187773/norma.htm",
+     "sha256": "0f7eb752211b73ce89f00063389e56a701ce228b00e9120f9a9e2b17e6f668b8"
+    },
+    {
+     "from": "2012-01-06",
+     "units": 369,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/190000-194999/192137/norma.htm",
+     "sha256": "0d9740438fa913ab0fb53784434462f556236998386deee87f42ad86a0b2a1b4"
+    },
+    {
+     "from": "2012-04-16",
+     "units": 369,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/195000-199999/195896/norma.htm",
+     "sha256": "6e8d7bb1f25f6e3c1e90e4d36659029fef53331bfb998c4dd213106639402e8e"
+    },
+    {
+     "from": "2012-12-23",
+     "units": 369,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/205000-209999/206018/norma.htm",
+     "sha256": "413759ff20c2d694fc4f0690cbc9dca4daddbeea515daab2b16cc7b873bac0ed"
+    },
+    {
+     "from": "2013-01-05",
+     "units": 369,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/205000-209999/206554/norma.htm",
+     "sha256": "6996de4319d70a005cfeead32d632110f8818e3ad77ffb46f5bc0cd599c00f41"
+    },
+    {
+     "from": "2013-04-21",
+     "units": 370,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210491/norma.htm",
+     "sha256": "81408d5ab03619c5e25994f6d4712358bbd363025ab57d054992a8dd61ec1c89"
+    },
+    {
+     "from": "2013-12-20",
+     "units": 371,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/220000-224999/223586/norma.htm",
+     "sha256": "c972f9fdb077f731e663563c14ef64b219cac0ba4a03f4ba8a7976dda504f063"
+    },
+    {
+     "from": "2014-12-28",
+     "units": 371,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239775/norma.htm",
+     "sha256": "e333ea2658463478c398e7743d69f5132ec6da5bda05160890142997c2101794"
+    },
+    {
+     "from": "2015-06-27",
+     "units": 370,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/245000-249999/248179/norma.htm",
+     "sha256": "27cdc0922a255f6fe305cafdf5009df657ea86986135655aab6a16cd9fb65f36"
+    },
+    {
+     "from": "2015-11-19",
+     "units": 370,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/250000-254999/254759/norma.htm",
+     "sha256": "7efa803a5840a62c8237257f29e61670229bedbee82fce160d4a5e970b511add"
+    },
+    {
+     "from": "2016-11-11",
+     "units": 371,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267115/norma.htm",
+     "sha256": "7fc090df368231631d619bffdc2f727ee062a4e1cd7d92da67eb194f251731a3"
+    },
+    {
+     "from": "2016-12-27",
+     "units": 372,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/269773/norma.htm",
+     "sha256": "0d3d1fe2d55d5c3f958c232eba9a7216a6ba47817777c963f30aa21679c71805"
+    },
+    {
+     "from": "2017-01-15",
+     "units": 374,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/270433/norma.htm",
+     "sha256": "2cea3f7a87412d652987a16c1d9244c05e9b8dae9f34a7699f34b2171a37f9af"
+    },
+    {
+     "from": "2017-05-26",
+     "units": 374,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/274739/norma.htm",
+     "sha256": "5838eb6d785ba539ded946f79f5d5a14eea7fd61fb42a3bce88ad381cd4f86ca"
+    },
+    {
+     "from": "2017-08-06",
+     "units": 374,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/275000-279999/277449/norma.htm",
+     "sha256": "32d8f1f993ab42a022b123079fb93f9396aef204ce282a1add6af4b955d27375"
+    },
+    {
+     "from": "2018-03-01",
+     "units": 376,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/295000-299999/296846/norma.htm",
+     "sha256": "1eb1dffc6eb87ef651bd2440f7eba859adaf8a62d47cfd1749e07ee74a502017"
+    },
+    {
+     "from": "2018-05-02",
+     "units": 376,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/309201/norma.htm",
+     "sha256": "d661dd739e0b091929502345da7bc50d86375fa657e580b575daab54edf5a60a"
+    },
+    {
+     "from": "2018-11-03",
+     "units": 376,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/315663/norma.htm",
+     "sha256": "823759fd9b833b4e5b3243a93ca2a79438a4301b86a90e08d14d40e4949fc8a1"
+    },
+    {
+     "from": "2021-01-24",
+     "units": 377,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/346231/norma.htm",
+     "sha256": "5b5555c12730b865300ea326ff896aaa47aad94dd5482b278eec8dcc521ece03"
+    },
+    {
+     "from": "2024-03-24",
+     "units": 377,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/397355/norma.htm",
+     "sha256": "bff60b2d1d7be07e164ed792f3d1503b992f2ce1f0a800fc0f838fff745fe382"
+    },
+    {
+     "from": "2024-10-15",
+     "units": 377,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/405186/norma.htm",
+     "sha256": "ae27e1a678d54cb953fa18242a089a9a3530d089dae52cb25205a7d40813a16c"
+    },
+    {
+     "from": "2025-03-08",
+     "units": 377,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/410382/norma.htm",
+     "sha256": "d24d7eb0db1cb4ece8a25be66626aa6a24faf05f8b7b8517147ea7b348b568fc"
+    },
+    {
+     "from": "2025-03-11",
+     "units": 379,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/410436/norma.htm",
+     "sha256": "80189510b42e0aa721efe7ec646c6e2bca0c89f74265e1f15c8940b1d88514bc"
+    }
+   ]
+  },
+  {
+   "slug": "ley-20744",
+   "short": "LCT",
+   "title": "Ley de Contrato de Trabajo (Ley 20.744, texto ordenado 1976)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+   "versions": [
+    {
+     "from": "1976-05-21",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/225000-229999/229909/norma.htm",
+     "sha256": "0fb5e3726a5fdcc0730804fc0ccefb18bcd2ef56d238c35c3b9fdb9355c74f51"
+    },
+    {
+     "from": "1977-10-13",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/77206/norma.htm",
+     "sha256": "cb6d7d28e9d05d70956c7a246ff1c7d301b8dd2d5e3d35a7fbe13180b3802e21"
+    },
+    {
+     "from": "1978-07-09",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/77209/norma.htm",
+     "sha256": "01b0b1822d2e6779e231b40a09375a30db3ac787a1f1ae36ade2bb86427e2b8b"
+    },
+    {
+     "from": "1980-07-27",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/29273/norma.htm",
+     "sha256": "4830f4dd11e51cbe3f45f2ab41ac49b59a280942636df805faf4242bd5486c8d"
+    },
+    {
+     "from": "1980-09-06",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/77208/norma.htm",
+     "sha256": "6c7d54f2bca516f76acc5478b1f0796e75e080a95d9263693247878fdd332eba"
+    },
+    {
+     "from": "1980-11-16",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/77207/norma.htm",
+     "sha256": "a1900d250abd474d0d6051883321b3b997fab644580e972bd09a22a04726c5e7"
+    },
+    {
+     "from": "1987-04-03",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/21976/norma.htm",
+     "sha256": "3844d828fcb8962129ac5ccba54d0e15aff6c8aa11f574e4f863cdd2fc92f648"
+    },
+    {
+     "from": "1989-10-04",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/15/norma.htm",
+     "sha256": "b7c0472171534486f42f831e5edb855178427241dd57f05c9c4105ed6fbfacb0"
+    },
+    {
+     "from": "1991-12-26",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/norma.htm",
+     "sha256": "ab27e2799b6a03502cafe8b818471862f82325555803664a5a4ec89a867d66fa"
+    },
+    {
+     "from": "1994-07-08",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/729/norma.htm",
+     "sha256": "bcbfab7a6805c4c60e53f8d7259772bcbbe893eaca7f475517952db6e6e423e8"
+    },
+    {
+     "from": "1995-01-19",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/803/norma.htm",
+     "sha256": "23cb8ea9de26a41b99f0e979fad40b623e027f601ebc5816e626f184a372c95e"
+    },
+    {
+     "from": "1995-04-06",
+     "units": 279,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/15931/norma.htm",
+     "sha256": "09606071c80340065b5501ee5d20b71e6a9c3f6faaa5f0a0375ed302b8748142"
+    },
+    {
+     "from": "1995-08-18",
+     "units": 276,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25379/norma.htm",
+     "sha256": "df18e04946552c294e96bbb393e45bd081e7f90e26f50472bf1e8d9da9a7e477"
+    },
+    {
+     "from": "1996-10-06",
+     "units": 276,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39521/norma.htm",
+     "sha256": "5712d7c2908a5af5354f045be6bf7ae2721c1224a761e76915afe53308a677aa"
+    },
+    {
+     "from": "1996-10-23",
+     "units": 278,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39793/norma.htm",
+     "sha256": "0d27fa986c2a9f9cffb47980f0b0888bb63c2da81f3056257162936a56e3ab76"
+    },
+    {
+     "from": "1998-10-03",
+     "units": 278,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/53159/norma.htm",
+     "sha256": "a17e26f87d9714e02a33475c326ec18a1ef17fcfcd6619ceae739dc77535d20f"
+    },
+    {
+     "from": "2000-11-26",
+     "units": 279,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/65015/norma.htm",
+     "sha256": "fac056597613012ba8b0af82eef10fce5e3cd9585b753b7f0e8b65b8f2c8e1af"
+    },
+    {
+     "from": "2004-03-28",
+     "units": 279,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/93595/norma.htm",
+     "sha256": "3e1aa104729313ce8597e942af5523d48ea321709efc07f17bd22fe374f904c2"
+    },
+    {
+     "from": "2006-05-03",
+     "units": 279,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/115745/norma.htm",
+     "sha256": "c18dea94837a326bb831a9a159e1a6a5dbcafa466a197ba2770d3dce429cad06"
+    },
+    {
+     "from": "2008-01-02",
+     "units": 279,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/136063/norma.htm",
+     "sha256": "14fb563e8216e8135511277aab835105f0f6da5656ff0a8f18a9fa539317bebf"
+    },
+    {
+     "from": "2008-07-04",
+     "units": 278,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/141792/norma.htm",
+     "sha256": "fb22b6d0479228a59d8b7bf1a97f8f9ab177788112acff3e5074b3c524ab20d1"
+    },
+    {
+     "from": "2009-01-04",
+     "units": 278,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/145000-149999/148760/norma.htm",
+     "sha256": "87ba3a345c43404bfc661932b6f4e3819ff6d525f8ea9569eaede1d9f4141a12"
+    },
+    {
+     "from": "2009-02-01",
+     "units": 278,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/145000-149999/149688/norma.htm",
+     "sha256": "51928948c79505fbf13c1bbf84961da0f4bfceae64cd42217f7b414aa740ae3a"
+    },
+    {
+     "from": "2010-01-07",
+     "units": 278,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/162205/norma.htm",
+     "sha256": "7299cb4f72cc2c72c9ea7753f7042dcb3e544e92ae67cca97f5b0be2fdfe11f8"
+    },
+    {
+     "from": "2010-05-14",
+     "units": 278,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/165000-169999/166910/norma.htm",
+     "sha256": "23631762f961df232568ba558b45a4323c86c51c343b690625f5b053b731fc48"
+    },
+    {
+     "from": "2010-05-30",
+     "units": 279,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/165000-169999/167617/norma.htm",
+     "sha256": "a0078ddad4fec37ae0485ca2d9ea1269af07dd59ed640ea795dbd2f83f70e94d"
+    },
+    {
+     "from": "2010-06-04",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/165000-169999/167661/norma.htm",
+     "sha256": "4c76d94dcedc05385490e3377bc7cd7d7aecd5551cf21ad5d079cda0f01c7769"
+    },
+    {
+     "from": "2011-09-07",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/185000-189999/186021/norma.htm",
+     "sha256": "97333d0f4866bd7e2125f474255435cca33c4d1ab77b66ceba66808301a14fe4"
+    },
+    {
+     "from": "2012-01-06",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/190000-194999/192152/norma.htm",
+     "sha256": "f4406354b973d2a288b26e24e1848b4d744db2a8b2fbca98b9f7e66b994a5085"
+    },
+    {
+     "from": "2013-12-14",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/220000-224999/223339/norma.htm",
+     "sha256": "10d60b27fd3efebc79f42a5344e2e3b1c64cb72b384c8157dfafdf5f19380f9b"
+    },
+    {
+     "from": "2015-01-29",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/240000-244999/241014/norma.htm",
+     "sha256": "ee499f60e9b6ab32645ebb0c1d1618e150b2e1338be61868a389846283a77b13"
+    },
+    {
+     "from": "2016-12-24",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/269015/norma.htm",
+     "sha256": "f29c0eb64db67f526c81950f51836a6680956bae01cfd5adc74f68bf38084d30"
+    },
+    {
+     "from": "2017-12-29",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305214/norma.htm",
+     "sha256": "bed1f306733907d8d733c471a59cda024f4a407c2195fa41d185448aa4b0ad8b"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 280,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2020-08-23",
+     "units": 281,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/340000-344999/341093/norma.htm",
+     "sha256": "2c89828c1ac83974219f88ae8ddda1036b54daef8c20ae37d8a410312888a75a"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 283,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2024-07-09",
+     "units": 283,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401266/norma.htm",
+     "sha256": "3decefb455bf96aada12b630851becd4a65e695d57a0b8868b78216715bb620c"
+    },
+    {
+     "from": "2024-11-12",
+     "units": 283,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/402820/norma.htm",
+     "sha256": "83ed78facc389cc521986074381a3979dc74e476e98b8d244d26c8088cf56734"
+    },
+    {
+     "from": "2026-03-06",
+     "units": 277,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-penal-federal",
+   "short": "CPPF",
+   "title": "Código Procesal Penal Federal (Ley 27.063, texto ordenado 2019)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239340/texact.htm",
+   "versions": [
+    {
+     "from": "2019-06-10",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/319681/norma.htm",
+     "sha256": "6ce46af60f3ba8bdb733a57515f8b4e84a7d742c51181898263ce20bc67ecc44"
+    },
+    {
+     "from": "2019-11-22",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/331847/norma.htm",
+     "sha256": "592309b5249ab55578d0e54e7c40cf80f5d3e0dffb8aec978bd3296ee69ad952"
+    },
+    {
+     "from": "2020-12-10",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/340000-344999/344835/norma.htm",
+     "sha256": "1801b533f64908fe7353df8c3f79417bffe5a9b2a8c93947b778cf819f6a711f"
+    },
+    {
+     "from": "2021-02-17",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/346923/norma.htm",
+     "sha256": "a302e04f8a47e20c23678645b7099cddcade85d2e7fbd8245831a17c2c0d2cb9"
+    },
+    {
+     "from": "2024-03-18",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/397458/norma.htm",
+     "sha256": "cd42353e925d53306fe6fd69b4aca07e84b167aa2a2fda6e3d9ba36477dd7a6a"
+    },
+    {
+     "from": "2024-08-05",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/399690/norma.htm",
+     "sha256": "4dfecc5cc258da873c8c85debeb5c6b1a36839ec0b120b7fca7a5cf937b8824e"
+    },
+    {
+     "from": "2024-11-04",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401479/norma.htm",
+     "sha256": "d80ad09324f3ccf310b2f8569c225cf0154c24b5509f220f31a9411d9726986a"
+    },
+    {
+     "from": "2025-03-01",
+     "units": 397,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/403661/norma.htm",
+     "sha256": "327141b590a27e21e29799d775cfe3f3d81ab5675debdaec24b0126be587fb7a"
+    },
+    {
+     "from": "2025-03-08",
+     "units": 398,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/410382/norma.htm",
+     "sha256": "d24d7eb0db1cb4ece8a25be66626aa6a24faf05f8b7b8517147ea7b348b568fc"
+    },
+    {
+     "from": "2025-03-17",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/410380/norma.htm",
+     "sha256": "bfaeccc4d237e32b91de1543389714a57180ec83bc1eff41ab1c9dca7b129bb1"
+    },
+    {
+     "from": "2025-04-07",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/407423/norma.htm",
+     "sha256": "18ce2b479457986954be1a692de983b1d4ab579e7c052fd7b59d3fd0dff9d311"
+    },
+    {
+     "from": "2025-09-29",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/411917/norma.htm",
+     "sha256": "16fe4ae87950b0993726f243d09d3a313278cf49c9891444600bd4036e0f6d80"
+    },
+    {
+     "from": "2025-12-01",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/410832/norma.htm",
+     "sha256": "f918f07b6cbbec0d629555c576f00146651aa615ef9defc4341f2fdebb9b409d"
+    },
+    {
+     "from": "2026-06-24",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/422117/norma.htm",
+     "sha256": "3bea22fd6b0719d3619d245f0d5f88b41d5e7338ae4a4bd3763eb8cfac77c96d"
+    },
+    {
+     "from": "2026-09-21",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/425000-429999/426706/norma.htm",
+     "sha256": "94957a3d85a16f03defe29d48eea0972ca567376dd92a9cb048be63567b10b3f"
+    },
+    {
+     "from": "2026-11-30",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/425000-429999/429577/norma.htm",
+     "sha256": "2d4f3ab17ef50cac7bfe9460b9e034f0d1b6bafc57957cbe02aebe4b711f5ac4"
+    },
+    {
+     "from": "2027-02-15",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/424970/norma.htm",
+     "sha256": "86949b23afa3e0ad27f368a87a2da3b73a2d87718e7e2a2ae29539c3a879702d"
+    },
+    {
+     "from": "2027-03-08",
+     "units": 403,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/425000-429999/426611/norma.htm",
+     "sha256": "b8f0c84bed8fa7071c7ffab2636ec3d9f952d674383f5845dd2ae125aecf10b2"
+    }
+   ]
+  },
+  {
+   "slug": "ley-19550",
+   "short": "LGS",
+   "title": "Ley General de Sociedades (Ley 19.550, texto ordenado 1984)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25553/texact.htm",
+   "versions": [
+    {
+     "from": "1984-03-30",
+     "units": 389,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/78064/norma.htm",
+     "sha256": "5b751c624569d79f79be2bbff991ef8226db3d18c74984de6669d0812ce068a4"
+    },
+    {
+     "from": "1988-08-05",
+     "units": 389,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20643/norma.htm",
+     "sha256": "13d3db747a03a9ddebee6688abff9da647b2777b88253a7d0597c59e3b62ae4b"
+    },
+    {
+     "from": "1991-10-06",
+     "units": 389,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/5000-9999/7231/norma.htm",
+     "sha256": "20edbfb1a58353f4e183ae00dc460af696f13f9eb2022797ff0a50e0f9a2d461"
+    },
+    {
+     "from": "1991-12-11",
+     "units": 389,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/23908/norma.htm",
+     "sha256": "2e840f89af5bfb794fabbc123cfd76b17ce74f5ed25ef6081a935f34c8194f88"
+    },
+    {
+     "from": "1995-01-26",
+     "units": 389,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/814/norma.htm",
+     "sha256": "67c484c6707877df569bbb9fc69c9ce9477bd9ccd157d4f9452a24b9cac0b03a"
+    },
+    {
+     "from": "1995-08-18",
+     "units": 388,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25379/norma.htm",
+     "sha256": "df18e04946552c294e96bbb393e45bd081e7f90e26f50472bf1e8d9da9a7e477"
+    },
+    {
+     "from": "2012-10-06",
+     "units": 388,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/200443/norma.htm",
+     "sha256": "6462f6f5ea86477827450e6f628ad370e03f9a805f2354ded87d49ede1c51e1a"
+    },
+    {
+     "from": "2015-08-01",
+     "units": 366,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/norma.htm",
+     "sha256": "cb0d963dd779b4f8ac44d049c3d1c449c250e7dc28a5ead280633115e9ba2967"
+    },
+    {
+     "from": "2016-11-27",
+     "units": 366,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267886/norma.htm",
+     "sha256": "3064274078eb6a31f9b000cc6b9fc6bdea775c922e1ac2eee70a630814b384fb"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 366,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-05-20",
+     "units": 366,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310084/norma.htm",
+     "sha256": "84e4df817d231ce24390d57fbded8cdcf7d832ff7bce2bb75e5c0cf1cdeef8b8"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 366,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311587/norma.htm",
+     "sha256": "97a63fdeb91d26936518e402c71eda3255e484592ef1cf73ce773c61e67c0f06"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 366,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2024-06-01",
+     "units": 366,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/399691/norma.htm",
+     "sha256": "11eab72ad5d6c80551fbaa9e555df35bf37e886bb5a0128816dcb2041de2ea2b"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24240",
+   "short": "LDC",
+   "title": "Ley 24.240 de Defensa del Consumidor",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/638/texact.htm",
+   "versions": [
+    {
+     "from": "1993-10-24",
+     "units": 63,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/638/norma.htm",
+     "sha256": "a70c1525ea8c9ff72676e42dbf4dfd9671cb1ea8a8738c54ee96f9f427589bba"
+    },
+    {
+     "from": "1995-11-09",
+     "units": 63,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/29218/norma.htm",
+     "sha256": "f1690ceea3a8507c858f537c059d967f432a0efee60d6e413ab08d5a4131c2df"
+    },
+    {
+     "from": "1997-04-11",
+     "units": 65,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42463/norma.htm",
+     "sha256": "fd50830326a15f01ac2b6e4a24fd04385f5ef7364fe75e207feb1bcceadb67e0"
+    },
+    {
+     "from": "1998-08-08",
+     "units": 67,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/52068/norma.htm",
+     "sha256": "d74d8ed01ab23388ac39c2015d6041acd663132390cc9a637fd6cb80381b1602"
+    },
+    {
+     "from": "2008-04-16",
+     "units": 71,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/139252/norma.htm",
+     "sha256": "b0a847fbaf7dca4f7deee47cccee57e6d5bd6ef5486ef5a8f8784265991ff0b1"
+    },
+    {
+     "from": "2014-09-28",
+     "units": 72,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235275/norma.htm",
+     "sha256": "f1868f54ba6eff78913a0ff314acfccd0e56a851d1063f374f78d4cfd931e94a"
+    },
+    {
+     "from": "2015-08-01",
+     "units": 72,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/235975/norma.htm",
+     "sha256": "cb0d963dd779b4f8ac44d049c3d1c449c250e7dc28a5ead280633115e9ba2967"
+    },
+    {
+     "from": "2016-06-23",
+     "units": 72,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/260000-264999/262686/norma.htm",
+     "sha256": "2b9e13f07a06745d5dbb51e63b2c4431af528316c83ef3500e87c6064480f975"
+    },
+    {
+     "from": "2016-08-26",
+     "units": 73,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/260000-264999/264483/norma.htm",
+     "sha256": "bd5dcd59224b62cc77cbb81b8c13b15efd1f98d4754b0bfadc9bdac608066e5b"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 73,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 73,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311587/norma.htm",
+     "sha256": "97a63fdeb91d26936518e402c71eda3255e484592ef1cf73ce773c61e67c0f06"
+    },
+    {
+     "from": "2022-12-10",
+     "units": 73,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/375000-379999/375860/norma.htm",
+     "sha256": "ecb4427b2467b2427f562c91b3dc69a3f22090bee9d9e491c46c5b791bc9b309"
+    }
+   ]
+  },
+  {
+   "slug": "ley-19549",
+   "short": "LPA",
+   "title": "Ley 19.549 de Procedimientos Administrativos",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/22363/texact.htm",
+   "versions": [
+    {
+     "from": "1972-05-06",
+     "units": 33,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/22363/norma.htm",
+     "sha256": "e1eee6635dcfa7692f9551a21b8f98cbd9f907875b7dc0a2376df378613f507c"
+    },
+    {
+     "from": "1977-12-04",
+     "units": 33,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/100070/norma.htm",
+     "sha256": "d835a1dac8f41b66b0257afde050985e96c9da1c061a19e09c9d1d0a5d9af30b"
+    },
+    {
+     "from": "2000-11-30",
+     "units": 33,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/65053/norma.htm",
+     "sha256": "44cf19b0f1b534270cd3d77492be624fe6698a3d6b7cd0b0edcdcd8cd9a39449"
+    },
+    {
+     "from": "2001-08-25",
+     "units": 33,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/68396/norma.htm",
+     "sha256": "cce4c2e870ad922884312e8a8994cf1bb28a15375c5057704e00c76ab059e674"
+    },
+    {
+     "from": "2024-07-09",
+     "units": 36,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401266/norma.htm",
+     "sha256": "3decefb455bf96aada12b630851becd4a65e695d57a0b8868b78216715bb620c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26061",
+   "short": "LPINNA",
+   "title": "Ley 26.061 de Protección Integral de los Derechos de las Niñas, Niños y Adolescentes",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/110000-114999/110778/texact.htm",
+   "versions": [
+    {
+     "from": "2005-11-04",
+     "units": 78,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/110000-114999/110778/norma.htm",
+     "sha256": "d71ce62d63cf4476695795b146b134740c0aed262352fee34cce13075687946c"
+    },
+    {
+     "from": "2020-12-05",
+     "units": 78,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/340000-344999/344575/norma.htm",
+     "sha256": "baddaaf611a029e9f2a6b264f5a2e1cdbd6ffedab217750657d49df342759bc4"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25675",
+   "short": "LGA",
+   "title": "Ley 25.675 General del Ambiente",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/79980/norma.htm",
+   "versions": [
+    {
+     "from": "2002-12-07",
+     "units": 37,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/79980/norma.htm",
+     "sha256": "1ad27e95393d85e5d96e671c5ba213843ab7f78468f089b3eca085d2d84894d1"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26485",
+   "short": "LPIM",
+   "title": "Ley 26.485 de Protección Integral para Prevenir, Sancionar y Erradicar la Violencia contra las Mujeres en los Ámbitos en que Desarrollen sus Relaciones Interpersonales",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/150000-154999/152155/texact.htm",
+   "versions": [
+    {
+     "from": "2009-04-14",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/150000-154999/152155/norma.htm",
+     "sha256": "ea4b89378ca911fcf939156b239cfc72cfa2f14ee810cabd93950c28513d6744"
+    },
+    {
+     "from": "2019-05-17",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/320000-324999/322870/norma.htm",
+     "sha256": "383634625f2855b41513a4bc5b616918e3c531754e915ce1792c6635e93662f6"
+    },
+    {
+     "from": "2019-12-29",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/333514/norma.htm",
+     "sha256": "34b055283bf8785b4b0739ceab2a04dd28261adcee7027d609918ea11dd81479"
+    },
+    {
+     "from": "2021-10-30",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/355000-359999/356020/norma.htm",
+     "sha256": "a6321ecdcbeb8c767c9fa4d4355b29c47c57c4e4aaf7cf478aa391fce54f2334"
+    },
+    {
+     "from": "2023-11-01",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/391774/norma.htm",
+     "sha256": "9bc6ccab30298a534900e083719c2f92f6ff51204e1adb7ccdd08a09b3219772"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24449",
+   "short": "LNT",
+   "title": "Ley 24.449 de Tránsito",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/818/texact.htm",
+   "versions": [
+    {
+     "from": "1995-12-01",
+     "units": 97,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/818/norma.htm",
+     "sha256": "eaf5512d305b1ca55096ba43bebe1e73448bfc08ed82414118f57dde1f8021c0"
+    },
+    {
+     "from": "1997-04-12",
+     "units": 97,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42480/norma.htm",
+     "sha256": "df637317097cc71ae5c41b04a0debba4f6ca656b5b9b5ba4d1689982c6ca5cc2"
+    },
+    {
+     "from": "2001-09-19",
+     "units": 97,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/68751/norma.htm",
+     "sha256": "69091334c33b21e1413c7ca3378571296b0f676f235a7f0d16a39fd0dbdd072b"
+    },
+    {
+     "from": "2004-01-17",
+     "units": 97,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/91608/norma.htm",
+     "sha256": "c8d7989c7123c1366fc70c171bc494893f584dffdd454486fbedb97f37a8d553"
+    },
+    {
+     "from": "2004-12-30",
+     "units": 100,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/102148/norma.htm",
+     "sha256": "27d51ca8114a9926df874af9ea6932ad6e74e845f732e8ff38bbee8130f162ce"
+    },
+    {
+     "from": "2008-04-30",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/140098/norma.htm",
+     "sha256": "558fcec2f1e69d2fbd767b26e25802c59ca175856b97da00888db17482facdc0"
+    },
+    {
+     "from": "2017-12-23",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305055/norma.htm",
+     "sha256": "f63c118d98c3d39cf53c8f726386b3a0230ad29b5a2c023dbf8606e3b9d75fd2"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311585/norma.htm",
+     "sha256": "7b9af4580523a59a851bd2ebde4888dbde199531911e90c86f0aaab92950ff92"
+    },
+    {
+     "from": "2019-09-06",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/325000-329999/327260/norma.htm",
+     "sha256": "d15e8de19811bd590adf82d471b36ca2cfcfaf9055f9ed7be45c82c743d39943"
+    },
+    {
+     "from": "2020-12-27",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/345366/norma.htm",
+     "sha256": "f9dcf61cd7909d8b75fd0501c2e9976313173de6b716028a4d8160587348dc18"
+    },
+    {
+     "from": "2023-05-12",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/380000-384999/383043/norma.htm",
+     "sha256": "a6dfe715611f6f4b8a945181b45cff2b84bd2b8f9689a5dd2d00822d7cf385e9"
+    },
+    {
+     "from": "2025-07-08",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/414868/norma.htm",
+     "sha256": "2a81245a7b42bb6ae255d463b9522778b767213c0b89214ca69763232b0e5ae1"
+    },
+    {
+     "from": "2025-09-03",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/417102/norma.htm",
+     "sha256": "f34d65faf90fe8cc5212850b7544da26e6211c0b4935a2d705af8ee366730a99"
+    }
+   ]
+  },
+  {
+   "slug": "ley-23551",
+   "short": "LAS",
+   "title": "Ley 23.551 de Asociaciones Sindicales",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20993/texact.htm",
+   "versions": [
+    {
+     "from": "1988-04-23",
+     "units": 67,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20993/norma.htm",
+     "sha256": "811f15c5ceb4e22585a4873551a8277a0ee3758b06dbdfd66b321a1625067b9b"
+    },
+    {
+     "from": "2002-12-08",
+     "units": 67,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/80000-84999/80046/norma.htm",
+     "sha256": "97a08a9fb5512502270b7c5db320a3f5dabd468325bfd56d1a54c114a714f2b3"
+    },
+    {
+     "from": "2008-07-04",
+     "units": 67,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/141792/norma.htm",
+     "sha256": "fb22b6d0479228a59d8b7bf1a97f8f9ab177788112acff3e5074b3c524ab20d1"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 69,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2025-05-21",
+     "units": 69,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/412998/norma.htm",
+     "sha256": "02b5111100e435ba7e914a6fd4e28f0aa7dfc1e2153e810afdd6ce4c96504399"
+    },
+    {
+     "from": "2026-03-06",
+     "units": 70,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26657",
+   "short": "LNSM",
+   "title": "Ley 26.657 Nacional de Salud Mental",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175977/norma.htm",
+   "versions": [
+    {
+     "from": "2010-12-12",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175977/norma.htm",
+     "sha256": "abf36c3040f7ef0e6786d70b6ebdbc4498949de7620101ba75ce1566b6bfd2c9"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25164",
+   "short": "LMEP",
+   "title": "Ley 25.164 Marco de Regulación de Empleo Público Nacional",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60458/texact.htm",
+   "versions": [
+    {
+     "from": "1999-10-17",
+     "units": 51,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60458/norma.htm",
+     "sha256": "3bf3748320418bdd4a1fa0eebb6bd624fd55551510f7b068a225e3d979bb941d"
+    },
+    {
+     "from": "2024-07-05",
+     "units": 51,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401216/norma.htm",
+     "sha256": "9dac4f4b087d853023a4a8ed1b47340a3955f23d6cbe2c88ee3fa13fafc8f5b1"
+    },
+    {
+     "from": "2024-07-09",
+     "units": 51,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401266/norma.htm",
+     "sha256": "3decefb455bf96aada12b630851becd4a65e695d57a0b8868b78216715bb620c"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-civil-y-comercial",
+   "short": "CPCCN",
+   "title": "Código Procesal Civil y Comercial de la Nación (Ley 17.454, texto ordenado 1981)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16547/texact.htm",
+   "versions": [
+    {
+     "from": "2013-04-04",
+     "units": 784,
+     "source_url": "https://web.archive.org/web/20130404170145id_/http://infoleg.mecon.gov.ar/infolegInternet/anexos/15000-19999/16547/texact.htm",
+     "sha256": "d867e0851de14cf6fca0c91cbd1ae2d1f1053846b60eecfdb83d784815c13f03"
+    },
+    {
+     "from": "2013-05-17",
+     "units": 782,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/214383/norma.htm",
+     "sha256": "5ae036b718be4137c70eebb75f07aca2c5e31572934592dda3435a091b85ea6e"
+    },
+    {
+     "from": "2014-05-19",
+     "units": 782,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/230000-234999/230088/norma.htm",
+     "sha256": "563bdd285387b6c65c28cf550560ef53da45989e7bc2d765a3597f493e532ea7"
+    },
+    {
+     "from": "2016-12-30",
+     "units": 782,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/270045/norma.htm",
+     "sha256": "40532c4625804845186b758e774593fb060d7f30d013e389bdc8e42ff3f6d916"
+    },
+    {
+     "from": "2018-08-04",
+     "units": 781,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/312719/norma.htm",
+     "sha256": "27c0626334f544711647d3e4597dd4fa7dedb7a42d7b8b20f7b384692319fefa"
+    },
+    {
+     "from": "2019-01-01",
+     "units": 781,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/317531/norma.htm",
+     "sha256": "88a84083d391734f6e274f740ee17b06a746451cf467ce778d9404a92e303a53"
+    },
+    {
+     "from": "2019-01-10",
+     "units": 783,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/318668/norma.htm",
+     "sha256": "9eb9877431d752a2c13047c2bacb907bfa486dba97b03c8049a644a6af5c75c8"
+    },
+    {
+     "from": "2020-01-01",
+     "units": 783,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/333669/norma.htm",
+     "sha256": "a64bba9b1a0dcceccedcf0861eed03c77d1f5a4ad0ad0e207ca2065e68dd63e6"
+    },
+    {
+     "from": "2022-06-01",
+     "units": 783,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/365000-369999/365429/norma.htm",
+     "sha256": "31b4db1a1e83eb1402dad0ab4fe6e7c19412e31a3365f5f1958fbb30822372e1"
+    },
+    {
+     "from": "2024-05-01",
+     "units": 783,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/398015/norma.htm",
+     "sha256": "17e661e4f449d08b7bda45324a9b90ffe963b2999c3f9d589a73106b78d77c9b"
+    },
+    {
+     "from": "2025-08-01",
+     "units": 783,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/415307/norma.htm",
+     "sha256": "48d07be75a71d426637006affa18c28e25a9454b3f11a35f19382ed6b88bbc8f"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-penal",
+   "short": "CPPN",
+   "title": "Código Procesal Penal de la Nación (Ley 23.984)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/383/texact.htm",
+   "versions": [
+    {
+     "from": "2013-04-04",
+     "units": 558,
+     "source_url": "https://web.archive.org/web/20130404141841id_/http://infoleg.mecon.gov.ar/infolegInternet/anexos/0-4999/383/texact.htm",
+     "sha256": "e13a17d49fdf765efc46868ae717c840b782e563a2cf8c8aa62be336cdea069a"
+    },
+    {
+     "from": "2016-11-17",
+     "units": 557,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267720/norma.htm",
+     "sha256": "69aa02a3d1f0b2a8af1cfae65efbcd457d023d08e9389b17492c333f8b6f548a"
+    },
+    {
+     "from": "2016-12-01",
+     "units": 561,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/268408/norma.htm",
+     "sha256": "5a38314661bbb24976ce28284edd3ae7b6afa9873f6ef2c331079a32bcbb9e91"
+    },
+    {
+     "from": "2016-12-31",
+     "units": 561,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/270008/norma.htm",
+     "sha256": "3e25cc4dd3dc4bb5975aa6068bcaafd3adab6e80f6acdbf007e1007deb4cf5a2"
+    },
+    {
+     "from": "2017-07-22",
+     "units": 561,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/275000-279999/276819/norma.htm",
+     "sha256": "10d0f89c74d7f1efcb71350e6e96d4bcc1794e6303c72c5fdcc1af2f212f29c5"
+    },
+    {
+     "from": "2017-10-03",
+     "units": 563,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/280000-284999/280184/norma.htm",
+     "sha256": "ce62a28ed82c3e9cc7f16a7e1d0097ec989b4430b607c1cba12cf0abdb62070d"
+    },
+    {
+     "from": "2018-03-01",
+     "units": 563,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/295000-299999/296846/norma.htm",
+     "sha256": "1eb1dffc6eb87ef651bd2440f7eba859adaf8a62d47cfd1749e07ee74a502017"
+    },
+    {
+     "from": "2025-03-08",
+     "units": 563,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/410382/norma.htm",
+     "sha256": "d24d7eb0db1cb4ece8a25be66626aa6a24faf05f8b7b8517147ea7b348b568fc"
+    },
+    {
+     "from": "2025-03-17",
+     "units": 568,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/410380/norma.htm",
+     "sha256": "bfaeccc4d237e32b91de1543389714a57180ec83bc1eff41ab1c9dca7b129bb1"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24522",
+   "short": "LCQ",
+   "title": "Ley 24.522 de Concursos y Quiebras",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25379/texact.htm",
+   "versions": [
+    {
+     "from": "2013-08-20",
+     "units": 301,
+     "source_url": "https://web.archive.org/web/20130820110229id_/http://www.infoleg.gov.ar/infolegInternet/anexos/25000-29999/25379/texact.htm",
+     "sha256": "b0d8a778f6a49adf57c39701b2c10f177ea34654ec395347427c37423a0c612b"
+    },
+    {
+     "from": "2015-09-17",
+     "units": 301,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/250000-254999/251563/norma.htm",
+     "sha256": "0fb17411a347318d3bafe3e076defac4b8ea23dd14f795ba6bf04f4b6f6e751b"
+    },
+    {
+     "from": "2019-01-22",
+     "units": 301,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/319068/norma.htm",
+     "sha256": "923735b4a6d0626b874cda1f03c79c38622266f663be909d1270b0d6f1408fac"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-aduanero",
+   "short": "CA",
+   "title": "Código Aduanero (Ley 22.415)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/16536/texact.htm",
+   "versions": [
+    {
+     "from": "2013-04-24",
+     "units": 1170,
+     "source_url": "https://web.archive.org/web/20130422020621id_/http://www.infoleg.gov.ar:80/infolegInternet/anexos/15000-19999/16536/texact.htm",
+     "sha256": "4126c06469e437b3fa4bf02a366f2205d025b81586708b46ba4a18bf3ae45dcb"
+    },
+    {
+     "from": "2016-11-17",
+     "units": 1170,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267336/norma.htm",
+     "sha256": "107fe013d66a2370b7cb175d8b392613b8d90c67168b1c8d79f3516c8a042c32"
+    },
+    {
+     "from": "2017-12-30",
+     "units": 1170,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305262/norma.htm",
+     "sha256": "afa2349bcb63f84bcca6ff60f68976a55ceadba0f1eafbe796b72f3c5e157fc7"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 1170,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 1170,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311585/norma.htm",
+     "sha256": "7b9af4580523a59a851bd2ebde4888dbde199531911e90c86f0aaab92950ff92"
+    },
+    {
+     "from": "2018-12-13",
+     "units": 1170,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/316974/norma.htm",
+     "sha256": "dc89f5bf68008d8ccac3f7f04543ed209ec736f8f5db917801783718ee62c29f"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 1129,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2025-08-22",
+     "units": 1129,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/416314/norma.htm",
+     "sha256": "04db15bd702955a4225091cbe71770d7f596c2e5ed55e171e147476a619fbb32"
+    },
+    {
+     "from": "2026-01-23",
+     "units": 1129,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/422548/norma.htm",
+     "sha256": "2edd8bcd52261d70cb9106d5050aa402cb5d5136d9c685bfb3c4d4f11e79b65a"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24557",
+   "short": "LRT",
+   "title": "Ley 24.557 sobre Riesgos del Trabajo",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/27971/texact.htm",
+   "versions": [
+    {
+     "from": "1996-07-01",
+     "units": 51,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/27971/norma.htm",
+     "sha256": "5a2da2f69c4d0412b0b87068a6d89c3b4b69c8290469ec6cd5091fb7b5188769"
+    },
+    {
+     "from": "1998-01-09",
+     "units": 51,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/45000-49999/48163/norma.htm",
+     "sha256": "b25e6b6e1dae4372c5bdfd18686f2ccfbbe2196cf02762097968612e97fb2d33"
+    },
+    {
+     "from": "2001-03-01",
+     "units": 51,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/65620/norma.htm",
+     "sha256": "af23deb37ff96fea1affef0d6a01e36ac21a98774a615c6fb5b7868482ff07c1"
+    },
+    {
+     "from": "2012-11-04",
+     "units": 49,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/203798/norma.htm",
+     "sha256": "b60c664d5eee034856018095d7287726913af7bc491733ef3ef39031164f720c"
+    },
+    {
+     "from": "2017-02-01",
+     "units": 49,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/271092/norma.htm",
+     "sha256": "18bf3c7d66dbf1d6800c9541b50e71793928e0160bb900793eb24ab19d46582a"
+    },
+    {
+     "from": "2017-03-05",
+     "units": 49,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/272119/norma.htm",
+     "sha256": "b08cf45043ee0a23c3e223d85e601b0b2871d92eaf3fce1a7943854a4b97a459"
+    },
+    {
+     "from": "2019-10-09",
+     "units": 49,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/325000-329999/329214/norma.htm",
+     "sha256": "fa508378c95ea175e984d78b3781e8841a0979d7da3678a2e2ef4253f7212b85"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24660",
+   "short": "LEP",
+   "title": "Ley 24.660 de Ejecución de la Pena Privativa de la Libertad",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/37872/texact.htm",
+   "versions": [
+    {
+     "from": "1996-07-25",
+     "units": 231,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/37872/norma.htm",
+     "sha256": "27273c9ed22a929c602d91b2c0d508ced92725bf3d0155d4f4823e4e7bae8239"
+    },
+    {
+     "from": "2004-11-21",
+     "units": 232,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/100947/norma.htm",
+     "sha256": "8858212c0628e82f30abdce769192efae42e5a20b4efafc4f60de11620c1bd2c"
+    },
+    {
+     "from": "2009-01-29",
+     "units": 232,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/145000-149999/149566/norma.htm",
+     "sha256": "559b64976984dce9ca753e7b1a33ebc1617b93ace96de1e83ce363a7fabaf247"
+    },
+    {
+     "from": "2011-09-07",
+     "units": 232,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/185000-189999/186022/norma.htm",
+     "sha256": "7d41fb16fc9495c0d83fa72cbf0709e648d320ddb177df31c7f238488940e094"
+    },
+    {
+     "from": "2013-01-25",
+     "units": 232,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/205000-209999/207403/norma.htm",
+     "sha256": "ec10dc145758533553802075b92e0bf086128cca75bde269fb7a983f5b1ba572"
+    },
+    {
+     "from": "2017-08-06",
+     "units": 242,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/275000-279999/277449/norma.htm",
+     "sha256": "32d8f1f993ab42a022b123079fb93f9396aef204ce282a1add6af4b955d27375"
+    },
+    {
+     "from": "2026-03-06",
+     "units": 241,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-22362",
+   "short": "LMD",
+   "title": "Ley 22.362 de Marcas y Designaciones",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/18803/texact.htm",
+   "versions": [
+    {
+     "from": "1981-01-11",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/18803/norma.htm",
+     "sha256": "1ddacc045b93273ee58e6b4b076bb1beef32d68fbcae50512644ea87b6d6d74a"
+    },
+    {
+     "from": "1982-06-23",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/145000-149999/149151/norma.htm",
+     "sha256": "9283b9ce1831df725f1bdcfaedab263708b8dd9b3c74bb567416fd3a3d88741b"
+    },
+    {
+     "from": "1983-08-28",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/150000-154999/150120/norma.htm",
+     "sha256": "9552e92739b641f7e381419c6eda302bcb123a80afff9d76535fe107b263a7c6"
+    },
+    {
+     "from": "2012-11-14",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/204228/norma.htm",
+     "sha256": "464d9844667d3ddbb0e34f7c2b0a7c660f460b03943263877db156b7b8183cd0"
+    },
+    {
+     "from": "2016-03-22",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257208/norma.htm",
+     "sha256": "d8f2256e3f08a0efd97641e7bbf14b4b83c97f93785895e864f423c7a55ae6a1"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311587/norma.htm",
+     "sha256": "97a63fdeb91d26936518e402c71eda3255e484592ef1cf73ce773c61e67c0f06"
+    }
+   ]
+  },
+  {
+   "slug": "ley-23661",
+   "short": "SNSS",
+   "title": "Ley 23.661 del Sistema Nacional del Seguro de Salud",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/63/texact.htm",
+   "versions": [
+    {
+     "from": "1989-01-29",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/63/norma.htm",
+     "sha256": "959d39f6b209c29954f479ca57e2bd99a44fb25d70f66b2987ccf155c618d6cb"
+    },
+    {
+     "from": "1993-01-22",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/587/norma.htm",
+     "sha256": "264fb1cd8421eca16f433e12b9526258a140b634f98de0ab9439827561fdf973"
+    },
+    {
+     "from": "2000-06-15",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/63228/norma.htm",
+     "sha256": "94088820966a7108d7604c8b3ea12c0b018a04778bdc480b783e1f23c5eb6b34"
+    },
+    {
+     "from": "2002-03-22",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/72887/norma.htm",
+     "sha256": "a33f1cb18e3e00d2fbe23e716559d0e8ef25695cc5547f2ed767a15c19582000"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2026-01-02",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/422008/norma.htm",
+     "sha256": "207db7b4afea7f4f849549e07ad82cefa94f46c00ddf37d4255fd23f29783239"
+    }
+   ]
+  },
+  {
+   "slug": "ley-17418",
+   "short": "LS",
+   "title": "Ley 17.418 de Seguros",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39520/texact.htm",
+   "versions": [
+    {
+     "from": "1968-03-01",
+     "units": 163,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/39520/norma.htm",
+     "sha256": "336bd7ce6db70a2b70abd814287a06e41fdc226fa7a8af664aeaf252eb451b5f"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 163,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27275",
+   "short": "LAIP",
+   "title": "Ley 27.275 de Derecho de Acceso a la Información Pública",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/265949/texact.htm",
+   "versions": [
+    {
+     "from": "2017-09-29",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/265949/norma.htm",
+     "sha256": "e60eb5ebd5459aee8e067867e109e649b051cfe2cf53ab6d89492d0359a9e776"
+    },
+    {
+     "from": "2017-09-29",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/275000-279999/279940/norma.htm",
+     "sha256": "7e79cc1602e254c636aa59bfd136e5e150e94fd4ada9fc8fc5981bdde4f6b5af"
+    }
+   ]
+  },
+  {
+   "slug": "ley-23592",
+   "short": "LAD",
+   "title": "Ley 23.592 de Actos Discriminatorios",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20465/texact.htm",
+   "versions": [
+    {
+     "from": "1988-09-14",
+     "units": 4,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20465/norma.htm",
+     "sha256": "4629e2878fbccf578295b2cde9ad5cad0d5734752cf198f63135144eb610a6db"
+    },
+    {
+     "from": "1997-04-12",
+     "units": 6,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42477/norma.htm",
+     "sha256": "8f9dee6e7ad2f7116a76e140b85c63f4e4df20a0690c07e875675824965a3296"
+    },
+    {
+     "from": "2002-07-17",
+     "units": 7,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/75734/norma.htm",
+     "sha256": "e4ea2fd9178ad904ff1ef5e6dc6d6bd4e66dac7b6ba674310b564c29e4e89d6b"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25520",
+   "short": "LIN",
+   "title": "Ley 25.520 de Inteligencia Nacional",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/70496/texact.htm",
+   "versions": [
+    {
+     "from": "2001-12-15",
+     "units": 43,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/70496/norma.htm",
+     "sha256": "00373d579272003d0051bf0a2964267b0396424256ef867fe6177d2f62da92b0"
+    },
+    {
+     "from": "2015-03-05",
+     "units": 54,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/240000-244999/243821/norma.htm",
+     "sha256": "221994d07eec1a55db8e72733ef7900619afd37d9a8cbe9c7ddf7aa67e24c60d"
+    },
+    {
+     "from": "2015-12-29",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257346/norma.htm",
+     "sha256": "e02039cccb8916b90d785918881c4b48a54e6bacd09858d20522f03cbca60a3e"
+    },
+    {
+     "from": "2020-03-06",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/335000-339999/335063/norma.htm",
+     "sha256": "5aa0c3e5eb40a3ddaecd6098e56d77285d809158b8b3879c3b80c737cc6dd497"
+    },
+    {
+     "from": "2024-07-16",
+     "units": 62,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401512/norma.htm",
+     "sha256": "eaac27286cba10b50868f0e9d135542eabae5702515f16947a905066c88dc39f"
+    },
+    {
+     "from": "2025-04-16",
+     "units": 62,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/411843/norma.htm",
+     "sha256": "6dfaff14bf9e4a2c9ac211440aa3467a46b4c1741c9acd2874ec81363ea7f028"
+    },
+    {
+     "from": "2026-01-02",
+     "units": 73,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/422011/norma.htm",
+     "sha256": "356f02fa6b25e32a45783fe09717a531972e293489c158a771e444337b4ec0df"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25871",
+   "short": "LM",
+   "title": "Ley 25.871 de Migraciones",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/92016/texact.htm",
+   "versions": [
+    {
+     "from": "2004-01-21",
+     "units": 126,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/92016/norma.htm",
+     "sha256": "b453ef4750be658715412d5c68689446848c855107107bf9e253eba530b3bef1"
+    },
+    {
+     "from": "2008-05-09",
+     "units": 126,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/140100/norma.htm",
+     "sha256": "66a3b8e4c61f1fbaa9eea8c594bf61e76ced3423e408d2e4b0689fd0f9aea9ff"
+    },
+    {
+     "from": "2017-01-31",
+     "units": 139,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/271245/norma.htm",
+     "sha256": "71e5c2dbae866c36c2f9af41f8f2205af6df3efbaac8bb6758c7b5f84ebb1ef3"
+    },
+    {
+     "from": "2021-03-05",
+     "units": 126,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/347595/norma.htm",
+     "sha256": "d2fa88609bb98fb03f6fa5cda4cac492f1c51185a41a12334e16a5eaabb12ad9"
+    },
+    {
+     "from": "2025-05-29",
+     "units": 125,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/413297/norma.htm",
+     "sha256": "cc3bc178abb4c2a5d2cecc964589f8ec20453e3c7ed65669bd3e549c9a947ccb"
+    },
+    {
+     "from": "2026-07-31",
+     "units": 125,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/425000-429999/428321/norma.htm",
+     "sha256": "a645a6855ed9d4cc062fcab55c36cff881914b0336d9dd548bc49935573a7c70"
+    }
+   ]
+  },
+  {
+   "slug": "ley-23737",
+   "short": "LE",
+   "title": "Ley 23.737 de Tenencia y Tráfico de Estupefacientes",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/138/texact.htm",
+   "versions": [
+    {
+     "from": "1989-10-20",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/138/norma.htm",
+     "sha256": "2b3be17d88c0be1b0d365347136acf1b74085813b014b634f1cbf7ed9fe7272c"
+    },
+    {
+     "from": "1991-09-26",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/374/norma.htm",
+     "sha256": "3ac10a7b4447643227a7f2104229dae84de7caf8c9be362cb8f58521ccc8c087"
+    },
+    {
+     "from": "1992-01-08",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/460/norma.htm",
+     "sha256": "1165e6e01f4b312f3cbf48e6185e8a8bc98a302c2e62ec44586b0c64e8b89ecd"
+    },
+    {
+     "from": "1992-09-06",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/511/norma.htm",
+     "sha256": "428f660f20d21bc4ca1402348f8d58d19a0faddab965375a84d08d015e46aa56"
+    },
+    {
+     "from": "1995-01-18",
+     "units": 56,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/800/norma.htm",
+     "sha256": "ec8ff70586464bbe7e21fde26cf1a9e94ee0a1362c46db7fe3910820f586c9a8"
+    },
+    {
+     "from": "2000-05-19",
+     "units": 55,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/62977/norma.htm",
+     "sha256": "c3f612504e30fb64647ad61923d9c17c0339a578f46f70ca339b4b5dda66e518"
+    },
+    {
+     "from": "2005-09-09",
+     "units": 55,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/105000-109999/109264/norma.htm",
+     "sha256": "8d231adacf19c5c95d2a4ae3e456a192b9a3e5321d80dd78f551d96abf2c3611"
+    },
+    {
+     "from": "2016-11-11",
+     "units": 54,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267115/norma.htm",
+     "sha256": "7fc090df368231631d619bffdc2f727ee062a4e1cd7d92da67eb194f251731a3"
+    },
+    {
+     "from": "2016-11-17",
+     "units": 56,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267336/norma.htm",
+     "sha256": "107fe013d66a2370b7cb175d8b392613b8d90c67168b1c8d79f3516c8a042c32"
+    },
+    {
+     "from": "2016-12-01",
+     "units": 49,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/268004/norma.htm",
+     "sha256": "28bb565b40b69dc53dbd8fc1e38b419bade4680e652b258d0fc9e767cd621f2c"
+    },
+    {
+     "from": "2019-05-23",
+     "units": 50,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/320000-324999/323084/norma.htm",
+     "sha256": "671ae86c88ae0a5173806219db1e16cd9b5ca7126a35c967805e1e363c5e0645"
+    },
+    {
+     "from": "2025-08-22",
+     "units": 50,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/416314/norma.htm",
+     "sha256": "04db15bd702955a4225091cbe71770d7f596c2e5ed55e171e147476a619fbb32"
+    }
+   ]
+  },
+  {
+   "slug": "ley-23660",
+   "short": "LOS",
+   "title": "Ley 23.660 de Obras Sociales",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/62/texact.htm",
+   "versions": [
+    {
+     "from": "1989-01-29",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/62/norma.htm",
+     "sha256": "aa1c2d948a008580a16fbd3aa760941fa518fc6af90ed2461652e778aebc4639"
+    },
+    {
+     "from": "1999-12-31",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/61784/norma.htm",
+     "sha256": "cd4931de47c20c269f43b7d325742ae9c41e0af922efb3493d99326398e697af"
+    },
+    {
+     "from": "2000-06-15",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/63228/norma.htm",
+     "sha256": "94088820966a7108d7604c8b3ea12c0b018a04778bdc480b783e1f23c5eb6b34"
+    },
+    {
+     "from": "2002-03-22",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/72887/norma.htm",
+     "sha256": "a33f1cb18e3e00d2fbe23e716559d0e8ef25695cc5547f2ed767a15c19582000"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 45,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2024-08-01",
+     "units": 44,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401319/norma.htm",
+     "sha256": "415ed6bcd3b2f25aab6390a8ea3a716e73644470fef591f0f61455c2698fa2c2"
+    },
+    {
+     "from": "2026-01-02",
+     "units": 44,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/422008/norma.htm",
+     "sha256": "207db7b4afea7f4f849549e07ad82cefa94f46c00ddf37d4255fd23f29783239"
+    },
+    {
+     "from": "2026-03-06",
+     "units": 44,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24013",
+   "short": "LNE",
+   "title": "Ley 24.013 Nacional de Empleo",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/texact.htm",
+   "versions": [
+    {
+     "from": "1991-12-26",
+     "units": 152,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/412/norma.htm",
+     "sha256": "ab27e2799b6a03502cafe8b818471862f82325555803664a5a4ec89a867d66fa"
+    },
+    {
+     "from": "1994-07-08",
+     "units": 152,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/729/norma.htm",
+     "sha256": "bcbfab7a6805c4c60e53f8d7259772bcbbe893eaca7f475517952db6e6e423e8"
+    },
+    {
+     "from": "1998-10-03",
+     "units": 118,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/53159/norma.htm",
+     "sha256": "a17e26f87d9714e02a33475c326ec18a1ef17fcfcd6619ceae739dc77535d20f"
+    },
+    {
+     "from": "2000-11-26",
+     "units": 118,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/65015/norma.htm",
+     "sha256": "fac056597613012ba8b0af82eef10fce5e3cd9585b753b7f0e8b65b8f2c8e1af"
+    },
+    {
+     "from": "2006-03-22",
+     "units": 118,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/110000-114999/114578/norma.htm",
+     "sha256": "ae374360b3609593cc9c5d783695724cf67ed20a1b8bc9af1186235f8a877ca3"
+    },
+    {
+     "from": "2010-07-15",
+     "units": 117,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/165000-169999/169006/norma.htm",
+     "sha256": "48dfd969ea6bedae274b1e6944bf03c7f9e216e787111064b6f1f8159610742d"
+    },
+    {
+     "from": "2012-01-06",
+     "units": 117,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/190000-194999/192152/norma.htm",
+     "sha256": "f4406354b973d2a288b26e24e1848b4d744db2a8b2fbca98b9f7e66b994a5085"
+    },
+    {
+     "from": "2023-06-01",
+     "units": 117,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/375000-379999/379858/norma.htm",
+     "sha256": "2e1b5dc3dde39ff0ae76831a5508eeabe04779e71340c329f94f92ef9c7470bc"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2024-07-09",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401266/norma.htm",
+     "sha256": "3decefb455bf96aada12b630851becd4a65e695d57a0b8868b78216715bb620c"
+    },
+    {
+     "from": "2025-10-01",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/417788/norma.htm",
+     "sha256": "c188d6b186a237cda485c9936eac593c6baac9afda611574aba47371e5a17832"
+    },
+    {
+     "from": "2026-03-06",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26522",
+   "short": "LSCA",
+   "title": "Ley 26.522 de Servicios de Comunicación Audiovisual",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/155000-159999/158649/texact.htm",
+   "versions": [
+    {
+     "from": "2009-10-19",
+     "units": 166,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/155000-159999/158649/norma.htm",
+     "sha256": "6a2503e3768d9676c05f6c82ba7b2bae026d658671ce4d73157a631bb6946869"
+    },
+    {
+     "from": "2014-12-19",
+     "units": 166,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239771/norma.htm",
+     "sha256": "e4ee6bf4c784db7ea8e719b376910753cc06e9b4fbeddaabdd111dc9e4a733ca"
+    },
+    {
+     "from": "2016-01-04",
+     "units": 155,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257461/norma.htm",
+     "sha256": "00dd02007569b0f092357373123ce6cb39cdcb92a93c33e338abdfea48c2c17c"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 154,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2025-06-26",
+     "units": 154,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/414454/norma.htm",
+     "sha256": "58b7746bbb2cd247f8dd14f7dd234688d48459f1037ce8dd68432567e27b939a"
+    },
+    {
+     "from": "2028-01-01",
+     "units": 154,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25246",
+   "short": "LEA",
+   "title": "Ley 25.246 de Encubrimiento y Lavado de Activos de Origen Delictivo",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/62977/texact.htm",
+   "versions": [
+    {
+     "from": "2000-05-19",
+     "units": 30,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/62977/norma.htm",
+     "sha256": "c3f612504e30fb64647ad61923d9c17c0339a578f46f70ca339b4b5dda66e518"
+    },
+    {
+     "from": "2001-12-05",
+     "units": 30,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/70091/norma.htm",
+     "sha256": "69119147c6876e234255bfa072f766b607249b985c00f48a7da0bd58d99a28df"
+    },
+    {
+     "from": "2006-05-03",
+     "units": 30,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/115744/norma.htm",
+     "sha256": "b87b0482bd9789461574619b63257b8fed8fb3c2142a09bb39d8514976372601"
+    },
+    {
+     "from": "2006-08-05",
+     "units": 30,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/118204/norma.htm",
+     "sha256": "3d4fee97dca0b9014f3fcdc6d9be798763fd186adb265af7c646babf857dd1ec"
+    },
+    {
+     "from": "2007-07-14",
+     "units": 30,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/125000-129999/129803/norma.htm",
+     "sha256": "b06d86298929788d1f948ad4dc4f0b91f1477b26c2807de3f50a739051d23e27"
+    },
+    {
+     "from": "2011-06-30",
+     "units": 36,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/180000-184999/183497/norma.htm",
+     "sha256": "b5904b3a7f36850f77a42af8b1e4a07103e304404f4577be4464a2d494d04c92"
+    },
+    {
+     "from": "2016-07-23",
+     "units": 36,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/260000-264999/263691/norma.htm",
+     "sha256": "799df1fe7628986f8d83113db570513d19505026127778d9cd8792ac47f3e100"
+    },
+    {
+     "from": "2016-11-11",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267115/norma.htm",
+     "sha256": "7fc090df368231631d619bffdc2f727ee062a4e1cd7d92da67eb194f251731a3"
+    },
+    {
+     "from": "2017-01-02",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/270227/norma.htm",
+     "sha256": "b36df296e001a5b90cedfd918414107a789419bbd8e85cd382b469f26ee94808"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-05-20",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310084/norma.htm",
+     "sha256": "84e4df817d231ce24390d57fbded8cdcf7d832ff7bce2bb75e5c0cf1cdeef8b8"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311583/norma.htm",
+     "sha256": "19106fc242ecb7ff2db689e6e8ab1b46811a02461f4c12931f3b927a0e44d7f4"
+    },
+    {
+     "from": "2019-07-24",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/325000-329999/325439/norma.htm",
+     "sha256": "a6ea25fc5120eb1d39ced802d50b92dd988de83986b7eb6b7fc651a5a65dfb84"
+    },
+    {
+     "from": "2023-12-11",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394976/norma.htm",
+     "sha256": "bea3408395775389f4ba0dd1d3218338b6b56a26cd9d64f925ea8c2be0847fd2"
+    },
+    {
+     "from": "2024-03-24",
+     "units": 39,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/397355/norma.htm",
+     "sha256": "bff60b2d1d7be07e164ed792f3d1503b992f2ce1f0a800fc0f838fff745fe382"
+    },
+    {
+     "from": "2024-10-11",
+     "units": 39,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/405146/norma.htm",
+     "sha256": "d1baec50a8f8bd2569ce071e628ef96db81fa817548b8a40c1f999f542808dba"
+    },
+    {
+     "from": "2025-04-16",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/411843/norma.htm",
+     "sha256": "6dfaff14bf9e4a2c9ac211440aa3467a46b4c1741c9acd2874ec81363ea7f028"
+    },
+    {
+     "from": "2025-08-22",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/416314/norma.htm",
+     "sha256": "04db15bd702955a4225091cbe71770d7f596c2e5ed55e171e147476a619fbb32"
+    }
+   ]
+  },
+  {
+   "slug": "ley-11723",
+   "short": "LPI",
+   "title": "Ley 11.723 de Propiedad Intelectual",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42755/texact.htm",
+   "versions": [
+    {
+     "from": "1933-10-09",
+     "units": 89,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42755/norma.htm",
+     "sha256": "a3cae331749af319b6ca3e91ce18361f50dd2813b090fff436a100e0ed3cec85"
+    },
+    {
+     "from": "1957-10-20",
+     "units": 89,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42755/texact.htm",
+     "sha256": "8575ab839d7f4b0f07a1afd3ff4dfa2e33c6177bc91792e6bca8c3908ff57bd0"
+    },
+    {
+     "from": "1958-02-23",
+     "units": 87,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/35000-39999/37242/norma.htm",
+     "sha256": "5bdd5224202af5ba981a74ff80c27621ed531c9cfd053d6a57ea80b153b76ccc"
+    },
+    {
+     "from": "1968-06-12",
+     "units": 87,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/85000-89999/85126/norma.htm",
+     "sha256": "a1ab8008ebd292629ab777c79054fe21c5694c6f99cb95441deb34efb4df0f99"
+    },
+    {
+     "from": "1973-02-01",
+     "units": 87,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/85000-89999/85127/norma.htm",
+     "sha256": "eb9c77516117130b41e72a92265d3a4e8233308261d68a5658f9be368ec718ac"
+    },
+    {
+     "from": "1989-11-03",
+     "units": 88,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/142/norma.htm",
+     "sha256": "e5c384a92d052e54cecb9bd503bcbf206704d92a09d13ba37e8870774dd19c75"
+    },
+    {
+     "from": "1991-09-26",
+     "units": 88,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/373/norma.htm",
+     "sha256": "e67a6ee28a8ad703f52a2b2da18d952a217a94625311dc103941b67a8093ea46"
+    },
+    {
+     "from": "1993-11-26",
+     "units": 88,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/647/norma.htm",
+     "sha256": "eb8230a29377e17c8a0e892979dc5120c8f07a5d1f7a6ad919b8decc69ec7c5f"
+    },
+    {
+     "from": "1994-01-07",
+     "units": 88,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/684/norma.htm",
+     "sha256": "a09a45b514d8fb882be34d31981750a3af280c8ccc25ad731d67b5e2f083f214"
+    },
+    {
+     "from": "1997-09-25",
+     "units": 88,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/45000-49999/45758/norma.htm",
+     "sha256": "43d07f2a54a847e34fcde45fc20a5ef142e76bfa75a3165e0ca51306d3ba9cb9"
+    },
+    {
+     "from": "1998-08-22",
+     "units": 89,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/52342/norma.htm",
+     "sha256": "52f2b850a9f44072463a39786632dd5f1ef6f87433fe7adc80ce30f520da2ff6"
+    },
+    {
+     "from": "1998-11-20",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/54178/norma.htm",
+     "sha256": "134e7259d623ea2f998398bc1303bcee699d23c1e94c8cf597faae8c5447b3ab"
+    },
+    {
+     "from": "2004-01-15",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/91507/norma.htm",
+     "sha256": "22af907325db9265783c287522d22bcaa171198e54833e238ad20702775d1f1f"
+    },
+    {
+     "from": "2007-09-22",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/130000-134999/132226/norma.htm",
+     "sha256": "fe87a295803b0b922bdd6448aa28889c3e489aadcbe025414f818d541ed179a5"
+    },
+    {
+     "from": "2009-12-23",
+     "units": 91,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161455/norma.htm",
+     "sha256": "b905aa0732763e7b1b0d79856fa6ce15b4a52f89b42799ad2f5be196f557e1a5"
+    },
+    {
+     "from": "2020-12-25",
+     "units": 95,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/345237/norma.htm",
+     "sha256": "5ec0d2ba11c8f0f0aeddaa5a509df30d141f3281e408c11180bf642d6f6fa863"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26831",
+   "short": "LMC",
+   "title": "Ley 26.831 de Mercado de Capitales",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/205000-209999/206592/texact.htm",
+   "versions": [
+    {
+     "from": "2013-01-27",
+     "units": 157,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/205000-209999/206592/norma.htm",
+     "sha256": "a8a43a84320873296874d4ff2ba44e97d2918db3421574c11e1e3232ebf44402"
+    },
+    {
+     "from": "2017-04-21",
+     "units": 157,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/norma.htm",
+     "sha256": "026b004f6fdeeafd8f6ff27f7d5580f949afd1b6ea8526bebbf6b48d71a39b13"
+    },
+    {
+     "from": "2018-05-20",
+     "units": 156,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310084/norma.htm",
+     "sha256": "84e4df817d231ce24390d57fbded8cdcf7d832ff7bce2bb75e5c0cf1cdeef8b8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25188",
+   "short": "LEFP",
+   "title": "Ley 25.188 de Ética en el Ejercicio de la Función Pública",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60847/texact.htm",
+   "versions": [
+    {
+     "from": "1999-11-10",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60847/norma.htm",
+     "sha256": "ed7ee6493ef1a461f292b3473f9e5968954550322f9883f557589b4efc939863"
+    },
+    {
+     "from": "2001-07-11",
+     "units": 47,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/67625/norma.htm",
+     "sha256": "7b6543c2d1d72ee8d473f14522c2ea552e39a1da9d072eb9774c25f604bfd447"
+    },
+    {
+     "from": "2013-06-01",
+     "units": 44,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/215000-219999/215002/norma.htm",
+     "sha256": "f0761a422c9514e05b68ab999ec146ca48e2fac0775e37255eabc4caaf2c3945"
+    },
+    {
+     "from": "2015-03-05",
+     "units": 44,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/240000-244999/243821/norma.htm",
+     "sha256": "221994d07eec1a55db8e72733ef7900619afd37d9a8cbe9c7ddf7aa67e24c60d"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25506",
+   "short": "LFD",
+   "title": "Ley 25.506 de Firma Digital",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/70749/texact.htm",
+   "versions": [
+    {
+     "from": "2001-12-23",
+     "units": 53,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/70749/norma.htm",
+     "sha256": "a0ee1f37e0da02cf873ea94b2ebec751bc6bf54f0e70d58c93889494a830da6e"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 48,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 48,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311583/norma.htm",
+     "sha256": "19106fc242ecb7ff2db689e6e8ab1b46811a02461f4c12931f3b927a0e44d7f4"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26529",
+   "short": "LDP",
+   "title": "Ley 26.529 de Derechos del Paciente en su Relación con los Profesionales e Instituciones de la Salud",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/160432/texact.htm",
+   "versions": [
+    {
+     "from": "2009-11-29",
+     "units": 25,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/160432/norma.htm",
+     "sha256": "593287851e8ff066900626da39d3e98a580b10cb04d88437e824bdff129f5253"
+    },
+    {
+     "from": "2012-06-02",
+     "units": 26,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/195000-199999/197859/norma.htm",
+     "sha256": "5758a506193ee96c92d6d8145a8e8da2f824ce6feedc8d340fe3f0bc99576402"
+    },
+    {
+     "from": "2013-01-30",
+     "units": 26,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/205000-209999/207587/norma.htm",
+     "sha256": "f325f70eb30deedc9f24c342b7a07b703451ba1fb07fe1999144e79db55f6251"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26743",
+   "short": "LIG",
+   "title": "Ley 26.743 de Identidad de Género",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/195000-199999/197860/texact.htm",
+   "versions": [
+    {
+     "from": "2012-06-02",
+     "units": 15,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/195000-199999/197860/norma.htm",
+     "sha256": "371bd3aedc1607b286def659cf81b7f61ff06865f43829ae8482aef7da01a9a5"
+    },
+    {
+     "from": "2025-02-07",
+     "units": 15,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/409265/norma.htm",
+     "sha256": "1a8e2db7d1f5f50093430ccd76b54b1f25db705f9088ba41756301c2aa28ac14"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27078",
+   "short": "LAD",
+   "title": "Ley 27.078 Argentina Digital (Tecnologías de la Información y las Comunicaciones)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239771/texact.htm",
+   "versions": [
+    {
+     "from": "2014-12-19",
+     "units": 98,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/235000-239999/239771/norma.htm",
+     "sha256": "e4ee6bf4c784db7ea8e719b376910753cc06e9b4fbeddaabdd111dc9e4a733ca"
+    },
+    {
+     "from": "2016-01-04",
+     "units": 91,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257461/norma.htm",
+     "sha256": "00dd02007569b0f092357373123ce6cb39cdcb92a93c33e338abdfea48c2c17c"
+    },
+    {
+     "from": "2020-08-31",
+     "units": 91,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/340000-344999/341372/norma.htm",
+     "sha256": "8f42976041be5a9357a0395833f56f662513bfccc01a944dd2d1d86d640abfec"
+    },
+    {
+     "from": "2020-12-23",
+     "units": 91,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/345117/norma.htm",
+     "sha256": "7466fe718a4707f7f3af9ac70bc339381c42936271a6bbec553e6e074a453e0c"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 91,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2024-04-10",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/397955/norma.htm",
+     "sha256": "c83f1f552d8ea16808b1482cb6c79cc0b436c037440d9f38645c727c1b85ff24"
+    },
+    {
+     "from": "2025-01-06",
+     "units": 89,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/408166/norma.htm",
+     "sha256": "ae951b3e16bb877167a9265bff511c8cb4bb111a9d58dcfa58c5f7b908982ad7"
+    },
+    {
+     "from": "2025-06-26",
+     "units": 89,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/414454/norma.htm",
+     "sha256": "58b7746bbb2cd247f8dd14f7dd234688d48459f1037ce8dd68432567e27b939a"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26206",
+   "short": "LEN",
+   "title": "Ley 26.206 de Educación Nacional",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/123542/texact.htm",
+   "versions": [
+    {
+     "from": "2007-01-06",
+     "units": 145,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/123542/norma.htm",
+     "sha256": "f9f998816a477e008ff62fd1e6d710b27431d6b98c4eb536342d339300dcb17e"
+    },
+    {
+     "from": "2015-01-16",
+     "units": 145,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/240000-244999/240450/norma.htm",
+     "sha256": "541c4f2e73cd3f20aa5da614033337017af5963ff85c896dae43d54a952580f5"
+    },
+    {
+     "from": "2020-07-09",
+     "units": 145,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/335000-339999/339380/norma.htm",
+     "sha256": "5ed6338d6ac089f0f570ebb095ca08268e030660c8eae6738176c06bda17a1ef"
+    },
+    {
+     "from": "2021-06-12",
+     "units": 145,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/350000-354999/350594/norma.htm",
+     "sha256": "3bc8f807bb92ca06112d9a8577c0d83406def6536d337acae642f7459d1053f2"
+    },
+    {
+     "from": "2025-05-29",
+     "units": 145,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/413297/norma.htm",
+     "sha256": "cc3bc178abb4c2a5d2cecc964589f8ec20453e3c7ed65669bd3e549c9a947ccb"
+    },
+    {
+     "from": "2026-01-11",
+     "units": 144,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/422000/norma.htm",
+     "sha256": "6712c4c5c9feac889919c09656b9680478eeb067eca841d380ba78fb96df5dfa"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26364",
+   "short": "LTP",
+   "title": "Ley 26.364 de Prevención y Sanción de la Trata de Personas y Asistencia a sus Víctimas",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/140100/texact.htm",
+   "versions": [
+    {
+     "from": "2008-05-09",
+     "units": 20,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/140000-144999/140100/norma.htm",
+     "sha256": "66a3b8e4c61f1fbaa9eea8c594bf61e76ced3423e408d2e4b0689fd0f9aea9ff"
+    },
+    {
+     "from": "2013-01-05",
+     "units": 25,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/205000-209999/206554/norma.htm",
+     "sha256": "6996de4319d70a005cfeead32d632110f8818e3ad77ffb46f5bc0cd599c00f41"
+    },
+    {
+     "from": "2019-07-24",
+     "units": 26,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/325000-329999/325439/norma.htm",
+     "sha256": "a6ea25fc5120eb1d39ced802d50b92dd988de83986b7eb6b7fc651a5a65dfb84"
+    },
+    {
+     "from": "2020-02-18",
+     "units": 26,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/330000-334999/334502/norma.htm",
+     "sha256": "535fe65cefc154d01b139042d63315316323e98f7eecdb2781ded52532c1e372"
+    },
+    {
+     "from": "2024-02-26",
+     "units": 26,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/396900/norma.htm",
+     "sha256": "58d6a2dc8f85c4e8d0f28d78db6aa34dd438949380c2c102915e60ab6d441a0d"
+    },
+    {
+     "from": "2025-08-22",
+     "units": 26,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/416314/norma.htm",
+     "sha256": "04db15bd702955a4225091cbe71770d7f596c2e5ed55e171e147476a619fbb32"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27401",
+   "short": "LRPPJ",
+   "title": "Ley 27.401 de Responsabilidad Penal de las Personas Jurídicas",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/295000-299999/296846/norma.htm",
+   "versions": [
+    {
+     "from": "2018-03-01",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/295000-299999/296846/norma.htm",
+     "sha256": "1eb1dffc6eb87ef651bd2440f7eba859adaf8a62d47cfd1749e07ee74a502017"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27442",
+   "short": "LDC",
+   "title": "Ley 27.442 de Defensa de la Competencia",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310241/norma.htm",
+   "versions": [
+    {
+     "from": "2018-05-24",
+     "units": 92,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310241/norma.htm",
+     "sha256": "a2a6651f54a817538bd76a1fec9827c374229ec0df78923607b4de31c74e3ebe"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24521",
+   "short": "LES",
+   "title": "Ley 24.521 de Educación Superior",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25394/texact.htm",
+   "versions": [
+    {
+     "from": "1995-08-19",
+     "units": 89,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25394/norma.htm",
+     "sha256": "afd6aea1a5ad2aa08a2008be825d3ffa106ee605c7fcfaecc03a0af56cb7a524"
+    },
+    {
+     "from": "2002-05-09",
+     "units": 89,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/73892/norma.htm",
+     "sha256": "c22f6770f7f1be4442ac58a98a1b4186da048edbc24b1f34f37d7115fa8413af"
+    },
+    {
+     "from": "2003-08-20",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/85000-89999/87488/norma.htm",
+     "sha256": "101da15ea610596a57806f96bb20118e8f024bd1d0c0b8f432dac88af585a30f"
+    },
+    {
+     "from": "2005-01-14",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/102596/norma.htm",
+     "sha256": "ea5d01c2c075754ad8d07bfd47af20932ed6185863165f245a439e2620b830c9"
+    },
+    {
+     "from": "2007-01-06",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/123542/norma.htm",
+     "sha256": "f9f998816a477e008ff62fd1e6d710b27431d6b98c4eb536342d339300dcb17e"
+    },
+    {
+     "from": "2015-11-20",
+     "units": 92,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/250000-254999/254825/norma.htm",
+     "sha256": "5d7dd24d72499ee519887031f513d9a4a776ff0b7230817dc81cb430262d1b8f"
+    },
+    {
+     "from": "2025-05-29",
+     "units": 92,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/413297/norma.htm",
+     "sha256": "cc3bc178abb4c2a5d2cecc964589f8ec20453e3c7ed65669bd3e549c9a947ccb"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24083",
+   "short": "LFCI",
+   "title": "Ley 24.083 de Fondos Comunes de Inversión",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/482/texact.htm",
+   "versions": [
+    {
+     "from": "1992-06-27",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/482/norma.htm",
+     "sha256": "2c988ef94be131fe534005e4079a7794489c54b8503c607d1c337f49bb53269b"
+    },
+    {
+     "from": "1995-01-25",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/812/norma.htm",
+     "sha256": "e5ce199a2df24739a59de4a4a27bdc41a0a48e047f2e648bf7ba92edce041453"
+    },
+    {
+     "from": "1997-04-13",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42499/norma.htm",
+     "sha256": "b0cc6e51c1d94764ed4d83d543119f4dd9d5f5b7534d143335aa650386ba7549"
+    },
+    {
+     "from": "2001-06-06",
+     "units": 40,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/67128/norma.htm",
+     "sha256": "efcd66b31e574038e83e2773b1f9efda96c2446dd8752bf6803419b9acda3d97"
+    },
+    {
+     "from": "2018-05-20",
+     "units": 38,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310084/norma.htm",
+     "sha256": "84e4df817d231ce24390d57fbded8cdcf7d832ff7bce2bb75e5c0cf1cdeef8b8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-23576",
+   "short": "LON",
+   "title": "Ley 23.576 de Obligaciones Negociables",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20643/texact.htm",
+   "versions": [
+    {
+     "from": "1988-08-05",
+     "units": 48,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20643/norma.htm",
+     "sha256": "13d3db747a03a9ddebee6688abff9da647b2777b88253a7d0597c59e3b62ae4b"
+    },
+    {
+     "from": "1991-08-15",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/361/norma.htm",
+     "sha256": "98929d4a3b58c10dfa1be75aec4225f0c3e88075b2d0ed9dc5e7b486453d8cd7"
+    },
+    {
+     "from": "1995-01-26",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/814/norma.htm",
+     "sha256": "67c484c6707877df569bbb9fc69c9ce9477bd9ccd157d4f9452a24b9cac0b03a"
+    },
+    {
+     "from": "2016-08-10",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/260000-264999/263953/norma.htm",
+     "sha256": "79da940b70e07244f3cf6bdbca93fb62696e54813cd2a646fc981d7a5b7d30a4"
+    },
+    {
+     "from": "2018-05-20",
+     "units": 46,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310084/norma.htm",
+     "sha256": "84e4df817d231ce24390d57fbded8cdcf7d832ff7bce2bb75e5c0cf1cdeef8b8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26639",
+   "short": "LG",
+   "title": "Ley 26.639 de Presupuestos Mínimos para la Preservación de los Glaciares y del Ambiente Periglacial",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/170000-174999/174117/texact.htm",
+   "versions": [
+    {
+     "from": "2010-11-06",
+     "units": 18,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/170000-174999/174117/norma.htm",
+     "sha256": "3e06d30c6f3db5db66a335e770dfddd01e7fff12c8cc9d20e30035e808c6eb74"
+    },
+    {
+     "from": "2026-05-03",
+     "units": 19,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/425000-429999/425121/norma.htm",
+     "sha256": "188a790d83d001f7052237e3458621d33b859dc2d2aa682b608fcaf98a03b163"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24051",
+   "short": "LRP",
+   "title": "Ley 24.051 de Residuos Peligrosos",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/450/texact.htm",
+   "versions": [
+    {
+     "from": "1992-04-07",
+     "units": 68,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/450/norma.htm",
+     "sha256": "9d6c19635e33c42c75c7ef238f3b8388bb4e5def57c02f14b2a787e2c827a33c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27349",
+   "short": "LACE",
+   "title": "Ley 27.349 de Apoyo al Capital Emprendedor",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/texact.htm",
+   "versions": [
+    {
+     "from": "2017-04-21",
+     "units": 68,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/norma.htm",
+     "sha256": "026b004f6fdeeafd8f6ff27f7d5580f949afd1b6ea8526bebbf6b48d71a39b13"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 68,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-02-02",
+     "units": 68,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/306532/norma.htm",
+     "sha256": "c53d89ffa629ad3ff21c471d53e78e9967c831b4f70f64e9ebf17af7e01688fc"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 68,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311587/norma.htm",
+     "sha256": "97a63fdeb91d26936518e402c71eda3255e484592ef1cf73ce773c61e67c0f06"
+    },
+    {
+     "from": "2024-11-26",
+     "units": 60,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/406547/norma.htm",
+     "sha256": "8a0a8624ae51ba9ba318cd1d2278ec30975754f8f3fffbad17be9b66854cabc7"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27610",
+   "short": "LIVE",
+   "title": "Ley 27.610 de Acceso a la Interrupción Voluntaria del Embarazo",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/346231/norma.htm",
+   "versions": [
+    {
+     "from": "2021-01-24",
+     "units": 27,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/346231/norma.htm",
+     "sha256": "5b5555c12730b865300ea326ff896aaa47aad94dd5482b278eec8dcc521ece03"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24156",
+   "short": "LAF",
+   "title": "Ley 24.156 de Administración Financiera y de los Sistemas de Control del Sector Público Nacional",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/554/texact.htm",
+   "versions": [
+    {
+     "from": "1992-11-07",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/554/norma.htm",
+     "sha256": "da0064823e52f04bb723e21c9c3515a8d162d725ab4acc43da5bd9b14c9d588f"
+    },
+    {
+     "from": "1994-09-11",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/10000-14999/13029/norma.htm",
+     "sha256": "a1a917e03470743df937c5d19777486b1dda12c4bbf4c88c80884edf6b136637"
+    },
+    {
+     "from": "1996-01-07",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/30000-34999/31692/norma.htm",
+     "sha256": "4941e753238f4dc93873cfa88a907ec091d5100fc08981b49d5c7f7d0c576482"
+    },
+    {
+     "from": "1997-01-11",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/41170/norma.htm",
+     "sha256": "585e6d4a86c303309369ce4d6df40e45467152863dc0f8ee748b0c19ff28eb89"
+    },
+    {
+     "from": "1999-12-10",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/61394/norma.htm",
+     "sha256": "15105c642c326f62edcf90e808f3b62865265cacc7e36bd1ca08765e134ba246"
+    },
+    {
+     "from": "2000-01-19",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/61920/norma.htm",
+     "sha256": "d1868d34673d5e89f40b384613ab5291c82e10db22cc1c67b3030fb30fd05bba"
+    },
+    {
+     "from": "2001-07-13",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/67818/norma.htm",
+     "sha256": "221354bb866234a375ef28f1c4bfd61d8789ca7fea7f37344f813e59d3769933"
+    },
+    {
+     "from": "2001-07-31",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/68098/norma.htm",
+     "sha256": "42deb9a71db6798434e5fd1512cb68346c2bd46c9de3b0daa56160ef54cc8ad2"
+    },
+    {
+     "from": "2001-11-03",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/69650/norma.htm",
+     "sha256": "e6bc8f9e4a1de537a3df9cc140d46a7d286e3dd974d4b511d0c031e7499cc821"
+    },
+    {
+     "from": "2002-03-30",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/73048/norma.htm",
+     "sha256": "adebfe45d85c8b34edc12f53488c26078b23c896edea72a3e4b4e93c18fc7b4b"
+    },
+    {
+     "from": "2002-10-10",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/75022/norma.htm",
+     "sha256": "5732ea177d0e550160ad7d0c5ecb38337734ecfa0962c8933afae63225148bc1"
+    },
+    {
+     "from": "2003-01-19",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/80000-84999/81258/norma.htm",
+     "sha256": "72e714aa1284f5188d6fc6e50171ea9c21120467f0aa9193511689d1ab09e5e3"
+    },
+    {
+     "from": "2003-12-31",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/91229/norma.htm",
+     "sha256": "1aa01fb6fd7eeb5ec14dda21a09736df30b715434d86e79f914771d2abc7b092"
+    },
+    {
+     "from": "2006-01-21",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/110000-114999/112978/norma.htm",
+     "sha256": "dde55fcf0e0db5c491debfa3aafab3b31be6c3963699c7b09a8bd6c8a0e2ccc1"
+    },
+    {
+     "from": "2006-08-09",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/118648/norma.htm",
+     "sha256": "9f73a74b48d75bec0bd25ba49ade5fbfa9075e7c4b617ffaa0d7f6737a1c3def"
+    },
+    {
+     "from": "2008-01-06",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/136187/norma.htm",
+     "sha256": "a933ad720cd27b04e2576da0845d45a03c239fb8dadbaf180c0e36e2d0444c14"
+    },
+    {
+     "from": "2009-12-06",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/160781/norma.htm",
+     "sha256": "26064617eec6e5992bca9ddd8c27063f5d1d5579b85047246ef785d90bed1605"
+    },
+    {
+     "from": "2010-07-16",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/165000-169999/169065/norma.htm",
+     "sha256": "e58f33ab4edc157661f91025fec4e30fe9c96df210ea8203275d2aac7c100670"
+    },
+    {
+     "from": "2013-05-27",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/215000-219999/215215/norma.htm",
+     "sha256": "99a62cb86364a3838d73a92fc97e17faaecd3436f30937cc77bc4c1072fbc44c"
+    },
+    {
+     "from": "2015-11-13",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/250000-254999/254339/norma.htm",
+     "sha256": "c235d842634c0a6de7664133d9863600befd57f5fdfdcc71d72c4bb198a73e68"
+    },
+    {
+     "from": "2016-12-30",
+     "units": 138,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/269287/norma.htm",
+     "sha256": "56bf19d96a44cb2fbe61a6cb9edb2c65bb874e2fbc41dc1bd39f9a9e1bb07e18"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26215",
+   "short": "LFPP",
+   "title": "Ley 26.215 de Financiamiento de los Partidos Políticos",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/124231/texact.htm",
+   "versions": [
+    {
+     "from": "2007-01-26",
+     "units": 79,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/124231/norma.htm",
+     "sha256": "3ba992e887331dfbbff854d97ccd89fa88c976866e60dcdf90f3c07ef55f0b84"
+    },
+    {
+     "from": "2009-12-23",
+     "units": 93,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161453/norma.htm",
+     "sha256": "0c2c142e2fa17cb78b6c1f83744f53768d69a2b518dd20f7a40b846f0277fad2"
+    },
+    {
+     "from": "2012-11-11",
+     "units": 93,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/204176/norma.htm",
+     "sha256": "2b455f2032958fae7ea109eb86d34b4cb3874024907811a26fd4fcb4961b0776"
+    },
+    {
+     "from": "2015-01-17",
+     "units": 93,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/240000-244999/240491/norma.htm",
+     "sha256": "9d851f13cd748d2792e8349fddec8530b64b6fb1bfa6d881451136383d83d347"
+    },
+    {
+     "from": "2019-06-01",
+     "units": 102,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/320000-324999/323729/norma.htm",
+     "sha256": "4738523657e40e8a672dadedf0481409bfa7c9b2ff03904ac4ad00bc7079a223"
+    },
+    {
+     "from": "2024-10-19",
+     "units": 101,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/405395/norma.htm",
+     "sha256": "773fc7fa9461275ca0ef7146e8aa3e50740ceb5c14e1bc171cab538dff5cb795"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27148",
+   "short": "LOMPF",
+   "title": "Ley 27.148 Orgánica del Ministerio Público Fiscal",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/245000-249999/248194/texact.htm",
+   "versions": [
+    {
+     "from": "2015-06-27",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/245000-249999/248194/norma.htm",
+     "sha256": "d066dc00f5d81610a278313d08ff5653cc15de0df4fd754ee008d701112890f4"
+    },
+    {
+     "from": "2016-01-07",
+     "units": 82,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257347/norma.htm",
+     "sha256": "1cd29e30caaf42fc0f6a96be54dfc141b75aa2825f5aa4459394a372a789f900"
+    },
+    {
+     "from": "2019-01-22",
+     "units": 82,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/319068/norma.htm",
+     "sha256": "923735b4a6d0626b874cda1f03c79c38622266f663be909d1270b0d6f1408fac"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27149",
+   "short": "LOMPD",
+   "title": "Ley 27.149 Orgánica del Ministerio Público de la Defensa",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/245000-249999/248189/texact.htm",
+   "versions": [
+    {
+     "from": "2015-06-27",
+     "units": 85,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/245000-249999/248189/norma.htm",
+     "sha256": "1e141999b9c899790be9ac2c299d8a692b3f3ae1e74a424bb2f3ffee622956e5"
+    },
+    {
+     "from": "2016-01-07",
+     "units": 77,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/255000-259999/257347/norma.htm",
+     "sha256": "1cd29e30caaf42fc0f6a96be54dfc141b75aa2825f5aa4459394a372a789f900"
+    },
+    {
+     "from": "2017-07-22",
+     "units": 79,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/275000-279999/276819/norma.htm",
+     "sha256": "10d0f89c74d7f1efcb71350e6e96d4bcc1794e6303c72c5fdcc1af2f212f29c5"
+    }
+   ]
+  },
+  {
+   "slug": "ley-24937",
+   "short": "LCM",
+   "title": "Ley 24.937 del Consejo de la Magistratura",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/45000-49999/48231/texact.htm",
+   "versions": [
+    {
+     "from": "1998-01-15",
+     "units": 34,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/45000-49999/48231/norma.htm",
+     "sha256": "60f03908befc92b67f5c3bc99de45e969dea90090122413a4f5adf00f9f6f35b"
+    },
+    {
+     "from": "1998-01-15",
+     "units": 34,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/45000-49999/48229/norma.htm",
+     "sha256": "404c07610d70b3932904bfb8fdfce22fe828c691e26eb5bc12a412ff86b8f341"
+    },
+    {
+     "from": "2002-11-28",
+     "units": 34,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/79675/norma.htm",
+     "sha256": "76e5a0152b3b97020bd9c9087832b097fa2926fa66f5309bf82b504a90c6372a"
+    },
+    {
+     "from": "2006-03-08",
+     "units": 34,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/110000-114999/114258/norma.htm",
+     "sha256": "10724df437bfbcd76a61bc4925bf96a150c44e4a71236237a202223e6eb1881b"
+    },
+    {
+     "from": "2013-05-27",
+     "units": 35,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/215000-219999/215215/norma.htm",
+     "sha256": "99a62cb86364a3838d73a92fc97e17faaecd3436f30937cc77bc4c1072fbc44c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26727",
+   "short": "RTA",
+   "title": "Ley 26.727 de Régimen de Trabajo Agrario",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/190000-194999/192152/texact.htm",
+   "versions": [
+    {
+     "from": "2012-01-06",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/190000-194999/192152/norma.htm",
+     "sha256": "f4406354b973d2a288b26e24e1848b4d744db2a8b2fbca98b9f7e66b994a5085"
+    },
+    {
+     "from": "2016-12-30",
+     "units": 108,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/269309/norma.htm",
+     "sha256": "af37bcfa82684f969ebb6e9ff7e0dddb2c210a000fb196bbcad0c92398a82154"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 107,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2024-07-09",
+     "units": 107,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/401266/norma.htm",
+     "sha256": "3decefb455bf96aada12b630851becd4a65e695d57a0b8868b78216715bb620c"
+    },
+    {
+     "from": "2026-03-06",
+     "units": 106,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26844",
+   "short": "RCTCP",
+   "title": "Ley 26.844 de Régimen Especial de Contrato de Trabajo para el Personal de Casas Particulares",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/texact.htm",
+   "versions": [
+    {
+     "from": "2013-04-21",
+     "units": 77,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/210000-214999/210489/norma.htm",
+     "sha256": "ca4997ba4ab5fcd082eed4efe7744ae7943140466da27e6f94f48b72a90ebfcb"
+    },
+    {
+     "from": "2023-06-01",
+     "units": 77,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/375000-379999/379858/norma.htm",
+     "sha256": "2e1b5dc3dde39ff0ae76831a5508eeabe04779e71340c329f94f92ef9c7470bc"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 76,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2026-03-06",
+     "units": 76,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26122",
+   "short": "LDNU",
+   "title": "Ley 26.122 de Régimen Legal de los Decretos de Necesidad y Urgencia, de Delegación Legislativa y de Promulgación Parcial de Leyes",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/118261/norma.htm",
+   "versions": [
+    {
+     "from": "2006-08-06",
+     "units": 28,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/118261/norma.htm",
+     "sha256": "6fcaebd53cfa7fd86c07e33d99b646655a45982f817e82703d3a5fa626138c9b"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26150",
+   "short": "ESI",
+   "title": "Ley 26.150 de Educación Sexual Integral",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/121222/norma.htm",
+   "versions": [
+    {
+     "from": "2006-11-02",
+     "units": 11,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/121222/norma.htm",
+     "sha256": "11edcf33cd8851e851c6eefd32f961c3449ed2cc1120bc4cf6fcbf754da89ebc"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25673",
+   "short": "LSSPR",
+   "title": "Ley 25.673 de Salud Sexual y Procreación Responsable",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/79831/texact.htm",
+   "versions": [
+    {
+     "from": "2002-12-01",
+     "units": 13,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/79831/norma.htm",
+     "sha256": "6baa82cfb3e4273521392a40e06aba00c8c9135e4369fa15f277a77e8fffd5e9"
+    },
+    {
+     "from": "2006-09-07",
+     "units": 13,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/115000-119999/119260/norma.htm",
+     "sha256": "58320865ade4d4d3474020199e50af2efb24ea2bbe73a3541882026865c665a8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27350",
+   "short": "LCMed",
+   "title": "Ley 27.350 de Investigación Médica y Científica del Uso Medicinal de la Planta de Cannabis y sus Derivados",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273801/texact.htm",
+   "versions": [
+    {
+     "from": "2017-04-28",
+     "units": 14,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273801/norma.htm",
+     "sha256": "3d03876f1225813fb3cce7ebed2c9cf333a6213c4a5b3615bc1646b9d799496b"
+    },
+    {
+     "from": "2022-06-04",
+     "units": 14,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/365000-369999/365303/norma.htm",
+     "sha256": "1bd130501a333e6f5c6aeda424b83a012969a6abb8d363f6ec9dcf5db9626b08"
+    },
+    {
+     "from": "2025-07-08",
+     "units": 14,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/410000-414999/414870/norma.htm",
+     "sha256": "eafdb0a88e01b8d69a01adc4c63c7f76edee2a8580b12ffab8d3aa51928f7cd8"
+    },
+    {
+     "from": "2025-09-03",
+     "units": 14,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/415000-419999/417102/norma.htm",
+     "sha256": "f34d65faf90fe8cc5212850b7544da26e6211c0b4935a2d705af8ee366730a99"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27506",
+   "short": "LEC",
+   "title": "Ley 27.506 de Régimen de Promoción de la Economía del Conocimiento",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/320000-324999/324101/texact.htm",
+   "versions": [
+    {
+     "from": "2019-06-19",
+     "units": 23,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/320000-324999/324101/norma.htm",
+     "sha256": "dd275f18779fc71d5e2ffb904b63e9682ec3817487364f34a881bddc526a5415"
+    },
+    {
+     "from": "2020-11-04",
+     "units": 24,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/340000-344999/343520/norma.htm",
+     "sha256": "9ccd83b9afc0b4b89334755e1a4cd47ff3fa56d7449daee52c9b26033a0a8098"
+    },
+    {
+     "from": "2022-10-12",
+     "units": 24,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/370000-374999/372806/norma.htm",
+     "sha256": "0ca98958f6231ff7954795525ddc7ad0f752930717206bd5f7bdb0571e926ea8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26331",
+   "short": "LB",
+   "title": "Ley 26.331 de Presupuestos Mínimos de Protección Ambiental de los Bosques Nativos",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/136125/norma.htm",
+   "versions": [
+    {
+     "from": "2008-01-04",
+     "units": 44,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/136125/norma.htm",
+     "sha256": "28e2fe589e686aa8c335db47c82a9038326bc5ae7266e1a6062294cbd71b4bc8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27555",
+   "short": "LTT",
+   "title": "Ley 27.555 de Régimen Legal del Contrato de Teletrabajo",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/340000-344999/341093/texact.htm",
+   "versions": [
+    {
+     "from": "2021-04-01",
+     "units": 20,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/340000-344999/341093/norma.htm",
+     "sha256": "2c89828c1ac83974219f88ae8ddda1036b54daef8c20ae37d8a410312888a75a"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 20,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    },
+    {
+     "from": "2027-01-01",
+     "units": 0,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/420000-424999/423680/norma.htm",
+     "sha256": "0757bbc5a2900d8f2d70492cda595c735c55a510aff0e36fca42add93296091e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26165",
+   "short": "LRA",
+   "title": "Ley 26.165 General de Reconocimiento y Protección al Refugiado",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/122609/texact.htm",
+   "versions": [
+    {
+     "from": "2006-12-10",
+     "units": 60,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/122609/norma.htm",
+     "sha256": "5f01d997d93e31c9004d9882655c270d808b80ced90722e4e14db8c68b37dd8e"
+    },
+    {
+     "from": "2024-09-13",
+     "units": 60,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/403985/norma.htm",
+     "sha256": "15109deff13ea4204584e089807f88b8268746bc55117068aebbcbbf7e3c8756"
+    },
+    {
+     "from": "2024-10-23",
+     "units": 60,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/405520/norma.htm",
+     "sha256": "4f3ce2c24e42be20322d20fd67a4487baf5e12d5f4015d8bee3471a6f564ca73"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25917",
+   "short": "LRF",
+   "title": "Ley 25.917 de Régimen Federal de Responsabilidad Fiscal",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/95000-99999/97698/texact.htm",
+   "versions": [
+    {
+     "from": "2005-01-01",
+     "units": 37,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/95000-99999/97698/norma.htm",
+     "sha256": "d29acd23a3e5af77b1dfe06408146108534cd9448981cf2ab68e238ee839176d"
+    },
+    {
+     "from": "2008-11-30",
+     "units": 37,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/145000-149999/147502/norma.htm",
+     "sha256": "7d49bb09de846459884d9342e12318dea4d6dac89af4e46ed3f601cfa2a105bf"
+    },
+    {
+     "from": "2018-01-01",
+     "units": 41,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305351/norma.htm",
+     "sha256": "ab06201bcfab68b0a9c2ce93b6365a93b6565edb26312eb97faddf7b898fcf5f"
+    },
+    {
+     "from": "2018-12-13",
+     "units": 41,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/315000-319999/316974/norma.htm",
+     "sha256": "dc89f5bf68008d8ccac3f7f04543ed209ec736f8f5db917801783718ee62c29f"
+    },
+    {
+     "from": "2020-12-23",
+     "units": 41,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/345000-349999/345117/norma.htm",
+     "sha256": "7466fe718a4707f7f3af9ac70bc339381c42936271a6bbec553e6e074a453e0c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-23298",
+   "short": "LOPP",
+   "title": "Ley 23.298 Orgánica de los Partidos Políticos",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/23893/texact.htm",
+   "versions": [
+    {
+     "from": "1985-11-03",
+     "units": 78,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/23893/norma.htm",
+     "sha256": "7c93c56b4dafdca5f9b8aa2eca3ae7b30a6fb2812563ea56e066a1f1a85d483a"
+    },
+    {
+     "from": "1987-03-12",
+     "units": 78,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/21969/norma.htm",
+     "sha256": "668832589928cf3f85592f75883f7ca33562cef19b4d8e81535cbceef1e3bbf1"
+    },
+    {
+     "from": "2002-07-13",
+     "units": 79,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/75652/norma.htm",
+     "sha256": "2b77d5228ed49b90d3f80ed07d68f9ae37030a413ee5863116ef10e33c7498f2"
+    },
+    {
+     "from": "2002-10-10",
+     "units": 70,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/75022/norma.htm",
+     "sha256": "5732ea177d0e550160ad7d0c5ecb38337734ecfa0962c8933afae63225148bc1"
+    },
+    {
+     "from": "2007-01-07",
+     "units": 69,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/123584/norma.htm",
+     "sha256": "2188945b573da39789de762ac25070ab4c2b049ca6842acbdd9167be22b57af2"
+    },
+    {
+     "from": "2009-12-23",
+     "units": 75,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161453/norma.htm",
+     "sha256": "0c2c142e2fa17cb78b6c1f83744f53768d69a2b518dd20f7a40b846f0277fad2"
+    },
+    {
+     "from": "2011-12-31",
+     "units": 76,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161453/norma.htm",
+     "sha256": "0c2c142e2fa17cb78b6c1f83744f53768d69a2b518dd20f7a40b846f0277fad2"
+    },
+    {
+     "from": "2012-11-11",
+     "units": 76,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/204176/norma.htm",
+     "sha256": "2b455f2032958fae7ea109eb86d34b4cb3874024907811a26fd4fcb4961b0776"
+    },
+    {
+     "from": "2017-12-24",
+     "units": 76,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/300000-304999/304794/norma.htm",
+     "sha256": "5faa3d1885459945a514e40d40ed25a26316ff1650db8b008c84eefeb6514d00"
+    },
+    {
+     "from": "2024-10-19",
+     "units": 76,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/405395/norma.htm",
+     "sha256": "773fc7fa9461275ca0ef7146e8aa3e50740ceb5c14e1bc171cab538dff5cb795"
+    }
+   ]
+  },
+  {
+   "slug": "ley-26571",
+   "short": "LDRP",
+   "title": "Ley 26.571 de Democratización de la Representación Política, la Transparencia y la Equidad Electoral",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161453/texact.htm",
+   "versions": [
+    {
+     "from": "2009-12-23",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161453/norma.htm",
+     "sha256": "0c2c142e2fa17cb78b6c1f83744f53768d69a2b518dd20f7a40b846f0277fad2"
+    },
+    {
+     "from": "2012-11-11",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/204176/norma.htm",
+     "sha256": "2b455f2032958fae7ea109eb86d34b4cb3874024907811a26fd4fcb4961b0776"
+    },
+    {
+     "from": "2015-01-17",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/240000-244999/240491/norma.htm",
+     "sha256": "9d851f13cd748d2792e8349fddec8530b64b6fb1bfa6d881451136383d83d347"
+    },
+    {
+     "from": "2017-12-24",
+     "units": 110,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/300000-304999/304794/norma.htm",
+     "sha256": "5faa3d1885459945a514e40d40ed25a26316ff1650db8b008c84eefeb6514d00"
+    },
+    {
+     "from": "2019-06-01",
+     "units": 111,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/320000-324999/323729/norma.htm",
+     "sha256": "4738523657e40e8a672dadedf0481409bfa7c9b2ff03904ac4ad00bc7079a223"
+    },
+    {
+     "from": "2024-10-19",
+     "units": 112,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/405395/norma.htm",
+     "sha256": "773fc7fa9461275ca0ef7146e8aa3e50740ceb5c14e1bc171cab538dff5cb795"
+    }
+   ]
+  },
+  {
+   "slug": "ley-19945",
+   "short": "CEN",
+   "title": "Código Electoral Nacional (Ley 19.945, texto ordenado 1983)",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/19442/texact.htm",
+   "versions": [
+    {
+     "from": "1983-09-06",
+     "units": 162,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/45000-49999/47989/norma.htm",
+     "sha256": "c7fd0afbb21f301ff4c5d0b6fc5809a3fdc1d236ad4f36c0b8cd25364d845c0a"
+    },
+    {
+     "from": "1985-01-26",
+     "units": 162,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/26347/norma.htm",
+     "sha256": "65871913f5e9e37cecb596e03b207df7a09bfa6f4261e15f23ae8449f1f30431"
+    },
+    {
+     "from": "1985-10-04",
+     "units": 162,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/24213/norma.htm",
+     "sha256": "783ef80546f9e7b29a0094e420ecc91d1c75701273db643c5aba05ce8acf934c"
+    },
+    {
+     "from": "1987-03-12",
+     "units": 162,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/21969/norma.htm",
+     "sha256": "668832589928cf3f85592f75883f7ca33562cef19b4d8e81535cbceef1e3bbf1"
+    },
+    {
+     "from": "1995-01-28",
+     "units": 170,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/781/norma.htm",
+     "sha256": "9e6ae5a7d8f5795552f3891d1f17c24ad491e1866a7c3d205a3f953529ed30e0"
+    },
+    {
+     "from": "1997-11-26",
+     "units": 170,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/45000-49999/47964/norma.htm",
+     "sha256": "4a0f02655d65f3e1732728e52292f4359e9e58b00856d2157e3375d061af1e7f"
+    },
+    {
+     "from": "2002-07-17",
+     "units": 177,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/75736/norma.htm",
+     "sha256": "b7a268f153314cf72c7025d004ae1c3b33c28deba37a17280881a5a0e29e62db"
+    },
+    {
+     "from": "2002-10-25",
+     "units": 177,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/75000-79999/78722/norma.htm",
+     "sha256": "ad1165c47fb98515c06a38f909f56ebcf8bf40134d4502f9fee6b3d0845ba9ed"
+    },
+    {
+     "from": "2004-01-15",
+     "units": 178,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/91513/norma.htm",
+     "sha256": "90c0527fb35e4f3cb3e5465c4ccfe47937924408dcf344122e9b656cb03ea2ce"
+    },
+    {
+     "from": "2005-01-08",
+     "units": 178,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/102403/norma.htm",
+     "sha256": "4de7a5eb32d577788b66ee70e048bdb524c51685bbf6ebf4c754473500bf00cb"
+    },
+    {
+     "from": "2007-01-26",
+     "units": 178,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/120000-124999/124231/norma.htm",
+     "sha256": "3ba992e887331dfbbff854d97ccd89fa88c976866e60dcdf90f3c07ef55f0b84"
+    },
+    {
+     "from": "2009-12-23",
+     "units": 177,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/160000-164999/161453/norma.htm",
+     "sha256": "0c2c142e2fa17cb78b6c1f83744f53768d69a2b518dd20f7a40b846f0277fad2"
+    },
+    {
+     "from": "2012-06-20",
+     "units": 176,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/195000-199999/198409/norma.htm",
+     "sha256": "cb0977ff4f60a1a0d1d4bc991ee2b7fed5f221ba5b85f973f9dd02d514a4bfff"
+    },
+    {
+     "from": "2012-11-11",
+     "units": 176,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/204176/norma.htm",
+     "sha256": "2b455f2032958fae7ea109eb86d34b4cb3874024907811a26fd4fcb4961b0776"
+    },
+    {
+     "from": "2015-01-17",
+     "units": 185,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/240000-244999/240491/norma.htm",
+     "sha256": "9d851f13cd748d2792e8349fddec8530b64b6fb1bfa6d881451136383d83d347"
+    },
+    {
+     "from": "2016-12-22",
+     "units": 193,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/268872/norma.htm",
+     "sha256": "8f193b119081dee41f02da44748e52220b7f80a9c1ba3713ad1573f9160bec3c"
+    },
+    {
+     "from": "2017-12-24",
+     "units": 193,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/300000-304999/304794/norma.htm",
+     "sha256": "5faa3d1885459945a514e40d40ed25a26316ff1650db8b008c84eefeb6514d00"
+    },
+    {
+     "from": "2019-06-01",
+     "units": 204,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/320000-324999/323729/norma.htm",
+     "sha256": "4738523657e40e8a672dadedf0481409bfa7c9b2ff03904ac4ad00bc7079a223"
+    },
+    {
+     "from": "2021-06-13",
+     "units": 204,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/350000-354999/350633/norma.htm",
+     "sha256": "86e33734945ade3ca5e58b0558486f8ec8131e8fe3d2a84ef03d6131868fb365"
+    },
+    {
+     "from": "2024-10-19",
+     "units": 206,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/405000-409999/405395/norma.htm",
+     "sha256": "773fc7fa9461275ca0ef7146e8aa3e50740ceb5c14e1bc171cab538dff5cb795"
+    }
+   ]
+  },
+  {
+   "slug": "ley-20091",
+   "short": "LES-Seg",
+   "title": "Ley 20.091 de Entidades de Seguros y su Control",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20965/texact.htm",
+   "versions": [
+    {
+     "from": "1973-07-11",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20965/norma.htm",
+     "sha256": "6891e4afc6d97371bd4df5943e2001bbffc136a6ad51d1e6a702b6660db2de72"
+    },
+    {
+     "from": "1987-04-03",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/21873/norma.htm",
+     "sha256": "8ccac40217c820a7725e6700b9064f182b2f1a57b7321344eeb0356c64700ec1"
+    },
+    {
+     "from": "1988-08-05",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/20000-24999/20643/norma.htm",
+     "sha256": "13d3db747a03a9ddebee6688abff9da647b2777b88253a7d0597c59e3b62ae4b"
+    },
+    {
+     "from": "1994-07-15",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/639/norma.htm",
+     "sha256": "36999bc053ee18a53a12a31f56cd450fa4d415abab63859cd711d8ad7a2b03b9"
+    },
+    {
+     "from": "2001-11-03",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/69650/norma.htm",
+     "sha256": "e6bc8f9e4a1de537a3df9cc140d46a7d286e3dd974d4b511d0c031e7499cc821"
+    },
+    {
+     "from": "2002-04-12",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/73220/norma.htm",
+     "sha256": "5c2c3a234135546a4d69898477bb499dbc59f3be6ff6e210c589134dcc8f6685"
+    },
+    {
+     "from": "2016-08-10",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/260000-264999/263953/norma.htm",
+     "sha256": "79da940b70e07244f3cf6bdbca93fb62696e54813cd2a646fc981d7a5b7d30a4"
+    },
+    {
+     "from": "2018-05-20",
+     "units": 90,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/310084/norma.htm",
+     "sha256": "84e4df817d231ce24390d57fbded8cdcf7d832ff7bce2bb75e5c0cf1cdeef8b8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-25065",
+   "short": "LTC",
+   "title": "Ley 25.065 de Tarjetas de Crédito",
+   "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/55000-59999/55556/texact.htm",
+   "versions": [
+    {
+     "from": "1999-01-23",
+     "units": 52,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/55000-59999/55556/norma.htm",
+     "sha256": "21fa2de3c434007e1a5552b90eaf173b904e9f6cbbefd72ad782b218dfcc247d"
+    },
+    {
+     "from": "1999-10-03",
+     "units": 58,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/55000-59999/55556/norma.htm",
+     "sha256": "21fa2de3c434007e1a5552b90eaf173b904e9f6cbbefd72ad782b218dfcc247d"
+    },
+    {
+     "from": "2001-11-03",
+     "units": 58,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/65000-69999/69650/norma.htm",
+     "sha256": "e6bc8f9e4a1de537a3df9cc140d46a7d286e3dd974d4b511d0c031e7499cc821"
+    },
+    {
+     "from": "2005-01-20",
+     "units": 58,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/100000-104999/102825/norma.htm",
+     "sha256": "ae787a8277fca6c6d63a8da384f8982fc94760548f50ef3432e2225bbfc0e552"
+    },
+    {
+     "from": "2008-04-16",
+     "units": 58,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/139252/norma.htm",
+     "sha256": "b0a847fbaf7dca4f7deee47cccee57e6d5bd6ef5486ef5a8f8784265991ff0b1"
+    },
+    {
+     "from": "2018-01-12",
+     "units": 58,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305736/norma.htm",
+     "sha256": "484ba9f9a28e7ae38d3f0b29732a9b599bc610a970cded64917e9fc878eb08b4"
+    },
+    {
+     "from": "2018-06-27",
+     "units": 57,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/310000-314999/311587/norma.htm",
+     "sha256": "97a63fdeb91d26936518e402c71eda3255e484592ef1cf73ce773c61e67c0f06"
+    },
+    {
+     "from": "2023-12-30",
+     "units": 48,
+     "source_url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/395000-399999/395521/norma.htm",
+     "sha256": "52720f271efeed463966950a1c20abfbbbc4458042d24b5b45c0c646f4cd552b"
+    }
+   ]
+  }
+ ]
+}

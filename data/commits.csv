@@ -1,0 +1,441 @@
+day,kind,law,acts,files,branch
+1933-10-09,start,ley-11723,ley-11723,89,main
+1957-10-20,law,decreto-ley-12063-1957,ley-11723,3,main
+1958-02-23,law,decreto-ley-1224-1958,ley-11723,2,main
+1968-03-01,start,ley-17418,ley-17418,163,main
+1968-06-12,law,ley-17753,ley-11723,1,main
+1972-05-06,start,ley-19549,ley-19549,33,main
+1973-02-01,law,ley-20098,ley-11723,1,main
+1973-07-11,start,ley-20091,ley-20091,90,main
+1976-05-21,start,,ley-20744,277,main
+1977-10-13,law,ley-21659,ley-20744,1,main
+1977-12-04,law,ley-21686,ley-19549,8,main
+1978-07-09,law,ley-21824,ley-20744,1,main
+1980-07-27,law,ley-22248,ley-20744,1,main
+1980-09-06,law,ley-22276,ley-20744,1,main
+1980-11-16,law,ley-22311,ley-20744,1,main
+1981-01-11,start,ley-22362,ley-22362,47,main
+1982-06-23,law,decreto-1109-1982,ley-22362,0,main
+1983-08-28,law,decreto-2061-1983,ley-22362,0,main
+1983-09-06,start,,ley-19945,162,main
+1984-03-30,start,,ley-19550,389,main
+1985-01-16,start,,codigo-penal,327,main
+1985-01-26,law,ley-23168,ley-19945,2,main
+1985-10-04,law,ley-23247,ley-19945,1,main
+1985-11-03,start,ley-23298,ley-23298,78,main
+1987-02-04,law,ley-23468,codigo-penal,4,main
+1987-02-04,law,ley-23479,codigo-penal,0,main
+1987-02-04,law,ley-23487,codigo-penal,2,main
+1987-03-12,law,ley-23476,ley-23298 ley-19945,5,main
+1987-04-03,law,ley-23488,ley-20091,1,main
+1987-04-03,law,ley-23472,ley-20744,1,main
+1988-04-23,start,ley-23551,ley-23551,67,main
+1988-08-05,start,ley-23576,ley-23576,48,main
+1988-08-05,law,ley-23576,ley-19550 ley-20091,2,main
+1988-09-02,law,ley-23588,codigo-penal,1,main
+1988-09-14,start,ley-23592,ley-23592,4,main
+1989-01-29,start,ley-23660,ley-23660,45,main
+1989-01-29,start,ley-23661,ley-23661,53,main
+1989-10-04,law,ley-23697,ley-20744,1,main
+1989-10-20,start,ley-23737,ley-23737,47,main
+1989-10-20,law,ley-23737,codigo-penal,4,main
+1989-11-03,law,ley-23741,ley-11723,2,main
+1991-08-15,law,ley-23962,ley-23576,15,main
+1991-09-26,law,ley-23974,codigo-penal ley-11723,0,main
+1991-09-26,law,ley-23975,ley-23737,1,main
+1991-10-06,law,decreto-1937-1991,ley-19550,0,main
+1991-12-11,law,resolucion-mj-623-1991,ley-19550,0,main
+1991-12-26,start,ley-24013,ley-24013,152,main
+1991-12-26,law,ley-24013,ley-20744,8,main
+1992-01-08,law,ley-24061,ley-23737,1,main
+1992-01-26,law,ley-24064,codigo-penal,2,main
+1992-04-07,start,ley-24051,ley-24051,68,main
+1992-06-27,start,ley-24083,ley-24083,40,main
+1992-09-06,law,ley-24112,ley-23737,1,main
+1992-11-07,start,ley-24156,ley-24156,138,main
+1993-01-22,law,ley-24189,ley-23661,1,main
+1993-06-12,law,ley-24198,codigo-penal,1,main
+1993-10-24,start,ley-24240,ley-24240,63,main
+1993-11-26,law,ley-24249,ley-11723,1,main
+1993-12-05,law,ley-24270,codigo-penal,1,main
+1994-01-07,law,ley-24286,codigo-penal ley-11723,23,main
+1994-05-28,law,ley-24316,codigo-penal,5,main
+1994-07-08,law,ley-24347,ley-20744 ley-24013,3,main
+1994-07-15,law,ley-24241,ley-20091,4,main
+1994-08-24,start,reforma-1994,constitucion,149,main
+1994-09-11,law,decreto-1545-1994,ley-24156,1,main
+1995-01-11,law,ley-24410,codigo-penal,10,main
+1995-01-18,law,ley-24424,ley-23737,13,main
+1995-01-19,law,ley-24432,ley-20744,1,main
+1995-01-25,law,ley-24441,codigo-penal ley-24083,9,main
+1995-01-26,law,ley-24435,ley-19550 ley-23576,2,main
+1995-01-28,law,ley-24444,ley-19945,28,main
+1995-03-16,law,ley-24453,codigo-penal,2,main
+1995-03-16,law,ley-24454,codigo-penal,1,main
+1995-04-06,law,ley-24465,ley-20744,2,main
+1995-08-18,law,ley-24522,ley-20744 ley-19550,6,main
+1995-08-19,start,ley-24521,ley-24521,89,main
+1995-09-17,law,ley-24527,codigo-penal,1,main
+1995-11-09,law,ley-24568,ley-24240,1,main
+1995-12-01,start,ley-24449,ley-24449,97,main
+1996-01-07,law,ley-24624,ley-24156,1,main
+1996-07-01,start,ley-24557,ley-24557,51,main
+1996-07-25,start,ley-24660,ley-24660,231,main
+1996-10-06,law,ley-24692,ley-20744,1,main
+1996-10-23,law,ley-24700,ley-20744,2,main
+1996-11-27,law,ley-24721,codigo-penal,2,main
+1997-01-11,law,ley-24764,ley-24156,1,main
+1997-04-11,law,ley-24787,ley-24240,4,main
+1997-04-12,law,ley-24782,ley-23592,3,main
+1997-04-12,law,ley-24788,ley-24449,1,main
+1997-04-13,law,ley-24781,ley-24083,1,main
+1997-05-13,law,ley-24760,codigo-penal,1,main
+1997-09-25,law,ley-24870,ley-11723,2,main
+1997-11-26,law,ley-24904,ley-19945,1,main
+1998-01-09,law,ley-24938,ley-24557,1,main
+1998-01-15,start,ley-24937,ley-24937,34,main
+1998-01-15,law,ley-24939,ley-24937,8,main
+1998-08-08,law,ley-24999,ley-24240,4,main
+1998-08-22,law,ley-25006,ley-11723,2,main
+1998-10-03,law,ley-25013,ley-20744 ley-24013,38,main
+1998-11-20,law,ley-25036,ley-11723,5,main
+1999-01-23,start,ley-25065,ley-25065,52,main
+1999-05-23,law,ley-25086,codigo-penal,2,main
+1999-05-23,law,ley-25087,codigo-penal,18,main
+1999-10-03,law,ley-25065,ley-25065,16,main
+1999-10-17,start,ley-25164,ley-25164,51,main
+1999-11-06,law,ley-25189,codigo-penal,5,main
+1999-11-09,law,ley-25188,codigo-penal,13,main
+1999-11-10,start,ley-25188,ley-25188,47,main
+1999-12-10,law,ley-25233,ley-24156,1,main
+1999-12-31,law,ley-25239,ley-23660,1,main
+2000-01-19,law,ley-25237,ley-24156,1,main
+2000-05-19,start,ley-25246,ley-25246,30,main
+2000-05-19,law,ley-25246,codigo-penal ley-23737,4,main
+2000-06-15,law,decreto-446-2000,ley-23661 ley-23660,3,main
+2000-10-01,law,ley-25297,codigo-penal,1,main
+2000-11-11,start,ley-25326,ley-25326,47,main
+2000-11-11,law,ley-25326,codigo-penal,2,main
+2000-11-26,law,ley-25345,ley-20744 ley-24013,4,main
+2000-11-30,law,ley-25344,ley-19549,3,main
+2001-03-01,law,decreto-1278-2000,ley-24557,12,main
+2001-06-06,law,decreto-677-2001,ley-24083,1,main
+2001-07-11,law,decreto-862-2001,ley-25188,2,main
+2001-07-13,law,decreto-896-2001,ley-24156,1,main
+2001-07-31,law,ley-25453,ley-24156,1,main
+2001-08-25,law,decreto-1023-2001,ley-19549,1,main
+2001-09-19,law,ley-25456,ley-24449,1,main
+2001-11-03,law,decreto-1387-2001,ley-24156 ley-20091 ley-25065,4,main
+2001-12-05,law,decreto-1500-2001,ley-25246,4,main
+2001-12-15,start,ley-25520,ley-25520,43,main
+2001-12-23,start,ley-25506,ley-25506,53,main
+2001-12-23,law,ley-25506,codigo-penal,1,main
+2002-01-18,law,ley-25528,codigo-penal,1,main
+2002-03-22,law,decreto-486-2002,ley-23661 ley-23660,2,main
+2002-03-30,law,ley-25565,ley-24156,9,main
+2002-04-12,law,decreto-558-2002,ley-20091,4,main
+2002-05-09,law,ley-25573,ley-24521,4,main
+2002-06-20,law,ley-25601,codigo-penal,1,main
+2002-06-29,law,ley-25602,codigo-penal,1,main
+2002-07-13,law,ley-25611,ley-23298,5,main
+2002-07-17,law,ley-25608,ley-23592,2,main
+2002-07-17,law,ley-25610,ley-19945,13,main
+2002-10-10,law,ley-25600,ley-24156 ley-23298,11,main
+2002-10-25,law,ley-25658,ley-19945,1,main
+2002-11-28,law,ley-25669,ley-24937,1,main
+2002-12-01,start,ley-25673,ley-25673,13,main
+2002-12-07,start,ley-25675,ley-25675,37,main
+2002-12-08,law,ley-25674,ley-23551,1,main
+2003-01-19,law,ley-25725,ley-24156,1,main
+2003-06-29,law,ley-25742,codigo-penal,4,main
+2003-08-20,law,ley-25754,ley-24521,2,main
+2003-09-10,law,ley-25767,codigo-penal,1,main
+2003-12-10,law,ley-25815,codigo-penal,3,main
+2003-12-18,law,ley-25816,codigo-penal,3,main
+2003-12-20,law,ley-25825,codigo-penal,1,main
+2003-12-31,law,ley-25827,ley-24156,1,main
+2004-01-15,law,ley-25847,ley-11723,1,main
+2004-01-15,law,ley-25858,ley-19945,4,main
+2004-01-17,law,ley-25857,ley-24449,1,main
+2004-01-21,start,ley-25871,ley-25871,126,main
+2004-03-28,law,ley-25877,ley-20744,4,main
+2004-05-05,law,ley-25882,codigo-penal,1,main
+2004-05-14,law,ley-25886,codigo-penal,2,main
+2004-05-30,law,ley-25890,codigo-penal,9,main
+2004-06-04,law,ley-25892,codigo-penal,3,main
+2004-06-04,law,ley-25893,codigo-penal,1,main
+2004-09-19,law,ley-25928,codigo-penal,1,main
+2004-09-30,law,ley-25930,codigo-penal,3,main
+2004-11-21,law,ley-25948,ley-24660,2,main
+2004-12-30,law,ley-25965,ley-24449,6,main
+2005-01-01,start,ley-25917,ley-25917,37,main
+2005-01-08,law,ley-25983,ley-19945,2,main
+2005-01-14,law,ley-26002,ley-24521,2,main
+2005-01-20,law,ley-25990,codigo-penal,1,main
+2005-01-20,law,ley-26010,ley-25065,1,main
+2005-09-09,law,ley-26052,ley-23737,3,main
+2005-11-04,start,ley-26061,ley-26061,78,main
+2006-01-21,law,ley-26078,ley-24156,2,main
+2006-03-08,law,ley-26080,ley-24937,20,main
+2006-03-22,law,decreto-267-2006,ley-24013,2,main
+2006-05-03,law,ley-26087,codigo-penal ley-25246,5,main
+2006-05-03,law,ley-26088,ley-20744,1,main
+2006-08-05,law,ley-26119,ley-25246,5,main
+2006-08-06,start,ley-26122,ley-26122,28,main
+2006-08-09,law,ley-26124,ley-24156,1,main
+2006-09-07,law,ley-26130,ley-25673,1,main
+2006-11-02,start,ley-26150,ley-26150,11,main
+2006-12-10,start,ley-26165,ley-26165,60,main
+2007-01-06,start,ley-26206,ley-26206,145,main
+2007-01-06,law,ley-26206,ley-24521,7,main
+2007-01-07,law,ley-26191,ley-23298,5,main
+2007-01-26,start,ley-26215,ley-26215,79,main
+2007-01-26,law,ley-26215,ley-19945,2,main
+2007-07-14,law,ley-26268,codigo-penal ley-25246,7,main
+2007-09-22,law,ley-26285,ley-11723,1,main
+2008-01-02,law,ley-26341,ley-20744,1,main
+2008-01-04,start,ley-26331,ley-26331,44,main
+2008-01-06,law,ley-26337,ley-24156,1,main
+2008-01-18,law,ley-26343,ley-25326,1,main
+2008-04-16,law,ley-26361,ley-24240 ley-25065,34,main
+2008-04-25,law,ley-26362,codigo-penal,1,main
+2008-04-30,law,ley-26363,ley-24449,16,main
+2008-05-09,start,ley-26364,ley-26364,20,main
+2008-05-09,law,ley-26364,codigo-penal ley-25871,7,main
+2008-07-04,law,ley-26388,codigo-penal,14,main
+2008-07-04,law,ley-26390,ley-20744 ley-23551,13,main
+2008-11-30,law,ley-26422,ley-25917,1,main
+2009-01-04,law,ley-26428,ley-20744,1,main
+2009-01-29,law,ley-26472,codigo-penal ley-24660,4,main
+2009-02-01,law,ley-26474,ley-20744,1,main
+2009-02-26,law,ley-26394,codigo-penal,18,main
+2009-04-14,start,ley-26485,ley-26485,45,main
+2009-10-19,start,ley-26522,ley-26522,166,main
+2009-11-14,law,ley-26524,codigo-penal,9,main
+2009-11-29,start,ley-26529,ley-26529,25,main
+2009-12-06,law,ley-26546,ley-24156,2,main
+2009-12-06,law,ley-26551,codigo-penal,6,main
+2009-12-23,start,ley-26571,ley-26571,110,main
+2009-12-23,law,ley-26570,ley-11723,1,main
+2009-12-23,law,ley-26571,ley-26215 ley-23298 ley-19945,88,main
+2010-01-07,law,ley-26574,ley-20744,1,main
+2010-05-14,law,ley-26590,ley-20744,1,main
+2010-05-30,law,ley-26592,ley-20744,1,main
+2010-06-04,law,ley-26593,ley-20744,1,main
+2010-07-15,law,ley-26598,ley-24013,1,main
+2010-07-16,law,ley-26599,ley-24156,1,main
+2010-11-06,start,ley-26639,ley-26639,18,main
+2010-12-12,start,ley-26657,ley-26657,46,main
+2011-05-18,law,ley-26679,codigo-penal,1,main
+2011-06-30,law,ley-26683,codigo-penal ley-25246,27,main
+2011-09-07,law,ley-26695,ley-24660,10,main
+2011-09-07,law,ley-26696,ley-20744,1,main
+2011-10-14,law,ley-26705,codigo-penal,1,main
+2011-12-31,law,ley-26571,ley-23298,2,main
+2012-01-06,start,ley-26727,ley-26727,110,main
+2012-01-06,law,ley-26727,ley-20744 ley-24013,2,main
+2012-01-06,law,ley-26733,codigo-penal,12,main
+2012-01-06,law,ley-26734,codigo-penal,4,main
+2012-01-06,law,ley-26735,codigo-penal,1,main
+2012-04-16,law,ley-26738,codigo-penal,1,main
+2012-06-02,start,ley-26743,ley-26743,15,main
+2012-06-02,law,ley-26742,ley-26529,7,main
+2012-06-20,law,ley-26744,ley-19945,14,main
+2012-10-06,law,decreto-1331-2012,ley-19550,0,main
+2012-11-04,law,ley-26773,ley-24557,3,main
+2012-11-11,law,ley-26774,ley-26215 ley-23298 ley-26571 ley-19945,40,main
+2012-11-14,law,ley-26784,ley-22362,1,main
+2012-12-23,law,ley-26791,codigo-penal,1,main
+2013-01-05,law,ley-26842,codigo-penal ley-26364,22,main
+2013-01-25,law,ley-26813,ley-24660,9,main
+2013-01-27,start,ley-26831,ley-26831,157,main
+2013-01-30,law,ley-26812,ley-26529,1,main
+2013-04-04,start,,codigo-procesal-civil-y-comercial,784,main
+2013-04-04,start,,codigo-procesal-penal,558,main
+2013-04-21,start,ley-26844,ley-26844,77,main
+2013-04-21,law,ley-26847,codigo-penal,1,main
+2013-04-24,start,,codigo-aduanero,1170,main
+2013-05-17,law,ley-26853,codigo-procesal-civil-y-comercial,16,main
+2013-05-27,law,ley-26855,ley-24156 ley-24937,19,main
+2013-06-01,law,ley-26857,ley-25188,4,main
+2013-08-20,start,,ley-24522,301,main
+2013-12-14,law,ley-26911,ley-20744,1,main
+2013-12-20,law,ley-26904,codigo-penal,1,main
+2014-05-19,law,acordada-16-2014,codigo-procesal-civil-y-comercial,1,main
+2014-09-28,law,ley-26993,ley-24240,4,main
+2014-12-19,start,ley-27078,ley-27078,98,main
+2014-12-19,law,ley-27078,ley-26522,1,main
+2014-12-28,law,ley-27079,codigo-penal,1,main
+2015-01-16,law,ley-27045,ley-26206,3,main
+2015-01-17,law,ley-27120,ley-26215 ley-26571 ley-19945,20,main
+2015-01-29,law,ley-27073,ley-20744,1,main
+2015-03-05,law,ley-27126,ley-25520 ley-25188,24,main
+2015-06-27,start,ley-27148,ley-27148,90,main
+2015-06-27,start,ley-27149,ley-27149,85,main
+2015-06-27,law,ley-27147,codigo-penal,5,main
+2015-08-01,start,ley-26994,codigo-civil-y-comercial,2671,main
+2015-08-01,law,ley-26994,ley-19550 ley-24240,52,main
+2015-09-17,law,ley-27170,ley-24522,3,main
+2015-11-13,law,ley-27198,ley-24156,1,main
+2015-11-19,law,ley-27206,codigo-penal,3,main
+2015-11-20,law,ley-27204,ley-24521,8,main
+2015-12-29,law,decreto-256-2015,ley-25520,1,main
+2016-01-04,law,decreto-267-2015,ley-26522 ley-27078,39,main
+2016-01-07,law,decreto-257-2015,ley-27148 ley-27149,18,main
+2016-03-22,law,ley-27222,ley-22362,2,main
+2016-06-23,law,ley-27250,ley-24240,1,main
+2016-07-23,law,ley-27260,ley-25246,3,main
+2016-08-10,law,ley-27264,ley-23576 ley-20091,5,main
+2016-08-26,law,ley-27265,ley-24240,1,main
+2016-08-26,law,ley-27266,ley-24240,1,main
+2016-09-15,law,ley-27271,codigo-civil-y-comercial,2,main
+2016-11-11,law,ley-27304,codigo-penal ley-23737 ley-25246,4,main
+2016-11-17,law,ley-27302,codigo-aduanero ley-23737,10,main
+2016-11-17,law,ley-27308,codigo-procesal-penal,8,main
+2016-11-27,law,ley-27290,ley-19550,2,main
+2016-12-01,law,ley-27319,ley-23737,7,main
+2016-12-01,law,ley-27272,codigo-procesal-penal,7,main
+2016-12-22,law,ley-27337,ley-19945,8,main
+2016-12-24,law,ley-27320,ley-20744,1,main
+2016-12-24,law,ley-27321,ley-20744,1,main
+2016-12-24,law,ley-27322,ley-20744,1,main
+2016-12-24,law,ley-27323,ley-20744,1,main
+2016-12-24,law,ley-27325,ley-20744,1,main
+2016-12-27,law,ley-27346,codigo-penal,1,main
+2016-12-30,law,ley-27341,ley-26727,2,main
+2016-12-30,law,ley-27342,ley-24156,1,main
+2016-12-30,law,acordada-45-2016,codigo-procesal-civil-y-comercial,1,main
+2016-12-31,law,ley-27307,codigo-procesal-penal,3,main
+2017-01-02,law,decreto-2-2017,ley-25246,1,main
+2017-01-15,law,ley-27347,codigo-penal,5,main
+2017-01-31,law,decreto-70-2017,ley-25871,24,main
+2017-02-01,law,decreto-54-2017,ley-24557,4,main
+2017-03-05,law,ley-27348,ley-24557,5,main
+2017-04-21,start,ley-27349,ley-27349,68,main
+2017-04-21,law,ley-27349,ley-26831,1,main
+2017-04-28,start,ley-27350,ley-27350,14,main
+2017-05-26,law,ley-27352,codigo-penal,1,main
+2017-07-05,law,ley-27363,codigo-civil-y-comercial,2,main
+2017-07-22,law,ley-27372,codigo-procesal-penal ley-27149,12,main
+2017-08-06,law,ley-27375,codigo-penal ley-24660,40,main
+2017-09-29,start,ley-27275,ley-27275,40,main
+2017-09-29,law,decreto-746-2017,ley-27275,2,main
+2017-10-03,law,ley-27384,codigo-procesal-penal,4,main
+2017-12-23,law,ley-27425,ley-24449,4,main
+2017-12-24,law,ley-27412,ley-23298 ley-26571 ley-19945,8,main
+2017-12-29,law,ley-27426,ley-20744,2,main
+2017-12-30,law,ley-27430,codigo-aduanero,29,main
+2018-01-01,law,ley-27428,ley-25917,24,main
+2018-01-12,law,decreto-27-2018,ley-20744 ley-19550 ley-24240 ley-24449 codigo-aduanero ley-22362 ley-17418 ley-25246 ley-25506 ley-27349 ley-25065,47,main
+2018-02-02,law,decreto-95-2018,ley-27349,1,main
+2018-03-01,start,ley-27401,ley-27401,40,main
+2018-03-01,law,ley-27401,codigo-penal codigo-procesal-penal,10,main
+2018-05-02,law,ley-27436,codigo-penal,1,main
+2018-05-20,law,ley-27440,codigo-civil-y-comercial ley-19550 ley-25246 ley-26831 ley-24083 ley-23576 ley-20091,137,main
+2018-05-24,start,ley-27442,ley-27442,92,main
+2018-06-27,law,ley-27444,ley-19550 ley-24240 ley-22362 ley-27349 ley-25065,20,main
+2018-06-27,law,ley-27445,ley-24449 codigo-aduanero,4,main
+2018-06-27,law,ley-27446,ley-25246 ley-25506,8,main
+2018-08-04,law,ley-27449,codigo-procesal-civil-y-comercial,1,main
+2018-11-03,law,ley-27455,codigo-penal,1,main
+2018-12-13,law,ley-27467,codigo-aduanero ley-25917,4,main
+2019-01-01,law,acordada-43-2018,codigo-procesal-civil-y-comercial,1,main
+2019-01-10,law,ley-27500,codigo-procesal-civil-y-comercial,16,main
+2019-01-22,law,decreto-62-2019,codigo-civil-y-comercial ley-24522 ley-27148,4,main
+2019-05-17,law,ley-27501,ley-26485,3,main
+2019-05-23,law,ley-27502,ley-23737,1,main
+2019-06-01,law,ley-27504,ley-26215 ley-26571 ley-19945,68,main
+2019-06-10,start,,codigo-procesal-penal-federal,397,main
+2019-06-19,start,ley-27506,ley-27506,23,main
+2019-07-24,law,ley-27508,ley-25246 ley-26364,3,main
+2019-09-06,law,ley-27510,ley-24449,1,main
+2019-10-09,law,decreto-669-2019,ley-24557,1,main
+2019-11-22,law,resolucion-cb-2-2019,codigo-procesal-penal-federal,0,main
+2019-12-29,law,ley-27533,ley-26485,3,main
+2020-01-01,law,acordada-41-2019,codigo-procesal-civil-y-comercial,1,main
+2020-02-18,law,decreto-157-2020,ley-26364,2,main
+2020-03-06,law,decreto-214-2020,ley-25520,1,main
+2020-07-01,law,ley-27551,codigo-civil-y-comercial,12,main
+2020-07-09,law,ley-27550,ley-26206,1,main
+2020-08-23,law,ley-27555,ley-20744,1,main
+2020-08-31,law,decreto-690-2020,ley-27078,3,main
+2020-11-04,law,ley-27570,ley-27506,19,main
+2020-12-05,law,ley-27576,ley-26061,1,main
+2020-12-10,law,resolucion-cb-1-2020,codigo-procesal-penal-federal,0,main
+2020-12-23,law,ley-27591,ley-27078 ley-25917,2,main
+2020-12-25,law,ley-27586,codigo-civil-y-comercial,3,main
+2020-12-25,law,ley-27587,codigo-civil-y-comercial,4,main
+2020-12-25,law,ley-27588,ley-11723,5,main
+2020-12-27,law,ley-27603,ley-24449,1,main
+2021-01-24,start,ley-27610,ley-27610,27,main
+2021-01-24,law,ley-27610,codigo-penal,5,main
+2021-02-17,law,resolucion-cb-1-2021,codigo-procesal-penal-federal,0,main
+2021-03-05,law,decreto-138-2021,ley-25871,24,main
+2021-04-01,start,ley-27555,ley-27555,20,main
+2021-06-12,law,ley-27621,ley-26206,1,main
+2021-06-13,law,ley-27631,ley-19945,2,main
+2021-10-30,law,decreto-744-2021,ley-26485,1,main
+2022-06-01,law,acordada-14-2022,codigo-procesal-civil-y-comercial,1,main
+2022-06-04,law,ley-27669,ley-27350,1,main
+2022-10-12,law,decreto-679-2022,ley-27506,4,main
+2022-12-10,law,ley-27701,ley-24240,1,main
+2023-05-12,law,ley-27714,ley-24449,1,main
+2023-06-01,law,decreto-90-2023,ley-24013 ley-26844,3,main
+2023-10-18,law,ley-27737,codigo-civil-y-comercial,4,main
+2023-11-01,law,ley-27736,ley-26485,8,main
+2023-12-11,law,decreto-8-2023,ley-25246,1,main
+2023-12-30,law,decreto-70-2023,codigo-civil-y-comercial ley-20744 ley-19550 ley-23551 codigo-aduanero ley-23661 ley-23660 ley-24013 ley-26522 ley-27078 ley-26727 ley-26844 ley-27555 ley-25065,208,main
+2024-02-26,law,decreto-195-2024,ley-26364,2,main
+2024-03-18,law,resolucion-mj-63-2024,codigo-procesal-penal-federal,0,main
+2024-03-24,law,ley-27739,codigo-penal ley-25246,25,main
+2024-04-10,law,decreto-302-2024,ley-27078,3,main
+2024-05-01,law,acordada-10-2024,codigo-procesal-civil-y-comercial,1,main
+2024-06-01,law,resolucion-mj-166-2024,ley-19550,1,main
+2024-07-05,law,decreto-585-2024,ley-25164,1,main
+2024-07-09,law,ley-27742,ley-20744 ley-19549 ley-25164 ley-24013 ley-26727,52,main
+2024-07-16,law,decreto-614-2024,ley-25520,22,main
+2024-08-01,law,decreto-600-2024,ley-23660,2,main
+2024-08-05,law,resolucion-mj-165-2024,codigo-procesal-penal-federal,0,main
+2024-09-13,law,decreto-819-2024,ley-26165,1,main
+2024-10-11,law,decreto-891-2024,ley-25246,5,main
+2024-10-15,law,ley-27759,codigo-penal,1,main
+2024-10-19,law,ley-27781,ley-26215 ley-23298 ley-26571 ley-19945,39,main
+2024-10-23,law,decreto-942-2024,ley-26165,4,main
+2024-11-04,law,resolucion-mj-216-2024,codigo-procesal-penal-federal,0,main
+2024-11-12,law,decreto-731-2024,ley-20744,1,main
+2024-11-13,law,decreto-1017-2024,codigo-civil-y-comercial,1,main
+2024-11-26,law,decreto-1048-2024,ley-27349,8,main
+2025-01-06,law,decreto-6-2025,ley-27078,1,main
+2025-02-07,law,decreto-62-2025,ley-26743,1,main
+2025-03-01,law,resolucion-mj-277-2024,codigo-procesal-penal-federal,0,main
+2025-03-08,law,ley-27785,codigo-penal codigo-procesal-penal-federal codigo-procesal-penal,9,main
+2025-03-11,law,ley-27786,codigo-penal,2,main
+2025-03-17,law,ley-27784,codigo-procesal-penal-federal codigo-procesal-penal,15,main
+2025-04-07,law,resolucion-mj-377-2024,codigo-procesal-penal-federal,0,main
+2025-04-16,law,decreto-274-2025,ley-25520 ley-25246,7,main
+2025-05-20,law,decreto-338-2025,codigo-civil-y-comercial,1,main
+2025-05-21,law,decreto-342-2025,ley-23551,1,main
+2025-05-29,law,decreto-366-2025,ley-25871 ley-26206 ley-24521,38,main
+2025-06-26,law,decreto-433-2025,ley-26522 ley-27078,2,main
+2025-07-08,law,decreto-461-2025,ley-24449,3,main
+2025-07-08,law,decreto-462-2025,ley-27350,1,main
+2025-08-01,law,acordada-20-2025,codigo-procesal-civil-y-comercial,1,main
+2025-08-22,law,decreto-575-2025,codigo-aduanero ley-23737 ley-25246 ley-26364,4,main
+2025-09-03,law,decreto-627-2025,ley-24449 ley-27350,4,main
+2025-09-29,law,resolucion-mj-233-2025,codigo-procesal-penal-federal,0,main
+2025-10-01,law,ley-27793,ley-24013,1,main
+2025-12-01,law,resolucion-mj-143-2025,codigo-procesal-penal-federal,0,main
+2026-01-02,law,ley-27799,codigo-civil-y-comercial ley-23661 ley-23660,4,main
+2026-01-02,law,decreto-941-2025,ley-25520,22,main
+2026-01-11,law,ley-27798,ley-26206,1,main
+2026-01-23,law,decreto-41-2026,codigo-aduanero,2,main
+2026-03-06,law,ley-27802,ley-20744 ley-23551 ley-24660 ley-23660 ley-24013 ley-26727 ley-26844,95,main
+2026-05-03,law,ley-27804,ley-26639,7,main
+2026-06-24,law,resolucion-mj-1-2026,codigo-procesal-penal-federal,0,main
+2026-07-31,law,decreto-681-2026,ley-25871,3,main
+2026-09-21,law,resolucion-mj-275-2026,codigo-procesal-penal-federal,0,main
+2026-11-30,law,resolucion-mj-417-2026,codigo-procesal-penal-federal,0,futuro
+2027-01-01,law,ley-27802,ley-27555,20,futuro
+2027-02-15,law,resolucion-mj-186-2026,codigo-procesal-penal-federal,0,futuro
+2027-03-08,law,resolucion-mj-274-2026,codigo-procesal-penal-federal,0,futuro
+2028-01-01,law,ley-27802,ley-26522,2,futuro
