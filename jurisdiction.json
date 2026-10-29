@@ -1,0 +1,11 @@
+{
+  "path": "ar",
+  "code": "AR",
+  "name": "Argentina",
+  "level": "country",
+  "repo": "https://github.com/lexifina/argentina-law",
+  "build": "built: Constitución 1994 (1 version), Código Civil y Comercial 2015-2026 (12 versions, rebuilt by replaying the amending norms and checked against InfoLEG's consolidated text), Ley 25.326 2000-2008 (2), Código Penal 1985-2025 (72, from the texto ordenado of 1984), Ley de Contrato de Trabajo 1976-2026 (39, from the texto ordenado of 1976), Código Procesal Penal Federal 2019-2027 (18, staged entry into force; 3 future steps on futuro), Ley General de Sociedades 1984-2024 (14), Ley 24.240 1993-2022 (12), Ley 19.549 1972-2024 (5), Ley 26.061 2005-2020 (2), Ley 25.675 2002 (1), Ley 26.485 2009-2023 (5), Ley 24.449 1995-2025 (14), Ley 23.551 1988-2026 (6), Ley 26.657 2010 (1), Ley 25.164 1999-2024 (3), Código Procesal Civil y Comercial 2013-2025 (11, from a 2013 Wayback Machine capture of InfoLEG's consolidated text), Código Procesal Penal de la Nación 2013-2025 (9, likewise), Ley 24.522 2013-2019 (3, likewise), Código Aduanero 2013-2026 (9, likewise, from the 29 pages of InfoLEG's consolidated text)",
+  "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
+  "register_date": "2026-10-28",
+  "sources": 2
+}
