@@ -5742,6 +5742,62 @@
      "sha256": "4d61983273110412fb3faed0f5d9315f4837fbb506f55ddb8459a179fda2c913"
     }
    ]
+  },
+  {
+   "slug": "ley-13064",
+   "short": "L13064",
+   "title": "Ley 13.064 de Obras Públicas",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-38542/actualizacion",
+   "versions": [
+    {
+     "from": "2025-03-21",
+     "units": 1,
+     "source_url": "https://www.argentina.gob.ar/normativa/nacional/norma-38542/actualizacion",
+     "sha256": "62f85c072d42eff6ff222fe0bebaa6b363c365b9e520c157d7ce989c494a1935"
+    }
+   ]
+  },
+  {
+   "slug": "ley-17671",
+   "short": "L17671",
+   "title": "Ley 17.671 de Identificación, Registro y Clasificación del Potencial Humano Nacional",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-28130/actualizacion",
+   "versions": [
+    {
+     "from": "2025-11-11",
+     "units": 1,
+     "source_url": "https://www.argentina.gob.ar/normativa/nacional/norma-28130/actualizacion",
+     "sha256": "87c576e9e721a870cad64f8ac8ce7e1bb5beb52c5130cfcb0ff7f720acb9549a"
+    }
+   ]
+  },
+  {
+   "slug": "ley-22431",
+   "short": "L22431",
+   "title": "Ley 22.431 del Sistema de Protección Integral de las Personas con Discapacidad",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-20620/actualizacion",
+   "versions": [
+    {
+     "from": "2025-10-01",
+     "units": 1,
+     "source_url": "https://www.argentina.gob.ar/normativa/nacional/norma-20620/actualizacion",
+     "sha256": "6b59699068deb6cbdb35fc6514e426bae3c348b1b61c23b22789b409130363a2"
+    }
+   ]
+  },
+  {
+   "slug": "ley-27351",
+   "short": "L27351",
+   "title": "Ley 27.351 de Electrodependientes por Cuestiones de Salud",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-274737/texto",
+   "versions": [
+    {
+     "from": "2017-05-26",
+     "units": 1,
+     "source_url": "https://www.argentina.gob.ar/normativa/nacional/norma-274737/texto",
+     "sha256": "33eb4ae7c0493834505ff866081fd6d58b4f15e8794b5c2dba520f8cd90de7cc"
+    }
+   ]
   }
  ]
 }

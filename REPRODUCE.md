@@ -1,6 +1,6 @@
 # How this repository was made (Argentina)
 
-This file is written by the build on 2026-10-29, the day the source data was retrieved.
+This file is written by the build on 2026-11-05, the day the source data was retrieved.
 
 ## Sources
 
@@ -15,6 +15,7 @@ This file is written by the build on 2026-10-29, the day the source data was ret
 | InfoLEG - Información Legislativa (Ministerio de Justicia de la Nación), batch 7 | <https://servicios.infoleg.gob.ar/infolegInternet/> | 2026-10-29 | As for InfoLEG above: official texts; site footer "Los contenidos de infoleg.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina License"; its Aviso Legal (https://www.infoleg.gob.ar/?page_id=762) restricts reproduction to strictly personal use. Attribution: Fuente: InfoLEG. |
 | Internet Archive Wayback Machine (captures of InfoLEG's Código Aduanero sub-pages) | <https://web.archive.org/> | 2026-10-29 | Served by the Internet Archive under its Terms of Use (https://archive.org/about/terms.php). The captured pages are InfoLEG's consolidated texts (Fuente: InfoLEG, Ministerio de Justicia de la Nación). |
 | legalize-ar (Legalize project), checked, no text used | <https://github.com/legalize-dev/legalize-ar> | 2026-10-29 | Data: CC BY 4.0 (atribución obligatoria a SAIJ): "Datos legislativos provistos por el Ministerio de Justicia de la República Argentina a través de la Dirección Nacional del Sistema Argentino de Información Jurídica (SAIJ). Publicados en https://datos.jus.gob.ar bajo licencia Creative Commons Atribución 4.0 Internacional." Pipeline: MIT (https://github.com/legalize-dev/legalize-pipeline). |
+| Ministerio de Justicia, Leyes Argentinas (Argentina.gob.ar) | <https://www.argentina.gob.ar/normativa> | 2026-11-05 | Creative Commons Atribución 4.0 Internacional (CC BY 4.0); Argentina.gob.ar / Ministerio de Justicia |
 
 Every word of law in this repository comes from these sources. Lexifina reads them and records each act's dated versions, and the laws that made each change, in one corpus file. This repository is built from that file.
 
@@ -157,20 +158,24 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ley-25929` | Ley 25.929 de Derechos de Padres e Hijos durante el Proceso de Nacimiento | 1 | 2004-11-16 to 2004-11-16 |
 | `ley-26396` | Ley 26.396 de Prevención y Control de los Trastornos Alimentarios | 1 | 2008-09-12 to 2008-09-12 |
 | `ley-27642` | Ley 27.642 de Promoción de la Alimentación Saludable | 1 | 2021-11-21 to 2021-11-21 |
+| `ley-13064` | Ley 13.064 de Obras Públicas | 1 | 2025-03-21 to 2025-03-21 |
+| `ley-17671` | Ley 17.671 de Identificación, Registro y Clasificación del Potencial Humano Nacional | 1 | 2025-11-11 to 2025-11-11 |
+| `ley-22431` | Ley 22.431 del Sistema de Protección Integral de las Personas con Discapacidad | 1 | 2025-10-01 to 2025-10-01 |
+| `ley-27351` | Ley 27.351 de Electrodependientes por Cuestiones de Salud | 1 | 2017-05-26 to 2017-05-26 |
 
-The build made 625 commits:
+The build made 629 commits:
 
 | Commits | Kind |
 | ---: | --- |
-| 135 | first version of an act |
+| 139 | first version of an act |
 | 490 | one law on its in-force day |
 | 0 | changes no amendment note explains, credited to the publisher |
 
 Other counts:
-- 5 commits on the branch `futuro`: laws not yet in force on 2026-10-29.
+- 5 commits on the branch `futuro`: laws not yet in force on 2026-11-05.
 - 6 commits dated 1 January 1970: in force before 1970, with the real day in their `In-force` trailer.
 - 596 laws in the record.
-- 1368 tags.
+- 1373 tags.
 
 ## Dates
 
@@ -182,15 +187,15 @@ When a law gives no date of its own, the default rule applies: Código Civil y C
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `0622489773f2468a879835cb43fc981a8beae16b3189554432aeac95411b3d36` (13391151 bytes).
+- Corpus: sha256 `6a0c4f7b4085580fdeb9ab4ed4665ed7801d604515c8d337081c7dbefa6628de` (13519036 bytes).
 - Builder blob hashes (`git hash-object`): `build.py` `35388bee5aa05369f7da68f5a8fa015ea8d442b8`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
 - Python 3.14.4; git version 2.53.0.
 
 ## Checks
 
-777 versions of 135 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
+781 versions of 139 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
 
-A second build from the same corpus into an empty folder gave identical hashes for all 620 history commits and 1348 tags (history tip `b7d2ee2786f9a48ff7aeab9bd21a758b380bd66c`).
+No second build of this corpus has been compared yet.
 
 ## Decisions made by hand
 
@@ -591,6 +596,10 @@ A second build from the same corpus into an empty folder gave identical hashes f
 - Ley 25.929 (Derechos de Padres e Hijos durante el Proceso de Nacimiento): one version, in force 2004-11-16, sixty days after its promulgation (2004-09-17), by its art. 7 ("entrará en vigencia a los SESENTA (60) días de su promulgación"). InfoLEG serves no consolidated text, and no decree its modificatorias table links to the act changes its words (Decreto 1231/2004 promulgates it; Decreto 2035/2015 regulates it).
 - Ley 26.396 (Prevención y Control de los Trastornos Alimentarios): one version, in force 2008-09-12 (default rule; no vigencia clause): the law as promulgated by Decreto 1395/2008 (B.O. 2008-09-03), less arts. 5, 11, 20 and 21, which its art. 1 vetoed ("Obsérvense"); InfoLEG prints them in the text as enacted. InfoLEG serves no consolidated text, and no decree its modificatorias table links to the act changes its words (Decreto 1415/2008 creates a drafting commission for its regulation); the resolutions linked to it are subordinate norms.
 - Ley 27.642 (Promoción de la Alimentación Saludable): one version, in force 2021-11-21 (default rule; no vigencia clause). Its art. 19 (compliance within 180 days of its entry into force, longer for small firms) and art. 20 (a possible extension) set terms for complying, not for the law's force, and are not separate versions. InfoLEG serves no consolidated text, and no decree its modificatorias table links to the act changes its words (Decreto 782/2021 promulgates it; Decreto 151/2022 regulates it; Decreto 362/2023, which InfoLEG does not serve, is listed in the table as rejecting an administrative claim).
+- Ley 13064: Latest source-cited measure: Decreto 206/2025, published 20 March 2025; article 19 commences on the following working day, 21 March 2025, with its stated application and registration-transition conditions retained in the source notes. The official text and its explanatory notes are retained in one file; no legal words were edited.
+- Ley 17671: Latest source-cited measure: Decreto 793/2025, published 11 November 2025; the consolidated text expressly states commencement on its publication day for the ministry-reference rule. The official text and its explanatory notes are retained in one file; no legal words were edited.
+- Ley 22431: Latest express textual amendment: Ley 27.793, articles 10 and 11, published 22 September 2025. Its official text has no special commencement clause for these substitutions; the ninth day after publication under the corpus default rule (Código Civil y Comercial articles 5 and 6) is 1 October 2025. The official text and its explanatory notes are retained in one file; no legal words were edited.
+- Ley 27351: The official record offers original text only. All 15 linked complementary measures are listed in the official relationship page; none lists a textual amendment to this law. Official publication 17 May 2017 gives 26 May 2017, the ninth day after publication under the corpus default rule (Código Civil y Comercial articles 5 and 6); the law contains no special commencement clause. The official text and its explanatory notes are retained in one file; no legal words were edited.
 
 ## What AI did and did not do
 
@@ -644,3 +653,4 @@ Model use at data-build time:
 - Batch 17y: none at data-build time; Lexifina's code is deterministic code written with Claude Code (claude-opus-5-5).
 - Batch 17z: none at data-build time; Lexifina's code is deterministic code written with Claude Code (claude-opus-5-5).
 - Batch 17za: none at data-build time; Lexifina's code is deterministic code written with Claude Code (claude-opus-5-5).
+- A model wrote extraction and validation code and assessed source dates. No model wrote or corrected law text.
