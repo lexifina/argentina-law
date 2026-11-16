@@ -61,6 +61,7 @@ Each change is credited to the law or decree that made it, with an address that 
 - `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before; both must match the corpus, whose sha256 is in `data/corpus.sha256`: 781 versions of 139 acts, 0 mismatches ([`REPRODUCE.md`](REPRODUCE.md)).
 - The same corpus gives the same commit hashes (`tools/build.py`); `REPRODUCE.md` records that no second build has been compared yet.
 - History is append-only (`tools/append.py`): no merge commits on `main`, no commit dates that go backwards, nothing dated in the future, and every commit's trailers parse.
+- [vulnerabilities/](vulnerabilities/README.en.md): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -84,6 +85,10 @@ Each change is credited to the law or decree that made it, with an address that 
 See [`LICENSE`](LICENSE). The legal texts are official texts of the Argentine Nation, reproduced with the attribution "Fuente: InfoLEG - Información Legislativa, Ministerio de Justicia de la Nación (www.infoleg.gob.ar)"; InfoLEG's pages publish no licence and the texts' copyright status is not confirmed, while the InfoLEG dataset (norm types, numbers, dates and titles) is CC BY 4.0. Lexifina's own contributions (the arrangement, commit messages, tables and tools) are CC0 1.0.
 
 No AI model wrote, translated or corrected legal text, and none runs at build time; the scripts were written by Claude Code running Claude Opus 5.5 (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/README.en.md): charts drawn from this repository. Not drawn yet.
 
 ## More
 
