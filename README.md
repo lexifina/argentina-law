@@ -1,35 +1,41 @@
-# Argentina: law history in git
+# Argentina: historia del derecho en git
 
+**Español** · [English](README.en.md)
 
-The national law of Argentina as a git history: one file per article, one commit per law on the day it took effect, and the law or decree that made each change as the commit's author. `git blame` names the law behind every paragraph; `git log` lists every change to an article; picking a date gives the text in force that day.
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="data/es/effort-dark.svg">
+<img alt="El derecho argentino en este repositorio: qué contiene, los cambios por año de entrada en vigor, la completitud frente a las fuentes oficiales y la exactitud de lo que contiene" src="data/es/effort-light.svg" width="880">
+</picture>
 
-Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Argentina's national law, which global-law reads at `argentina/national/acts/`.
+El derecho nacional de la Argentina como historia de git: un archivo por artículo, un commit por norma el día en que entró en vigencia, y la ley o el decreto que hizo cada cambio como autor del commit. `git blame` indica la ley que está detrás de cada párrafo; `git log` enumera todos los cambios de un artículo; al elegir una fecha se obtiene el texto vigente ese día.
 
-**What is in it now:** the Constitution and 138 national codes and laws, among them the Código Civil y Comercial, the Código Penal and the Ley de Contrato de Trabajo, with 775 versions in force from 1933 to 2026; 7 of the laws have since been repealed, and their history ends with a version that has no provisions. 6 more versions, due to take effect later, are on the `futuro` branch. [`data/versions.json`](data/versions.json) lists every act with the day each version took effect; [`data/laws.csv`](data/laws.csv) lists every norm the record names, with its dates.
+Forma parte de [lexifina/global-law](https://github.com/lexifina/global-law), una única historia de git para el derecho de todos los países: este es el derecho nacional de la Argentina, que global-law lee en `argentina/national/acts/`.
 
-Each act is a folder named after it (`ley-20744/`, `codigo-civil-y-comercial/`), with one file per article: `ley-20744/art-245.md` is art. 245 of the Ley de Contrato de Trabajo (Ley 20.744, texto ordenado 1976). The four acts taken from Argentina.gob.ar are one file each, `texto.md`. Each folder's `README.md` lists its provisions and when each changed.
+**Qué contiene ahora:** la Constitución y 138 códigos y leyes nacionales, entre ellos el Código Civil y Comercial, el Código Penal y la Ley de Contrato de Trabajo, con 775 versiones vigentes desde 1933 hasta 2026; 7 de esas leyes fueron derogadas después, y su historia termina con una versión sin disposiciones. Otras 6 versiones, que entrarán en vigencia más adelante, están en la rama `futuro`. [`data/versions.json`](data/versions.json) enumera cada norma con el día en que entró en vigencia cada versión; [`data/laws.csv`](data/laws.csv) enumera todas las normas que el registro menciona, con sus fechas.
 
-The text is in Spanish, as InfoLEG (or Argentina.gob.ar) publishes it, with InfoLEG's notes left out. InfoLEG keeps only two texts of each norm, the text as enacted and today's consolidated text, so the versions in between are rebuilt by applying each amending norm's own published instructions in order of entry into force.
+Cada norma es una carpeta con su nombre (`ley-20744/`, `codigo-civil-y-comercial/`), con un archivo por artículo: `ley-20744/art-245.md` es el art. 245 de la Ley de Contrato de Trabajo (Ley 20.744, texto ordenado 1976). Las cuatro normas tomadas de Argentina.gob.ar son un solo archivo cada una, `texto.md`. El `README.md` de cada carpeta enumera sus disposiciones y cuándo cambió cada una.
 
-## Questions as git commands
+El texto está en español, tal como lo publica InfoLEG (o Argentina.gob.ar), sin las notas de InfoLEG. InfoLEG conserva solo dos textos de cada norma, el texto original y el texto actualizado de hoy, por lo que las versiones intermedias se reconstruyen aplicando las instrucciones publicadas por cada norma modificatoria, en el orden de su entrada en vigencia.
 
-| Question | Command |
+## Preguntas como comandos de git
+
+| Pregunta | Comando |
 | --- | --- |
-| Every change to art. 245 of the Ley de Contrato de Trabajo | `git log -p --word-diff -- ley-20744/art-245.md` |
-| Which law wrote each paragraph of art. 245? | `git blame ley-20744/art-245.md` |
-| Every version of the Ley de Contrato de Trabajo, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- ley-20744 ":^ley-20744/README.md"` |
-| Art. 245 as in force on 1 January 2023 | `python tools/en_vigor_el.py 2023-01-01 ley-20744 245` |
+| Todos los cambios del art. 245 de la Ley de Contrato de Trabajo | `git log -p --word-diff -- ley-20744/art-245.md` |
+| ¿Qué ley escribió cada párrafo del art. 245? | `git blame ley-20744/art-245.md` |
+| Todas las versiones de la Ley de Contrato de Trabajo, con el día en que entró en vigencia cada una | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- ley-20744 ":^ley-20744/README.md"` |
+| El art. 245 vigente al 1 de enero de 2023 | `python tools/en_vigor_el.py 2023-01-01 ley-20744 245` |
 
-**Outside git**, we also host this record publicly, for free:
+**Fuera de git**, también alojamos este registro de forma pública y gratuita:
 
-- **[Ask Claude about Argentine law](https://global-law.lexifina.com/v1/try_claude?country=argentina)**: opens Claude with a first question ready.
-- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=argentina)**: the same question in ChatGPT.
-- **[Search Argentine law on our site](https://lexifina.com/law?country=argentina&q=vacaciones+anuales)**: a search for "vacaciones anuales", with each provision's text and its versions, no account needed.
-- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=vacaciones+anuales&jurisdiction=argentina)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
+- **[Preguntar a Claude sobre el derecho argentino](https://global-law.lexifina.com/v1/try_claude?country=argentina)**: abre Claude con una primera pregunta preparada.
+- **[Preguntar a ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=argentina)**: la misma pregunta en ChatGPT.
+- **[Buscar en el derecho argentino en nuestro sitio](https://lexifina.com/law?country=argentina&q=vacaciones+anuales)**: una búsqueda de "vacaciones anuales", con el texto de cada disposición y sus versiones, sin necesidad de cuenta.
+- **[API REST para desarrolladores](https://global-law.lexifina.com/v1/search_law?query=vacaciones+anuales&jurisdiction=argentina)**: la misma búsqueda en JSON, sin clave. Consulte la [documentación aquí](https://lexifina.com/api/global-law).
 
-Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Spanish or in English.
+Ambos asistentes leen el registro a través del conector gratuito Global law (MCP, `https://global-law.lexifina.com/mcp`); la primera vez, el chat le da el enlace para agregarlo. Pregunte en español o en inglés.
 
-**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+**Alójelo usted mismo fácilmente.** Solo hacen falta git y Python, y las herramientas se ejecutan en su equipo:
 
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
@@ -37,59 +43,57 @@ python3 tools/countries.py add argentina/national/acts
 python3 tools/law.py show 2026-01-01 argentina/national/acts/ley-20744/art-245.md
 ```
 
-Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
+Abierto en Claude Code, Cursor, VS Code o Codex, el clon también inicia un servidor MCP local con las mismas herramientas ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
 
-## Dates
+## Fechas
 
-Each commit is dated at noon, America/Argentina/Buenos_Aires, on the day the change took effect, and carries it in its `In-force:` trailer, beside `Enacted:` and `Published:` (the Boletín Oficial day):
+Cada commit está fechado a las doce del mediodía, hora de America/Argentina/Buenos_Aires, del día en que el cambio entró en vigencia, y lleva ese día en su trailer `In-force:`, junto a `Enacted:` y `Published:` (el día del Boletín Oficial):
 
-- a norm's own vigencia clause decides ("a partir del día siguiente al de su publicación"); without one, Código Civil y Comercial art. 5 ("Las leyes rigen después del octavo día de su publicación oficial"), counted under art. 6, puts it on the ninth day after publication; before 1 August 2015 the same rule was Código Civil art. 2, as replaced by Ley 16.504;
-- staged starts, extensions and terms that run out (the Código Procesal Penal Federal district by district, Ley 25.561's emergency) are commits that change no words, on their own day;
-- git cannot store dates before 1970, so the 6 earlier commits are dated from 1970-01-01, one second apart, with the real day in `In-force:`. Ask for a date with `tools/en_vigor_el.py`, not `git log --before`.
+- decide la cláusula de vigencia de la propia norma ("a partir del día siguiente al de su publicación"); a falta de ella, el art. 5 del Código Civil y Comercial ("Las leyes rigen después del octavo día de su publicación oficial"), computado según su art. 6, la sitúa en el noveno día posterior a la publicación; antes del 1 de agosto de 2015 la misma regla era el art. 2 del Código Civil, sustituido por la Ley 16.504;
+- las entradas en vigencia escalonadas, las prórrogas y los plazos que vencen (el Código Procesal Penal Federal, distrito por distrito; la emergencia de la Ley 25.561) son commits que no cambian ninguna palabra, cada uno en su propio día;
+- git no puede almacenar fechas anteriores a 1970, por lo que los 6 commits anteriores están fechados a partir del 1970-01-01, con un segundo de diferencia entre sí, y llevan el día real en `In-force:`. Para consultar una fecha, use `tools/en_vigor_el.py`, no `git log --before`.
 
-Each change is credited to the law or decree that made it, with an address that cannot exist (`Ley 27.802 <ley-27802@infoleg.invalid>`; decrees of necessity and urgency as `DNU 70/2023`), so `git blame` and `git log --author` name laws. A first version taken from a texto ordenado, a consolidated text or an archived capture is credited to its publisher, InfoLEG (11 acts) or Argentina.gob.ar (4), as the "oldest version available"; the committer is Lexifina.
+Cada cambio se atribuye a la ley o al decreto que lo hizo, con una dirección que no puede existir (`Ley 27.802 <ley-27802@infoleg.invalid>`; los decretos de necesidad y urgencia, como `DNU 70/2023`), de modo que `git blame` y `git log --author` indican leyes. Una primera versión tomada de un texto ordenado, de un texto actualizado o de una captura archivada se atribuye a quien la publica, InfoLEG (11 normas) o Argentina.gob.ar (4), como "versión más antigua disponible"; el committer es Lexifina.
 
-## How it is checked
+## Cómo se verifica
 
-- Today's rebuilt text of every act InfoLEG consolidates is compared, article by article, with InfoLEG's consolidated text of the retrieval day: 0 differences in wording, apart from the few listed in `REPRODUCE.md` (such as "integral" in art. 86 of the Código Penal, which Decreto 14/2021 vetoed and InfoLEG keeps with a note). The acts that start from a 2013 capture were also checked against later captures (2014 to 2025).
-- `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before; both must match the corpus, whose sha256 is in `data/corpus.sha256`: 781 versions of 139 acts, 0 mismatches ([`REPRODUCE.md`](REPRODUCE.md)).
-- The same corpus gives the same commit hashes (`tools/build.py`); `REPRODUCE.md` records that no second build has been compared yet.
-- History is append-only (`tools/append.py`): no merge commits on `main`, no commit dates that go backwards, nothing dated in the future, and every commit's trailers parse.
+- El texto reconstruido a hoy de cada norma que InfoLEG actualiza se compara, artículo por artículo, con el texto actualizado de InfoLEG del día de la descarga: 0 diferencias de redacción, salvo las pocas que enumera `REPRODUCE.md` (como "integral" en el art. 86 del Código Penal, que el Decreto 14/2021 vetó y que InfoLEG conserva con una nota). Las normas que parten de una captura de 2013 también se cotejaron con capturas posteriores (de 2014 a 2025).
+- `tools/check_repo.py` vuelve a leer desde git cada versión el día en que entró en vigencia y el día anterior; ambas lecturas deben coincidir con el corpus, cuyo sha256 está en `data/corpus.sha256`: 781 versiones de 139 normas, 0 discrepancias ([`REPRODUCE.md`](REPRODUCE.md)).
+- El mismo corpus produce los mismos hashes de commit (`tools/build.py`); `REPRODUCE.md` deja constancia de que todavía no se ha comparado una segunda compilación.
+- La historia solo admite agregados (`tools/append.py`): no hay commits de fusión (merge) en `main`, ni fechas de commit que retrocedan, ni nada fechado en el futuro, y los trailers de todos los commits se analizan sin errores.
 
-## What it does not show
+## Qué no muestra
 
-- **All national law.** These are 139 acts, not the whole statute book; regulatory decrees and resolutions that only complement an act, and case law, are not here.
-- **Changes before an act's first version**, which are inside that first commit: for example the Constitution before 1994, the Ley de Contrato de Trabajo before 1976 and the Código Penal before 1985. InfoLEG serves no older text of the Códigos Procesales Civil y Comercial and Penal, Ley 24.522 or the Código Aduanero, so they start from 2013 captures of InfoLEG's pages, dated by the capture day; Leyes 13.064, 17.671, 22.431 and 27.351 are today's text only.
-- **Changes that leave the words alone**: suspensions, emergency measures, court rulings (such as those on the labour chapter of DNU 70/2023) and treaties given constitutional hierarchy have no commit.
-- **Headings, notes and vetoed words.** Headings of books, titles and chapters are not kept, InfoLEG's notes are removed, and words vetoed on promulgation are left out.
-- **Provincial and city law**, which is in its own repositories (such as [argentina-buenos-aires-law](https://github.com/lexifina/argentina-buenos-aires-law)), read by global-law beside this one under `argentina/`.
+- **Todo el derecho nacional.** Son 139 normas, no la totalidad de la legislación; no están aquí los decretos reglamentarios ni las resoluciones que solo complementan una norma, ni la jurisprudencia.
+- **Los cambios anteriores a la primera versión de una norma**, que quedan dentro de ese primer commit: por ejemplo, la Constitución antes de 1994, la Ley de Contrato de Trabajo antes de 1976 y el Código Penal antes de 1985. InfoLEG no ofrece ningún texto más antiguo de los Códigos Procesales Civil y Comercial y Penal, de la Ley 24.522 ni del Código Aduanero, por lo que estos parten de capturas de 2013 de las páginas de InfoLEG, fechadas el día de la captura; de las Leyes 13.064, 17.671, 22.431 y 27.351 solo está el texto actual.
+- **Los cambios que no tocan el texto**: las suspensiones, las medidas de emergencia, los fallos judiciales (como los referidos al capítulo laboral del DNU 70/2023) y los tratados con jerarquía constitucional no tienen commit.
+- **Encabezados, notas y palabras vetadas.** No se conservan los encabezados de libros, títulos y capítulos, se eliminan las notas de InfoLEG y se omiten las palabras vetadas en la promulgación.
+- **El derecho provincial y de la ciudad**, que está en sus propios repositorios (como [argentina-buenos-aires-law](https://github.com/lexifina/argentina-buenos-aires-law)), que global-law lee junto a este bajo `argentina/`.
 
-## Sources
+## Fuentes
 
-| Source | Kind | Past versions | Notes |
+| Fuente | Tipo | Versiones anteriores | Notas |
 | --- | --- | --- | --- |
-| [InfoLEG](https://www.infoleg.gob.ar) (Ministerio de Justicia de la Nación) | Official database of national legislation | no: the text as enacted and today's consolidated text | Every act's texts and the amending norms' own texts; its notes name the norm behind each change |
-| [Base de datos InfoLEG](https://datos.jus.gob.ar/dataset/base-de-datos-legislativos-infoleg) (datos.jus.gob.ar) | Open dataset, CC BY 4.0 | n/a | Each norm's type, number, dates and title |
-| [Internet Archive Wayback Machine](https://web.archive.org/) | Captures of InfoLEG's pages | yes, dated captures from 2013 | The first version of four acts, and the checks against later captures |
-| [Argentina.gob.ar, Leyes Argentinas](https://www.argentina.gob.ar/normativa) (Ministerio de Justicia) | Official legislation | no, today's text | Leyes 13.064, 17.671, 22.431 and 27.351 |
+| [InfoLEG](https://www.infoleg.gob.ar) (Ministerio de Justicia de la Nación) | Base de datos oficial de legislación nacional | no: el texto original y el texto actualizado de hoy | Los textos de cada norma y los textos propios de las normas modificatorias; sus notas indican la norma detrás de cada cambio |
+| [Base de datos InfoLEG](https://datos.jus.gob.ar/dataset/base-de-datos-legislativos-infoleg) (datos.jus.gob.ar) | Conjunto de datos abiertos, CC BY 4.0 | no corresponde | El tipo, el número, las fechas y el título de cada norma |
+| [Internet Archive Wayback Machine](https://web.archive.org/) | Capturas de las páginas de InfoLEG | sí, capturas fechadas desde 2013 | La primera versión de cuatro normas y los cotejos con capturas posteriores |
+| [Argentina.gob.ar, Leyes Argentinas](https://www.argentina.gob.ar/normativa) (Ministerio de Justicia) | Legislación oficial | no, el texto actual | Leyes 13.064, 17.671, 22.431 y 27.351 |
 
-## Licence
+## Licencia
 
-See [`LICENSE`](LICENSE). The legal texts are official texts of the Argentine Nation, reproduced with the attribution "Fuente: InfoLEG - Información Legislativa, Ministerio de Justicia de la Nación (www.infoleg.gob.ar)"; InfoLEG's pages publish no licence and the texts' copyright status is not confirmed, while the InfoLEG dataset (norm types, numbers, dates and titles) is CC BY 4.0. Lexifina's own contributions (the arrangement, commit messages, tables and tools) are CC0 1.0.
+Véase [`LICENSE`](LICENSE). Los textos normativos son textos oficiales de la Nación Argentina, reproducidos con la atribución "Fuente: InfoLEG - Información Legislativa, Ministerio de Justicia de la Nación (www.infoleg.gob.ar)"; las páginas de InfoLEG no publican ninguna licencia y la situación de los textos en materia de derecho de autor no está confirmada, mientras que el conjunto de datos InfoLEG (tipos, números, fechas y títulos de las normas) tiene licencia CC BY 4.0. Las contribuciones propias de Lexifina (la organización, los mensajes de commit, las tablas y las herramientas) son CC0 1.0.
 
-No AI model wrote, translated or corrected legal text, and none runs at build time; the scripts were written by Claude Code running Claude Opus 5.5 (see [`REPRODUCE.md`](REPRODUCE.md)).
+Ningún modelo de IA escribió, tradujo ni corrigió texto normativo, y ninguno se ejecuta durante la compilación; los scripts los escribió Claude Code con Claude Opus 5.5 (véase [`REPRODUCE.md`](REPRODUCE.md)).
 
-## En español
+Esta es una traducción de la versión inglesa ([README.en.md](README.en.md)); si difieren, prevalece la versión inglesa.
 
-Historia del derecho nacional argentino en git: un archivo por artículo y un commit por norma, fechado el día de su entrada en vigencia y firmado por la norma que hizo el cambio. Contiene la Constitución Nacional y 138 códigos y leyes nacionales, con 775 versiones; las que aún no rigen están en la rama `futuro`. Texto vigente en una fecha: `python tools/en_vigor_el.py 2023-01-01 ley-20744 245`. Fuente: InfoLEG - Información Legislativa, Ministerio de Justicia de la Nación (www.infoleg.gob.ar).
+## Más información
 
-## More
+Del repositorio [lexifina/global-law](https://github.com/lexifina/global-law) (páginas en inglés):
 
-From [lexifina/global-law](https://github.com/lexifina/global-law):
-
-- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
-- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
-- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
-- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
-- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
-- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): todas las funciones y lo que cada corpus debe admitir (`git blame`, `law.py`, herramientas MCP)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): preguntas y respuestas · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proponer cambios · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): servidor MCP · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): cómo se ha construido · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): lo actualizado que está cada corpus · [Supervisión](https://github.com/lexifina/global-law/tree/main/monitoring): si las actualizaciones funcionan · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): cómo se vigila cada fuente oficial para detectar cambios
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): la rapidez de las herramientas, medida
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): gráficos y conexiones a través del derecho de todo el mundo
+- [Vulnerabilidades](https://github.com/lexifina/global-law/tree/main/vulnerabilities): errores en las normas tal como se publicaron
